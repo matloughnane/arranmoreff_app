@@ -1,0 +1,149 @@
+
+@-webkit-viewport { width: device-width; }
+@-moz-viewport { width: device-width; }
+@-ms-viewport { width: device-width; }
+@-o-viewport { width: device-width; }
+@viewport { width: device-width; }
+
+
+// BASIC FORMATTING
+body {
+	font-family: 'Rambla',sans-serif;
+	background-color: $bkg_color;
+	margin: 0px;
+}
+
+a {
+	text-decoration: none;
+}
+
+::selection {
+	background:$main_color_light;
+}
+
+::-moz-selection {
+	background: $main_color_light;
+}
+
+.footer_bar {
+	width: 100%;
+	position: fixed;
+	bottom: 0px;
+	text-align: center;
+	background-color: $main_color;
+	padding: 5px;
+	span {
+		color: $bkg_color_lighter;
+		font-size: 12px;
+		padding: 5px;
+	}
+	a {
+		font-size: 12px;
+		color: $bkg_color_lighter;
+	}
+}
+
+.full_bar {
+	font-size: 1.5em;
+  	padding: 0.5em;
+  	color: $bkg_color_lighter;
+  	background-color: $main_color_dark;
+}
+
+.actionBar {
+	margin-left: 2em;
+}
+
+.content {
+	background-color: $bkg_color_lighter;
+}
+
+.content_secondary {
+	color: $bkg_color_lighter;
+	background-color: $main_color_dark;
+}
+
+.content_tertiary {
+	color: $bkg_color_lighter;
+	background-color: $main_color;
+}
+
+/*
+==================IMAGES NAVIGATION====================
+*/
+
+img.logo {
+	max-width: 90%;
+	margin: 0 auto;
+}
+
+
+/*
+==================TABLET BASICS====================
+*/
+
+@media screen and (max-width: 968px) {
+	h1 {
+		color: $bkg_color;
+		font-size: 2em;
+		padding: 0px;
+		margin: 0px;
+	}
+	h2 {
+		font-size: 1.5em;
+	}
+	h3 {
+		font-size: 1em;
+	}
+	.nav li a {
+		font-size: 0.75em;
+	}
+	p {
+		font-size: 1em;
+	}
+	.italics {
+		font-size: 0.9em;
+	}
+	a {
+		padding: 10px 20px;
+	}
+	.wrapper {
+  		position: relative;
+  		margin: 0 auto;
+	}
+}
+
+/*
+==================MOBILE BASICS====================
+*/
+
+@media screen and (max-width: 640px) {
+	h1 {
+		color: $bkg_color;
+		font-size: 2em;
+		padding: 0px;
+		margin: 0px;
+	}
+	p {
+		font-size: 1.0em;
+	}
+	.content {
+		height: auto;
+		p {
+			font-size: 1em;
+		}
+	}
+	.italics {
+		font-size: 1em;
+	}
+	.content_secondary {
+		height: auto;
+	}
+	.content_tertiary {
+		height: auto;
+	}
+	.wrapper {
+  		position: relative;
+  		margin: 0 auto;
+	}
+}
