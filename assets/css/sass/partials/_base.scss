@@ -48,24 +48,44 @@ a {
   	padding: 0.5em;
   	color: $bkg_color_lighter;
   	background-color: $main_color_dark;
+  	box-shadow: $shadow;
 }
 
 .actionBar {
-	margin-left: 2em;
+	font-size: 1em;
+	margin-left: 1em;
+}
+
+.padded {
+	padding: 10px;
+}
+
+.screen_title {
+	font-size: 1.5em;
+	font-weight: bold;
 }
 
 .content {
 	background-color: $bkg_color_lighter;
 }
 
-.content_secondary {
-	color: $bkg_color_lighter;
-	background-color: $main_color_dark;
+.content_main {
+	margin-bottom: 10px;
+	background-color: $main_color;
+  	color: $bkg_color_lighter;
+	box-shadow: $shadow;
 }
 
-.content_tertiary {
+.content_opposite {
+	margin-bottom: 10px;
+	background-color: $main_color_opp;
 	color: $bkg_color_lighter;
-	background-color: $main_color;
+	box-shadow: $shadow;
+}
+
+.important_text {
+	font-weight: bold;
+	font-size: 1.2em;
 }
 
 /*
@@ -84,7 +104,6 @@ img.logo {
 
 @media screen and (max-width: 968px) {
 	h1 {
-		color: $bkg_color;
 		font-size: 2em;
 		padding: 0px;
 		margin: 0px;
@@ -119,7 +138,6 @@ img.logo {
 
 @media screen and (max-width: 640px) {
 	h1 {
-		color: $bkg_color;
 		font-size: 2em;
 		padding: 0px;
 		margin: 0px;
