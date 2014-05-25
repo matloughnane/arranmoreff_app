@@ -91,7 +91,7 @@ function GetNextFerry(){
 		} else if (militaryclockInt < sundayDepartArranmoreInt[7]) {
 				nextFerryTimeDepartArranmore = sundayDepartArranmoreInt[7];
 		} else {
-				nextFerryTimeDepartArranmore = "No More Ferries Today, check timetables";
+				nextFerryTimeDepartArranmore = "No More Ferries Today";
 		};
 
 		if (militaryclockInt < sundayDepartBurtonInt[0]) {
@@ -111,7 +111,7 @@ function GetNextFerry(){
 		} else if (militaryclockInt < sundayDepartBurtonInt[7]) {
 				nextFerryTimeDepartBurton = sundayDepartBurtonInt[7];
 		} else {
-				nextFerryTimeDepartBurton = "No More Ferries Today, check timetables";
+				nextFerryTimeDepartBurton = "No More Ferries Today";
 		};
 		// END THE SUNDAY TIMES CHECKS
 		// START WEEKDAY CHECKS
@@ -131,7 +131,7 @@ function GetNextFerry(){
 		} else if (militaryclockInt < weekDepartArranmoreInt[6]) {
 				nextFerryTimeDepartArranmore = weekDepartArranmoreInt[6];
 		} else {
-				nextFerryTimeDepartArranmore = "No More Ferries Today, check timetables";
+				nextFerryTimeDepartArranmore = "No More Ferries Today";
 		};
 
 		if (militaryclockInt < weekDepartBurtonInt[0]) {
@@ -149,7 +149,7 @@ function GetNextFerry(){
 		} else if (militaryclockInt < weekDepartBurtonInt[6]) {
 				nextFerryTimeDepartBurton = weekDepartBurtonInt[6];
 		} else {
-				nextFerryTimeDepartBurton = "No More Ferries Today, check timetables";
+				nextFerryTimeDepartBurton = "No More Ferries Today";
 		};
 		// END WEEKDAY CHECKS
 	};
