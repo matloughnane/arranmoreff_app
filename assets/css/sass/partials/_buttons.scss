@@ -1,9 +1,10 @@
 .btn {
 	border: none;
 	background: none;
-	padding: 10px 10px;
+	padding: 10px 0px;
+	width: 90%;
 	display: inline-block;
-	margin: 8px 5px;
+	margin: 5px 5px;
 	text-transform: lowercase;
 	text-decoration: none;
 	outline: none;
@@ -12,10 +13,13 @@
 	-webkit-transition: $transition;
 	-moz-transition: $transition;
 	transition: $transition;
+	i {
+		margin-right: 20px;
+	}
 }
 
 .default {
-	color: $bkg_color;
+	color: $bkg_color_lighter;
 	background-color: $main_color;
 	a {
 		color: $bkg_color_lighter;
@@ -32,7 +36,7 @@
 }
 
 .dark_highlight {
-	color: $bkg_color;
+	color: $bkg_color_lighter;
 	background-color: $main_color_accent;
 	a {
 		color: $bkg_color_lighter;
@@ -52,14 +56,15 @@
 // SOCIAL BUTTONS
 
 .facebook {
-	background-color: $main_color;
+	color: $bkg_color_lighter;
+	background-color: $facebook;
+	box-shadow: 0px -3px 0px 0px $facebook_highlight inset;
 	a {
 		color: $bkg_color_lighter;
 	}
 	&:hover {
-		box-shadow: 0px -3px 0px 0px $facebook_highlight inset;
 		outline: 0 6px $main_color_dark;
-		background-color: $facebook;
+		background-color: $facebook_highlight;
 	}
 	&:active {
 		background-color: $facebook;
@@ -68,14 +73,15 @@
 }
 
 .twitter {
-	background-color: $main_color;
+	color: $bkg_color_lighter;
+	background-color: $twitter;
+	box-shadow: 0px -3px 0px 0px $twitter_highlight inset;
 	a {
 		color: $bkg_color_lighter;
 	}
 	&:hover {
-		box-shadow: 0px -3px 0px 0px $twitter_highlight inset;
 		outline: 0 6px $main_color_dark;
-		background-color: $twitter;
+		background-color: $twitter_highlight;
 	}
 	&:active {
 		background-color: $twitter;
@@ -84,17 +90,36 @@
 }
 
 .google {
-	background-color: $main_color;
+	color: $bkg_color_lighter;
+	background-color: $google;
+	box-shadow: 0px -3px 0px 0px $google_highlight inset;
 	a {
 		color: $bkg_color_lighter;
 	}
 	&:hover {
-		box-shadow: 0px -3px 0px 0px $google_highlight inset;
+
 		outline: 0 6px $main_color_dark;
-		background-color: $google;
+		background-color: $google_highlight;
 	}
 	&:active {
 		background-color: $google;
+		top: 0px;
+	}
+}
+
+.instagram {
+	color: $bkg_color_lighter;
+	background-color: $instagram;
+	box-shadow: 0px -3px 0px 0px $instagram_highlight inset;
+	a {
+		color: $bkg_color_lighter;
+	}
+	&:hover {
+		outline: 0 6px $main_color_dark;
+		background-color: $instagram_highlight;
+	}
+	&:active {
+		background-color: $instagram;
 		top: 0px;
 	}
 }

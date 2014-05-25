@@ -55,27 +55,10 @@
           </ul>
     </nav>
     <div class="full_bar">
-    	<span class="actionBar">Arranmore Fast Ferry</span>
+    	<span class="actionBar">Contact Us</span>
     </div>
 </div>
 <!-- END NAV -->
-
-<!-- GRID FOR FERRY TIMES -->
-<div class="grid padded">
-  <div class="unit half content_main">
-    <div class="align-center">
-      <span>Next Ferry Departing Burton Port: </span> <br>
-      <span id="nextFerryDepartBurton" class="important_text"></span>
-    </div>
-  </div>
-  <div class="unit half content_opposite">
-    <div class="align-center">
-<!--      <span>Current Time: </span><span id="clockbox"></span> <br> -->
-      <span>Next Ferry Departing Arranmore: </span> <br>
-      <span id="nextFerryDepartArranmore" class="important_text"></span>
-    </div>
-  </div>
-</div>
 
 <!-- GRID FOR CONTACT -->
 <div class="grid padded">
@@ -86,6 +69,30 @@
     </div>
   </div>
 </div>
+
+<!-- GRID FOR EMAIL -->
+<div class="grid padded">
+  <div class="unit whole content">
+    <div class="align-center">
+      <a class="btn default" href="mailto:"><i class="fa fa-envelope"></i>contact@arranmorefastferry.com</a>
+    </div>
+  </div>
+</div>
+
+
+<!-- GRID FOR SOCIAL BUTTONS -->
+<div class="grid padded">
+  <div class="unit whole content">
+    <div class="align-center">
+      <span>Join Us On Social Media:</span> <br>
+      <a class="btn facebook" href="https://www.facebook.com/arranmorefastferries"><i class="fa fa-facebook"></i>facebook</a>
+      <a class="btn twitter" href="#"><i class="fa fa-twitter"></i>twitter</a>
+      <a class="btn google" href="#"><i class="fa fa-google-plus"></i>google</a>
+      <a class="btn instagram" href="#"><i class="fa fa-instagram"></i>instagram</a>
+    </div>
+  </div>
+</div>
+
 
 <!-- FOOTER BAR -->
   <div class="grid whole footer_bar">
@@ -98,14 +105,6 @@
       $(document).ready(function() {
           $('.menu-link').bigSlide();
       });
-  </script>
-
-  <script type="text/javascript">
-    function start() {
-      // GetClock();
-      GetNextFerry();
-    } 
-    window.onload = start;
   </script>
 
   </body>
