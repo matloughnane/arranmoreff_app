@@ -22,7 +22,7 @@ th.main_color {
 td.main_color {
 	border: 1px solid $main_color_light;
 	text-align: center;
-	padding: 5px;
+	padding: 5px 0;
 	&.light_darkText {
 		padding: 8px 0;
 		font-weight: bold;
@@ -35,6 +35,7 @@ td.main_color {
 table.opp_color {
 	margin-top: 10px;
 	width: 100%;
+	padding: 5px 0;
 	color: $bkg_color_lighter;
 	background-color: $main_color_accent_opp;
 	border: 1px solid $bkg_color_lighter;
@@ -50,7 +51,6 @@ th.opp_color {
 td.opp_color {
 	border: 1px solid $bkg_color_lighter;
 	text-align: center;
-	padding: 5px;
 	&.light_darkText {
 		padding: 8px 0;
 		font-weight: bold;

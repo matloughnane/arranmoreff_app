@@ -408,7 +408,7 @@ th.main_color {
 td.main_color {
   border: 1px solid #6bb9f0;
   text-align: center;
-  padding: 5px;
+  padding: 5px 0;
 }
 /* line 26, sass/partials/_tables.scss */
 td.main_color.light_darkText {
@@ -422,12 +422,13 @@ td.main_color.light_darkText {
 table.opp_color {
   margin-top: 10px;
   width: 100%;
+  padding: 5px 0;
   color: #eeeeee;
   background-color: #d36f18;
   border: 1px solid #eeeeee;
 }
 
-/* line 43, sass/partials/_tables.scss */
+/* line 44, sass/partials/_tables.scss */
 th.opp_color {
   border: 1px solid #eeeeee;
   padding: 10px 0;
@@ -435,11 +436,10 @@ th.opp_color {
   height: 30px;
 }
 
-/* line 50, sass/partials/_tables.scss */
+/* line 51, sass/partials/_tables.scss */
 td.opp_color {
   border: 1px solid #eeeeee;
   text-align: center;
-  padding: 5px;
 }
 /* line 54, sass/partials/_tables.scss */
 td.opp_color.light_darkText {
