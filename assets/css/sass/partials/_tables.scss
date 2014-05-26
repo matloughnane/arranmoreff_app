@@ -68,13 +68,14 @@ TABLE.CSVTable {
 	// margin-top: 10px;
 	border-collapse: collapse;
 	width: 100%;
-	// border-bottom: 1px solid $bkg_color_lighter;
+	border: 1px solid $main_color_dark;
 }
 
 /* Header */
 TABLE.CSVTable THEAD TR {
-	color: $bkg_color_lighter;
-	background: $main_color_dark;
+	border: 2px solid $main_color_dark;
+	color: black;
+	background: $main_color_halftransparent;
 }
 
 TABLE.CSVTable TH {
