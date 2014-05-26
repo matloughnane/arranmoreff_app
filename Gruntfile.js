@@ -10,7 +10,7 @@ module.exports = function(grunt) {
       },
       my_target: {
         files: {
-          'assets/js/output.min.js': ['assets/js/jquery-1.10.2.min.js', 'assets/js/bigSlide.min.js']
+          'assets/js/output.min.js': ['assets/js/jquery-1.10.2.min.js', 'assets/js/bigSlide.min.js', 'assets/js/jquery.csvToTable.js']
         }
       }
     },

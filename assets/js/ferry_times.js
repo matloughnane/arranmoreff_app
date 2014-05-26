@@ -47,29 +47,33 @@ function GetNextFerry(){
 		militaryclockInt = parseInt(militaryclock);
 
 	// MOVE THE CLOCK BACKWARDS (FOR TESTING)
-	// militaryclockInt = parseInt(militaryclock)-400;
+	// militaryclockInt = parseInt(militaryclock)-300;
+
+	// MOVE THE CALENDAR BACK / FORWARD MONTHS (FOR TESTING)
+	// mmonth = mmonth - 3;
 
 	// LOG TO THE CONSOLE - LOCAL TIME
 	// console.log( "Time the website thinks it is: " + militaryclockInt );
 
 	// USE IF STATEMENT TO CHANGE TIMETABLES
 
-	if (mmonth < 4 && mmonth > 9) {
-		// FERRY TIMES FOR MONTHS JANUARY, FEBRUARY, MARCH, APRIL, NOVEMBER AND DECEMBER
+	if (mmonth <=3 != mmonth >= 8) {
+		// FERRY TIMES FOR WINTER MONTHS  >> JANUARY 0 , FEBRUARY 1, MARCH 2, APRIL 3, SEPTMBER 8 , OCTOBER 9, NOVEMBER 10 AND DECEMBER 11.
 		weekDepartArranmoreInt = new Array(0745, 0915, 1015, 1315, 1500, 1700);
-		weekDepartBurtonInt = new Array(0845, 0945, 1245, 1430, 1630, 1730);
-
 		sundayDepartArranmoreInt = new Array (1015, 1200, 1315, 1500, 1700);
+
+		weekDepartBurtonInt = new Array(0845, 0945, 1245, 1430, 1630, 1730);
 		sundayDepartBurtonInt = new Array (1130, 1245, 1430, 1630, 1730);
 	} else {
-		// TIMES FOR SUMMER MONTHS
+		// TIMES FOR SUMMER MONTHS MAY 4, JUNE 5, JULY 6 and AUGUST 7
 		weekDepartArranmoreInt = new Array(0745, 0915, 1015, 1315, 1500, 1700, 1800);
-		weekDepartBurtonInt = new Array(0845, 0945, 1245, 1430, 1630, 1730, 1830);
-
 		sundayDepartArranmoreInt = new Array (1015, 1200, 1315, 1500, 1700, 1800);
+
+		weekDepartBurtonInt = new Array(0845, 0945, 1245, 1430, 1630, 1730, 1830);
 		sundayDepartBurtonInt = new Array (1130, 1245, 1430, 1630, 1730, 1830);
 	};
 
+	console.log(weekDepartArranmoreInt);
 
 // CHECKS FOR DAY OF THE WEEK
 	if (mday = 0 ) {

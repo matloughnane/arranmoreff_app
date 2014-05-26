@@ -12,9 +12,6 @@
     
     <script src="assets/js/output.min.js"></script>
 
-    <!--     SCRIPT FOR FERRY TIMES -->
-    <script src="assets/js/ferry_times.js"></script>
-
 <!-- FONTS -->
     <link href='http://fonts.googleapis.com/css?family=Rambla:400,700' rel='stylesheet' type='text/css'>
 
@@ -48,57 +45,56 @@
           <ul>
             <li><a class="nav_link" href="index.html"><i class="fa fa-home"></i>home</a></li>
             <li><a class="nav_link" href="times.html"><i class="fa fa-clock-o"></i>times</a></li>
-<!--             <li><a class="nav_link" href="weather.html"><i class="fa fa-sun-o"></i>weather</a></li> -->
-            <li><a class="nav_link" href="contact.html"><i class="fa fa-phone-square"></i>contact</a></li>
-            <li><a class="nav_link" href="maps.html"><i class="fa fa-map-marker"></i>map</a></li>
+<!--             <li><a class="nav_link" href="weather.html"><i class="fa fa-sun-o"></i>weather</a></li>
+ -->            <li><a class="nav_link" href="contact.html"><i class="fa fa-phone-square"></i>contact</a></li>
+            <li><a class="nav_link" href="maps.html"><i class="fa fa-map-marker"></i>map</a></li>            
             <li><a class="nav_link" href="tickets.html"><i class="fa fa-ticket"></i>tickets</a></li>
 <!--             <li><a class="nav_link" href="photos"><i class="fa fa-camera-retro"></i>photos</a></li> -->
           </ul>
     </nav>
     <div class="full_bar">
-    	<span class="actionBar">Arranmore Fast Ferry</span>
+    	<span class="actionBar">Ferry Times</span>
     </div>
 </div>
 <!-- END NAV -->
 
+<br>
+
 <!-- GRID FOR FERRY TIMES -->
-<div class="grid padded">
-  <div class="unit half content_main">
+<div class="grid wrap">
+  <div class="unit no-gutters-mobile half content_main">
     <div class="align-center">
-      <span>Next Ferry Departing Burtonport: </span> <br>
-      <span id="nextFerryDepartBurton" class="important_text"></span>
+      <br>
+      <span class="content_title">Timetables for Summer:</span> <br>
+      <span>(May to August)</span>
+
+      <!-- DEPARTING ARRANMORE SUMMER -->
+      <div id="departing_arranmore_summer"> </div>
+
+      <!-- DEPARTING BURTONPORT SUMMER -->
+      <div id="departing_burtonport_summer"> </div>
+        <br>
     </div>
   </div>
-  <div class="unit half content_opposite">
+
+  <div class="unit no-gutters-mobile half content_opposite">
     <div class="align-center">
-<!--      <span>Current Time: </span><span id="clockbox"></span> <br> -->
-      <span>Next Ferry Departing Arranmore: </span> <br>
-      <span id="nextFerryDepartArranmore" class="important_text"></span>
+    <br>
+      <span class="content_title">Timetables for Winter:</span> <br>
+      <span>(September to April)</span>
+
+      <!-- DEPARTING ARRANMORE WINTER -->
+       <div id="departing_arranmore_winter"> </div>
+
+      <!-- DEPARTING BURTONPORT WINTER -->
+        <div id="departing_burtonport_winter"> </div>
+        <br>
     </div>
   </div>
 </div>
-
-
-<!-- GRID FOR EXTRA SAILINGS -->
-<div class="grid padded">
-  <div class="unit half content">
-    <div class="align-center">
-      <span class="content_subtitle">Extra Ferries Departing Burtonport: </span> <br>
-        <div id="extra_sailings_arranmore"></div>
-    </div>
-  </div>
-  <div class="unit half content">
-    <div class="align-center">
-      <span class="content_subtitle">Extra Ferries Departing Arranmore: </span> <br>
-        <div id="extra_sailings_burtonport"></div>
-    </div>
-  </div>
-</div>
-
-
 
 <!-- GRID FOR CONTACT -->
-<div class="grid padded">
+<div class="grid wrap padded">
   <div class="unit whole content">
     <div class="align-center">
       <span>Call to book a ticket:</span> <br>
@@ -107,34 +103,22 @@
   </div>
 </div>
 
-<!-- FOOTER BAR -->
-  <div class="grid whole footer_bar">
-      <span style="float:left;">&copy; Arranmore Fast Ferry</span>
-      <span style="float:right;">v0.1</span>
-  </div>
+<!--   GOOGLE DOCS -->
 
-<!-- CHECK FOR EXTRA SAILINGS -->
   <script>
     $(function() {
-      $('#extra_sailings_arranmore').CSVToTable('https://docs.google.com/spreadsheet/pub?key=0Ahm69ZFnwz84dGJmS0x6LWVCb1o3ZFhxQkowX2VqTFE&output=csv', { loadingImage: 'assets/img/loading.gif', startLine: 0 });
-      $('#extra_sailings_burtonport').CSVToTable('https://docs.google.com/spreadsheet/pub?key=0Ahm69ZFnwz84dE5TLXhZbEhXQUtOV0NtRDB3UGNLS1E&output=csv', { loadingImage: 'assets/img/loading.gif', startLine: 0 });
+      $('#departing_arranmore_summer').CSVToTable('https://docs.google.com/spreadsheet/pub?key=0Ahm69ZFnwz84dEp5aUZmUUI3UTl3ckRMc3Vjc3p4ZFE&output=csv', { loadingImage: 'assets/img/loading.gif', startLine: 0 });
+      $('#departing_burtonport_summer').CSVToTable('https://docs.google.com/spreadsheet/pub?key=0Ahm69ZFnwz84dE9jR1VTNFZRUkx0VlI3NGttSU9tOWc&output=csv', { loadingImage: 'assets/img/loading.gif', startLine: 0 });
+      $('#departing_arranmore_winter').CSVToTable('https://docs.google.com/spreadsheet/pub?key=0Ahm69ZFnwz84dFRzMmxVNGlIOFJWVDR5TEJpSk9rYUE&output=csv', { loadingImage: 'assets/img/loading.gif', startLine: 0 });
+      $('#departing_burtonport_winter').CSVToTable('https://docs.google.com/spreadsheet/pub?key=0Ahm69ZFnwz84dGl3Slk4eU1mQVI5eHVWMlZ4Rk9uOWc&output=csv', { loadingImage: 'assets/img/loading.gif', startLine: 0 });
       });
   </script>
-
 
 <!-- BIG SLIDE -->
   <script>
       $(document).ready(function() {
           $('.menu-link').bigSlide();
       });
-  </script>
-
-  <script type="text/javascript">
-    function start() {
-      // GetClock();
-      GetNextFerry();
-    } 
-    window.onload = start;
   </script>
 
   </body>
