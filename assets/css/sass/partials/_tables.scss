@@ -51,6 +51,7 @@ th.opp_color {
 td.opp_color {
 	border: 1px solid $bkg_color_lighter;
 	text-align: center;
+	padding: 5px 0;
 	&.light_darkText {
 		padding: 8px 0;
 		font-weight: bold;
