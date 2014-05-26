@@ -18,30 +18,55 @@
   width: device-width;
 }
 
-/* line 10, sass/partials/_base.scss */
+/*
+==================  FONTS  ====================
+*/
+@font-face {
+  font-family: 'Rambla';
+  font-style: normal;
+  font-weight: 400;
+  src: local("Rambla"), local("Rambla-Regular"), url(../fonts/rambla/Rambla-Regular.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: 'Rambla';
+  font-style: normal;
+  font-weight: 700;
+  src: local("Rambla Bold"), local("Rambla-Bold"), url(../fonts/rambla/Rambla-Bold.ttf) format("truetype");
+}
+
+/*
+==================  END FONTS  ====================
+*/
+/* line 30, sass/partials/_base.scss */
+* {
+  font-family: 'Rambla', sans-serif;
+}
+
+/* line 35, sass/partials/_base.scss */
 body {
-  font-family: 'Rambla',sans-serif;
+  font-family: 'Rambla', sans-serif;
   background-color: #dadfe1;
   margin: 0px;
 }
 
-/* line 16, sass/partials/_base.scss */
+/* line 41, sass/partials/_base.scss */
 a {
   text-decoration: none;
   color: #eeeeee;
 }
 
-/* line 21, sass/partials/_base.scss */
+/* line 46, sass/partials/_base.scss */
 ::selection {
   background: #6bb9f0;
 }
 
-/* line 25, sass/partials/_base.scss */
+/* line 50, sass/partials/_base.scss */
 ::-moz-selection {
   background: #6bb9f0;
 }
 
-/* line 29, sass/partials/_base.scss */
+/* line 54, sass/partials/_base.scss */
 .footer_bar {
   width: 100%;
   position: fixed;
@@ -50,19 +75,19 @@ a {
   background-color: #3498db;
   padding: 5px;
 }
-/* line 36, sass/partials/_base.scss */
+/* line 61, sass/partials/_base.scss */
 .footer_bar span {
   color: #eeeeee;
   font-size: 12px;
   padding: 5px;
 }
-/* line 41, sass/partials/_base.scss */
+/* line 66, sass/partials/_base.scss */
 .footer_bar a {
   font-size: 12px;
   color: #eeeeee;
 }
 
-/* line 47, sass/partials/_base.scss */
+/* line 72, sass/partials/_base.scss */
 .full_bar {
   font-size: 1.5em;
   padding: 0.5em;
@@ -71,55 +96,55 @@ a {
   box-shadow: 0px 2px 2px rgba(43, 48, 51, 0.3);
 }
 
-/* line 55, sass/partials/_base.scss */
+/* line 80, sass/partials/_base.scss */
 .actionBar {
   font-size: 1em;
   margin-left: 1em;
 }
 
-/* line 60, sass/partials/_base.scss */
+/* line 85, sass/partials/_base.scss */
 .padded {
   padding: 10px;
 }
 
-/* line 64, sass/partials/_base.scss */
+/* line 89, sass/partials/_base.scss */
 .screen_title {
   font-size: 1.5em;
   font-weight: bold;
 }
 
-/* line 69, sass/partials/_base.scss */
+/* line 94, sass/partials/_base.scss */
 .content {
   background-color: #eeeeee;
   box-shadow: 0px 2px 2px rgba(43, 48, 51, 0.3);
 }
 
-/* line 74, sass/partials/_base.scss */
+/* line 99, sass/partials/_base.scss */
 .content_main {
   background-color: #3498db;
   color: #eeeeee;
   box-shadow: 0px 2px 2px rgba(43, 48, 51, 0.3);
 }
 
-/* line 80, sass/partials/_base.scss */
+/* line 105, sass/partials/_base.scss */
 .content_opposite {
   background-color: #f27935;
   color: #eeeeee;
   box-shadow: 0px 2px 2px rgba(43, 48, 51, 0.3);
 }
 
-/* line 86, sass/partials/_base.scss */
+/* line 111, sass/partials/_base.scss */
 .content_title {
   font-weight: bold;
   font-size: 1.5em;
 }
 
-/* line 91, sass/partials/_base.scss */
+/* line 116, sass/partials/_base.scss */
 .content_subtitle {
   font-size: 1.2em;
 }
 
-/* line 95, sass/partials/_base.scss */
+/* line 120, sass/partials/_base.scss */
 .important_text {
   font-weight: bold;
   font-size: 2em;
@@ -128,7 +153,7 @@ a {
 /*
 ==================IMAGES NAVIGATION====================
 */
-/* line 105, sass/partials/_base.scss */
+/* line 130, sass/partials/_base.scss */
 img.logo {
   max-width: 90%;
   margin: 0 auto;
@@ -138,39 +163,39 @@ img.logo {
 ==================TABLET BASICS====================
 */
 @media screen and (max-width: 968px) {
-  /* line 116, sass/partials/_base.scss */
+  /* line 141, sass/partials/_base.scss */
   h1 {
     font-size: 2em;
     padding: 0px;
     margin: 0px;
   }
 
-  /* line 121, sass/partials/_base.scss */
+  /* line 146, sass/partials/_base.scss */
   h2 {
     font-size: 1.5em;
   }
 
-  /* line 124, sass/partials/_base.scss */
+  /* line 149, sass/partials/_base.scss */
   h3 {
     font-size: 1em;
   }
 
-  /* line 127, sass/partials/_base.scss */
+  /* line 152, sass/partials/_base.scss */
   .nav li a {
     font-size: 0.75em;
   }
 
-  /* line 130, sass/partials/_base.scss */
+  /* line 155, sass/partials/_base.scss */
   p {
     font-size: 1em;
   }
 
-  /* line 133, sass/partials/_base.scss */
+  /* line 158, sass/partials/_base.scss */
   .italics {
     font-size: 0.9em;
   }
 
-  /* line 136, sass/partials/_base.scss */
+  /* line 161, sass/partials/_base.scss */
   .wrapper {
     position: relative;
     margin: 0 auto;
@@ -180,43 +205,43 @@ img.logo {
 ==================MOBILE BASICS====================
 */
 @media screen and (max-width: 640px) {
-  /* line 147, sass/partials/_base.scss */
+  /* line 172, sass/partials/_base.scss */
   h1 {
     font-size: 2em;
     padding: 0px;
     margin: 0px;
   }
 
-  /* line 152, sass/partials/_base.scss */
+  /* line 177, sass/partials/_base.scss */
   p {
     font-size: 1.0em;
   }
 
-  /* line 155, sass/partials/_base.scss */
+  /* line 180, sass/partials/_base.scss */
   .content {
     height: auto;
   }
-  /* line 157, sass/partials/_base.scss */
+  /* line 182, sass/partials/_base.scss */
   .content p {
     font-size: 1em;
   }
 
-  /* line 161, sass/partials/_base.scss */
+  /* line 186, sass/partials/_base.scss */
   .italics {
     font-size: 1em;
   }
 
-  /* line 164, sass/partials/_base.scss */
+  /* line 189, sass/partials/_base.scss */
   .content_secondary {
     height: auto;
   }
 
-  /* line 167, sass/partials/_base.scss */
+  /* line 192, sass/partials/_base.scss */
   .content_tertiary {
     height: auto;
   }
 
-  /* line 170, sass/partials/_base.scss */
+  /* line 195, sass/partials/_base.scss */
   .wrapper {
     position: relative;
     margin: 0 auto;

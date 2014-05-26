@@ -5,10 +5,35 @@
 @-o-viewport { width: device-width; }
 @viewport { width: device-width; }
 
+/*
+==================  FONTS  ====================
+*/
+
+
+@font-face {
+  font-family: 'Rambla';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Rambla'), local('Rambla-Regular'),  url(../fonts/rambla/Rambla-Regular.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Rambla';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Rambla Bold'), local('Rambla-Bold'),  url(../fonts/rambla/Rambla-Bold.ttf) format('truetype');
+}
+
+/*
+==================  END FONTS  ====================
+*/
+
+* {
+	font-family: 'Rambla', sans-serif;
+}
 
 // BASIC FORMATTING
 body {
-	font-family: 'Rambla',sans-serif;
+	font-family: 'Rambla', sans-serif;
 	background-color: $bkg_color;
 	margin: 0px;
 }
