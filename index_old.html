@@ -9,17 +9,15 @@
     <link rel="stylesheet" type="text/css" href="assets/css/gridism.css">
     <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="assets/css/animate.css">
-      
-    <script src="https://cdn.firebase.com/js/client/1.0.15/firebase.js"></script>
+    
     <script src="assets/js/output.min.js"></script>
 
     <!--     SCRIPT FOR FERRY TIMES -->
-    <script src="assets/js/update_firebase.js"></script>
-    <script src="assets/js/next_ferry.js"></script>
+    <script src="assets/js/ferry_times.js"></script>
 
 <!-- FONTS -->
-    <link href='http://fonts.googleapis.com/css?family=Rambla:400,700' rel='stylesheet' type='text/css'>
-
+<!--     <link href='http://fonts.googleapis.com/css?family=Rambla:400,700' rel='stylesheet' type='text/css'>
+ -->
 <!-- FAVICON -->
   <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/img/favicon/square_pngs_72.png">
   <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/img/favicon/square_pngs_144.png">
@@ -51,52 +49,57 @@
           <ul>
             <li><a class="nav_link" href="index.html"><i class="fa fa-home"></i>home</a></li>
             <li><a class="nav_link" href="times.html"><i class="fa fa-clock-o"></i>times</a></li>
-<!--             <li><a class="nav_link" href="weather.html"><i class="fa fa-sun-o"></i>weather</a></li>
- -->            <li><a class="nav_link" href="contact.html"><i class="fa fa-phone-square"></i>contact</a></li>
-            <li><a class="nav_link" href="maps.html"><i class="fa fa-map-marker"></i>map</a></li>            
+<!--             <li><a class="nav_link" href="weather.html"><i class="fa fa-sun-o"></i>weather</a></li> -->
+            <li><a class="nav_link" href="contact.html"><i class="fa fa-phone-square"></i>contact</a></li>
+            <li><a class="nav_link" href="maps.html"><i class="fa fa-map-marker"></i>map</a></li>
             <li><a class="nav_link" href="tickets.html"><i class="fa fa-ticket"></i>tickets</a></li>
 <!--             <li><a class="nav_link" href="photos"><i class="fa fa-camera-retro"></i>photos</a></li> -->
           </ul>
     </nav>
     <div class="full_bar">
-    	<span class="actionBar">Ferry Times</span>
+    	<span class="actionBar">Arranmore Fast Ferry</span>
     </div>
 </div>
 <!-- END NAV -->
 
+<!-- GRID FOR FERRY TIMES -->
 <div class="grid padded">
-
-  <div class="unit half content_main align-center">
-    <h2> Summer Timetable </h2>
-      <table class="main_color" id="SummerSec1" border=1></table>
-
-      <table class="main_color" id="SummerSec2" border=1></table>
-
-      <table class="main_color" id="SummerSec3" border=1></table>
-
-      <table class="main_color" id="SummerSec4" border=1></table>
+  <div class="unit half content_main">
+    <div class="align-center">
+      <span>Next Ferry Departing Burtonport: </span> <br>
+      <span id="nextFerryDepartBurton" class="important_text"></span>
+    </div>
   </div>
-
-  <div class="unit half content_opposite align-center"> 
-    <h2> Winter Timetable </h2>
-      <table class="opp_color" id="WinterSec1" border=1></table>
-
-      <table class="opp_color" id="WinterSec2" border=1></table>
-
-      <table class="opp_color" id="WinterSec3" border=1></table>
-
-      <table class="opp_color" id="WinterSec4" border=1></table>
+  <div class="unit half content_opposite">
+    <div class="align-center">
+<!--      <span>Current Time: </span><span id="clockbox"></span> <br> -->
+      <span>Next Ferry Departing Arranmore: </span> <br>
+      <span id="nextFerryDepartArranmore" class="important_text"></span>
+    </div>
   </div>
-
-  <div class="unit whole content">
-    <table class="main_color" id="ExtraFerry" border=1> </table>
-  </div>
-
 </div>
 
 
+<!-- GRID FOR EXTRA SAILINGS -->
+<div class="grid padded">
+  <div class="unit half content">
+    <div class="align-center">
+      <span class="content_subtitle">Extra Ferries Departing Burtonport: </span> <br>
+        <div id="extra_sailings_arranmore"></div>
+    </div>
+  </div>
+  <div class="unit half content">
+    <div class="align-center">
+      <span class="content_subtitle">Extra Ferries Departing Arranmore: </span> <br>
+        <div id="extra_sailings_burtonport"></div>
+    </div>
+  </div>
+</div>
+
+
+
 <!-- GRID FOR CONTACT -->
-<div class="grid wrap padded">
+<div class="grid padded">
   <div class="unit whole content">
     <div class="align-center">
       <span>Call to book a ticket:</span> <br>
@@ -105,11 +108,36 @@
   </div>
 </div>
 
+<div style="height:35px;"></div>
+
+<!-- FOOTER BAR -->
+  <div class="grid whole footer_bar">
+      <span style="float:left;">&copy; Arranmore Fast Ferry</span>
+      <span style="float:right;">v0.1</span>
+  </div>
+
+<!-- CHECK FOR EXTRA SAILINGS -->
+  <script>
+    $(function() {
+      $('#extra_sailings_arranmore').CSVToTable('https://docs.google.com/spreadsheet/pub?key=0Ahm69ZFnwz84dGJmS0x6LWVCb1o3ZFhxQkowX2VqTFE&output=csv', { loadingImage: 'assets/img/loading.gif', startLine: 0 });
+      $('#extra_sailings_burtonport').CSVToTable('https://docs.google.com/spreadsheet/pub?key=0Ahm69ZFnwz84dE5TLXhZbEhXQUtOV0NtRDB3UGNLS1E&output=csv', { loadingImage: 'assets/img/loading.gif', startLine: 0 });
+      });
+  </script>
+
+
 <!-- BIG SLIDE -->
   <script>
       $(document).ready(function() {
           $('.menu-link').bigSlide();
       });
+  </script>
+
+  <script type="text/javascript">
+    function start() {
+      // GetClock();
+      GetNextFerry();
+    } 
+    window.onload = start;
   </script>
 
   </body>

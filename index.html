@@ -9,11 +9,13 @@
     <link rel="stylesheet" type="text/css" href="assets/css/gridism.css">
     <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="assets/css/animate.css">
-    
+      
+    <script src="https://cdn.firebase.com/js/client/1.0.15/firebase.js"></script>
     <script src="assets/js/output.min.js"></script>
 
     <!--     SCRIPT FOR FERRY TIMES -->
-    <script src="assets/js/ferry_times.js"></script>
+    <script src="assets/js/next_ferry.js"></script>
+    <script src="assets/js/extra_ferry.js"></script>
 
 <!-- FONTS -->
 <!--     <link href='http://fonts.googleapis.com/css?family=Rambla:400,700' rel='stylesheet' type='text/css'>
@@ -58,45 +60,25 @@
     </nav>
     <div class="full_bar">
     	<span class="actionBar">Arranmore Fast Ferry</span>
+      <a class="pull-right" href="javascript:history.go(0)"><i class="fa fa-refresh"></i></a>
     </div>
 </div>
 <!-- END NAV -->
 
-<!-- GRID FOR FERRY TIMES -->
 <div class="grid padded">
-  <div class="unit half content_main">
-    <div class="align-center">
-      <span>Next Ferry Departing Burtonport: </span> <br>
-      <span id="nextFerryDepartBurton" class="important_text"></span>
-    </div>
+
+  <div class="unit half content_main align-center">
+    <h2>Next Ferry Leaving Arranmore:</h2> <span id="nextDA" class="important_text"></span>
   </div>
-  <div class="unit half content_opposite">
-    <div class="align-center">
-<!--      <span>Current Time: </span><span id="clockbox"></span> <br> -->
-      <span>Next Ferry Departing Arranmore: </span> <br>
-      <span id="nextFerryDepartArranmore" class="important_text"></span>
-    </div>
+      
+  <div class="unit half content_opposite align-center">
+    <h2>Next Ferry Leaving Burtonport:</h2> <span id="nextDB" class="important_text"></span>
+  </div>
+
+  <div class="unit whole content">
+    <table class="main_color" id="ExtraFerry" border=1> </table>
   </div>
 </div>
-
-
-<!-- GRID FOR EXTRA SAILINGS -->
-<div class="grid padded">
-  <div class="unit half content">
-    <div class="align-center">
-      <span class="content_subtitle">Extra Ferries Departing Burtonport: </span> <br>
-        <div id="extra_sailings_arranmore"></div>
-    </div>
-  </div>
-  <div class="unit half content">
-    <div class="align-center">
-      <span class="content_subtitle">Extra Ferries Departing Arranmore: </span> <br>
-        <div id="extra_sailings_burtonport"></div>
-    </div>
-  </div>
-</div>
-
-
 
 <!-- GRID FOR CONTACT -->
 <div class="grid padded">
@@ -116,28 +98,12 @@
       <span style="float:right;">v0.1</span>
   </div>
 
-<!-- CHECK FOR EXTRA SAILINGS -->
-  <script>
-    $(function() {
-      $('#extra_sailings_arranmore').CSVToTable('https://docs.google.com/spreadsheet/pub?key=0Ahm69ZFnwz84dGJmS0x6LWVCb1o3ZFhxQkowX2VqTFE&output=csv', { loadingImage: 'assets/img/loading.gif', startLine: 0 });
-      $('#extra_sailings_burtonport').CSVToTable('https://docs.google.com/spreadsheet/pub?key=0Ahm69ZFnwz84dE5TLXhZbEhXQUtOV0NtRDB3UGNLS1E&output=csv', { loadingImage: 'assets/img/loading.gif', startLine: 0 });
-      });
-  </script>
-
 
 <!-- BIG SLIDE -->
   <script>
       $(document).ready(function() {
           $('.menu-link').bigSlide();
       });
-  </script>
-
-  <script type="text/javascript">
-    function start() {
-      // GetClock();
-      GetNextFerry();
-    } 
-    window.onload = start;
   </script>
 
   </body>

@@ -150,10 +150,17 @@ a {
   font-size: 2em;
 }
 
+/* line 125, sass/partials/_base.scss */
+h2 {
+  -webkit-margin-before: 0px;
+  -webkit-margin-after: 0px;
+  font-weight: normal;
+}
+
 /*
 ==================IMAGES NAVIGATION====================
 */
-/* line 130, sass/partials/_base.scss */
+/* line 135, sass/partials/_base.scss */
 img.logo {
   max-width: 90%;
   margin: 0 auto;
@@ -163,39 +170,39 @@ img.logo {
 ==================TABLET BASICS====================
 */
 @media screen and (max-width: 968px) {
-  /* line 141, sass/partials/_base.scss */
+  /* line 146, sass/partials/_base.scss */
   h1 {
     font-size: 2em;
     padding: 0px;
     margin: 0px;
   }
 
-  /* line 146, sass/partials/_base.scss */
+  /* line 151, sass/partials/_base.scss */
   h2 {
     font-size: 1.5em;
   }
 
-  /* line 149, sass/partials/_base.scss */
+  /* line 154, sass/partials/_base.scss */
   h3 {
     font-size: 1em;
   }
 
-  /* line 152, sass/partials/_base.scss */
+  /* line 157, sass/partials/_base.scss */
   .nav li a {
     font-size: 0.75em;
   }
 
-  /* line 155, sass/partials/_base.scss */
+  /* line 160, sass/partials/_base.scss */
   p {
     font-size: 1em;
   }
 
-  /* line 158, sass/partials/_base.scss */
+  /* line 163, sass/partials/_base.scss */
   .italics {
     font-size: 0.9em;
   }
 
-  /* line 161, sass/partials/_base.scss */
+  /* line 166, sass/partials/_base.scss */
   .wrapper {
     position: relative;
     margin: 0 auto;
@@ -205,43 +212,43 @@ img.logo {
 ==================MOBILE BASICS====================
 */
 @media screen and (max-width: 640px) {
-  /* line 172, sass/partials/_base.scss */
+  /* line 177, sass/partials/_base.scss */
   h1 {
     font-size: 2em;
     padding: 0px;
     margin: 0px;
   }
 
-  /* line 177, sass/partials/_base.scss */
+  /* line 182, sass/partials/_base.scss */
   p {
     font-size: 1.0em;
   }
 
-  /* line 180, sass/partials/_base.scss */
+  /* line 185, sass/partials/_base.scss */
   .content {
     height: auto;
   }
-  /* line 182, sass/partials/_base.scss */
+  /* line 187, sass/partials/_base.scss */
   .content p {
     font-size: 1em;
   }
 
-  /* line 186, sass/partials/_base.scss */
+  /* line 191, sass/partials/_base.scss */
   .italics {
     font-size: 1em;
   }
 
-  /* line 189, sass/partials/_base.scss */
+  /* line 194, sass/partials/_base.scss */
   .content_secondary {
     height: auto;
   }
 
-  /* line 192, sass/partials/_base.scss */
+  /* line 197, sass/partials/_base.scss */
   .content_tertiary {
     height: auto;
   }
 
-  /* line 195, sass/partials/_base.scss */
+  /* line 200, sass/partials/_base.scss */
   .wrapper {
     position: relative;
     margin: 0 auto;
@@ -415,9 +422,10 @@ img.logo {
 /* line 2, sass/partials/_tables.scss */
 table, th, td {
   border-collapse: collapse;
+  text-align: center;
 }
 
-/* line 7, sass/partials/_tables.scss */
+/* line 8, sass/partials/_tables.scss */
 table.main_color {
   margin-top: 10px;
   width: 100%;
@@ -426,7 +434,7 @@ table.main_color {
   border: 1px solid #6bb9f0;
 }
 
-/* line 15, sass/partials/_tables.scss */
+/* line 16, sass/partials/_tables.scss */
 th.main_color {
   border: 1px solid #6bb9f0;
   padding: 10px 0;
@@ -434,13 +442,13 @@ th.main_color {
   height: 30px;
 }
 
-/* line 22, sass/partials/_tables.scss */
+/* line 23, sass/partials/_tables.scss */
 td.main_color {
   border: 1px solid #6bb9f0;
   text-align: center;
   padding: 5px 0;
 }
-/* line 26, sass/partials/_tables.scss */
+/* line 27, sass/partials/_tables.scss */
 td.main_color.light_darkText {
   padding: 8px 0;
   font-weight: bold;
@@ -448,7 +456,7 @@ td.main_color.light_darkText {
   background-color: #eeeeee;
 }
 
-/* line 35, sass/partials/_tables.scss */
+/* line 36, sass/partials/_tables.scss */
 table.opp_color {
   margin-top: 10px;
   width: 100%;
@@ -458,7 +466,7 @@ table.opp_color {
   border: 1px solid #eeeeee;
 }
 
-/* line 44, sass/partials/_tables.scss */
+/* line 45, sass/partials/_tables.scss */
 th.opp_color {
   border: 1px solid #eeeeee;
   padding: 10px 0;
@@ -466,13 +474,13 @@ th.opp_color {
   height: 30px;
 }
 
-/* line 51, sass/partials/_tables.scss */
+/* line 52, sass/partials/_tables.scss */
 td.opp_color {
   border: 1px solid #eeeeee;
   text-align: center;
   padding: 5px 0;
 }
-/* line 55, sass/partials/_tables.scss */
+/* line 56, sass/partials/_tables.scss */
 td.opp_color.light_darkText {
   padding: 8px 0;
   font-weight: bold;
@@ -481,7 +489,7 @@ td.opp_color.light_darkText {
 }
 
 /* CSV Table Classes */
-/* line 67, sass/partials/_tables.scss */
+/* line 68, sass/partials/_tables.scss */
 TABLE.CSVTable {
   border-collapse: collapse;
   width: 100%;
@@ -489,21 +497,21 @@ TABLE.CSVTable {
 }
 
 /* Header */
-/* line 75, sass/partials/_tables.scss */
+/* line 76, sass/partials/_tables.scss */
 TABLE.CSVTable THEAD TR {
   border: 2px solid #1e8bc3;
   color: black;
   background: rgba(52, 152, 219, 0.5);
 }
 
-/* line 81, sass/partials/_tables.scss */
+/* line 82, sass/partials/_tables.scss */
 TABLE.CSVTable TH {
   border: 1px solid #1e8bc3;
   font-size: 1em;
 }
 
 /* Table Cells */
-/* line 87, sass/partials/_tables.scss */
+/* line 88, sass/partials/_tables.scss */
 TABLE.CSVTable TD, TABLE.CSVTable TH {
   width: 25%;
   border: 1px solid #1e8bc3;
@@ -514,13 +522,13 @@ TABLE.CSVTable TD, TABLE.CSVTable TH {
 }
 
 /* Default background color for rows */
-/* line 96, sass/partials/_tables.scss */
+/* line 97, sass/partials/_tables.scss */
 TABLE.CSVTable TR {
   background: #eeeeee;
 }
 
 /* Background color for odd rows */
-/* line 100, sass/partials/_tables.scss */
+/* line 101, sass/partials/_tables.scss */
 TABLE.CSVTable TR.odd {
   background: #6bb9f0;
 }
