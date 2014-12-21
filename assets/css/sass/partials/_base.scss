@@ -92,6 +92,7 @@ a {
 }
 
 .content {
+	margin: 5px;
 	background-color: $bkg_color_lighter;
 	box-shadow: $shadow;
 }
@@ -117,9 +118,35 @@ a {
 	font-size: 1.2em;
 }
 
+.content_warning {
+	background-color: $google;
+	margin: 5px;
+	color: $bkg_color_lighter;
+	box-shadow: $shadow;
+}
+
 .important_text {
 	font-weight: bold;
 	font-size: 2em;
+}
+
+.time_tag {
+	border: 1px dotted black;
+	margin: 5px;
+	padding: 3px 8px;
+	display: inline-block;
+}
+
+.time_tag_delete {
+	margin-left: 8px;
+}
+
+.margin_right {
+	margin-right: 20px;
+}
+
+.margin_left {
+	margin-left: 20px;
 }
 
 h2 {

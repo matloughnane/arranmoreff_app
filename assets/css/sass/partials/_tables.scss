@@ -39,18 +39,18 @@ table.opp_color {
 	padding: 5px 0;
 	color: $bkg_color_lighter;
 	background-color: $main_color_accent_opp;
-	border: 1px solid $bkg_color_lighter;
+	border: 1px solid $main_color_opp;
 }
 
 th.opp_color {
-	border: 1px solid $bkg_color_lighter;
+	border: 1px solid $main_color_opp;
 	padding: 10px 0;
 	font-size: 1.3em;
 	height: 30px;
 }
 
 td.opp_color {
-	border: 1px solid $bkg_color_lighter;
+	border: 1px solid $main_color_opp;
 	text-align: center;
 	padding: 5px 0;
 	&.light_darkText {

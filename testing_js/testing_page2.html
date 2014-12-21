@@ -1,0 +1,68 @@
+<!DOCTYPE html5>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Testing JS</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+<!-- css and formatting -->
+    <link rel="stylesheet" type="text/css" href="../assets/css/styles.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/gridism.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/animate.css">
+      
+    <script src="../assets/js/output.min.js"></script>
+
+    <script src="testing_js_pages.js"></script>
+
+  </head>
+<body class="wrapper push">
+<!-- NAV MENUS -->
+<div class="grid whole">
+	<a href="#menu" class="menu-link pull-left"><span><i class="fa fa-bars"></i></span></a>
+    <nav id="menu" class="panel" role="navigation">
+          <ul>
+            <li><a class="nav_link" href="../index.html"><i class="fa fa-home"></i>home</a></li>
+            <li><a class="nav_link" href="../times.html"><i class="fa fa-clock-o"></i>times</a></li>
+            <li><a class="nav_link" href="../contact.html"><i class="fa fa-phone-square"></i>contact</a></li>
+            <li><a class="nav_link" href="../maps.html"><i class="fa fa-map-marker"></i>map</a></li>
+            <li><a class="nav_link" href="../tickets.html"><i class="fa fa-ticket"></i>tickets</a></li>
+            <li><a class="nav_link" href="../testing_js/testing_js.html"><i class="fa fa-ticket"></i>testing_js</a></li>
+          </ul>
+    </nav>
+    <div class="full_bar">
+    	<span class="actionBar">Arranmore Fast Ferry</span>
+      <a class="pull-right" href="javascript:history.go(0)"><i class="fa fa-refresh"></i></a>
+    </div>
+</div>
+<!-- END NAV -->
+
+
+<div class="grid padded">
+
+  <div class="unit whole content">
+    <h2>Page 2</h2>
+  </div>
+
+  <div class="unit whole content align-center">
+    <a class="btn default" href="testing_js.html">Go Back To Page</a>
+  </div>
+</div>
+
+<div style="height:35px;"></div>
+
+<!-- FOOTER BAR -->
+  <div class="grid whole footer_bar">
+      <span style="float:left;">&copy; Arranmore Fast Ferry</span>
+      <span style="float:right;">v0.1</span>
+  </div>
+
+
+<!-- BIG SLIDE -->
+  <script>
+      $(document).ready(function() {
+          $('.menu-link').bigSlide();
+      });
+  </script>
+
+  </body>
+</html>

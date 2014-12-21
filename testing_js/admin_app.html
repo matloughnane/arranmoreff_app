@@ -1,0 +1,126 @@
+<!DOCTYPE html5>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Admin Panel</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+<!-- css and formatting -->
+    <link rel="stylesheet" type="text/css" href="../assets/css/styles.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/gridism.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/animate.css">
+
+    <script src="https://cdn.firebase.com/js/client/1.0.15/firebase.js"></script>
+    <script src="../assets/js/output.min.js"></script>
+
+    <script src="../assets/js/update_firebase.js"></script>
+    <script src="../assets/js/firebase_tree.js"></script>
+
+  </head>
+
+<body class="wrapper push">
+<!-- NAV MENUS -->
+<div class="grid whole">
+	<a href="#menu" class="menu-link pull-left"><span><i class="fa fa-bars"></i></span></a>
+    <nav id="menu" class="panel" role="navigation">
+          <ul>
+            <li><a class="nav_link" href="../index.html"><i class="fa fa-home"></i>home</a></li>
+            <li><a class="nav_link" href="../times.html"><i class="fa fa-clock-o"></i>times</a></li>
+            <li><a class="nav_link" href="../contact.html"><i class="fa fa-phone-square"></i>contact</a></li>
+            <li><a class="nav_link" href="../maps.html"><i class="fa fa-map-marker"></i>map</a></li>
+            <li><a class="nav_link" href="../tickets.html"><i class="fa fa-ticket"></i>tickets</a></li>
+            <li><a class="nav_link" href="../testing_js/admin_app.html"><i class="fa fa-ticket"></i>admin app</a></li>
+          </ul>
+    </nav>
+    <div class="full_bar">
+    	<span class="actionBar">Fast Ferry - Admin Panel</span>
+      <a class="pull-right" href="javascript:history.go(0)"><i class="fa fa-refresh"></i></a>
+      <a class="pull-right" href="admin_app2.html" target="_blank"><i class="fa fa-cogs margin_right"></i></a>
+    </div>
+</div>
+<!-- END NAV -->
+
+<div class="grid padded">
+
+  <div class="unit whole content">
+
+    <div class="unit half">
+      <h3>Edit Summer Timetable</h3>
+        <h4>Departing Arranmore</h4>
+          <p>Edit the summer timetable departing Arranmore during the week here:</p>
+            <ul id="summerDA_weekday"></ul>
+          <p>Edit the summer timetable departing Arranmore for Sunday here:</p>
+            <ul id="summerDA_weekend"></ul>
+    </div>
+
+    <div class="unit half align-center">
+        <table class="main_color" id="SummerSec1" border=1></table>
+
+        <table class="main_color" style="margin-top:0px" id="SummerSec2" border=1></table>
+    </div>
+
+  </div>
+
+
+  <div class="unit whole content">
+
+    <div class="unit half">
+      <h3>Edit Summer Timetable</h3>
+        <h4>Departing Burtonport</h4>
+          <p>Edit the summer timetable departing Burtonport here:</p>
+          <div></div>
+    </div>
+
+    <div class="unit half align-center">
+        <table class="main_color" id="SummerSec3" border=1></table>
+
+        <table class="main_color" style="margin-top:0px" id="SummerSec4" border=1></table>
+    </div>
+
+  </div>
+
+
+
+  <div class="unit whole content">
+    <div class="unit half">
+      <h3>Edit Winter Timetable</h3>
+        <h4>Departing Arranmore</h4>
+          <p>Edit the winter timetable departing Arranmore here:</p>
+          <div>
+          </div>
+        <h4>Departing Burtonport</h4>
+          <p>Edit the winter timetable departing Burtonport here:</p>
+          <div></div>
+    </div>
+
+    <div class="unit half align-center"> 
+        <table class="opp_color" id="WinterSec1" border=1></table>
+
+        <table class="opp_color" style="margin-top:0px" id="WinterSec2" border=1></table>
+
+        <table class="opp_color" id="WinterSec3" border=1></table>
+
+        <table class="opp_color" style="margin-top:0px" id="WinterSec4" border=1></table>
+    </div>
+  </div>
+
+</div>
+
+<div style="height:35px;"></div>
+
+<!-- FOOTER BAR -->
+  <div class="grid whole footer_bar">
+      <span style="float:left;">&copy; Arranmore Fast Ferry</span>
+      <span style="float:right;">v0.1</span>
+  </div>
+
+
+<!-- BIG SLIDE -->
+  <script>
+      $(document).ready(function() {
+          $('.menu-link').bigSlide();
+      });
+  </script>
+
+  </body>
+</html>
