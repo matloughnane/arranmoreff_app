@@ -125,6 +125,48 @@ a {
 	box-shadow: $shadow;
 }
 
+.bold {
+	font-weight: 700;
+}
+
+form {
+	margin-bottom: 0px;
+	font-size: 12px;
+}
+
+input {
+	margin: 0 5px;
+	padding: 2px;
+	font-size: 14px;
+	border-radius: 2px;
+	border: 1px solid $bkg_color_lighter; 
+    -webkit-box-shadow: 
+      inset 0 0 8px  rgba(0,0,0,0.1),
+            0 0 16px rgba(0,0,0,0.1); 
+    -moz-box-shadow: 
+      inset 0 0 8px  rgba(0,0,0,0.1),
+            0 0 16px rgba(0,0,0,0.1); 
+    box-shadow: 
+      inset 0 0 8px  rgba(0,0,0,0.1),
+            0 0 16px rgba(0,0,0,0.1); 
+}
+
+button {
+	padding: 3px 4px;
+	border-radius: 2px;
+	border: 0px;
+	background-color: $bkg_color_lighter;
+	color: $addition_dark;
+	font-weight: 700; 
+
+}
+
+.add_ferry_form {
+	background-color: $addition;
+	margin: 5px;
+	padding: 5px;
+}
+
 .important_text {
 	font-weight: bold;
 	font-size: 2em;
@@ -139,10 +181,15 @@ a {
 
 .time_tag_delete {
 	margin-left: 8px;
+	color: $google;
 }
 
 .margin_right {
 	margin-right: 20px;
+}
+
+.margin_right_small {
+	margin-right: 10px;
 }
 
 .margin_left {
