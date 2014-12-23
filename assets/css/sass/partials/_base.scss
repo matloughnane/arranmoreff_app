@@ -83,6 +83,10 @@ a {
 }
 
 .padded {
+	padding: 10px 5px 0px;
+}
+
+.padded_allRound {
 	padding: 10px;
 }
 
@@ -92,9 +96,15 @@ a {
 }
 
 .content {
-	margin: 5px;
+	// margin: 5px 5px 5px 0px;
 	background-color: $bkg_color_lighter;
 	box-shadow: $shadow;
+}
+
+.cancel_link {
+	padding: 2px 10px;
+	color: $google;
+	background-color: $bkg_color_lighter;
 }
 
 .content_main {
@@ -109,6 +119,12 @@ a {
 	box-shadow: $shadow;
 }
 
+.content_card {
+	margin: 5px 5px 5px 0px;
+	background-color: $bkg_color_lighter;
+	box-shadow: $shadow;
+}
+
 .content_title {
 	font-weight: bold;
 	font-size: 1.5em;
@@ -120,9 +136,24 @@ a {
 
 .content_warning {
 	background-color: $google;
-	margin: 5px;
+	// margin: 5px;
 	color: $bkg_color_lighter;
 	box-shadow: $shadow;
+}
+
+ul.cancelTimesList {
+	list-style-type: none;
+    padding: 10px;
+}
+
+li.cancel_list_item {
+    padding: 10px;
+    background-color: $bkg_color_lighter;
+    border:  1px dotted black;
+}
+
+.ferryTime {
+	font-size: 2em;
 }
 
 .bold {
@@ -151,14 +182,34 @@ input {
             0 0 16px rgba(0,0,0,0.1); 
 }
 
-button {
+a.add_btn {
 	padding: 3px 4px;
 	border-radius: 2px;
 	border: 0px;
 	background-color: $bkg_color_lighter;
 	color: $addition_dark;
-	font-weight: 700; 
+	font-weight: 700;
+	cursor: pointer;
+}
 
+a.daySelect_btn {
+	padding: 3px 4px;
+	border-radius: 2px;
+	border: 0px;
+	background-color: $bkg_color_lighter;
+	color: $addition_dark;
+	font-weight: 700;
+	cursor: pointer;	
+}
+
+a.cancelFerry_btn {
+	padding: 3px 4px;
+	border-radius: 2px;
+	border: 0px;
+	background-color: $google;
+	color: $bkg_color_lighter;
+	font-weight: 500;
+	cursor: pointer;	
 }
 
 .add_ferry_form {
@@ -217,6 +268,9 @@ img.logo {
 */
 
 @media screen and (max-width: 968px) {
+	body {
+
+	}
 	h1 {
 		font-size: 2em;
 		padding: 0px;

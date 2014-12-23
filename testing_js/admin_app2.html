@@ -41,10 +41,10 @@
 <div class="grid padded">
 
   <div class="unit whole content_warning align-center">
-    <span> <i class="fa fa-warning margin_right"></i>CHANGES MADE HERE WILL EFFECT EVERY TIMETABLE, WEBSITE and APPS<i class="fa fa-warning margin_left"></i> </span>
+    <span> <i class="fa fa-warning margin_right"></i>CHANGES MADE HERE WILL EFFECT EVERY TIMETABLE, WEBSITE and APPS<i class="fa fa-warning margin_left"></i> </span> <a class="cancel_link pull-right" href="admin_app_cancel.html">Cancel a Ferry</a>
   </div>
 
-  <div class="unit whole content">
+  <div class="unit whole content_card">
     <!-- =========== SECTION ============ -->
     <!-- SUMMER DEPARTING ARRANMORE FORMS -->
     <div class="unit half">
@@ -55,7 +55,7 @@
       <div class="add_ferry_form align-center">
         <form>
         <input type="time">
-        <button class="summer_da_wk"> <i class="fa fa-plus-circle margin_right_small"></i>Add Time</button>
+        <a class="summer_da_wk add_btn"> <i class="fa fa-plus-circle margin_right_small"></i>Add Time</a>
         </form>
       </div>
       <!-- WEEKEND FORM -->
@@ -64,12 +64,12 @@
       <div class="add_ferry_form align-center">
         <form>
         <input type="time">
-        <button class="summer_da_we"> <i class="fa fa-plus-circle margin_right_small"></i>Add Time</button>
+        <a class="summer_da_we add_btn"> <i class="fa fa-plus-circle margin_right_small"></i>Add Time</a>
         </form>
       </div> 
     </div>
     <!-- SUMMER DA TIMETABLES -->
-    <div class="unit half">
+    <div class="unit half padded">
       <span>Here's what the timetable will look like:</span>
       <table class="main_color" id="htmlID1" border=1></table>
       <table class="main_color" id="htmlID2" border=1></table>
@@ -78,7 +78,7 @@
   </div>
 
     <!-- =========== SECTION ============ -->
-  <div class="unit whole content">
+  <div class="unit whole content_card">
     <!-- SUMMER DEPARTING BP FORMS -->
     <div class="unit half">
       <span class="bold">Summer Timetable, departing Burtonport</span> <br>
@@ -88,7 +88,7 @@
       <div class="add_ferry_form align-center">
         <form>
         <input type="time">
-        <button class="summer_db_wk"> <i class="fa fa-plus-circle margin_right_small"></i>Add Time</button>
+        <a class="summer_db_wk add_btn"> <i class="fa fa-plus-circle margin_right_small"></i>Add Time</a>
         </form>
       </div>
       <!-- WEEKEND FORM -->
@@ -97,7 +97,7 @@
       <div class="add_ferry_form align-center">
         <form>
         <input type="time">
-        <button class="summer_db_we"> <i class="fa fa-plus-circle margin_right_small"></i>Add Time</button>
+        <a class="summer_db_we add_btn"> <i class="fa fa-plus-circle margin_right_small"></i>Add Time</a>
         </form>
       </div> 
     </div>
@@ -111,7 +111,7 @@
     <!-- =========== END SECTION ============ -->
 
     <!-- =========== SECTION ============ -->
-  <div class="unit whole content">
+  <div class="unit whole content_card">
     <!-- WINTER DEPARTING ARRANMORE FORMS -->
     <div class="unit half">
       <span class="bold">Winter Timetable, departing Arranmore</span> <br>
@@ -121,7 +121,7 @@
       <div class="add_ferry_form align-center">
         <form>
         <input type="time">
-        <button class="winter_da_wk"> <i class="fa fa-plus-circle margin_right_small"></i>Add Time</button>
+        <a class="winter_da_wk add_btn"> <i class="fa fa-plus-circle margin_right_small"></i>Add Time</a>
         </form>
       </div>
       <!-- WEEKEND FORM -->
@@ -130,7 +130,7 @@
       <div class="add_ferry_form align-center">
         <form>
         <input type="time">
-        <button class="winter_da_we"> <i class="fa fa-plus-circle margin_right_small"></i>Add Time</button>
+        <a class="winter_da_we add_btn"> <i class="fa fa-plus-circle margin_right_small"></i>Add Time</a>
         </form>
       </div> 
     </div>
@@ -144,7 +144,7 @@
     <!-- =========== END SECTION ============ -->
 
     <!-- =========== SECTION ============ -->
-  <div class="unit whole content">
+  <div class="unit whole content_card">
     <!-- WINTER DEPARTING BP FORMS -->
     <div class="unit half">
       <span class="bold">Winter Timetable, departing Burtonport</span> <br>
@@ -154,7 +154,7 @@
       <div class="add_ferry_form align-center">
         <form>
         <input type="time">
-        <button class="winter_db_wk"> <i class="fa fa-plus-circle margin_right_small"></i>Add Time</button>
+        <a class="winter_db_wk add_btn"> <i class="fa fa-plus-circle margin_right_small"></i>Add Time</a>
         </form>
       </div>
       <!-- WEEKEND FORM -->
@@ -163,7 +163,7 @@
       <div class="add_ferry_form align-center">
         <form>
         <input type="time">
-        <button class="winter_db_we"> <i class="fa fa-plus-circle margin_right_small"></i>Add Time</button>
+        <a class="winter_db_we add_btn"> <i class="fa fa-plus-circle margin_right_small"></i>Add Time</a>
         </form>
       </div> 
     </div>
@@ -173,6 +173,56 @@
       <table class="opp_color" id="htmlID7" border=1></table>
       <table class="opp_color" id="htmlID8" border=1></table>
     </div>
+  </div>
+    <!-- =========== END SECTION ============ -->
+
+  <!-- =========== EXTRA FERRY SECTION ============ -->
+  <div class="unit whole content_card">
+
+    <div class="unit half">
+      <h3 class="bold">Extra Ferry Departing Arranmore</h3>
+        <span>Add extra ferries:</span> <br>
+        <!-- LIST OF FERRIES -->
+        <span id="extra_ferry_list_da"></span>
+        <!-- END OF LIST -->
+      <div class="add_ferry_form align-center">
+        <form>
+          <input type="date" class="extra_ferry_date">
+          <input type="time" class="extra_ferry_time">
+          <a class="extra_ferry_da add_btn"> <i class="fa fa-plus-circle margin_right_small"></i>Add Extra Ferry</a>
+        </form>
+      </div>
+    </div>
+    <!-- TABLE -->
+    <div class="unit half">
+      <table class="main_color" id="extra_ferry_da" border=1> </table>
+    </div>
+
+  </div>
+    <!-- =========== END SECTION ============ -->
+
+      <!-- =========== EXTRA FERRY SECTION ============ -->
+  <div class="unit whole content_card">
+
+    <div class="unit half content">
+      <h3 class="bold">Extra Ferry Departing Burtonport</h3>
+        <span>Add extra ferries:</span> <br>
+        <!-- LIST OF FERRIES -->
+        <span id="extra_ferry_list_db"></span>
+        <!-- END OF LIST -->
+      <div class="add_ferry_form align-center">
+        <form>
+          <input type="date" class="extra_ferry_date">
+          <input type="time" class="extra_ferry_time">
+          <a class="extra_ferry_db add_btn"> <i class="fa fa-plus-circle margin_right_small"></i>Add Extra Ferry</a>
+        </form>
+      </div>
+    </div>
+    <!-- TABLE -->
+    <div class="unit half content">
+      <table class="main_color" id="extra_ferry_db" border=1> </table>
+    </div>
+
   </div>
     <!-- =========== END SECTION ============ -->
 
