@@ -96,7 +96,7 @@ a {
 }
 
 .content {
-	// margin: 5px 5px 5px 0px;
+	margin-top: 5px;
 	background-color: $bkg_color_lighter;
 	box-shadow: $shadow;
 }
@@ -204,11 +204,23 @@ a.daySelect_btn {
 
 a.cancelFerry_btn {
 	padding: 3px 4px;
+	margin-right: 5px;
 	border-radius: 2px;
 	border: 0px;
 	background-color: $google;
 	color: $bkg_color_lighter;
-	font-weight: 500;
+	// font-weight: 500;
+	cursor: pointer;	
+}
+
+a.unCancelFerry_btn {
+	padding: 3px 4px;
+	margin-right: 5px;
+	border-radius: 2px;
+	border: 0px;
+	background-color: $google;
+	color: $bkg_color_lighter;
+	// font-weight: 500;
 	cursor: pointer;	
 }
 

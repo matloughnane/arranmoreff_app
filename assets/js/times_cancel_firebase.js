@@ -60,6 +60,13 @@ $(function() {
 				cancelFerry(journeyID, cancelID);
 				// console.log("cancel button clicked");
 			}
+		if ( $(this).hasClass("unCancelFerry_btn")) {
+			if ( $(this).children("i").hasClass("uncancelIcon") ) {
+				var cancelID = $(this).attr('id');
+				unCancelFerry(journeyID, cancelID);
+				// console.log("cancel button clicked");
+				}
+			}
 		} 
 	});
 
@@ -360,6 +367,16 @@ function cancelFerry(journeyID, dateID) {
 		var rootRef = firebaseRef.child("cancel_ferry/db");		
 	}
 	rootRef.push( {date: dateID} );
+}
+
+
+function unCancelFerry(journeyID, id) {
+	if (journeyID == journey1){
+		var rootRef = firebaseRef.child("cancel_ferry/da");
+	} else {
+		var rootRef = firebaseRef.child("cancel_ferry/db");		
+	}
+	// rootRef.remove( {date: id} );
 }
 
 

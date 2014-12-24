@@ -120,6 +120,7 @@ a {
 
 /* line 98, sass/partials/_base.scss */
 .content {
+  margin-top: 5px;
   background-color: #eeeeee;
   box-shadow: 0px 2px 2px rgba(43, 48, 51, 0.3);
 }
@@ -236,28 +237,39 @@ a.daySelect_btn {
 /* line 205, sass/partials/_base.scss */
 a.cancelFerry_btn {
   padding: 3px 4px;
+  margin-right: 5px;
   border-radius: 2px;
   border: 0px;
   background-color: #dd4b39;
   color: #eeeeee;
-  font-weight: 500;
   cursor: pointer;
 }
 
-/* line 215, sass/partials/_base.scss */
+/* line 216, sass/partials/_base.scss */
+a.unCancelFerry_btn {
+  padding: 3px 4px;
+  margin-right: 5px;
+  border-radius: 2px;
+  border: 0px;
+  background-color: #dd4b39;
+  color: #eeeeee;
+  cursor: pointer;
+}
+
+/* line 227, sass/partials/_base.scss */
 .add_ferry_form {
   background-color: #27ae60;
   margin: 5px;
   padding: 5px;
 }
 
-/* line 221, sass/partials/_base.scss */
+/* line 233, sass/partials/_base.scss */
 .important_text {
   font-weight: bold;
   font-size: 2em;
 }
 
-/* line 226, sass/partials/_base.scss */
+/* line 238, sass/partials/_base.scss */
 .time_tag {
   border: 1px dotted black;
   margin: 5px;
@@ -265,28 +277,28 @@ a.cancelFerry_btn {
   display: inline-block;
 }
 
-/* line 233, sass/partials/_base.scss */
+/* line 245, sass/partials/_base.scss */
 .time_tag_delete {
   margin-left: 8px;
   color: #dd4b39;
 }
 
-/* line 238, sass/partials/_base.scss */
+/* line 250, sass/partials/_base.scss */
 .margin_right {
   margin-right: 20px;
 }
 
-/* line 242, sass/partials/_base.scss */
+/* line 254, sass/partials/_base.scss */
 .margin_right_small {
   margin-right: 10px;
 }
 
-/* line 246, sass/partials/_base.scss */
+/* line 258, sass/partials/_base.scss */
 .margin_left {
   margin-left: 20px;
 }
 
-/* line 250, sass/partials/_base.scss */
+/* line 262, sass/partials/_base.scss */
 h2 {
   -webkit-margin-before: 0px;
   -webkit-margin-after: 0px;
@@ -296,7 +308,7 @@ h2 {
 /*
 ==================IMAGES NAVIGATION====================
 */
-/* line 260, sass/partials/_base.scss */
+/* line 272, sass/partials/_base.scss */
 img.logo {
   max-width: 90%;
   margin: 0 auto;
@@ -306,39 +318,39 @@ img.logo {
 ==================TABLET BASICS====================
 */
 @media screen and (max-width: 968px) {
-  /* line 274, sass/partials/_base.scss */
+  /* line 286, sass/partials/_base.scss */
   h1 {
     font-size: 2em;
     padding: 0px;
     margin: 0px;
   }
 
-  /* line 279, sass/partials/_base.scss */
+  /* line 291, sass/partials/_base.scss */
   h2 {
     font-size: 1.5em;
   }
 
-  /* line 282, sass/partials/_base.scss */
+  /* line 294, sass/partials/_base.scss */
   h3 {
     font-size: 1em;
   }
 
-  /* line 285, sass/partials/_base.scss */
+  /* line 297, sass/partials/_base.scss */
   .nav li a {
     font-size: 0.75em;
   }
 
-  /* line 288, sass/partials/_base.scss */
+  /* line 300, sass/partials/_base.scss */
   p {
     font-size: 1em;
   }
 
-  /* line 291, sass/partials/_base.scss */
+  /* line 303, sass/partials/_base.scss */
   .italics {
     font-size: 0.9em;
   }
 
-  /* line 294, sass/partials/_base.scss */
+  /* line 306, sass/partials/_base.scss */
   .wrapper {
     position: relative;
     margin: 0 auto;
@@ -348,43 +360,43 @@ img.logo {
 ==================MOBILE BASICS====================
 */
 @media screen and (max-width: 640px) {
-  /* line 305, sass/partials/_base.scss */
+  /* line 317, sass/partials/_base.scss */
   h1 {
     font-size: 2em;
     padding: 0px;
     margin: 0px;
   }
 
-  /* line 310, sass/partials/_base.scss */
+  /* line 322, sass/partials/_base.scss */
   p {
     font-size: 1.0em;
   }
 
-  /* line 313, sass/partials/_base.scss */
+  /* line 325, sass/partials/_base.scss */
   .content {
     height: auto;
   }
-  /* line 315, sass/partials/_base.scss */
+  /* line 327, sass/partials/_base.scss */
   .content p {
     font-size: 1em;
   }
 
-  /* line 319, sass/partials/_base.scss */
+  /* line 331, sass/partials/_base.scss */
   .italics {
     font-size: 1em;
   }
 
-  /* line 322, sass/partials/_base.scss */
+  /* line 334, sass/partials/_base.scss */
   .content_secondary {
     height: auto;
   }
 
-  /* line 325, sass/partials/_base.scss */
+  /* line 337, sass/partials/_base.scss */
   .content_tertiary {
     height: auto;
   }
 
-  /* line 328, sass/partials/_base.scss */
+  /* line 340, sass/partials/_base.scss */
   .wrapper {
     position: relative;
     margin: 0 auto;

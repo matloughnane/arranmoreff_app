@@ -1,0 +1,101 @@
+<!DOCTYPE html5>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Admin Panel - Cancellations</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+<!-- css and formatting -->
+    <link rel="stylesheet" type="text/css" href="../assets/css/styles.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/gridism.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/animate.css">
+
+    <script src="https://cdn.firebase.com/js/client/1.0.15/firebase.js"></script>
+    <script src="../assets/js/output.min.js"></script>
+
+    <script src="../assets/js/times_cancel2.js"></script>
+
+  </head>
+
+<body class="wrapper push">
+<!-- NAV MENUS -->
+<div class="grid whole">
+	<a href="#menu" class="menu-link pull-left"><span><i class="fa fa-bars"></i></span></a>
+    <nav id="menu" class="panel" role="navigation">
+          <ul>
+            <li><a class="nav_link" href="../index.html"><i class="fa fa-home"></i>home</a></li>
+            <li><a class="nav_link" href="../times.html"><i class="fa fa-clock-o"></i>times</a></li>
+            <li><a class="nav_link" href="../contact.html"><i class="fa fa-phone-square"></i>contact</a></li>
+            <li><a class="nav_link" href="../maps.html"><i class="fa fa-map-marker"></i>map</a></li>
+            <li><a class="nav_link" href="../tickets.html"><i class="fa fa-ticket"></i>tickets</a></li>
+            <li><a class="nav_link" href="../testing_js/admin_app2.html"><i class="fa fa-cogs"></i>admin app</a></li>
+          </ul>
+    </nav>
+    <div class="full_bar">
+    	<span class="actionBar">Fast Ferry - Admin Cancel</span>
+      <a class="pull-right" href="javascript:history.go(0)"><i class="fa fa-refresh"></i></a>
+    </div>
+</div>
+<!-- END NAV -->
+
+<div class="grid padded">
+
+  <div class="unit whole content_warning align-center">
+    <span> <i class="fa fa-warning margin_right"></i>CHANGES MADE HERE WILL EFFECT EVERY TIMETABLE, WEBSITE and APPS<i class="fa fa-warning margin_left"></i> </span>
+  </div>
+
+  <div class="unit whole content">
+    <!-- CHOSEN DATE FORM -->
+    <div class="unit half">
+    <h3 class="bold">Cancel Ferries:</h3>
+      <span>Select date to cancel:</span> <br>
+      <!-- LIST OF FERRIES -->
+      <span id="extra_ferry_list_da"></span>
+      <!-- END OF LIST -->
+    <div class="content_main padded_allRound align-center">
+      <form>
+        <input type="date" class="cancel_ferry_date">
+        <select>
+          <option value="Departing Arranmore">Departing Arranmore</option>
+          <option value="Departing Burtonport">Departing Burtonport</option>
+        </select>
+        <a class="day_select daySelect_btn"> <i class="fa fa-calendar-o margin_right_small"></i>Select A Date</a>
+      </form>
+    </div>
+    <!-- LIST CANCELLATION FORMS -->
+    <div>
+      <p> ferry times for this date </p>
+      <div id="cancelList"></div>
+    </div>
+
+    <!-- END FIRST HALF -->
+    </div>
+    <!-- TABLE -->
+    <div class="unit half">
+      <h3 class="bold">Cancelled Ferries</h3>
+      <div id="cancelListDA"></div>
+      <div id="cancelListDB"></div>
+    </div>
+  </div>
+
+    <!-- =========== END SECTION ============ -->
+
+
+</div>
+
+<!-- FOOTER BAR -->
+  <div class="grid whole footer_bar">
+      <span style="float:left;">&copy; Arranmore Fast Ferry</span>
+      <span style="float:right;">v0.1</span>
+  </div>
+
+
+<!-- BIG SLIDE -->
+  <script>
+      $(document).ready(function() {
+          $('.menu-link').bigSlide();
+      });
+  </script>
+
+  </body>
+</html>

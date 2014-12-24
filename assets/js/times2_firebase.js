@@ -16,10 +16,14 @@ $(function() {
 	var extrasArrayDB = futureExtras(timetableObj.extra_ferry.db);
 	var extraFerriesDB = checkTodaysExtras(extrasArrayDB);
 
+	// CANCELLED FERRYS DA
+	var cancelledFerryObjDA = cancelledFerryToday(timetableObj.cancel_ferry.da, journey1)
+	var cancelledFerryObjDB = cancelledFerryToday(timetableObj.cancel_ferry.db, journey2)
+
 	// GENERATE TODAYS ARRAY - EXTRAS
-	var todaysArrayDA = generateTodaysArray(timetableObj, extraFerriesDA, journey1);
+	var todaysArrayDA = generateTodaysArray(timetableObj, extraFerriesDA, cancelledFerryObjDA, journey1);
 	// console.log(todaysArrayDA);
-	var todaysArrayDB = generateTodaysArray(timetableObj, extraFerriesDB, journey2);
+	var todaysArrayDB = generateTodaysArray(timetableObj, extraFerriesDB, cancelledFerryObjDB, journey2);
 	// console.log(todaysArrayDB);
 
 	// NEXT TIME
@@ -66,7 +70,7 @@ function createTable(array, htmlID, journey){
 
 // TODAYS FUNCTIONS
 
-function generateTodaysArray(timetableObj, extraFerry, journey) {
+function generateTodaysArray(timetableObj, extraFerry, cancelFerry, journey) {
 	// GET TODAYS ARRAY
 	var todaysTimesArray = [];
 	var todaysTimesArray = getTodaysArray(timetableObj, journey);
@@ -90,8 +94,22 @@ function generateTodaysArray(timetableObj, extraFerry, journey) {
   		return new Date('1970/01/01 ' + a) - new Date('1970/01/01 ' + b);
 	});
 
+	var finalTodayArray = todaysTimesArray;
+	// console.log(finalTodayArray);
+
+	for ( var i = 0; i < cancelFerry.length; i++ ){
+		for ( var j = 0; j < todaysTimesArray.length; j++ ){
+			if (todaysTimesArray[j] == cancelFerry[i]){
+				// finalTodayArray.splice(i, 1);
+				// console.log(j);
+				finalTodayArray.splice(j, 1);
+			}
+		}
+	};
+
+	// console.log(finalTodayArray);
 	// console.log(todaysTimesArray);
-	return todaysTimesArray;
+	return finalTodayArray;
 }
 
 
@@ -317,6 +335,40 @@ function generateArrays(object, name){
 
 
 
+// ================================  CANCELLED FERRY  ==============================================
+
+
+function cancelledFerryToday(timetableObj, journey) {
+	// if (journey == journey1) {
+	// 	console.log("DA")	
+	// } else {
+	// 	console.log("DB")
+	// }
+	var tdate = new Date();
+	var tyear = tdate.getFullYear();
+	var tmonth = tdate.getMonth()+1;
+	var tday = tdate.getDate();
+
+	var formatDate = tyear+"-"+tmonth+"-"+tday;
+	// console.log(formatDate);
+
+	var todaysCancelledArray = [];
+
+	for (key in timetableObj){
+		if (timetableObj[key].date == formatDate) {
+			// console.log(timetableObj[key].date);
+			// match the dates
+			if (timetableObj[key].time == "23:59") {
+				// do nothing
+			} else {
+				// console.log(timetableObj[key].time);
+				todaysCancelledArray.push(timetableObj[key].time);
+			}
+		}
+	}
+	// console.log(todaysCancelledArray);
+	return todaysCancelledArray;
+}
 
 
 
