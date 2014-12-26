@@ -1,0 +1,104 @@
+
+table, th, td {
+	border-collapse: collapse;
+	text-align: center;
+}
+
+
+table.main_color {
+	margin-top: 10px;
+	width: 100%;
+	color: $bkg_color_lighter;
+	background-color: $main_color_dark;
+	border: 1px solid $main_color_light;
+}
+
+th.main_color {
+	border: 1px solid $main_color_light;
+	padding: 10px 0;
+	font-size: 1.3em;
+	height: 30px;
+}
+
+td.main_color {
+	border: 1px solid $main_color_light;
+	text-align: center;
+	padding: 5px 0;
+	&.light_darkText {
+		padding: 8px 0;
+		font-weight: bold;
+		color: $main_color_dark;
+		background-color: $bkg_color_lighter;
+	}
+}
+
+
+table.opp_color {
+	margin-top: 10px;
+	width: 100%;
+	padding: 5px 0;
+	color: $bkg_color_lighter;
+	background-color: $main_color_accent_opp;
+	border: 1px solid $main_color_opp_light;
+}
+
+th.opp_color {
+	border: 1px solid $main_color_opp_light;
+	padding: 10px 0;
+	font-size: 1.3em;
+	height: 30px;
+}
+
+td.opp_color {
+	border: 1px solid $main_color_opp_light;
+	text-align: center;
+	padding: 5px 0;
+	&.light_darkText {
+		padding: 8px 0;
+		font-weight: bold;
+		color: $main_color_accent_opp;
+		background-color: $bkg_color_lighter;
+	}
+}
+
+
+// CSV TABLES
+
+/* CSV Table Classes */
+TABLE.CSVTable {
+	// margin-top: 10px;
+	border-collapse: collapse;
+	width: 100%;
+	border: 1px solid $main_color_dark;
+}
+
+/* Header */
+TABLE.CSVTable THEAD TR {
+	border: 2px solid $main_color_dark;
+	color: black;
+	background: $main_color_halftransparent;
+}
+
+TABLE.CSVTable TH {
+	border: 1px solid $main_color_dark;
+	font-size: 1em;
+}
+
+/* Table Cells */
+TABLE.CSVTable TD, TABLE.CSVTable TH {
+	width: 25%;
+	border: 1px solid $main_color_dark;
+	padding: 5px;
+	text-align: left;
+	border-bottom: 1px solid $main_color_light;
+	border-top: 1px solid transparent;
+}
+/* Default background color for rows */
+TABLE.CSVTable TR {
+	background: $bkg_color_lighter;
+}
+/* Background color for odd rows */
+TABLE.CSVTable TR.odd {
+	background: $main_color_light;
+}
+

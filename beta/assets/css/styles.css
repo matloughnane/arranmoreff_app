@@ -20,9 +20,42 @@ span.badge.cancel {
     padding: 4px;
     font-size: 0.8rem;
     color: #fff;
-    background-color: ;
+    background-color: #e51c23;
     -webkit-border-radius: 2px;
     -moz-border-radius: 2px;
     border-radius: 2px;
     background-clip: padding-box;
+}
+
+span.cancel {
+    font-weight: 300;
+    padding: 4px;
+    font-size: 0.8rem;
+    color: #fff;
+    background-color: #e51c23;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    background-clip: padding-box; 
+}
+
+.cancel_btn {
+    font-size: 0.8em;
+    display: inline-block;
+    padding: 0 0.5rem;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    background-clip: padding-box;
+    border: none;
+}
+
+.list_item {
+    display: inline-block;
+    padding: 5px;
+    margin: 2px;
+}
+
+.add_ferry {
+    padding: 5px;
 }

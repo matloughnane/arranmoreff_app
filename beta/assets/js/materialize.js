@@ -1207,7 +1207,7 @@ jQuery.extend( jQuery.easing,
 
         var $this = $(this);
         var menu_id = $("#"+ $this.attr('data-activates'));
-        console.log(menu_id);
+        // console.log(menu_id);
        
         function removeMenu() {
           $('#sidenav-overlay').animate({opacity: 0}, {duration: 300, queue: false, easing: 'easeOutQuad', 

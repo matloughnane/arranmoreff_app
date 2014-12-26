@@ -55,6 +55,18 @@ $(function() {
 		// END IF STATEMENT
 	});
 
+		// UNCANCEL BUTTON IS CLICKED
+	jQuery('body').on('click', 'a', function () {
+		if ( $(this).hasClass("cancelAllFerry_btn") ) {
+			// console.log("cancelButtonClicked");
+			var journeyType = $(this).next("i").attr("id");
+			var chosenDate = $(this).attr('id');
+			console.log(chosenDate);
+			cancelAllFirebase(journeyType, chosenDate, timetableObj);
+		} 
+		// END IF STATEMENT
+	});
+
 	// ERROR FUNCTION
 	}, function (errorObject) {
   		console.log("The read failed: " + errorObject.code);
@@ -83,7 +95,6 @@ function listTimesForDate(timetableObj, date, journey){
 // ==================================================================================================
 
 // CANCELLED FERRIES LIST FUNCTIONS
-
 function checkForCancellationsDate(timetableObj, date, journey){
 	// CHOOSE CANCEL TREE
 	if (journey == journey1) {
@@ -99,9 +110,7 @@ function checkForCancellationsDate(timetableObj, date, journey){
 	// console.log(array);
 	return array;
 }
-
 // CANCELLED FERRIES FUNCTIONS
-
 function removeCancelledFromList(dateArray, cancelArray){
 	var finalArray = dateArray;
 	// console.log(dateArray + ",> " + cancelArray);
@@ -115,10 +124,11 @@ function removeCancelledFromList(dateArray, cancelArray){
 	}
 	return finalArray;
 }
-
-// DISPLAYED CANCELLED FERRY LIST
+// DISPLAYED CANCELLED FERRY LIST cancelAllFerry_btn
 function generateTheCancelledList(date, journey, array){
-	var timesList = "<h3> Cancel Ferries " + journey + ", on " + date +"</h3>";
+	// console.log(date);
+	// var timesList = "<h3>Ferry times for this date </h3><br><p> Cancel Ferries " + journey + ", on " + date +":<a class='cancelAllFerry_btn pull-right' id='" + date + "'><i class='fa fa-ban margin_right cancelIcon' id='" + journey + "'></i>Cancel All Ferries For This Day</a></p>";
+	var timesList = "<h3>Ferry times for this date </h3><br><p> Cancel Ferries " + journey + ", on " + date +":</p>";
 	timesList += "<ul class='cancelTimesList'>";
 	for (var i = 0; i < array.length; i++) {
 		timesList += "<li class='cancel_list_item' id='" + journey + "'>" + array[i] + "<a class='cancelFerry_btn pull-right' id='" + date + "'><i class='fa fa-ban margin_right cancelIcon' id='" + array[i] + "'></i>Cancel This Ferry</a></li>";
@@ -129,6 +139,15 @@ function generateTheCancelledList(date, journey, array){
 	return timesList;
 }
 
+function cancelAllFirebase(journey, date, timetableObj){
+
+	var dateArray = getArrayForDate(timetableObj, date, journey);
+	
+	for (var i = 0; i < dateArray.length; i++){
+		pushToCancelFirebase(journey, date, dateArray[i]);
+	}
+
+}
 
 // PUSH CANCELLED FIREBASE
 function pushToCancelFirebase(journeyType, dateID, cancelTime) {
@@ -139,8 +158,6 @@ function pushToCancelFirebase(journeyType, dateID, cancelTime) {
 	}
 	rootRef.push( {date: dateID, time: cancelTime} );
 }
-
-
 
 function displayCancelTable(timetableObj, journey, htmlID){
 	// NOTHING
@@ -167,7 +184,6 @@ function displayCancelTable(timetableObj, journey, htmlID){
 
 
 // UN CANCEL A FERRY
-
 function unCancelFirebase(journeyType, unCancelID, timetableObj) {
 	// console.log("uncancel a ferry" + journeyType + unCancelID);
 	if (journeyType == journey1){
@@ -179,11 +195,7 @@ function unCancelFirebase(journeyType, unCancelID, timetableObj) {
 	rootRef2.child( unCancelID ).remove();
 }
 
-
-// ==================================================================================================
-
 // GENERAL FUNCTIONS
-
 function getArrayForDate(timetableObj, date, journey) {
 
 	var tdate = new Date(date);
@@ -222,7 +234,6 @@ function getArrayForDate(timetableObj, date, journey) {
 		}
 	}
 }
-
 function generateArrays(object){
 	array = [];
 	// GENERATE THE ARRAY

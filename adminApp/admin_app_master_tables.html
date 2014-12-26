@@ -1,0 +1,196 @@
+<!DOCTYPE html5>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Admin Panel Master Timetables</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+<!-- css and formatting -->
+    <link rel="stylesheet" type="text/css" href="assets/css/styles.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/gridism.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/animate.css">
+
+    <script src="https://cdn.firebase.com/js/client/1.0.15/firebase.js"></script>
+    <script src="assets/js/output.min.js"></script>
+
+    <script src="assets/js/masters_firebase.js"></script>
+
+  </head>
+
+<body class="wrapper push">
+<!-- NAV MENUS -->
+<div class="grid whole">
+	<a href="#menu" class="menu-link pull-left"><span><i class="fa fa-bars"></i></span></a>
+    <nav id="menu" class="panel" role="navigation">
+          <ul>
+            <li><a class="nav_link" href="index.html"><i class="fa fa-home"></i>home</a></li>
+            <li><a class="nav_link" href="admin_app_master_tables.html"><i class="fa fa-cogs"></i>master tables</a></li>
+            <li><a class="nav_link" href="admin_app_extras.html"><i class="fa fa-cogs"></i>extra ferries</a></li>
+            <li><a class="nav_link" href="admin_app_cancel.html"><i class="fa fa-cogs"></i>cancel ferries</a></li>
+          </ul>
+    </nav>
+    <div class="full_bar">
+    	<span class="actionBar">Fast Ferry - Master Timetables</span>
+      <a class="pull-right" href="javascript:history.go(0)"><i class="fa fa-refresh"></i></a>
+    </div>
+</div>
+<!-- END NAV -->
+
+<div class="grid padded">
+
+  <div class="unit whole content_warning align-center">
+    <span> <i class="fa fa-warning margin_right"></i>CHANGES MADE HERE WILL EFFECT EVERY TIMETABLE, WEBSITE and APPS<i class="fa fa-warning margin_left"></i> </span>
+  </div>
+
+  <div class="unit whole content_card">
+    <!-- =========== SECTION ============ -->
+    <!-- SUMMER DEPARTING ARRANMORE FORMS -->
+    <div class="unit half">
+      <span class="bold">Summer Timetable, departing Arranmore</span> <br>
+      <!-- WEEKDAY FORM -->
+      <span>Edit the summer timetable, Monday to Saturday:</span> <br>
+      <span id="summer_da_wk"></span>
+      <div class="add_ferry_form align-center">
+        <form>
+        <input type="time">
+        <a class="summer_da_wk add_btn"> <i class="fa fa-plus-circle margin_right_small"></i>Add Time</a>
+        </form>
+      </div>
+      <!-- WEEKEND FORM -->
+      <span class="bold">Edit the summer timetable, Sundays only:</span> <br>
+      <span id="summer_da_we"></span>
+      <div class="add_ferry_form align-center">
+        <form>
+        <input type="time">
+        <a class="summer_da_we add_btn"> <i class="fa fa-plus-circle margin_right_small"></i>Add Time</a>
+        </form>
+      </div> 
+    </div>
+    <!-- SUMMER DA TIMETABLES -->
+    <div class="unit half padded">
+      <span>Here's what the timetable will look like:</span>
+      <table class="main_color" id="htmlID1" border=1></table>
+      <table class="main_color" id="htmlID2" border=1></table>
+    </div>
+    <!-- =========== END SECTION ============ --> 
+  </div>
+
+    <!-- =========== SECTION ============ -->
+  <div class="unit whole content_card">
+    <!-- SUMMER DEPARTING BP FORMS -->
+    <div class="unit half">
+      <span class="bold">Summer Timetable, departing Burtonport</span> <br>
+      <!-- WEEKDAY FORM -->
+      <span>Edit the summer timetable, Monday to Saturday:</span> <br>
+      <span id="summer_db_wk"></span>
+      <div class="add_ferry_form align-center">
+        <form>
+        <input type="time">
+        <a class="summer_db_wk add_btn"> <i class="fa fa-plus-circle margin_right_small"></i>Add Time</a>
+        </form>
+      </div>
+      <!-- WEEKEND FORM -->
+      <span class="bold">Edit the summer timetable, Sundays only:</span> <br>
+      <span id="summer_db_we"></span>
+      <div class="add_ferry_form align-center">
+        <form>
+        <input type="time">
+        <a class="summer_db_we add_btn"> <i class="fa fa-plus-circle margin_right_small"></i>Add Time</a>
+        </form>
+      </div> 
+    </div>
+    <!-- SUMMER DB TIMETABLES -->
+    <div class="unit half">
+      <span>Here's what the timetable will look like:</span>
+      <table class="main_color" id="htmlID3" border=1></table>
+      <table class="main_color" id="htmlID4" border=1></table>
+    </div>
+  </div>
+    <!-- =========== END SECTION ============ -->
+
+    <!-- =========== SECTION ============ -->
+  <div class="unit whole content_card">
+    <!-- WINTER DEPARTING ARRANMORE FORMS -->
+    <div class="unit half">
+      <span class="bold">Winter Timetable, departing Arranmore</span> <br>
+      <!-- WEEKDAY FORM -->
+      <span>Edit the winter timetable, Monday to Saturday:</span> <br>
+      <span id="winter_da_wk"></span>
+      <div class="add_ferry_form align-center">
+        <form>
+        <input type="time">
+        <a class="winter_da_wk add_btn"> <i class="fa fa-plus-circle margin_right_small"></i>Add Time</a>
+        </form>
+      </div>
+      <!-- WEEKEND FORM -->
+      <span class="bold">Edit the winter timetable, Sundays only:</span> <br>
+      <span id="winter_da_we"></span>
+      <div class="add_ferry_form align-center">
+        <form>
+        <input type="time">
+        <a class="winter_da_we add_btn"> <i class="fa fa-plus-circle margin_right_small"></i>Add Time</a>
+        </form>
+      </div> 
+    </div>
+    <!-- WINTER DA TIMETABLES -->
+    <div class="unit half">
+      <span class="bold">Here's what the timetable will look like:</span>
+      <table class="opp_color" id="htmlID5" border=1></table>
+      <table class="opp_color" id="htmlID6" border=1></table>
+    </div>
+  </div>
+    <!-- =========== END SECTION ============ -->
+
+    <!-- =========== SECTION ============ -->
+  <div class="unit whole content_card">
+    <!-- WINTER DEPARTING BP FORMS -->
+    <div class="unit half">
+      <span class="bold">Winter Timetable, departing Burtonport</span> <br>
+      <!-- WEEKDAY FORM -->
+      <span>Edit the winter timetable, Monday to Saturday:</span> <br>
+      <span id="winter_db_wk"></span>
+      <div class="add_ferry_form align-center">
+        <form>
+        <input type="time">
+        <a class="winter_db_wk add_btn"> <i class="fa fa-plus-circle margin_right_small"></i>Add Time</a>
+        </form>
+      </div>
+      <!-- WEEKEND FORM -->
+      <span class="bold">Edit the winter timetable, Sundays only:</span> <br>
+      <span id="winter_db_we"></span>
+      <div class="add_ferry_form align-center">
+        <form>
+        <input type="time">
+        <a class="winter_db_we add_btn"> <i class="fa fa-plus-circle margin_right_small"></i>Add Time</a>
+        </form>
+      </div> 
+    </div>
+    <!-- WINTER DB TIMETABLES -->
+    <div class="unit half">
+      <span>Here's what the timetable will look like:</span>
+      <table class="opp_color" id="htmlID7" border=1></table>
+      <table class="opp_color" id="htmlID8" border=1></table>
+    </div>
+  </div>
+    <!-- =========== END SECTION ============ -->
+
+</div>
+
+<div style="height:35px;"></div>
+
+<!-- FOOTER BAR -->
+  <div class="grid whole footer_bar">
+      <span style="float:left;">&copy; Arranmore Fast Ferry</span>
+      <span style="float:right;">v0.1</span>
+  </div>
+
+
+<!-- BIG SLIDE -->
+  <script>
+      $(document).ready(function() {
+          $('.menu-link').bigSlide();
+      });
+  </script>
+
+  </body>
+</html>

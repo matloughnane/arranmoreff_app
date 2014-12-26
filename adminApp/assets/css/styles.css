@@ -1,0 +1,868 @@
+@-webkit-viewport {
+  width: device-width;
+}
+
+@-moz-viewport {
+  width: device-width;
+}
+
+@-ms-viewport {
+  width: device-width;
+}
+
+@-o-viewport {
+  width: device-width;
+}
+
+@viewport {
+  width: device-width;
+}
+
+/*
+==================  FONTS  ====================
+*/
+@font-face {
+  font-family: 'Rambla';
+  font-style: normal;
+  font-weight: 400;
+  src: local("Rambla"), local("Rambla-Regular"), url(../fonts/rambla/Rambla-Regular.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: 'Rambla';
+  font-style: normal;
+  font-weight: 700;
+  src: local("Rambla Bold"), local("Rambla-Bold"), url(../fonts/rambla/Rambla-Bold.ttf) format("truetype");
+}
+
+/*
+==================  END FONTS  ====================
+*/
+/* line 30, /Users/Matthew/developer/github/arranmoreff_app/adminApp/assets/css/sass/partials/_base.scss */
+* {
+  font-family: 'Rambla', sans-serif;
+}
+
+/* line 35, /Users/Matthew/developer/github/arranmoreff_app/adminApp/assets/css/sass/partials/_base.scss */
+body {
+  font-family: 'Rambla', sans-serif;
+  background-color: #dadfe1;
+  margin: 0px;
+}
+
+/* line 41, /Users/Matthew/developer/github/arranmoreff_app/adminApp/assets/css/sass/partials/_base.scss */
+a {
+  text-decoration: none;
+  color: #eeeeee;
+}
+
+/* line 46, /Users/Matthew/developer/github/arranmoreff_app/adminApp/assets/css/sass/partials/_base.scss */
+::selection {
+  background: #6bb9f0;
+}
+
+/* line 50, /Users/Matthew/developer/github/arranmoreff_app/adminApp/assets/css/sass/partials/_base.scss */
+::-moz-selection {
+  background: #6bb9f0;
+}
+
+/* line 54, /Users/Matthew/developer/github/arranmoreff_app/adminApp/assets/css/sass/partials/_base.scss */
+.footer_bar {
+  width: 100%;
+  position: fixed;
+  bottom: 0px;
+  text-align: center;
+  background-color: #3498db;
+  padding: 5px;
+}
+/* line 61, /Users/Matthew/developer/github/arranmoreff_app/adminApp/assets/css/sass/partials/_base.scss */
+.footer_bar span {
+  color: #eeeeee;
+  font-size: 12px;
+  padding: 5px;
+}
+/* line 66, /Users/Matthew/developer/github/arranmoreff_app/adminApp/assets/css/sass/partials/_base.scss */
+.footer_bar a {
+  font-size: 12px;
+  color: #eeeeee;
+}
+
+/* line 72, /Users/Matthew/developer/github/arranmoreff_app/adminApp/assets/css/sass/partials/_base.scss */
+.full_bar {
+  font-size: 1.5em;
+  padding: 0.5em;
+  color: #eeeeee;
+  background-color: #1e8bc3;
+  box-shadow: 0px 2px 2px rgba(43, 48, 51, 0.3);
+}
+
+/* line 80, /Users/Matthew/developer/github/arranmoreff_app/adminApp/assets/css/sass/partials/_base.scss */
+.actionBar {
+  font-size: 1em;
+  margin-left: 1em;
+}
+
+/* line 85, /Users/Matthew/developer/github/arranmoreff_app/adminApp/assets/css/sass/partials/_base.scss */
+.padded {
+  padding: 10px 5px 0px;
+}
+
+/* line 89, /Users/Matthew/developer/github/arranmoreff_app/adminApp/assets/css/sass/partials/_base.scss */
+.padded_allRound {
+  padding: 10px;
+}
+
+/* line 93, /Users/Matthew/developer/github/arranmoreff_app/adminApp/assets/css/sass/partials/_base.scss */
+.screen_title {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+/* line 98, /Users/Matthew/developer/github/arranmoreff_app/adminApp/assets/css/sass/partials/_base.scss */
+.content {
+  margin-top: 5px;
+  background-color: #eeeeee;
+  box-shadow: 0px 2px 2px rgba(43, 48, 51, 0.3);
+}
+
+/* line 104, /Users/Matthew/developer/github/arranmoreff_app/adminApp/assets/css/sass/partials/_base.scss */
+.cancel_link {
+  padding: 2px 10px;
+  color: #dd4b39;
+  background-color: #eeeeee;
+}
+
+/* line 110, /Users/Matthew/developer/github/arranmoreff_app/adminApp/assets/css/sass/partials/_base.scss */
+.content_main {
+  background-color: #3498db;
+  color: #eeeeee;
+  box-shadow: 0px 2px 2px rgba(43, 48, 51, 0.3);
+}
+
+/* line 116, /Users/Matthew/developer/github/arranmoreff_app/adminApp/assets/css/sass/partials/_base.scss */
+.content_opposite {
+  background-color: #f27935;
+  color: #eeeeee;
+  box-shadow: 0px 2px 2px rgba(43, 48, 51, 0.3);
+}
+
+/* line 122, /Users/Matthew/developer/github/arranmoreff_app/adminApp/assets/css/sass/partials/_base.scss */
+.content_card {
+  margin: 5px 5px 5px 0px;
+  background-color: #eeeeee;
+  box-shadow: 0px 2px 2px rgba(43, 48, 51, 0.3);
+}
+
+/* line 128, /Users/Matthew/developer/github/arranmoreff_app/adminApp/assets/css/sass/partials/_base.scss */
+.content_title {
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+/* line 133, /Users/Matthew/developer/github/arranmoreff_app/adminApp/assets/css/sass/partials/_base.scss */
+.content_subtitle {
+  font-size: 1.2em;
+}
+
+/* line 137, /Users/Matthew/developer/github/arranmoreff_app/adminApp/assets/css/sass/partials/_base.scss */
+.content_warning {
+  background-color: #dd4b39;
+  color: #eeeeee;
+  box-shadow: 0px 2px 2px rgba(43, 48, 51, 0.3);
+}
+
+/* line 144, /Users/Matthew/developer/github/arranmoreff_app/adminApp/assets/css/sass/partials/_base.scss */
+ul.cancelTimesList {
+  list-style-type: none;
+  padding: 10px;
+}
+
+/* line 149, /Users/Matthew/developer/github/arranmoreff_app/adminApp/assets/css/sass/partials/_base.scss */
+li.cancel_list_item {
+  padding: 10px;
+  background-color: #eeeeee;
+  border: 1px dotted black;
+}
+
+/* line 155, /Users/Matthew/developer/github/arranmoreff_app/adminApp/assets/css/sass/partials/_base.scss */
+.ferryTime {
+  font-size: 2em;
+}
+
+/* line 159, /Users/Matthew/developer/github/arranmoreff_app/adminApp/assets/css/sass/partials/_base.scss */
+.bold {
+  font-weight: 700;
+}
+
+/* line 163, /Users/Matthew/developer/github/arranmoreff_app/adminApp/assets/css/sass/partials/_base.scss */
+form {
+  margin-bottom: 0px;
+  font-size: 12px;
+}
+
+/* line 168, /Users/Matthew/developer/github/arranmoreff_app/adminApp/assets/css/sass/partials/_base.scss */
+input {
+  margin: 0 5px;
+  padding: 2px;
+  font-size: 14px;
+  border-radius: 2px;
+  border: 1px solid #eeeeee;
+  -webkit-box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.1), 0 0 16px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.1), 0 0 16px rgba(0, 0, 0, 0.1);
+  box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.1), 0 0 16px rgba(0, 0, 0, 0.1);
+}
+
+/* line 185, /Users/Matthew/developer/github/arranmoreff_app/adminApp/assets/css/sass/partials/_base.scss */
+a.add_btn {
+  padding: 3px 4px;
+  border-radius: 2px;
+  border: 0px;
+  background-color: #eeeeee;
+  color: #19703e;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+/* line 195, /Users/Matthew/developer/github/arranmoreff_app/adminApp/assets/css/sass/partials/_base.scss */
+a.daySelect_btn {
+  padding: 3px 4px;
+  border-radius: 2px;
+  border: 0px;
+  background-color: #eeeeee;
+  color: #19703e;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+/* line 205, /Users/Matthew/developer/github/arranmoreff_app/adminApp/assets/css/sass/partials/_base.scss */
+a.cancelFerry_btn {
+  padding: 3px 4px;
+  margin-right: 5px;
+  border-radius: 2px;
+  border: 0px;
+  background-color: #dd4b39;
+  color: #eeeeee;
+  cursor: pointer;
+}
+
+/* line 216, /Users/Matthew/developer/github/arranmoreff_app/adminApp/assets/css/sass/partials/_base.scss */
+a.cancelAllFerry_btn {
+  padding: 3px 4px;
+  margin-right: 5px;
+  border-radius: 2px;
+  border: 0px;
+  background-color: #dd4b39;
+  color: #eeeeee;
+  cursor: pointer;
+}
+
+/* line 227, /Users/Matthew/developer/github/arranmoreff_app/adminApp/assets/css/sass/partials/_base.scss */
+a.unCancelFerry_btn {
+  padding: 3px 4px;
+  margin-right: 5px;
+  border-radius: 2px;
+  border: 0px;
+  background-color: #dd4b39;
+  color: #eeeeee;
+  cursor: pointer;
+}
+
+/* line 238, /Users/Matthew/developer/github/arranmoreff_app/adminApp/assets/css/sass/partials/_base.scss */
+.add_ferry_form {
+  background-color: #27ae60;
+  margin: 5px;
+  padding: 5px;
+}
+
+/* line 244, /Users/Matthew/developer/github/arranmoreff_app/adminApp/assets/css/sass/partials/_base.scss */
+.important_text {
+  font-weight: bold;
+  font-size: 2em;
+}
+
+/* line 249, /Users/Matthew/developer/github/arranmoreff_app/adminApp/assets/css/sass/partials/_base.scss */
+.time_tag {
+  border: 1px dotted black;
+  margin: 5px;
+  padding: 3px 8px;
+  display: inline-block;
+}
+
+/* line 256, /Users/Matthew/developer/github/arranmoreff_app/adminApp/assets/css/sass/partials/_base.scss */
+.time_tag_delete {
+  margin-left: 8px;
+  color: #dd4b39;
+}
+
+/* line 261, /Users/Matthew/developer/github/arranmoreff_app/adminApp/assets/css/sass/partials/_base.scss */
+.margin_right {
+  margin-right: 20px;
+}
+
+/* line 265, /Users/Matthew/developer/github/arranmoreff_app/adminApp/assets/css/sass/partials/_base.scss */
+.margin_right_small {
+  margin-right: 10px;
+}
+
+/* line 269, /Users/Matthew/developer/github/arranmoreff_app/adminApp/assets/css/sass/partials/_base.scss */
+.margin_left {
+  margin-left: 20px;
+}
+
+/* line 273, /Users/Matthew/developer/github/arranmoreff_app/adminApp/assets/css/sass/partials/_base.scss */
+h2 {
+  -webkit-margin-before: 0px;
+  -webkit-margin-after: 0px;
+  font-weight: normal;
+}
+
+/*
+==================IMAGES NAVIGATION====================
+*/
+/* line 283, /Users/Matthew/developer/github/arranmoreff_app/adminApp/assets/css/sass/partials/_base.scss */
+img.logo {
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+/*
+==================TABLET BASICS====================
+*/
+@media screen and (max-width: 968px) {
+  /* line 297, /Users/Matthew/developer/github/arranmoreff_app/adminApp/assets/css/sass/partials/_base.scss */
+  h1 {
+    font-size: 2em;
+    padding: 0px;
+    margin: 0px;
+  }
+
+  /* line 302, /Users/Matthew/developer/github/arranmoreff_app/adminApp/assets/css/sass/partials/_base.scss */
+  h2 {
+    font-size: 1.5em;
+  }
+
+  /* line 305, /Users/Matthew/developer/github/arranmoreff_app/adminApp/assets/css/sass/partials/_base.scss */
+  h3 {
+    font-size: 1em;
+  }
+
+  /* line 308, /Users/Matthew/developer/github/arranmoreff_app/adminApp/assets/css/sass/partials/_base.scss */
+  .nav li a {
+    font-size: 0.75em;
+  }
+
+  /* line 311, /Users/Matthew/developer/github/arranmoreff_app/adminApp/assets/css/sass/partials/_base.scss */
+  p {
+    font-size: 1em;
+  }
+
+  /* line 314, /Users/Matthew/developer/github/arranmoreff_app/adminApp/assets/css/sass/partials/_base.scss */
+  .italics {
+    font-size: 0.9em;
+  }
+
+  /* line 317, /Users/Matthew/developer/github/arranmoreff_app/adminApp/assets/css/sass/partials/_base.scss */
+  .wrapper {
+    position: relative;
+    margin: 0 auto;
+  }
+}
+/*
+==================MOBILE BASICS====================
+*/
+@media screen and (max-width: 640px) {
+  /* line 328, /Users/Matthew/developer/github/arranmoreff_app/adminApp/assets/css/sass/partials/_base.scss */
+  h1 {
+    font-size: 2em;
+    padding: 0px;
+    margin: 0px;
+  }
+
+  /* line 333, /Users/Matthew/developer/github/arranmoreff_app/adminApp/assets/css/sass/partials/_base.scss */
+  p {
+    font-size: 1.0em;
+  }
+
+  /* line 336, /Users/Matthew/developer/github/arranmoreff_app/adminApp/assets/css/sass/partials/_base.scss */
+  .content {
+    height: auto;
+  }
+  /* line 338, /Users/Matthew/developer/github/arranmoreff_app/adminApp/assets/css/sass/partials/_base.scss */
+  .content p {
+    font-size: 1em;
+  }
+
+  /* line 342, /Users/Matthew/developer/github/arranmoreff_app/adminApp/assets/css/sass/partials/_base.scss */
+  .italics {
+    font-size: 1em;
+  }
+
+  /* line 345, /Users/Matthew/developer/github/arranmoreff_app/adminApp/assets/css/sass/partials/_base.scss */
+  .content_secondary {
+    height: auto;
+  }
+
+  /* line 348, /Users/Matthew/developer/github/arranmoreff_app/adminApp/assets/css/sass/partials/_base.scss */
+  .content_tertiary {
+    height: auto;
+  }
+
+  /* line 351, /Users/Matthew/developer/github/arranmoreff_app/adminApp/assets/css/sass/partials/_base.scss */
+  .wrapper {
+    position: relative;
+    margin: 0 auto;
+  }
+}
+/* line 1, /Users/Matthew/developer/github/arranmoreff_app/adminApp/assets/css/sass/partials/_buttons.scss */
+.btn {
+  border: none;
+  background: none;
+  padding: 10px 10px;
+  display: inline-block;
+  margin: 5px 5px;
+  text-transform: lowercase;
+  text-decoration: none;
+  outline: none;
+  position: relative;
+  border-radius: 0px;
+  -webkit-transition: all 0.1s;
+  -moz-transition: all 0.1s;
+  transition: all 0.1s;
+}
+/* line 16, /Users/Matthew/developer/github/arranmoreff_app/adminApp/assets/css/sass/partials/_buttons.scss */
+.btn i {
+  margin-right: 20px;
+}
+
+/* line 21, /Users/Matthew/developer/github/arranmoreff_app/adminApp/assets/css/sass/partials/_buttons.scss */
+.default {
+  color: #eeeeee;
+  background-color: #3498db;
+}
+/* line 24, /Users/Matthew/developer/github/arranmoreff_app/adminApp/assets/css/sass/partials/_buttons.scss */
+.default a {
+  color: #eeeeee;
+}
+/* line 27, /Users/Matthew/developer/github/arranmoreff_app/adminApp/assets/css/sass/partials/_buttons.scss */
+.default:hover {
+  box-shadow: 0px -3px 0px 0px #22a7f0 inset;
+  outline: 0 6px #1e8bc3;
+  background-color: #3498db;
+}
+/* line 32, /Users/Matthew/developer/github/arranmoreff_app/adminApp/assets/css/sass/partials/_buttons.scss */
+.default:active {
+  background-color: #1e8bc3;
+  top: 0px;
+}
+
+/* line 38, /Users/Matthew/developer/github/arranmoreff_app/adminApp/assets/css/sass/partials/_buttons.scss */
+.dark_highlight {
+  color: #eeeeee;
+  background-color: #22a7f0;
+}
+/* line 41, /Users/Matthew/developer/github/arranmoreff_app/adminApp/assets/css/sass/partials/_buttons.scss */
+.dark_highlight a {
+  color: #eeeeee;
+}
+/* line 44, /Users/Matthew/developer/github/arranmoreff_app/adminApp/assets/css/sass/partials/_buttons.scss */
+.dark_highlight:hover {
+  box-shadow: 0px -3px 0px 0px #1e8bc3 inset;
+  outline: 0 6px #1e8bc3;
+  background-color: #22a7f0;
+}
+/* line 49, /Users/Matthew/developer/github/arranmoreff_app/adminApp/assets/css/sass/partials/_buttons.scss */
+.dark_highlight:active {
+  background-color: #1e8bc3;
+  top: 0px;
+}
+
+/* line 58, /Users/Matthew/developer/github/arranmoreff_app/adminApp/assets/css/sass/partials/_buttons.scss */
+.facebook {
+  color: #eeeeee;
+  background-color: #3b5998;
+  box-shadow: 0px -3px 0px 0px #758ab6 inset;
+}
+/* line 62, /Users/Matthew/developer/github/arranmoreff_app/adminApp/assets/css/sass/partials/_buttons.scss */
+.facebook a {
+  color: #eeeeee;
+}
+/* line 65, /Users/Matthew/developer/github/arranmoreff_app/adminApp/assets/css/sass/partials/_buttons.scss */
+.facebook:hover {
+  outline: 0 6px #1e8bc3;
+  background-color: #758ab6;
+}
+/* line 69, /Users/Matthew/developer/github/arranmoreff_app/adminApp/assets/css/sass/partials/_buttons.scss */
+.facebook:active {
+  background-color: #3b5998;
+  top: 0px;
+}
+
+/* line 75, /Users/Matthew/developer/github/arranmoreff_app/adminApp/assets/css/sass/partials/_buttons.scss */
+.twitter {
+  color: #eeeeee;
+  background-color: #00aced;
+  box-shadow: 0px -3px 0px 0px #8bdfff inset;
+}
+/* line 79, /Users/Matthew/developer/github/arranmoreff_app/adminApp/assets/css/sass/partials/_buttons.scss */
+.twitter a {
+  color: #eeeeee;
+}
+/* line 82, /Users/Matthew/developer/github/arranmoreff_app/adminApp/assets/css/sass/partials/_buttons.scss */
+.twitter:hover {
+  outline: 0 6px #1e8bc3;
+  background-color: #8bdfff;
+}
+/* line 86, /Users/Matthew/developer/github/arranmoreff_app/adminApp/assets/css/sass/partials/_buttons.scss */
+.twitter:active {
+  background-color: #00aced;
+  top: 0px;
+}
+
+/* line 92, /Users/Matthew/developer/github/arranmoreff_app/adminApp/assets/css/sass/partials/_buttons.scss */
+.google {
+  color: #eeeeee;
+  background-color: #dd4b39;
+  box-shadow: 0px -3px 0px 0px #e78174 inset;
+}
+/* line 96, /Users/Matthew/developer/github/arranmoreff_app/adminApp/assets/css/sass/partials/_buttons.scss */
+.google a {
+  color: #eeeeee;
+}
+/* line 99, /Users/Matthew/developer/github/arranmoreff_app/adminApp/assets/css/sass/partials/_buttons.scss */
+.google:hover {
+  outline: 0 6px #1e8bc3;
+  background-color: #e78174;
+}
+/* line 104, /Users/Matthew/developer/github/arranmoreff_app/adminApp/assets/css/sass/partials/_buttons.scss */
+.google:active {
+  background-color: #dd4b39;
+  top: 0px;
+}
+
+/* line 110, /Users/Matthew/developer/github/arranmoreff_app/adminApp/assets/css/sass/partials/_buttons.scss */
+.instagram {
+  color: #eeeeee;
+  background-color: #517fa4;
+  box-shadow: 0px -3px 0px 0px #759cbb inset;
+}
+/* line 114, /Users/Matthew/developer/github/arranmoreff_app/adminApp/assets/css/sass/partials/_buttons.scss */
+.instagram a {
+  color: #eeeeee;
+}
+/* line 117, /Users/Matthew/developer/github/arranmoreff_app/adminApp/assets/css/sass/partials/_buttons.scss */
+.instagram:hover {
+  outline: 0 6px #1e8bc3;
+  background-color: #759cbb;
+}
+/* line 121, /Users/Matthew/developer/github/arranmoreff_app/adminApp/assets/css/sass/partials/_buttons.scss */
+.instagram:active {
+  background-color: #517fa4;
+  top: 0px;
+}
+
+/* line 129, /Users/Matthew/developer/github/arranmoreff_app/adminApp/assets/css/sass/partials/_buttons.scss */
+.right {
+  float: right;
+  clear: both;
+}
+
+/* line 134, /Users/Matthew/developer/github/arranmoreff_app/adminApp/assets/css/sass/partials/_buttons.scss */
+.left {
+  float: left;
+}
+
+/* line 138, /Users/Matthew/developer/github/arranmoreff_app/adminApp/assets/css/sass/partials/_buttons.scss */
+.bottom {
+  position: absolute;
+  bottom: 0px;
+}
+
+/* line 2, /Users/Matthew/developer/github/arranmoreff_app/adminApp/assets/css/sass/partials/_tables.scss */
+table, th, td {
+  border-collapse: collapse;
+  text-align: center;
+}
+
+/* line 8, /Users/Matthew/developer/github/arranmoreff_app/adminApp/assets/css/sass/partials/_tables.scss */
+table.main_color {
+  margin-top: 10px;
+  width: 100%;
+  color: #eeeeee;
+  background-color: #1e8bc3;
+  border: 1px solid #6bb9f0;
+}
+
+/* line 16, /Users/Matthew/developer/github/arranmoreff_app/adminApp/assets/css/sass/partials/_tables.scss */
+th.main_color {
+  border: 1px solid #6bb9f0;
+  padding: 10px 0;
+  font-size: 1.3em;
+  height: 30px;
+}
+
+/* line 23, /Users/Matthew/developer/github/arranmoreff_app/adminApp/assets/css/sass/partials/_tables.scss */
+td.main_color {
+  border: 1px solid #6bb9f0;
+  text-align: center;
+  padding: 5px 0;
+}
+/* line 27, /Users/Matthew/developer/github/arranmoreff_app/adminApp/assets/css/sass/partials/_tables.scss */
+td.main_color.light_darkText {
+  padding: 8px 0;
+  font-weight: bold;
+  color: #1e8bc3;
+  background-color: #eeeeee;
+}
+
+/* line 36, /Users/Matthew/developer/github/arranmoreff_app/adminApp/assets/css/sass/partials/_tables.scss */
+table.opp_color {
+  margin-top: 10px;
+  width: 100%;
+  padding: 5px 0;
+  color: #eeeeee;
+  background-color: #d36f18;
+  border: 1px solid #eb974e;
+}
+
+/* line 45, /Users/Matthew/developer/github/arranmoreff_app/adminApp/assets/css/sass/partials/_tables.scss */
+th.opp_color {
+  border: 1px solid #eb974e;
+  padding: 10px 0;
+  font-size: 1.3em;
+  height: 30px;
+}
+
+/* line 52, /Users/Matthew/developer/github/arranmoreff_app/adminApp/assets/css/sass/partials/_tables.scss */
+td.opp_color {
+  border: 1px solid #eb974e;
+  text-align: center;
+  padding: 5px 0;
+}
+/* line 56, /Users/Matthew/developer/github/arranmoreff_app/adminApp/assets/css/sass/partials/_tables.scss */
+td.opp_color.light_darkText {
+  padding: 8px 0;
+  font-weight: bold;
+  color: #d36f18;
+  background-color: #eeeeee;
+}
+
+/* CSV Table Classes */
+/* line 68, /Users/Matthew/developer/github/arranmoreff_app/adminApp/assets/css/sass/partials/_tables.scss */
+TABLE.CSVTable {
+  border-collapse: collapse;
+  width: 100%;
+  border: 1px solid #1e8bc3;
+}
+
+/* Header */
+/* line 76, /Users/Matthew/developer/github/arranmoreff_app/adminApp/assets/css/sass/partials/_tables.scss */
+TABLE.CSVTable THEAD TR {
+  border: 2px solid #1e8bc3;
+  color: black;
+  background: rgba(52, 152, 219, 0.5);
+}
+
+/* line 82, /Users/Matthew/developer/github/arranmoreff_app/adminApp/assets/css/sass/partials/_tables.scss */
+TABLE.CSVTable TH {
+  border: 1px solid #1e8bc3;
+  font-size: 1em;
+}
+
+/* Table Cells */
+/* line 88, /Users/Matthew/developer/github/arranmoreff_app/adminApp/assets/css/sass/partials/_tables.scss */
+TABLE.CSVTable TD, TABLE.CSVTable TH {
+  width: 25%;
+  border: 1px solid #1e8bc3;
+  padding: 5px;
+  text-align: left;
+  border-bottom: 1px solid #6bb9f0;
+  border-top: 1px solid transparent;
+}
+
+/* Default background color for rows */
+/* line 97, /Users/Matthew/developer/github/arranmoreff_app/adminApp/assets/css/sass/partials/_tables.scss */
+TABLE.CSVTable TR {
+  background: #eeeeee;
+}
+
+/* Background color for odd rows */
+/* line 101, /Users/Matthew/developer/github/arranmoreff_app/adminApp/assets/css/sass/partials/_tables.scss */
+TABLE.CSVTable TR.odd {
+  background: #6bb9f0;
+}
+
+/*
+==================DESKTOP NAVIGATION====================
+*/
+/* line 6, /Users/Matthew/developer/github/arranmoreff_app/adminApp/assets/css/sass/partials/_navigation.scss */
+.nav {
+  background-color: #1e8bc3;
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+  text-align: center;
+}
+/* line 12, /Users/Matthew/developer/github/arranmoreff_app/adminApp/assets/css/sass/partials/_navigation.scss */
+.nav ul {
+  padding: 0px;
+  margin: 0px;
+}
+/* line 16, /Users/Matthew/developer/github/arranmoreff_app/adminApp/assets/css/sass/partials/_navigation.scss */
+.nav li {
+  display: inline;
+  padding: 10px;
+  margin: 0px;
+}
+/* line 20, /Users/Matthew/developer/github/arranmoreff_app/adminApp/assets/css/sass/partials/_navigation.scss */
+.nav li:hover {
+  box-shadow: 0px -5px 0px 0px #22a7f0 inset;
+}
+/* line 23, /Users/Matthew/developer/github/arranmoreff_app/adminApp/assets/css/sass/partials/_navigation.scss */
+.nav li:active {
+  background-color: #3498db;
+}
+/* line 27, /Users/Matthew/developer/github/arranmoreff_app/adminApp/assets/css/sass/partials/_navigation.scss */
+.nav a {
+  font-size: 1em;
+  color: #eeeeee;
+  display: inline-block;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 10px 30px;
+  margin: 0px;
+}
+
+/*
+==================DESKTOP NAVIGATION====================
+*/
+/* line 42, /Users/Matthew/developer/github/arranmoreff_app/adminApp/assets/css/sass/partials/_navigation.scss */
+.nav-alt {
+  background-color: #22a7f0;
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+  text-align: center;
+}
+/* line 48, /Users/Matthew/developer/github/arranmoreff_app/adminApp/assets/css/sass/partials/_navigation.scss */
+.nav-alt ul {
+  padding: 0px;
+  margin: 0px;
+}
+/* line 52, /Users/Matthew/developer/github/arranmoreff_app/adminApp/assets/css/sass/partials/_navigation.scss */
+.nav-alt li {
+  display: inline;
+  padding: 10px;
+  margin: 0px;
+}
+/* line 56, /Users/Matthew/developer/github/arranmoreff_app/adminApp/assets/css/sass/partials/_navigation.scss */
+.nav-alt li:hover {
+  box-shadow: 0px -5px 0px 0px #1e8bc3 inset;
+}
+/* line 59, /Users/Matthew/developer/github/arranmoreff_app/adminApp/assets/css/sass/partials/_navigation.scss */
+.nav-alt li:active {
+  background-color: #3498db;
+}
+/* line 63, /Users/Matthew/developer/github/arranmoreff_app/adminApp/assets/css/sass/partials/_navigation.scss */
+.nav-alt a {
+  font-size: 0.9em;
+  color: #eeeeee;
+  display: inline-block;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 10px 30px;
+  margin: 0px;
+}
+
+/*
+==================HIDDEN NAVIGATION====================
+*/
+/* line 78, /Users/Matthew/developer/github/arranmoreff_app/adminApp/assets/css/sass/partials/_navigation.scss */
+.wrapper {
+  position: relative;
+  margin: 0 auto;
+}
+
+/* line 83, /Users/Matthew/developer/github/arranmoreff_app/adminApp/assets/css/sass/partials/_navigation.scss */
+.menu-link {
+  color: #eeeeee;
+  position: absolute;
+  padding: 1em;
+  padding-left: 0em;
+  background-color: #1e8bc3;
+}
+/* line 96, /Users/Matthew/developer/github/arranmoreff_app/adminApp/assets/css/sass/partials/_navigation.scss */
+.menu-link i {
+  font-size: 20px;
+}
+
+/* line 101, /Users/Matthew/developer/github/arranmoreff_app/adminApp/assets/css/sass/partials/_navigation.scss */
+.subtitle {
+  text-align: center;
+  font-size: 1.125em;
+  margin: .5em 0;
+}
+
+/* line 107, /Users/Matthew/developer/github/arranmoreff_app/adminApp/assets/css/sass/partials/_navigation.scss */
+.btn-list {
+  margin: 3em 0;
+  text-align: center;
+}
+/* line 110, /Users/Matthew/developer/github/arranmoreff_app/adminApp/assets/css/sass/partials/_navigation.scss */
+.btn-list li {
+  display: inline-block;
+}
+/* line 112, /Users/Matthew/developer/github/arranmoreff_app/adminApp/assets/css/sass/partials/_navigation.scss */
+.btn-list li:first-of-type {
+  margin-right: 1em;
+}
+
+/*
+==================HIDDEN NAVIGATION PANEL====================
+*/
+/* line 134, /Users/Matthew/developer/github/arranmoreff_app/adminApp/assets/css/sass/partials/_navigation.scss */
+.panel {
+  text-transform: lowercase;
+  background: #3498db;
+  z-index: 9999;
+  position: fixed;
+  left: -15.625em;
+  /*or width of your navigation panel*/
+  width: 15.625em;
+  /*should match the above value*/
+}
+/* line 141, /Users/Matthew/developer/github/arranmoreff_app/adminApp/assets/css/sass/partials/_navigation.scss */
+.panel ul {
+  list-style-type: none;
+  padding: 0px;
+  margin: 0px;
+}
+/* line 145, /Users/Matthew/developer/github/arranmoreff_app/adminApp/assets/css/sass/partials/_navigation.scss */
+.panel ul li {
+  padding: 1em;
+  box-shadow: 0px -1px 0px 0px #22a7f0 inset;
+}
+/* line 152, /Users/Matthew/developer/github/arranmoreff_app/adminApp/assets/css/sass/partials/_navigation.scss */
+.panel ul a {
+  color: #dadfe1;
+  padding: 1em;
+}
+/* line 155, /Users/Matthew/developer/github/arranmoreff_app/adminApp/assets/css/sass/partials/_navigation.scss */
+.panel ul a.nav_link {
+  font-size: 1em;
+}
+/* line 157, /Users/Matthew/developer/github/arranmoreff_app/adminApp/assets/css/sass/partials/_navigation.scss */
+.panel ul a.nav_link i {
+  margin-right: 1em;
+}
+
+/* line 165, /Users/Matthew/developer/github/arranmoreff_app/adminApp/assets/css/sass/partials/_navigation.scss */
+.nav-icon {
+  margin-right: 6px;
+}
+
+@media screen and (max-width: 968px) {
+  /* line 171, /Users/Matthew/developer/github/arranmoreff_app/adminApp/assets/css/sass/partials/_navigation.scss */
+  .nav-alt li a {
+    font-size: 0.7em;
+  }
+}

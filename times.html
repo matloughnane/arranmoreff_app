@@ -10,22 +10,11 @@
     <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="assets/css/animate.css">
       
-    <script src="https://cdn.firebase.com/js/client/1.0.15/firebase.js"></script>
+    <script src="assets/js/firebase.js"></script>
     <script src="assets/js/output.min.js"></script>
 
     <!--     SCRIPT FOR FERRY TIMES -->
-    <script src="assets/js/update_firebase.js"></script>
-    <script src="assets/js/next_ferry.js"></script>
-
-<!-- FONTS -->
-    <link href='http://fonts.googleapis.com/css?family=Rambla:400,700' rel='stylesheet' type='text/css'>
-
-<!-- FAVICON -->
-  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/img/favicon/square_pngs_72.png">
-  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/img/favicon/square_pngs_144.png">
-  <link rel="apple-touch-icon-precomposed" sizes="512x512" href="assets/img/favicon/square_pngs_512.png">
-  <link rel="apple-touch-icon-precomposed" href="assets/img/favicon/square_pngs_512.png">
-  <link rel="shortcut icon" href="2013_archive/assets/ico/favicon.png">
+    <script src="assets/js/timetables.js"></script>
 
 <!-- GOOGLE META DATA -->
     <meta itemprop="name" content="Fast Ferry App">
@@ -38,9 +27,6 @@
     <meta property="og:site_name" content="Fast Ferry App App"/>
     <meta property="og:url" content="http://matloughnane.github.io/arranmoreff_app/index.html"/>
     <meta property="og:description" content="All the latest information from the Arranmore Fast Ferry"/>
-<!--     <meta property="og:image" content=""/> -->
-<!--     <meta property="fb:admins" content="" /> -->
-<!-- END SHARING META DATA -->
 
   </head>
 <body class="wrapper push">
@@ -49,13 +35,10 @@
 	<a href="#menu" class="menu-link pull-left"><span><i class="fa fa-bars"></i></span></a>
     <nav id="menu" class="panel" role="navigation">
           <ul>
-            <li><a class="nav_link" href="index.html"><i class="fa fa-home"></i>home</a></li>
-            <li><a class="nav_link" href="times.html"><i class="fa fa-clock-o"></i>times</a></li>
-<!--             <li><a class="nav_link" href="weather.html"><i class="fa fa-sun-o"></i>weather</a></li>
- -->            <li><a class="nav_link" href="contact.html"><i class="fa fa-phone-square"></i>contact</a></li>
-            <li><a class="nav_link" href="maps.html"><i class="fa fa-map-marker"></i>map</a></li>            
-            <li><a class="nav_link" href="tickets.html"><i class="fa fa-ticket"></i>tickets</a></li>
-            <li><a class="nav_link" href="testing_js/admin_app2.html"><i class="fa fa-cogs"></i>Admin App</a></li>
+            <li><a class="nav_link" href="index.html"><i class="fa fa-home"></i>Home</a></li>
+            <li><a class="nav_link" href="times.html"><i class="fa fa-clock-o"></i>Timetables</a></li>
+            <li><a class="nav_link" href="contact.html"><i class="fa fa-phone-square"></i>Contact</a></li>
+            <li><a class="nav_link" href="maps.html"><i class="fa fa-map-marker"></i>Map</a></li>
           </ul>
     </nav>
     <div class="full_bar">
@@ -64,33 +47,31 @@
 </div>
 <!-- END NAV -->
 
-<div class="grid padded">
+<div class="grid wrap padded">
 
-  <div class="unit half content_main align-center">
-    <h2> Summer Timetable </h2>
-      <table class="main_color" id="SummerSec1" border=1></table>
-
-      <table class="main_color" style="margin-top:0px" id="SummerSec2" border=1></table>
-
-      <table class="main_color" id="SummerSec3" border=1></table>
-
-      <table class="main_color" style="margin-top:0px" id="SummerSec4" border=1></table>
-  </div>
-
-  <div class="unit half content_opposite align-center"> 
-    <h2> Winter Timetable </h2>
-      <table class="opp_color" id="WinterSec1" border=1></table>
-
-      <table class="opp_color" style="margin-top:0px" id="WinterSec2" border=1></table>
-
-      <table class="opp_color" id="WinterSec3" border=1></table>
-
-      <table class="opp_color" style="margin-top:0px" id="WinterSec4" border=1></table>
+  <div class="unit whole content">
+    <h2> Summer Timetables </h2>
+    <div class="unit half">
+      <div id="summer_da"></div>
+    </div>
+    <div class="unit half no-gutters-mobile">
+      <div id="summer_db"></div>
+    </div>
   </div>
 
   <div class="unit whole content">
-    <table class="main_color" id="ExtraFerry" border=1> </table>
+    <h2> Winter Timetables </h2>
+    <div class="unit half">
+      <div id="winter_da"></div>
+    </div>
+    <div class="unit half no-gutters-mobile">
+      <div id="winter_db"></div>
+    </div>
   </div>
+
+<!--   <div class="unit whole content">
+    <table class="main_color" id="ExtraFerry" border=1> </table>
+  </div> -->
 
 </div>
 
@@ -105,7 +86,7 @@
   </div>
 </div>
 
-<div class="grid padded">
+<div class="grid wrap padded">
   <div class="unit whole content">
     <div class="align-center">
       <a class="btn default" href="times_old.html">Help I'm Offline!</a>

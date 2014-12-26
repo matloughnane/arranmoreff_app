@@ -1,0 +1,91 @@
+<!DOCTYPE html5>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Admin Panel - Dashboard</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+<!-- css and formatting -->
+    <link rel="stylesheet" type="text/css" href="assets/css/styles.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/gridism.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/animate.css">
+
+    <script src="https://cdn.firebase.com/js/client/1.0.15/firebase.js"></script>
+    <script src="assets/js/output.min.js"></script>
+
+    <script src="assets/js/dashboard.js"></script>
+
+  </head>
+
+<body class="wrapper push">
+<!-- NAV MENUS -->
+<div class="grid whole">
+	<a href="#menu" class="menu-link pull-left"><span><i class="fa fa-bars"></i></span></a>
+    <nav id="menu" class="panel" role="navigation">
+          <ul>
+            <li><a class="nav_link" href="index.html"><i class="fa fa-home"></i>home</a></li>
+            <li><a class="nav_link" href="admin_app_master_tables.html"><i class="fa fa-cogs"></i>master tables</a></li>
+            <li><a class="nav_link" href="admin_app_extras.html"><i class="fa fa-cogs"></i>extra ferries</a></li>
+            <li><a class="nav_link" href="admin_app_cancel.html"><i class="fa fa-cogs"></i>cancel ferries</a></li>
+          </ul>
+    </nav>
+    <div class="full_bar">
+    	<span class="actionBar">Fast Ferry - Admin App</span>
+      <a class="pull-right" href="javascript:history.go(0)"><i class="fa fa-refresh"></i></a>
+    </div>
+</div>
+<!-- END NAV -->
+
+<div class="grid padded">
+
+  <div class="unit half content_main align-center">
+    <span>The next ferry leaving Arranmore is at:</span><br>
+    <span class="ferryTime" id="nextFerry_da"></span>
+  </div>
+  <div class="unit half content_opposite align-center">
+    <span>The next ferry leaving Burtonport is at:</span><br>
+    <span class="ferryTime" id="nextFerry_db"></span>
+  </div>
+
+  <div class="unit whole content">
+    <h2>Today's Timetables</h2>
+    <div class="unit half">
+      <h2>Departing Arranmore</h2>
+        <table class="main_color" id="todays_da" border=1></table>
+    </div>
+    <!-- SUMMER DA TIMETABLES -->
+    <div class="unit half padded">
+      <h2>Departing Burtonport</h2>
+        <table class="opp_color" id="todays_db" border=1></table>
+    </div>
+    <a class="pull-right btn default" href="admin_app_master_tables.html">Edit the timetables</a>
+  </div>
+
+  <div class="unit whole content">
+    <div class="unit half">
+      <h2>Upcoming Extra Sailings</h2>
+        <table class="main_color" id="htmlID3" border=1></table>
+        <table class="opp_color" id="htmlID4" border=1></table>
+        <a class="pull-right btn default" href="admin_app_extras.html">Edit the Extras</a>
+    </div>
+    <!-- SUMMER DA TIMETABLES -->
+    <div class="unit half padded">
+      <h2>Upcoming Cancellations</h2>
+        <table class="main_color" id="htmlID5" border=1></table>
+        <table class="opp_color" id="htmlID6" border=1></table>
+        <a class="pull-right btn google" href="admin_app_cancel.html">Edit the Cancellations</a>
+    </div>
+
+  </div>
+
+</div>
+
+<!-- BIG SLIDE -->
+  <script>
+      $(document).ready(function() {
+          $('.menu-link').bigSlide();
+      });
+  </script>
+
+  </body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html5>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Arranmore Fast Ferry</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+<!-- css and formatting -->
+    <link rel="stylesheet" type="text/css" href="assets/css/styles.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/gridism.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/animate.css">
+      
+    <script src="assets/js/firebase.js"></script>
+    <script src="assets/js/output.min.js"></script>
+
+    <!--     SCRIPT FOR FERRY TIMES -->
+    <script src="assets/js/update_firebase.js"></script>
+    <script src="assets/js/next_ferry.js"></script>
+
+<!-- GOOGLE META DATA -->
+    <meta itemprop="name" content="Fast Ferry App">
+    <meta itemprop="description" content="All the latest information from the Arranmore Fast Ferry">
+    <meta name="theme-color" content="#1e8bc3">
+<!--     <meta itemprop="image" content=""> -->
+<!-- SHARING META DATA -->
+    <meta property="og:title" content="Fast Ferry App"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:site_name" content="Fast Ferry App App"/>
+    <meta property="og:url" content="http://matloughnane.github.io/arranmoreff_app/index.html"/>
+    <meta property="og:description" content="All the latest information from the Arranmore Fast Ferry"/>
+
+  </head>
+<body class="wrapper push">
+<!-- NAV MENUS -->
+<div class="grid whole">
+	<a href="#menu" class="menu-link pull-left"><span><i class="fa fa-bars"></i></span></a>
+    <nav id="menu" class="panel" role="navigation">
+          <ul>
+            <li><a class="nav_link" href="index.html"><i class="fa fa-home"></i>Home</a></li>
+            <li><a class="nav_link" href="times.html"><i class="fa fa-clock-o"></i>Timetables</a></li>
+            <li><a class="nav_link" href="contact.html"><i class="fa fa-phone-square"></i>Contact</a></li>
+            <li><a class="nav_link" href="maps.html"><i class="fa fa-map-marker"></i>Map</a></li>
+          </ul>
+    </nav>
+    <div class="full_bar">
+    	<span class="actionBar">Ferry Times</span>
+    </div>
+</div>
+<!-- END NAV -->
+
+<div class="grid wrap padded">
+
+  <div class="unit half content_main align-center">
+    <h2> Summer Timetable </h2>
+      <table class="main_color" id="SummerSec1" border=1></table>
+
+      <table class="main_color" style="margin-top:0px" id="SummerSec2" border=1></table>
+
+      <table class="main_color" id="SummerSec3" border=1></table>
+
+      <table class="main_color" style="margin-top:0px" id="SummerSec4" border=1></table>
+  </div>
+
+  <div class="unit half content_opposite align-center"> 
+    <h2> Winter Timetable </h2>
+      <table class="opp_color" id="WinterSec1" border=1></table>
+
+      <table class="opp_color" style="margin-top:0px" id="WinterSec2" border=1></table>
+
+      <table class="opp_color" id="WinterSec3" border=1></table>
+
+      <table class="opp_color" style="margin-top:0px" id="WinterSec4" border=1></table>
+  </div>
+
+  <div class="unit whole content">
+    <table class="main_color" id="ExtraFerry" border=1> </table>
+  </div>
+
+</div>
+
+
+<!-- GRID FOR CONTACT -->
+<div class="grid wrap padded">
+  <div class="unit whole content">
+    <div class="align-center">
+      <span>Call to book a ticket:</span> <br>
+      <span class="important_text">+353 87 3171810</span>
+    </div>
+  </div>
+</div>
+
+<div class="grid wrap padded">
+  <div class="unit whole content">
+    <div class="align-center">
+      <a class="btn default" href="times_old.html">Help I'm Offline!</a>
+    </div>
+  </div>
+</div>
+
+<!-- BIG SLIDE -->
+  <script>
+      $(document).ready(function() {
+          $('.menu-link').bigSlide();
+      });
+  </script>
+
+  </body>
+</html>

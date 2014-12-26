@@ -10,27 +10,19 @@
     <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="assets/css/animate.css">
       
-    <script src="https://cdn.firebase.com/js/client/1.0.15/firebase.js"></script>
+    <script src="assets/js/firebase.js"></script>
     <script src="assets/js/output.min.js"></script>
 
     <!--     SCRIPT FOR FERRY TIMES -->
-    <script src="assets/js/times2_firebase.js"></script>
+    <script src="assets/js/dashboard_app.js"></script>
 
 <!-- FONTS -->
-    <link href='http://fonts.googleapis.com/css?family=Rambla:400,700' rel='stylesheet' type='text/css'>
-
-<!-- FAVICON -->
-  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/img/favicon/square_pngs_72.png">
-  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/img/favicon/square_pngs_144.png">
-  <link rel="apple-touch-icon-precomposed" sizes="512x512" href="assets/img/favicon/square_pngs_512.png">
-  <link rel="apple-touch-icon-precomposed" href="assets/img/favicon/square_pngs_512.png">
-  <link rel="shortcut icon" href="2013_archive/assets/ico/favicon.png">
-
+<!--     <link href='http://fonts.googleapis.com/css?family=Rambla:400,700' rel='stylesheet' type='text/css'>
+ -->
 <!-- GOOGLE META DATA -->
     <meta itemprop="name" content="Fast Ferry App">
     <meta itemprop="description" content="All the latest information from the Arranmore Fast Ferry">
     <meta name="theme-color" content="#1e8bc3">
-<!--     <meta itemprop="image" content=""> -->
 <!-- SHARING META DATA -->
     <meta property="og:title" content="Fast Ferry App"/>
     <meta property="og:type" content="website"/>
@@ -46,13 +38,10 @@
 	<a href="#menu" class="menu-link pull-left"><span><i class="fa fa-bars"></i></span></a>
     <nav id="menu" class="panel" role="navigation">
           <ul>
-            <li><a class="nav_link" href="index.html"><i class="fa fa-home"></i>home</a></li>
-            <li><a class="nav_link" href="times.html"><i class="fa fa-clock-o"></i>times</a></li>
-<!--             <li><a class="nav_link" href="weather.html"><i class="fa fa-sun-o"></i>weather</a></li>
- -->            <li><a class="nav_link" href="contact.html"><i class="fa fa-phone-square"></i>contact</a></li>
-            <li><a class="nav_link" href="maps.html"><i class="fa fa-map-marker"></i>map</a></li>            
-            <li><a class="nav_link" href="tickets.html"><i class="fa fa-ticket"></i>tickets</a></li>
-            <li><a class="nav_link" href="testing_js/admin_app2.html"><i class="fa fa-cogs"></i>Admin App</a></li>
+            <li><a class="nav_link" href="index.html"><i class="fa fa-home"></i>Home</a></li>
+            <li><a class="nav_link" href="times.html"><i class="fa fa-clock-o"></i>Timetables</a></li>
+            <li><a class="nav_link" href="contact.html"><i class="fa fa-phone-square"></i>Contact</a></li>
+            <li><a class="nav_link" href="maps.html"><i class="fa fa-map-marker"></i>Map</a></li>
           </ul>
     </nav>
     <div class="full_bar">
@@ -61,7 +50,7 @@
 </div>
 <!-- END NAV -->
 
-<div class="grid padded">
+<div class="grid wrap padded">
   <div class="unit half content_main align-center">
     <span>The next ferry leaving Arranmore is at:</span><br>
     <span class="ferryTime" id="nextFerry_da"></span>
@@ -72,7 +61,7 @@
   </div>
 </div>
 
-<div class="grid padded">
+<div class="grid wrap padded">
 
   <div class="unit whole content">
     <div>
@@ -85,7 +74,7 @@
           </div>
       </div>
 
-      <div class="unit half">
+      <div class="unit half no-gutters-mobile">
           <!-- <span class="bold">Today's Ferries Leaving Burtonport:</span> -->
           <div class="align-center" id="todays_db">
             <!-- TODAYS ARRAY IN TABLE -->
@@ -106,7 +95,7 @@
   </div>
 </div>
 
-<div class="grid padded">
+<div class="grid wrap padded">
   <div class="unit whole content">
     <div class="align-center">
       <a class="btn default" href="times_old.html">Help I'm Offline!</a>

@@ -1,0 +1,115 @@
+<!DOCTYPE html5>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Admin Panel - Extras</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+<!-- css and formatting -->
+    <link rel="stylesheet" type="text/css" href="assets/css/styles.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/gridism.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/animate.css">
+
+    <script src="https://cdn.firebase.com/js/client/1.0.15/firebase.js"></script>
+    <script src="assets/js/output.min.js"></script>
+
+    <script src="assets/js/extra_firebase.js"></script>
+
+  </head>
+
+<body class="wrapper push">
+<!-- NAV MENUS -->
+<div class="grid whole">
+	<a href="#menu" class="menu-link pull-left"><span><i class="fa fa-bars"></i></span></a>
+    <nav id="menu" class="panel" role="navigation">
+          <ul>
+            <li><a class="nav_link" href="index.html"><i class="fa fa-home"></i>home</a></li>
+            <li><a class="nav_link" href="admin_app_master_tables.html"><i class="fa fa-cogs"></i>master tables</a></li>
+            <li><a class="nav_link" href="admin_app_extras.html"><i class="fa fa-cogs"></i>extra ferries</a></li>
+            <li><a class="nav_link" href="admin_app_cancel.html"><i class="fa fa-cogs"></i>cancel ferries</a></li>
+          </ul>
+    </nav>
+    <div class="full_bar">
+    	<span class="actionBar">Fast Ferry - Extra Ferries</span>
+      <a class="pull-right" href="javascript:history.go(0)"><i class="fa fa-refresh"></i></a>
+    </div>
+</div>
+<!-- END NAV -->
+
+<div class="grid padded">
+
+  <div class="unit whole content_warning align-center">
+    <span> <i class="fa fa-warning margin_right"></i>CHANGES MADE HERE WILL EFFECT EVERY TIMETABLE, WEBSITE and APPS<i class="fa fa-warning margin_left"></i> </span>
+  </div>
+
+  <!-- =========== EXTRA FERRY SECTION ============ -->
+  <div class="unit whole content_card">
+
+    <div class="unit half">
+      <h3 class="bold">Extra Ferry Departing Arranmore</h3>
+        <span>Add extra ferries:</span> <br>
+        <!-- LIST OF FERRIES -->
+        <span id="extra_ferry_list_da"></span>
+        <!-- END OF LIST -->
+      <div class="add_ferry_form align-center">
+        <form>
+          <input type="date" class="extra_ferry_date">
+          <input type="time" class="extra_ferry_time">
+          <a class="extra_ferry_da add_btn"> <i class="fa fa-plus-circle margin_right_small"></i>Add Extra Ferry</a>
+        </form>
+      </div>
+    </div>
+    <!-- TABLE -->
+    <div class="unit half">
+      <table class="main_color" id="extra_ferry_da" border=1> </table>
+    </div>
+
+  </div>
+    <!-- =========== END SECTION ============ -->
+
+      <!-- =========== EXTRA FERRY SECTION ============ -->
+  <div class="unit whole content_card">
+
+    <div class="unit half">
+      <h3 class="bold">Extra Ferry Departing Burtonport</h3>
+        <span>Add extra ferries:</span> <br>
+        <!-- LIST OF FERRIES -->
+        <span id="extra_ferry_list_db"></span>
+        <!-- END OF LIST -->
+      <div class="add_ferry_form align-center">
+        <form>
+          <input type="date" class="extra_ferry_date">
+          <input type="time" class="extra_ferry_time">
+          <a class="extra_ferry_db add_btn"> <i class="fa fa-plus-circle margin_right_small"></i>Add Extra Ferry</a>
+        </form>
+      </div>
+    </div>
+    <!-- TABLE -->
+    <div class="unit half">
+      <table class="main_color" id="extra_ferry_db" border=1> </table>
+    </div>
+
+  </div>
+    <!-- =========== END SECTION ============ -->
+
+
+</div>
+
+<div style="height:35px;"></div>
+
+<!-- FOOTER BAR -->
+  <div class="grid whole footer_bar">
+      <span style="float:left;">&copy; Arranmore Fast Ferry</span>
+      <span style="float:right;">v0.1</span>
+  </div>
+
+
+<!-- BIG SLIDE -->
+  <script>
+      $(document).ready(function() {
+          $('.menu-link').bigSlide();
+      });
+  </script>
+
+  </body>
+</html>
