@@ -185,21 +185,23 @@ function createExtrasTable(journey){
 		// GENERATE THE TABLE PIECES
 		if (journey == journey1) {
 			var journeyTitle = "Departing Arranmore";
+			var cssColor = "main_color";
 		} else {
 			var journeyTitle = "Departing Burtonport";
+			var cssColor = "opp_color";
 		}
 
 		if (array.length > 0) {
 			// construct table for extra ferries
 			// Header
-			var extraFerryTable = "<tr> <th class='main_color'> Extra Ferries " + journeyTitle + " </th> </tr>"
+			var extraFerryTable = "<tr> <th class='" + cssColor + "'> Extra Ferries " + journeyTitle + " </th> </tr>"
 			// Rows in the table
 			for(var i=0; i < array.length; i++) {
-            	extraFerryTable += "<tr><td class='main_color light_darkText'>" + array[i] + "</td></tr>";
+            	extraFerryTable += "<tr><td class='" + cssColor + " light_darkText'>" + array[i] + "</td></tr>";
     		}
 		} else {
 			// write an empty statement
-			extraFerryTable = "<tr> <th class='main_color'>There are no extra ferries planned</th> </tr>"
+			extraFerryTable = "<tr> <th class='" + cssColor + "'>There are no extra ferries planned</th> </tr>"
 		}
 
 		if (journey == journey1) {

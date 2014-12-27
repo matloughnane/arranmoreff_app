@@ -359,7 +359,7 @@ function updateValues(firebaseToPush, timetable) {
 
 function updateTable(myArray, journeyTitle1, daysTitle1, seasonTitle, htmlID) {
 
-	if (seasonTitle == season1) {
+	if (journeyTitle1 == journey1) {
 		var headingColor = "main_color";
 		var tdTitleColor = "main_color light_darkText";
 	} else {
@@ -369,16 +369,16 @@ function updateTable(myArray, journeyTitle1, daysTitle1, seasonTitle, htmlID) {
 
 	if (daysTitle1 == days1) {
 		// Create the heading
-    	var result = "<tr> <th class=" + headingColor + " colspan=" + myArray.length + "> " + journeyTitle1 + "</th> </tr>";
+    	var result = "<table class='" + headingColor + "' border=1> <tr> <th class=" + headingColor + " colspan=" + myArray.length + "> " + journeyTitle1 + "</th> </tr>";
 	} else {
-		var result = "";
+		var result = "<table class='" + headingColor + "' border=1>";
 	}
     result += "<tr> <td class='" + tdTitleColor + "'colspan=" + myArray.length + ">" + daysTitle1 + "</td> </tr> <tr>";
     for(var i=0; i < myArray.length; i++) {
             result += "<td>" + myArray[i] + "</td>";
     }
     result += "</td>";    
-    result += "</td>";
+    result += "</td></table>";
 
 	return result;
 }
