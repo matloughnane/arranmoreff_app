@@ -181,6 +181,7 @@ function nextFerryTime(timeArray, journey, htmlID) {
 	for ( var i = 0; i < timeArray.length; i++){
 		if (timeNow < timeArray[i]) {
 			var nextFerry = timeArray[i];
+			break;
 		} else {
 			var nextFerry = "There are no more ferries today!";
 		}
