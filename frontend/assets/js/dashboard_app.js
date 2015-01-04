@@ -113,8 +113,13 @@ function generateTodaysArray(timetableObj, extraFerry, cancelFerry, journey) {
 
 function getTodaysArray(timetableObj, journey){
 
-	var tdate = new Date();
+	var todaysDate = todaysDateFormatted();
+	var tdate = new Date(todaysDate);
 	// AWKWARD OFF SET
+	tdate.setMonth(tdate.getMonth()+1);
+
+	// console.log(tdate.getDay());	
+	// console.log(tdate.getMonth());
 
 	if (tdate.getMonth() > 3 && tdate.getMonth() < 8 ) {
 		// console.log("It's SUMMER!");
@@ -142,7 +147,7 @@ function getTodaysArray(timetableObj, journey){
 	} else {
 		// console.log("It's WINTER!");
 		if (tdate.getDay() == 0) {
-			// console.log("It's SUNDAY WINTER");
+			// console.log("It's SUNDAY");
 			// WEEKEND JOURNEYS
 			if (journey == journey1) {
 				// console.log("winter weekend journey departing arranmore");
@@ -152,7 +157,7 @@ function getTodaysArray(timetableObj, journey){
 				return generateArrays(timetableObj.winter_db.weekend, "winter_db_we");
 			}
 		} else {
-			// console.log("It's A WEEKDAY WINTER");
+			// console.log("It's A WEEKDAY");
 			// WEEK DAY JOURNEY
 			if (journey == journey1) {
 				// console.log("winter weekday journey departing arranmore");

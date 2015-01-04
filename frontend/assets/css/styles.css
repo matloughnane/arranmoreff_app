@@ -1,0 +1,427 @@
+@-webkit-viewport {
+  width: device-width;
+}
+
+@-moz-viewport {
+  width: device-width;
+}
+
+@-ms-viewport {
+  width: device-width;
+}
+
+@-o-viewport {
+  width: device-width;
+}
+
+@viewport {
+  width: device-width;
+}
+
+/* line 10, sass/partials/_base.scss */
+body {
+  font-family: 'Rambla', sans-serif;
+  background-color: #bdbcbc;
+  margin: 0px;
+  text-align: 10px;
+}
+
+/* line 17, sass/partials/_base.scss */
+h1 {
+  color: #f4f5f5;
+  font-size: 3em;
+  padding: 10px;
+}
+
+/* line 23, sass/partials/_base.scss */
+p {
+  font-size: 18px;
+}
+
+/* line 27, sass/partials/_base.scss */
+a {
+  text-decoration: none;
+}
+
+/* line 31, sass/partials/_base.scss */
+i.margin_right {
+  margin-right: 10px;
+}
+
+/* line 34, sass/partials/_base.scss */
+i.margin_left {
+  margin-left: 10px;
+}
+
+/* line 39, sass/partials/_base.scss */
+.full_bar {
+  width: 100%;
+  background-color: #35c1d6;
+}
+
+/* line 44, sass/partials/_base.scss */
+.nav {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+  text-align: center;
+}
+/* line 49, sass/partials/_base.scss */
+.nav ul {
+  padding: 0px;
+  margin: 0px;
+}
+/* line 53, sass/partials/_base.scss */
+.nav li {
+  display: inline;
+  padding: 10px;
+  margin: 0px;
+}
+/* line 57, sass/partials/_base.scss */
+.nav li:hover {
+  box-shadow: 0px -5px 0px 0px #b6e2eb inset;
+}
+/* line 60, sass/partials/_base.scss */
+.nav li:active {
+  background-color: #0297a7;
+}
+/* line 64, sass/partials/_base.scss */
+.nav a {
+  color: #f4f5f5;
+  display: inline-block;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 10px 35px;
+  margin: 0px;
+}
+
+/* line 76, sass/partials/_base.scss */
+img.ri {
+  max-width: 30%;
+}
+
+/* line 80, sass/partials/_base.scss */
+.content {
+  background-color: #f4f5f5;
+  height: 250px;
+}
+
+/* line 85, sass/partials/_base.scss */
+.sidebar {
+  background-color: #b6e2eb;
+  height: 250px;
+}
+
+/* line 90, sass/partials/_base.scss */
+.location {
+  background-color: #f4f5f5;
+  height: 350px;
+}
+
+/* line 95, sass/partials/_base.scss */
+.google-maps {
+  position: relative;
+  padding-bottom: 75%;
+  height: 350;
+  overflow: hidden;
+}
+
+/* line 102, sass/partials/_base.scss */
+.google-maps iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+/* line 110, sass/partials/_base.scss */
+img.banner {
+  max-width: 100%;
+}
+
+/* line 114, sass/partials/_base.scss */
+.footer_bar {
+  text-align: center;
+  background-color: #35c1d6;
+  padding: 5px;
+}
+/* line 118, sass/partials/_base.scss */
+.footer_bar p {
+  color: #f4f5f5;
+  font-size: 12px;
+}
+
+@media screen and (max-width: 968px) {
+  /* line 127, sass/partials/_base.scss */
+  h1 {
+    color: #f4f5f5;
+    font-size: 2em;
+    padding: 0px;
+    margin: 0px;
+  }
+
+  /* line 133, sass/partials/_base.scss */
+  h2 {
+    font-size: 1.5em;
+  }
+
+  /* line 136, sass/partials/_base.scss */
+  h3 {
+    font-size: 1em;
+  }
+
+  /* line 139, sass/partials/_base.scss */
+  .nav li a {
+    font-size: 1em;
+  }
+
+  /* line 142, sass/partials/_base.scss */
+  p {
+    font-size: 1em;
+  }
+
+  /* line 145, sass/partials/_base.scss */
+  .sidebar p {
+    font-size: 0.9em;
+  }
+
+  /* line 148, sass/partials/_base.scss */
+  a {
+    font-size: 0.5em;
+  }
+}
+@media screen and (max-width: 640px) {
+  /* line 157, sass/partials/_base.scss */
+  h1 {
+    color: #f4f5f5;
+    font-size: 2em;
+    padding: 0px;
+    margin: 0px;
+  }
+
+  /* line 163, sass/partials/_base.scss */
+  p {
+    font-size: 1.0em;
+  }
+
+  /* line 166, sass/partials/_base.scss */
+  .content {
+    height: auto;
+  }
+
+  /* line 169, sass/partials/_base.scss */
+  .sidebar {
+    height: auto;
+  }
+  /* line 171, sass/partials/_base.scss */
+  .sidebar p {
+    font-size: 1em;
+  }
+
+  /* line 175, sass/partials/_base.scss */
+  .location {
+    height: auto;
+  }
+}
+/*
+Navigation Menu
+======================================
+*/
+/* line 185, sass/partials/_base.scss */
+.wrapper {
+  position: relative;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* line 191, sass/partials/_base.scss */
+.menu-link {
+  color: #f4f5f5;
+  position: absolute;
+  font-size: 1.5em;
+  padding: 0 0.5em;
+  background-color: #35c1d6;
+}
+/* line 197, sass/partials/_base.scss */
+.menu-link:hover {
+  background-color: #0297a7;
+}
+/* line 200, sass/partials/_base.scss */
+.menu-link:active {
+  background-color: #0297a7;
+}
+
+/* line 205, sass/partials/_base.scss */
+.subtitle {
+  text-align: center;
+  font-size: 1.125em;
+  margin: .5em 0;
+}
+
+/* line 211, sass/partials/_base.scss */
+.btn-list {
+  margin: 3em 0;
+  text-align: center;
+}
+/* line 214, sass/partials/_base.scss */
+.btn-list li {
+  display: inline-block;
+}
+/* line 216, sass/partials/_base.scss */
+.btn-list li:first-of-type {
+  margin-right: 1em;
+}
+
+/* line 222, sass/partials/_base.scss */
+.btn {
+  padding: 1em .5em;
+  text-align: center;
+  border-radius: 6px;
+}
+/* line 226, sass/partials/_base.scss */
+.btn:hover {
+  background: #16a085;
+}
+/* line 229, sass/partials/_base.scss */
+.btn:active {
+  background: #16a085;
+}
+
+/*
+Nav Panel
+======================================
+*/
+/* line 239, sass/partials/_base.scss */
+.panel {
+  text-transform: uppercase;
+  background: #35c1d6;
+  z-index: 9999;
+  position: fixed;
+  left: -15.625em;
+  /*or width of your navigation panel*/
+  width: 15.625em;
+  /*should match the above value*/
+}
+/* line 246, sass/partials/_base.scss */
+.panel ul {
+  list-style-type: none;
+  padding: 0px;
+  margin: 0px;
+}
+/* line 250, sass/partials/_base.scss */
+.panel ul li {
+  padding: 1em;
+  box-shadow: 0px -1px 0px 0px #0297a7 inset;
+}
+/* line 253, sass/partials/_base.scss */
+.panel ul li:hover {
+  background-color: #b6e2eb;
+}
+/* line 256, sass/partials/_base.scss */
+.panel ul li:active {
+  box-shadow: 0px -5px 0px 0px #0297a7 inset;
+}
+/* line 260, sass/partials/_base.scss */
+.panel ul a {
+  color: #f4f5f5;
+  padding: 1em;
+}
+/* line 263, sass/partials/_base.scss */
+.panel ul a.nav_link {
+  font-size: 1em;
+}
+
+/* line 270, sass/partials/_base.scss */
+.nav-icon {
+  margin-right: 6px;
+}
+
+/* line 1, sass/partials/_buttons.scss */
+.btn {
+  border: none;
+  background: none;
+  padding: 10px 10px;
+  display: inline-block;
+  margin: 8px 5px;
+  text-transform: lowercase;
+  text-decoration: none;
+  outline: none;
+  position: relative;
+  border-radius: 3px;
+  -webkit-transition: all 0.1s;
+  -moz-transition: all 0.1s;
+  transition: all 0.1s;
+}
+
+/* line 17, sass/partials/_buttons.scss */
+.default {
+  color: #f4f5f5;
+  background-color: #35c1d6;
+}
+/* line 20, sass/partials/_buttons.scss */
+.default a {
+  color: #f4f5f5;
+}
+/* line 23, sass/partials/_buttons.scss */
+.default:hover {
+  box-shadow: 0px -3px 0px 0px #0297a7 inset;
+  outline: 0 6px #0297a7;
+  background-color: #35c1d6;
+}
+/* line 28, sass/partials/_buttons.scss */
+.default:active {
+  background-color: #0297a7;
+  top: 0px;
+}
+
+/* line 34, sass/partials/_buttons.scss */
+.googlebtn {
+  color: #f4f5f5;
+  background-color: #dd4b39;
+}
+/* line 37, sass/partials/_buttons.scss */
+.googlebtn:hover {
+  box-shadow: 0px -3px 0px 0px #892417 inset;
+  outline: 0 6px #892417;
+  background-color: #e05a4a;
+}
+/* line 42, sass/partials/_buttons.scss */
+.googlebtn:active {
+  background-color: #dd4b39;
+  top: 0px;
+}
+
+/* line 48, sass/partials/_buttons.scss */
+.twitterbtn {
+  color: #f4f5f5;
+  background-color: #00aced;
+}
+/* line 51, sass/partials/_buttons.scss */
+.twitterbtn:hover {
+  box-shadow: 0px -3px 0px 0px #0081b2 inset;
+  outline: 0 6px #0081b2;
+  background-color: #29c4ff;
+}
+/* line 57, sass/partials/_buttons.scss */
+.twitterbtn:active {
+  background-color: #00aced;
+  top: 0px;
+}
+
+/* line 63, sass/partials/_buttons.scss */
+.githubbtn {
+  color: #f4f5f5;
+  background-color: #0e1717;
+}
+/* line 66, sass/partials/_buttons.scss */
+.githubbtn:hover {
+  box-shadow: 0px -3px 0px 0px #426c6c inset;
+  outline: 0 6px #426c6c;
+  background-color: #77adad;
+}
+/* line 72, sass/partials/_buttons.scss */
+.githubbtn:active {
+  background-color: #0e1717;
+  top: 0px;
+}
