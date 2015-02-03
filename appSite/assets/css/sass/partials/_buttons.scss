@@ -1,0 +1,76 @@
+.btn {
+	border: none;
+	background: none;
+	padding: 10px 10px;
+	display: inline-block;
+	margin: 8px 5px;
+	text-transform: lowercase;
+	text-decoration: none;
+	outline: none;
+	position: relative;
+	border-radius: 3px;
+	-webkit-transition: $transition;
+	-moz-transition: $transition;
+	transition: $transition;
+}
+
+.default {
+	color: $bkg_color;
+	background-color: $main_color;
+	a {
+		color: $bkg_color;
+	}
+	&:hover {
+		box-shadow: 0px -3px 0px 0px $main_color_dark inset;
+		outline: 0 6px $main_color_dark;
+		background-color: $main_color;
+	}
+	&:active {
+		background-color: $main_color_dark;
+		top: 0px;
+	}
+}
+
+.googlebtn {
+	color: $bkg_color;
+	background-color: $google_red;
+	&:hover {
+		box-shadow: 0px -3px 0px 0px $google_red_dark inset;
+		outline: 0 6px $google_red_dark;
+		background-color: $google_red_accent;
+	}
+	&:active {
+		background-color: $google_red;
+		top: 0px;
+	}
+}
+
+.twitterbtn {
+	color: $bkg_color;
+	background-color: $twitter_blue;
+	&:hover {
+		box-shadow: 0px -3px 0px 0px $twitter_blue_dark inset;
+		outline: 0 6px $twitter_blue_dark;
+		background-color: $twitter_blue_accent;
+		// color: $bkg_dark;
+	}
+	&:active {
+		background-color: $twitter_blue;
+		top: 0px;
+	}
+}
+
+.githubbtn {
+	color: $bkg_color;
+	background-color: $github_black;
+	&:hover {
+		box-shadow: 0px -3px 0px 0px $github_black_dark inset;
+		outline: 0 6px $github_black_dark;
+		background-color: $github_black_accent;
+		// color: $bkg_dark;
+	}
+	&:active {
+		background-color: $github_black;
+		top: 0px;
+	}
+}

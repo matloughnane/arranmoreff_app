@@ -1,0 +1,272 @@
+
+@-webkit-viewport { width: device-width; }
+@-moz-viewport { width: device-width; }
+@-ms-viewport { width: device-width; }
+@-o-viewport { width: device-width; }
+@viewport { width: device-width; }
+
+
+// BASIC FORMATTING
+body {
+	font-family: 'Rambla', sans-serif;
+	background-color: $bkg_dark;
+	margin: 0px;
+	text-align: 10px;
+}
+
+h1 {
+	color: $bkg_color;
+	font-size: 3em;
+	padding: 10px;
+}
+
+p {
+	font-size: 18px;
+}
+
+a {
+	text-decoration: none;
+}
+
+i.margin_right {
+	margin-right: 10px;
+}
+i.margin_left {
+	margin-left: 10px;
+}
+// Navigation
+
+.full_bar {
+	width: 100%;
+	background-color: $main_color;
+}
+
+.nav {
+		list-style: none;
+		margin: 0px;
+		padding: 0px;
+		text-align: center;
+		ul {
+			padding: 0px;
+			margin: 0px;
+		}
+		li {
+			display: inline;
+			padding: 10px;
+			margin: 0px;
+			&:hover {
+				box-shadow: 0px -5px 0px 0px $main_color_accent inset;
+			}
+			&:active {
+				background-color: $main_color_dark;
+			}
+	}
+	a {
+		color: $bkg_color;
+		display: inline-block;
+		text-decoration: none;
+		text-transform: uppercase;
+		padding: 10px 35px;
+		margin: 0px;
+	}
+}
+
+// DIV CONTAINERS
+
+img.ri {
+	max-width: 30%;
+}
+
+.content {
+	background-color: $bkg_color;
+	height: 250px;
+}
+
+.sidebar {
+	background-color: $main_color_accent;
+	height: 250px;
+}
+
+.location {
+	background-color: $bkg_color;
+	height: 350px;
+}
+
+.google-maps {
+    position: relative;
+    padding-bottom: 75%; // This is the aspect ratio
+    height: 350;
+    overflow: hidden;
+}
+
+.google-maps iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important;
+}
+
+img.banner {
+	max-width: 100%;
+}
+
+.footer_bar {
+	text-align: center;
+	background-color: $main_color;
+	padding: 5px;
+	p {
+		color: $bkg_color;
+		font-size: 12px;
+	}
+}
+
+// MID SCREENs
+
+@media screen and (max-width: 968px) {
+	h1 {
+		color: $bkg_color;
+		font-size: 2em;
+		padding: 0px;
+		margin: 0px;
+	}
+	h2 {
+		font-size: 1.5em;
+	}
+	h3 {
+		font-size: 1em;
+	}
+	.nav li a {
+		font-size: 1em;
+	}
+	p {
+		font-size: 1em;
+	}
+	.sidebar p {
+		font-size: 0.9em;
+	}
+	a {
+		font-size: 0.5em;
+	}
+}
+
+
+// MOBILE SCREENs
+
+@media screen and (max-width: 640px) {
+	h1 {
+		color: $bkg_color;
+		font-size: 2em;
+		padding: 0px;
+		margin: 0px;
+	}
+	p {
+		font-size: 1.0em;
+	}
+	.content {
+		height: auto;
+	}
+	.sidebar {
+		height: auto;
+		p {
+			font-size: 1em;
+		}
+	}
+	.location {
+		height: auto;
+	}
+}
+
+/*
+Navigation Menu
+======================================
+*/
+
+.wrapper {
+  position: relative;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.menu-link {
+	color: $bkg_color;
+	position: absolute;
+  	font-size: 1.5em;
+  	padding: 0 0.5em;
+  	background-color: $main_color;
+  	&:hover {
+		background-color: $main_color_dark;
+  	}
+  	&:active {
+		background-color: $main_color_dark;
+  }
+}
+
+.subtitle {
+  text-align: center;
+  font-size: 1.125em;
+  margin: .5em 0;
+}
+
+.btn-list {
+  margin: 3em 0;
+  text-align: center;
+  li {
+	display: inline-block;
+  	&:first-of-type {
+  		margin-right: 1em;
+  	}
+  }
+}
+
+.btn {
+  padding: 1em .5em;
+  text-align: center;
+  border-radius: 6px;
+  &:hover {
+	background: #16a085;
+  }
+  &:active {
+  	background: #16a085;
+  }
+}
+
+/*
+Nav Panel
+======================================
+*/
+
+.panel {
+	text-transform: uppercase;
+	background: $main_color;
+	z-index: 9999;
+	position: fixed;
+	left: -15.625em; /*or width of your navigation panel*/
+	width: 15.625em; /*should match the above value*/
+	  ul {
+	  	list-style-type: none;
+	  	padding: 0px;
+	  	margin: 0px;
+	  li {
+	  	padding: 1em;
+	  	box-shadow: 0px -1px 0px 0px $main_color_dark inset;
+	  	&:hover {
+	  		background-color: $main_color_accent;
+	  	}
+	  	&:active {
+	  		box-shadow: 0px -5px 0px 0px $main_color_dark inset
+	  			}
+	  }
+	  a {
+	  	color: $bkg_color;
+	  	padding: 1em;
+	  	&.nav_link {
+	  		font-size: 1em;
+	  	}
+	  	}
+	}
+}
+
+.nav-icon {
+  margin-right: 6px;
+}
