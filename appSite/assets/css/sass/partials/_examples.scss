@@ -1,0 +1,163 @@
+@CHARSET "ISO-8859-1";
+/* Reset CSS
+ * --------------------------------------- */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,
+form,fieldset,input,textarea,p,blockquote,th,td {
+    padding: 0;
+    margin: 0;
+}
+a{
+	text-decoration:none;
+}
+table {
+    border-spacing: 0;
+}
+fieldset,img {
+    border: 0;
+}
+address,caption,cite,code,dfn,em,strong,th,var {
+    font-weight: normal;
+    font-style: normal;
+}
+strong{
+	font-weight: bold;
+}
+ol,ul {
+    list-style: none;
+    margin:0;
+    padding:0;
+}
+
+ul.list {
+	// list-style: ;
+	margin: 10px 20px;
+    padding:5px;
+	list-style-type: square;
+	li {
+		padding:5px;
+	}
+}
+
+caption,th {
+    text-align: left;
+
+}
+h1,h2,h3,h4,h5,h6 {
+    font-weight: normal;
+    font-size: 100%;
+    margin:0;
+    padding:0;
+    color: $bkg_dark;
+}
+q:before,q:after {
+    content:'';
+}
+abbr,acronym { border: 0;
+}
+
+
+/* Custom CSS
+ * --------------------------------------- */
+body{
+	font-family: arial,helvetica;
+	/*color: #333;*/
+	color: white;
+	background-image: url(../img/background-01.jpg);
+	background-size: cover;
+}
+.wrap{
+	margin-left: auto;
+	margin-right: auto;
+	// width: 1180px;
+	position: relative;
+}
+h1{
+	font-size: 6em;
+}
+
+
+h2{
+	font-size: 3em;
+}
+
+// p{
+// 	font-size: 2em;
+// }
+
+.intro p{
+	width: 50%;
+	margin: 0 auto;
+	font-size: 1.5em;
+}
+.section{
+	text-align:center;
+}
+#menu li {
+	display:inline-block;
+	margin: 10px;
+	color: #000;
+	background: rgba(255,255,255, 0.5);
+	-webkit-border-radius: 2px;
+            border-radius: 2px;
+}
+#menu li.active{
+	background:#666;
+	background: rgba(0,0,0, 0.5);
+	color: #fff;
+}
+#menu li a{
+	text-decoration:none;
+	color: #000;
+}
+#menu li.active a:hover{
+	color: #000;
+}
+#menu li:hover{
+	background: rgba(255,255,255, 0.8);
+}
+#menu li a,
+#menu li.active a{
+	padding: 9px 18px;
+	display:block;
+}
+#menu li.active a{
+	color: #fff;
+}
+#menu{
+	position:fixed;
+	top:0;
+	left:0;
+	height: 40px;
+	z-index: 70;
+	width: 100%;
+	padding: 0;
+	margin:0;
+}
+
+
+
+#header, #footer{
+	position:fixed;
+	height: 40px;
+	display:block;
+	width: 100%;
+	background: rgba(52, 152, 219, 0.5);
+	z-index:9;
+	text-align:left;
+	color: #f2f2f2;
+	padding: 20px 0 0 0;
+}
+
+#header{
+	top:0px;
+}
+
+
+/*ANIMATED LOADER*/
+
+svg {
+/*  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;*/
+  margin: auto;
+  rect { fill: #76daff; }
+}

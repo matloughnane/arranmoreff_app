@@ -1,6 +1,14 @@
 //Colors
 $bkg_color: #F4F5F5;
-$bkg_dark: #BDBCBC;
+
+// GREY
+// GREY 100
+$bkg_light: #F5F5F5;
+// GREY 800
+$bkg_dark: #424242;
+// GREY 300
+$grey_light: #9E9E9E;
+
 
 // Theme Color
 $main_color: #35C1D6;
@@ -32,3 +40,4 @@ $github_black_dark: #426c6c;
 
 // transition times
 $transition: all 0.1s;
+$border-radius: 2px;
