@@ -15,7 +15,13 @@
 <!-- NAVIGATION -->
 <nav>
   <div class="nav_bar">
-    <a href="#" class="cd-btn"><i class="mdi-navigation-menu"></i></a><div>Extras</div>
+    <a href="#" class="cd-btn"><i class="mdi-navigation-menu"></i></a><div>Extra Ferries</div>
+    <!-- POSSIBILITY OF ADDING AN EDITABLE SWITCH -->
+    <!-- <span class="editable_div">
+      <span class="margin_right">Flick the switch to edit</span>
+      <input id="editable" type="checkbox" hidden="hidden" class="editable_switch"/>
+      <label for="editable" class="switch"></label>
+    </span> -->
     <a href="javascript:history.go(0)" class="refresh-icon"><i class="mdi-navigation-refresh"></i></a>
   </div>
 
@@ -37,83 +43,58 @@
 
 <div class="nav_bar_buffer"></div>
 
-
 <main >
 
 <!-- NO INTERNET CONNECTION NOTIFICATION -->
-<div class="grid padded">
+<!-- <div class="grid padded" id="internet_notification">
   <div class="unit whole card shadow1 red align-center">
-    NO INTERNET CONNECTION
+    <p><i class="mdi-alert-warning margin_right"></i>No internet connection - you can't change the timetables without an internet connection!<i class="mdi-alert-warning margin_left"></i></p>
+  </div>
+</div> -->
+
+<!-- WARNING FOR CHANGES -->
+<div class="grid padded">
+  <div class="unit whole card red shadow1 align-center">
+    <span> <i class="mdi-alert-warning margin_right"></i>CHANGES MADE HERE WILL EFFECT EVERY TIMETABLE ON WEBSITES and APPS<i class="mdi-alert-warning margin_left"></i> </span>
   </div>
 </div>
+
+
+<!-- DEPARTING ARRANMORE EXTRA -->
+<div id="jantoapr" class="grid padded">
+  <div class="unit whole card shadow1 plain padded_left_right">
+    <h3 class="blue_text">Extra Ferries Departing Arranmore:</h3>
+    <div class="unit half">
+      EXTRA FERRIES EDITABLE LIST
+    </div>
+    <!-- END OF FIRST HALF -->
+    <div class="unit half">
+      EXTRA FERRIES ON WEBSITE
+    </div>
+  </div>
+</div>
+
+
+<!-- DEPARTING BURTONPORT EXTRA -->
+<div id="jantoapr" class="grid padded">
+  <div class="unit whole card shadow1 plain padded_left_right">
+    <h3 class="orange_text">Extra Ferries Departing Burtonport:</h3>
+    <div class="unit half">
+      EXTRA FERRIES EDITABLE LIST
+    </div>
+    <!-- END OF FIRST HALF -->
+    <div class="unit half">
+      EXTRA FERRIES ON WEBSITE
+    </div>
+  </div>
+</div>
+
+
 
 <!-- LOCAL TIME -->
-<div class="grid padded">
-  <div class="unit whole card shadow1 orange align-center">
-    ARRANMORE LOCAL TIME
-  </div>
-</div>
-
-
-<!-- LOCAL CLOCK BANNER -->
-<div id="next_ferries" class="grid padded">
-  <div class="unit half card shadow1 blue align-center">
-    <span id="next_ferry_da_title"></span>
-    <span class="tferry_time" id="nextFerry_da">
-
-      <div class="align-center">
-        NEXT FERRY TIME
-      </div>
-
-    </span>
-  </div>
-  <div class="unit half card orange shadow1 align-center">
-    <span id="next_ferry_db_title"></span>
-    <span class="tferry_time" id="nextFerry_db">
-
-      <div class="align-center">
-        NEXT FERRY TIME
-      </div>
-
-    </span>
-  </div>
-</div>
-
-<!-- TIMETABLE -->
 <div class="grid padded">
   <div class="unit whole card shadow1 plain align-center">
-    <h3>Arranmore with split inside card</h3>
-    <!-- TWO HALVES BANNER -->
-      <div id="next_ferries" class="grid padded">
-        <div class="unit half card shadow1 blue align-center">
-          <span id="next_ferry_da_title"></span>
-          <span class="tferry_time" id="nextFerry_da">
-
-            <div class="align-center">
-              NEXT FERRY TIME
-            </div>
-
-          </span>
-        </div>
-        <div class="unit half card orange shadow1 align-center">
-          <span id="next_ferry_db_title"></span>
-          <span class="tferry_time" id="nextFerry_db">
-
-            <div class="align-center">
-              NEXT FERRY TIME
-            </div>
-
-          </span>
-        </div>
-      </div>
-
-  </div>
-</div>
-
-<!-- LOCAL TIME -->
-<div class="grid padded">
-  <div class="unit whole card shadow1 blue align-center">
-    footer
+    <a class="btn btn_blue" href="mailto:mat.loughnane@gmail.com" target="_blank">No idea what's going on? Email Mat</a>
   </div>
 </div>
 
@@ -122,6 +103,17 @@
   <!--  Scripts-->
   <script src="../assets/js/jquery-2.1.3.min.js"></script>
   <script src="../assets/js/sidepanel.js"></script>
+  <script src="../assets/js/toastr.min.js"></script>
+  <script src="../assets/js/firebase.js"></script>
+  <script src="../assets/js/adminApp_extras.js"></script>
+
+  <script>
+  toastr.options = {
+    "positionClass": "toast-bottom-right",
+  }
+  </script>
 
   </body>
 </html>
+
+

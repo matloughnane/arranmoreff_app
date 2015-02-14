@@ -1,7 +1,8 @@
 body {
-	font-family: "Roboto";
+	font-family: "Roboto", sans-serif;
 	margin: 0px;
 	font-size: 100%;
+	font-weight: 300;
 	color: $bkg_dark;
 	background: $bkg_light;
 	&.first_time {
@@ -30,7 +31,7 @@ h1, h2, h3, {
 }
 
 h4, h5, h6 {
-	font-weight: 400;
+	font-weight: 550;
 	-webkit-margin-before: 0.15em;
 	-webkit-margin-after: 0.15em;
 	-webkit-margin-start: 0px;

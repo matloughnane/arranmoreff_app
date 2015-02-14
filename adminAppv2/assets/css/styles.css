@@ -3815,35 +3815,36 @@
 
 /* line 1, partials/_layout.scss */
 body {
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   margin: 0px;
   font-size: 100%;
+  font-weight: 300;
   color: #424242;
   background: whitesmoke;
 }
-/* line 7, partials/_layout.scss */
+/* line 8, partials/_layout.scss */
 body.first_time {
   background: #ffb74d;
   color: whitesmoke;
 }
 
-/* line 12, partials/_layout.scss */
+/* line 13, partials/_layout.scss */
 ::selection {
   background: #03a9f4;
 }
 
-/* line 16, partials/_layout.scss */
+/* line 17, partials/_layout.scss */
 ::-moz-selection {
   background: #03a9f4;
 }
 
-/* line 20, partials/_layout.scss */
+/* line 21, partials/_layout.scss */
 a {
   color: black;
   text-decoration: none;
 }
 
-/* line 25, partials/_layout.scss */
+/* line 26, partials/_layout.scss */
 h1, h2, h3 {
   -webkit-margin-before: 0.5em;
   -webkit-margin-after: 0.5em;
@@ -3851,104 +3852,104 @@ h1, h2, h3 {
   -webkit-margin-end: 0px;
 }
 
-/* line 32, partials/_layout.scss */
+/* line 33, partials/_layout.scss */
 h4, h5, h6 {
-  font-weight: 400;
+  font-weight: 550;
   -webkit-margin-before: 0.15em;
   -webkit-margin-after: 0.15em;
   -webkit-margin-start: 0px;
   -webkit-margin-end: 0px;
 }
 
-/* line 42, partials/_layout.scss */
+/* line 43, partials/_layout.scss */
 .card {
   border-radius: 2px;
   margin-bottom: 15px;
 }
 
-/* line 48, partials/_layout.scss */
+/* line 49, partials/_layout.scss */
 .padded_left_right {
   padding-left: 10px !important;
   padding-right: 10px !important;
 }
 
-/* line 53, partials/_layout.scss */
+/* line 54, partials/_layout.scss */
 .plain {
   background: whitesmoke;
   color: #424242;
 }
 
-/* line 57, partials/_layout.scss */
+/* line 58, partials/_layout.scss */
 .blue {
   background: #03a9f4;
   color: whitesmoke;
 }
 
-/* line 61, partials/_layout.scss */
+/* line 62, partials/_layout.scss */
 .blue_light {
   background: #81d4fa;
   color: #424242;
 }
 
-/* line 65, partials/_layout.scss */
+/* line 66, partials/_layout.scss */
 .blue_dull {
   background: #0277bd;
   color: whitesmoke;
 }
 
-/* line 69, partials/_layout.scss */
+/* line 70, partials/_layout.scss */
 .orange {
   background: #f57c00;
   color: whitesmoke;
 }
 
-/* line 73, partials/_layout.scss */
+/* line 74, partials/_layout.scss */
 .orange_light {
   background: #ffb74d;
   color: #424242;
 }
 
-/* line 77, partials/_layout.scss */
+/* line 78, partials/_layout.scss */
 .orange_dull {
   background: #e65100;
   color: whitesmoke;
 }
 
-/* line 81, partials/_layout.scss */
+/* line 82, partials/_layout.scss */
 .green {
   background: #388e3c;
   color: whitesmoke;
 }
 
-/* line 85, partials/_layout.scss */
+/* line 86, partials/_layout.scss */
 .green_light {
   font-size: 15px;
   background: #a5d6a7;
 }
 
-/* line 91, partials/_layout.scss */
+/* line 92, partials/_layout.scss */
 .red {
   background: #d32f2f;
   color: whitesmoke;
 }
 
-/* line 96, partials/_layout.scss */
+/* line 97, partials/_layout.scss */
 .light_red {
   background: #ef9a9a;
 }
 
-/* line 100, partials/_layout.scss */
+/* line 101, partials/_layout.scss */
 .light_green {
   background-color: #a5d6a7;
 }
 
-/* line 104, partials/_layout.scss */
+/* line 105, partials/_layout.scss */
 .card_noBottom {
   border-radius: 2px;
   margin-bottom: 0px;
 }
 
-/* line 112, partials/_layout.scss */
+/* line 113, partials/_layout.scss */
 .btn {
   border: none;
   background: none;
@@ -3964,118 +3965,118 @@ h4, h5, h6 {
   transition: all 0.1s;
 }
 
-/* line 127, partials/_layout.scss */
+/* line 128, partials/_layout.scss */
 .btn_blue {
   background-color: #03a9f4 !important;
   color: whitesmoke !important;
 }
-/* line 130, partials/_layout.scss */
+/* line 131, partials/_layout.scss */
 .btn_blue:hover {
   box-shadow: 0px -3px 0px 0px #0277bd inset;
 }
-/* line 133, partials/_layout.scss */
+/* line 134, partials/_layout.scss */
 .btn_blue:active {
   background-color: #0277bd !important;
 }
 
-/* line 138, partials/_layout.scss */
+/* line 139, partials/_layout.scss */
 .btn_orange {
   background-color: #f57c00 !important;
   color: whitesmoke !important;
 }
 
-/* line 143, partials/_layout.scss */
+/* line 144, partials/_layout.scss */
 .btn_no_margin {
   margin: 0px;
 }
 
-/* line 147, partials/_layout.scss */
+/* line 148, partials/_layout.scss */
 .btn_large {
   font-size: 1.2em !important;
 }
 
-/* line 151, partials/_layout.scss */
+/* line 152, partials/_layout.scss */
 .btn_add {
   background-color: whitesmoke !important;
   color: #388e3c !important;
   padding: 4px 5px !important;
 }
-/* line 155, partials/_layout.scss */
+/* line 156, partials/_layout.scss */
 .btn_add:hover {
   box-shadow: 0px -2px 0px 0px #1b5e20 inset;
 }
-/* line 158, partials/_layout.scss */
+/* line 159, partials/_layout.scss */
 .btn_add:active {
   background-color: #1b5e20 !important;
   color: whitesmoke !important;
 }
 
-/* line 164, partials/_layout.scss */
+/* line 165, partials/_layout.scss */
 .btn_remove {
   background-color: whitesmoke !important;
   color: #ef9a9a !important;
 }
 
-/* line 171, partials/_layout.scss */
+/* line 172, partials/_layout.scss */
 .shadow1 {
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 }
 
-/* line 174, partials/_layout.scss */
+/* line 175, partials/_layout.scss */
 .shadow2 {
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 }
 
-/* line 177, partials/_layout.scss */
+/* line 178, partials/_layout.scss */
 .shadow3 {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
 }
 
-/* line 180, partials/_layout.scss */
+/* line 181, partials/_layout.scss */
 .shadow4 {
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
 
-/* line 183, partials/_layout.scss */
+/* line 184, partials/_layout.scss */
 .shadow5 {
   box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
 }
 
-/* line 190, partials/_layout.scss */
+/* line 191, partials/_layout.scss */
 .left_half {
   padding-right: 5px;
 }
 
-/* line 194, partials/_layout.scss */
+/* line 195, partials/_layout.scss */
 .right_half {
   padding-left: 5px;
 }
 
-/* line 198, partials/_layout.scss */
+/* line 199, partials/_layout.scss */
 .padded {
   padding: 0px 8px;
 }
 
-/* line 202, partials/_layout.scss */
+/* line 203, partials/_layout.scss */
 .tferry_time {
   display: block;
   padding: 10px;
   font-size: 2em;
 }
 
-/* line 208, partials/_layout.scss */
+/* line 209, partials/_layout.scss */
 #static_timetable {
   display: none;
 }
 
-/* line 213, partials/_layout.scss */
+/* line 214, partials/_layout.scss */
 .tferry_table_title {
   display: block;
   padding: 5px;
   font-size: 1em;
 }
 
-/* line 219, partials/_layout.scss */
+/* line 220, partials/_layout.scss */
 .settings_title {
   display: block;
   font-weight: 600;
@@ -4083,7 +4084,7 @@ h4, h5, h6 {
   font-size: 1em;
 }
 
-/* line 226, partials/_layout.scss */
+/* line 227, partials/_layout.scss */
 .horizontal_line {
   width: 400px;
   height: 0;
@@ -4091,60 +4092,60 @@ h4, h5, h6 {
   font-size: 0;
 }
 
-/* line 233, partials/_layout.scss */
+/* line 234, partials/_layout.scss */
 .loading_text {
   font-size: 0.4em;
 }
 
-/* line 237, partials/_layout.scss */
+/* line 238, partials/_layout.scss */
 .blue_text {
   color: #0277bd;
 }
 
-/* line 242, partials/_layout.scss */
+/* line 243, partials/_layout.scss */
 .orange_text {
   color: #e65100;
 }
 
-/* line 247, partials/_layout.scss */
+/* line 248, partials/_layout.scss */
 .settings_text {
   padding: 5px;
   margin-left: 14px;
   font-size: 1em;
 }
 
-/* line 253, partials/_layout.scss */
+/* line 254, partials/_layout.scss */
 .margin_small {
   margin: 5px;
 }
 
-/* line 257, partials/_layout.scss */
+/* line 258, partials/_layout.scss */
 .margin_left {
   margin-left: 10px;
 }
 
-/* line 261, partials/_layout.scss */
+/* line 262, partials/_layout.scss */
 .margin_right {
   margin-right: 10px;
 }
 
-/* line 265, partials/_layout.scss */
+/* line 266, partials/_layout.scss */
 .important_text {
   font-size: 1.5em;
   font-weight: 700;
 }
 
-/* line 270, partials/_layout.scss */
+/* line 271, partials/_layout.scss */
 .date_text {
   font-size: 0.8em;
   color: #9e9e9e;
 }
 
-/* line 275, partials/_layout.scss */
+/* line 276, partials/_layout.scss */
 img {
   max-width: 100%;
 }
-/* line 277, partials/_layout.scss */
+/* line 278, partials/_layout.scss */
 img.first_time_logo {
   width: 60%;
   margin-top: 10px;
@@ -4166,58 +4167,93 @@ table.blue {
   border: 1px solid #03a9f4;
   color: #0277bd;
 }
-/* line 17, partials/_tables.scss */
+/* line 16, partials/_tables.scss */
+table.blue.no_top_border {
+  border-top: 0px;
+  border-left: 1px solid #03a9f4;
+  border-right: 1px solid #03a9f4;
+}
+/* line 22, partials/_tables.scss */
 table.orange {
   border: 1px solid #f57c00;
   color: #e65100;
 }
-
-/* line 28, partials/_tables.scss */
-tr.blue {
-  color: #0277bd;
-}
-/* line 31, partials/_tables.scss */
-tr.orange {
-  color: #e65100;
+/* line 25, partials/_tables.scss */
+table.orange.no_top_border {
+  border-top: 0px;
+  border-left: 1px solid #f57c00;
+  border-right: 1px solid #f57c00;
 }
 
-/* line 36, partials/_tables.scss */
-th {
-  padding: 10px 0px;
-}
 /* line 38, partials/_tables.scss */
-th.blue {
-  background: #0277bd;
-  color: white;
-}
-/* line 42, partials/_tables.scss */
-th.orange {
-  background: #e65100;
-  color: white;
-}
-/* line 47, partials/_tables.scss */
-th.subheading.blue {
-  background: #03a9f4;
-  color: white;
-}
-/* line 51, partials/_tables.scss */
-th.subheading.orange {
-  background: #f57c00;
-  color: white;
-}
-
-/* line 59, partials/_tables.scss */
 tbody.blue {
   color: #0277bd;
 }
-/* line 62, partials/_tables.scss */
+/* line 41, partials/_tables.scss */
 tbody.orange {
   color: #e65100;
 }
 
-/* line 67, partials/_tables.scss */
+/* line 47, partials/_tables.scss */
 td {
   padding: 10px 0px;
+}
+/* line 49, partials/_tables.scss */
+td.fri_subheading {
+  padding: 5px 0px;
+}
+/* line 51, partials/_tables.scss */
+td.fri_subheading.blue {
+  background-color: whitesmoke;
+  color: #0277bd;
+  border-right: 1px solid #03a9f4;
+}
+/* line 55, partials/_tables.scss */
+td.fri_subheading.orange {
+  background-color: whitesmoke;
+  color: #e65100;
+  border-right: 1px solid #f57c00;
+}
+
+/* line 72, partials/_tables.scss */
+th {
+  padding: 10px 0px;
+}
+/* line 74, partials/_tables.scss */
+th.blue {
+  background: #0277bd;
+  color: white;
+}
+/* line 78, partials/_tables.scss */
+th.orange {
+  background: #e65100;
+  color: white;
+}
+/* line 83, partials/_tables.scss */
+th.subheading.blue {
+  background: #03a9f4;
+  color: white;
+}
+/* line 87, partials/_tables.scss */
+th.subheading.orange {
+  background: #f57c00;
+  color: white;
+}
+/* line 92, partials/_tables.scss */
+th.fri_subheading {
+  padding: 5px 0px !important;
+}
+/* line 94, partials/_tables.scss */
+th.fri_subheading.blue {
+  background: #81d4fa;
+  color: #0277bd;
+  border-right: 1px solid #03a9f4;
+}
+/* line 98, partials/_tables.scss */
+th.fri_subheading.orange {
+  background: #ffb74d;
+  color: #e65100;
+  border-right: 1px solid #f57c00;
 }
 
 /* line 4, partials/_forms.scss */
@@ -4547,6 +4583,272 @@ input:checked + .switch::before {
 /* line 302, partials/_forms.scss */
 input:checked + .switch:active::before {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.28), 0 0 0 20px rgba(0, 150, 136, 0.2);
+}
+
+/* line 1, partials/_toastr.scss */
+.toast-title {
+  font-weight: bold;
+}
+
+/* line 4, partials/_toastr.scss */
+.toast-message {
+  -ms-word-wrap: break-word;
+  word-wrap: break-word;
+}
+
+/* line 9, partials/_toastr.scss */
+.toast-message a,
+.toast-message label {
+  color: whitesmoke;
+}
+
+/* line 12, partials/_toastr.scss */
+.toast-message a:hover {
+  color: whitesmoke;
+  text-decoration: none;
+}
+
+/* line 16, partials/_toastr.scss */
+.toast-close-button {
+  position: relative;
+  right: -0.3em;
+  top: -0.3em;
+  float: right;
+  font-size: 20px;
+  font-weight: bold;
+  color: whitesmoke;
+  -webkit-text-shadow: 0 1px 0 #ffffff;
+  text-shadow: 0 1px 0 whitesmoke;
+}
+
+/* line 31, partials/_toastr.scss */
+.toast-close-button:hover,
+.toast-close-button:focus {
+  color: #424242;
+  text-decoration: none;
+  cursor: pointer;
+  opacity: 0.4;
+  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=40);
+  filter: alpha(opacity=40);
+}
+
+/*Additional properties for button version
+ iOS requires the button element instead of an anchor tag.
+ If you want the anchor version, it requires `href="#"`.*/
+/* line 42, partials/_toastr.scss */
+button.toast-close-button {
+  padding: 0;
+  cursor: pointer;
+  background: transparent;
+  border: 0;
+  -webkit-appearance: none;
+}
+
+/* line 49, partials/_toastr.scss */
+.toast-top-center {
+  top: 0;
+  right: 0;
+  width: 100%;
+}
+
+/* line 54, partials/_toastr.scss */
+.toast-bottom-center {
+  bottom: 0;
+  right: 0;
+  width: 100%;
+}
+
+/* line 59, partials/_toastr.scss */
+.toast-top-full-width {
+  top: 0;
+  right: 0;
+  width: 100%;
+}
+
+/* line 64, partials/_toastr.scss */
+.toast-bottom-full-width {
+  bottom: 0;
+  right: 0;
+  width: 100%;
+}
+
+/* line 69, partials/_toastr.scss */
+.toast-top-left {
+  top: 4em;
+  left: 12px;
+}
+
+/* line 73, partials/_toastr.scss */
+.toast-top-right {
+  top: 4em;
+  right: 12px;
+}
+
+/* line 77, partials/_toastr.scss */
+.toast-bottom-right {
+  right: 12px;
+  bottom: 12px;
+}
+
+/* line 81, partials/_toastr.scss */
+.toast-bottom-left {
+  bottom: 12px;
+  left: 12px;
+}
+
+/* line 85, partials/_toastr.scss */
+#toast-container {
+  position: fixed;
+  z-index: 999999;
+  /*overrides*/
+}
+
+/* line 91, partials/_toastr.scss */
+#toast-container * {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 96, partials/_toastr.scss */
+#toast-container > div {
+  position: relative;
+  overflow: hidden;
+  margin: 0 0 6px;
+  padding: 15px 15px 15px 50px;
+  width: 300px;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  background-position: 15px center;
+  background-repeat: no-repeat;
+  color: whitesmoke;
+  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
+  filter: alpha(opacity=80);
+}
+
+/* line 115, partials/_toastr.scss */
+#toast-container > :hover {
+  -moz-box-shadow: 0 0 12px #000000;
+  -webkit-box-shadow: 0 0 12px #000000;
+  box-shadow: 0 0 12px #000000;
+  opacity: 1;
+  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+  filter: alpha(opacity=100);
+  cursor: pointer;
+}
+
+/* line 134, partials/_toastr.scss */
+#toast-container.toast-top-center > div,
+#toast-container.toast-bottom-center > div {
+  width: 300px;
+  margin: auto;
+}
+
+/* line 139, partials/_toastr.scss */
+#toast-container.toast-top-full-width > div,
+#toast-container.toast-bottom-full-width > div {
+  width: 96%;
+  margin: auto;
+}
+
+/* line 143, partials/_toastr.scss */
+.toast {
+  background-color: #03a9f4;
+}
+
+/* line 146, partials/_toastr.scss */
+.toast-success {
+  background-color: #388e3c;
+}
+
+/* line 149, partials/_toastr.scss */
+.toast-error {
+  background-color: #b71c1c;
+}
+
+/* line 152, partials/_toastr.scss */
+.toast-info {
+  background-color: #03a9f4;
+}
+
+/* line 155, partials/_toastr.scss */
+.toast-warning {
+  background-color: #f57c00;
+}
+
+/* line 158, partials/_toastr.scss */
+.toast-progress {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 4px;
+  background-color: #000000;
+  opacity: 0.4;
+  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=40);
+  filter: alpha(opacity=40);
+}
+
+/*Responsive Design*/
+@media all and (max-width: 240px) {
+  /* line 170, partials/_toastr.scss */
+  #toast-container > div {
+    padding: 8px 8px 8px 50px;
+    width: 11em;
+  }
+
+  /* line 174, partials/_toastr.scss */
+  #toast-container .toast-close-button {
+    right: -0.2em;
+    top: -0.2em;
+  }
+}
+@media all and (min-width: 241px) and (max-width: 480px) {
+  /* line 180, partials/_toastr.scss */
+  #toast-container > div {
+    padding: 8px 8px 8px 50px;
+    width: 18em;
+  }
+
+  /* line 184, partials/_toastr.scss */
+  #toast-container .toast-close-button {
+    right: -0.2em;
+    top: -0.2em;
+  }
+}
+@media all and (min-width: 481px) and (max-width: 768px) {
+  /* line 190, partials/_toastr.scss */
+  #toast-container > div {
+    padding: 15px 15px 15px 50px;
+    width: 25em;
+  }
+}
+/* line 1, partials/_adminApp.scss */
+.list_item {
+  border: 1px dotted #424242;
+  padding: 4px 3px 4px 3px;
+  margin: 3px;
+  display: inline-block;
+}
+/* line 7, partials/_adminApp.scss */
+.list_item a {
+  background-color: #d32f2f !important;
+  border: none;
+  background: none;
+  padding: 2px 4px;
+  display: inline-block;
+  text-decoration: none;
+  outline: none;
+  position: relative;
+  border-radius: 2px;
+  -webkit-transition: all 0.1s;
+  -moz-transition: all 0.1s;
+  transition: all 0.1s;
+}
+/* line 21, partials/_adminApp.scss */
+.list_item a:hover {
+  background-color: #b71c1c !important;
+  cursor: pointer;
 }
 
 /* -------------------------------- 

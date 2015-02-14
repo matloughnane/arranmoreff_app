@@ -1,0 +1,26 @@
+.list_item {
+	border: 1px dotted $bkg_dark;
+	// TOP RIGHT BOTTOM RIGHT
+	padding: 4px 3px 4px 3px;
+	margin: 3px;
+	display: inline-block;
+	a {
+		background-color: $red !important;
+		border: none;
+		background: none;
+		padding: 2px 4px;
+		display: inline-block;
+		// margin: 8px 5px;
+		text-decoration: none;
+		outline: none;
+		position: relative;
+		border-radius: $border_radius;
+		-webkit-transition: all 0.1s;
+		-moz-transition: all 0.1s;
+		transition: all 0.1s;
+		&:hover {
+			background-color: $red_dull !important;
+			cursor: pointer;
+		}
+	}
+}

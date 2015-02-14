@@ -13,10 +13,20 @@ table {
   &.blue {
     border: 1px solid $blue;
     color: $blue_dull;
+    &.no_top_border {
+      border-top: 0px;
+      border-left: 1px solid $blue;
+      border-right: 1px solid $blue;
+    }
   }
   &.orange {
     border: 1px solid $orange;
-    color: $orange_dull;     
+    color: $orange_dull;
+    &.no_top_border {
+      border-top: 0px;
+      border-left: 1px solid $orange;
+      border-right: 1px solid $orange;
+    }
   }
 }
 
@@ -24,7 +34,7 @@ thead {
 
 }
 
-tr {
+tbody {
   &.blue {
     color: $blue_dull;
   }
@@ -32,6 +42,32 @@ tr {
     color: $orange_dull; 
   }
 }
+
+
+td {
+  padding: 10px 0px;
+  &.fri_subheading {
+    padding: 5px 0px;
+    &.blue {
+      background-color: $bkg_light;
+      color: $blue_dull;
+      border-right: 1px solid $blue;
+    } &.orange {
+      background-color: $bkg_light;
+      color: $orange_dull;
+      border-right: 1px solid $orange;
+    }
+  }
+}
+
+// tr {
+//   &.blue {
+//     color: $blue_dull;
+//   }
+//   &.orange {
+//     color: $orange_dull; 
+//   }
+// }
 
 th { 
   padding: 10px 0px;
@@ -53,17 +89,17 @@ th {
     color: $white;
     }
   }
+  &.fri_subheading{
+    padding: 5px 0px !important;
+    &.blue { 
+      background: $blue_light;
+      color: $blue_dull;
+      border-right: 1px solid $blue;
+    } &.orange {
+      background: $orange_light;
+      color: $orange_dull;
+      border-right: 1px solid $orange;
+    }
+  }
 }
 
-tbody {
-  &.blue {
-    color: $blue_dull;
-  }
-  &.orange {
-    color: $orange_dull; 
-  }
-}
-
-td {
-  padding: 10px 0px;
-}
