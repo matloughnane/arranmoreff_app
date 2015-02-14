@@ -1,0 +1,127 @@
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+  <title>Admin Extra Ferries</title>
+
+  <!-- CORDOVA NECESSITIES -->
+
+  <!-- CSS  -->
+  <link href="../assets/css/gridism.css" type="text/css" rel="stylesheet"/>
+  <link href="../assets/css/styles.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+<body>
+
+<!-- NAVIGATION -->
+<nav>
+  <div class="nav_bar">
+    <a href="#" class="cd-btn"><i class="mdi-navigation-menu"></i></a><div>Offline</div>
+    <a href="javascript:history.go(0)" class="refresh-icon"><i class="mdi-navigation-refresh"></i></a>
+  </div>
+
+  <div class="cd-panel from-left">
+    <div class="cd-panel-container">
+      <div class="cd-panel-content">
+        <ul>
+          <a href="../index.html"><li><i class="mdi-action-home"></i>Dashboard</li></a>
+          <a href="timetables.html"><li><i class="mdi-action-event"></i>Master Timetables</li></a>
+          <a href="extras.html"><li><i class="mdi-content-add-circle"></i>Extra Ferries</li></a>
+          <a href="cancelled.html"><li><i class="mdi-content-remove-circle"></i>Cancelled Ferries</li></a>
+          <a href="offline.html"><li><i class="mdi-device-signal-wifi-off"></i>Offline Timetables</li></a>
+        </ul>
+      </div> <!-- cd-panel-content -->
+    </div> <!-- cd-panel-container -->
+  </div> <!-- cd-panel -->
+
+</nav>
+
+<div class="nav_bar_buffer"></div>
+
+
+<main >
+
+<!-- NO INTERNET CONNECTION NOTIFICATION -->
+<div class="grid padded">
+  <div class="unit whole card shadow1 red align-center">
+    NO INTERNET CONNECTION
+  </div>
+</div>
+
+<!-- LOCAL TIME -->
+<div class="grid padded">
+  <div class="unit whole card shadow1 orange align-center">
+    ARRANMORE LOCAL TIME
+  </div>
+</div>
+
+
+<!-- LOCAL CLOCK BANNER -->
+<div id="next_ferries" class="grid padded">
+  <div class="unit half card shadow1 blue align-center">
+    <span id="next_ferry_da_title"></span>
+    <span class="tferry_time" id="nextFerry_da">
+
+      <div class="align-center">
+        NEXT FERRY TIME
+      </div>
+
+    </span>
+  </div>
+  <div class="unit half card orange shadow1 align-center">
+    <span id="next_ferry_db_title"></span>
+    <span class="tferry_time" id="nextFerry_db">
+
+      <div class="align-center">
+        NEXT FERRY TIME
+      </div>
+
+    </span>
+  </div>
+</div>
+
+<!-- TIMETABLE -->
+<div class="grid padded">
+  <div class="unit whole card shadow1 plain align-center">
+    <h3>Arranmore with split inside card</h3>
+    <!-- TWO HALVES BANNER -->
+      <div id="next_ferries" class="grid padded">
+        <div class="unit half card shadow1 blue align-center">
+          <span id="next_ferry_da_title"></span>
+          <span class="tferry_time" id="nextFerry_da">
+
+            <div class="align-center">
+              NEXT FERRY TIME
+            </div>
+
+          </span>
+        </div>
+        <div class="unit half card orange shadow1 align-center">
+          <span id="next_ferry_db_title"></span>
+          <span class="tferry_time" id="nextFerry_db">
+
+            <div class="align-center">
+              NEXT FERRY TIME
+            </div>
+
+          </span>
+        </div>
+      </div>
+
+  </div>
+</div>
+
+<!-- LOCAL TIME -->
+<div class="grid padded">
+  <div class="unit whole card shadow1 blue align-center">
+    footer
+  </div>
+</div>
+
+</main>
+
+  <!--  Scripts-->
+  <script src="../assets/js/jquery-2.1.3.min.js"></script>
+  <script src="../assets/js/sidepanel.js"></script>
+
+  </body>
+</html>

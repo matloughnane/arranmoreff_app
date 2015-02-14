@@ -95,20 +95,20 @@
 	window.onresize = _.debounce(resize, 200);
 	window.onscroll = _.debounce(resize, 200);
 
-	function showDetails() {
-		$about.removeClass('hide');
-		$toggle.removeClass('i');
-	}
+	// function showDetails() {
+	// 	$about.removeClass('hide');
+	// 	$toggle.removeClass('i');
+	// }
 
-	function hideDetails() {
-		$about.addClass('hide');
-		$toggle.addClass('i');
-	}
+	// function hideDetails() {
+	// 	$about.addClass('hide');
+	// 	$toggle.addClass('i');
+	// }
 
-	// Listen for toggle click event.
-	$toggle.on('click', function(event) {
-		$toggle.hasClass('i') ? showDetails() : hideDetails();
-	});
+	// // Listen for toggle click event.
+	// $toggle.on('click', function(event) {
+	// 	$toggle.hasClass('i') ? showDetails() : hideDetails();
+	// });
 
 	// Pretty simple huh?
 	$scene.parallax();
