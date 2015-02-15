@@ -228,20 +228,24 @@ function checkRefDay(day){
 function constructLists(timetableObj) {
 	for (key in timetableObj){
 		// console.log(key);
-		var journey = key;
-		var journeyObj = timetableObj[key];
+		if (key == "extra_ferry" || key == "cancel_ferry") { console.log("extra ferry found")} else {
+			var journey = key;
+			var journeyObj = timetableObj[key];
 
-		for (key in journeyObj){
-			// console.log(key);
-			var monthRange = key;
-			var daysObj = journeyObj[key];
+			for (key in journeyObj){
+				// console.log(key);
+				var monthRange = key;
+				var daysObj = journeyObj[key];
 
-			for (key in daysObj){
-				// console.log(key)
-				var days = key;
-				var timesObj = daysObj[key];
-				// console.log(timesObj + " " + journey+"_"+monthRange+"_"+days)
-				constructSingleList(timesObj, journey+"_"+monthRange+"_"+days);
+				for (key in daysObj){
+					// console.log(key)
+					var days = key;
+					var timesObj = daysObj[key];
+					// console.log(timesObj + " " + journey+"_"+monthRange+"_"+days)
+					var htmlID = journey+"_"+monthRange+"_"+days;
+					// console.log(htmlID);
+					constructSingleList(timesObj, htmlID);
+				}
 			}
 		}
 	};
@@ -299,15 +303,17 @@ function extractDateKey(dateString){
 
 function constructTables(timetableObj){
 	for (key in timetableObj){
-		// console.log(key);
-		var journey = key;
-		var journeyObj = timetableObj[key];
+		if (key == "extra_ferry" || key == "cancel_ferry") { console.log("extra ferry found table")} else {
+			// console.log(key);
+			var journey = key;
+			var journeyObj = timetableObj[key];
 
-		for (key in journeyObj){
-			var monthRange = key;
-			var daysObj = journeyObj[key];
-			// console.log(daysObj);
-			constructSingleTable(journey, monthRange, daysObj);
+			for (key in journeyObj){
+				var monthRange = key;
+				var daysObj = journeyObj[key];
+				// console.log(daysObj);
+				constructSingleTable(journey, monthRange, daysObj);
+			}
 		}
 	};
 }
@@ -374,6 +380,7 @@ function constructSingleTable(journey, monthRange, daysObj){
 
     tableHTML += "</tr></tbody></table>";
 
+    // console.log(htmlID);
     document.getElementById(htmlID).innerHTML = tableHTML;
 }
 
