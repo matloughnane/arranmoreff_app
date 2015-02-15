@@ -148,14 +148,14 @@ function constructSingleExtraTable(dateTimeObj, htmlID){
 	// console.log(htmlID);
 	if (journey == "da"){
 		var cssColor = "blue";
-		var journeyTitle = "Departing Arranmore";
+		var journeyTitle = "Extra Ferries Departing Arranmore";
 	} else {
 		var cssColor = "orange";
-		var journeyTitle = "Departing Burtonport";
+		var journeyTitle = "Extra Ferries Departing Burtonport";
 	};
 
 	var array_extra = generateArraysWithDate(dateTimeObj);
-	console.log(htmlID + " " + array_extra);
+	// console.log(htmlID + " " + array_extra);
 
     // EXTRA TABLE
     var tableHTML = "<table class='"+cssColor+" align-center' border='1'> <thead> <tr> <th class='"+cssColor+"'>" + journeyTitle + "</th> </tr> </thead>";
@@ -182,7 +182,7 @@ function generateArraysWithDate(timeObj){
     	var today = getTodayDate();
     	if (datesInFuture(timeObj[key].date, today) == true){
     		var date = getPrettyDate(timeObj[key].date);
-        	array.push(date + " " + timeObj[key].time);
+        	array.push(date + ", " + timeObj[key].time);
     	}
     };
 
@@ -195,6 +195,110 @@ function generateArraysWithDate(timeObj){
     // console.log(array);
     return array;
 }
+
+
+
+// ===========================================================================
+// BUTTONS FOR SHOWING THE EXTRA FERRIES
+// ===========================================================================
+$(function() {
+
+	jQuery('body').on('click', 'a', function () { 
+		// JAN TO APR
+		if ( $(this).hasClass("da_extra_btn_old") ) {
+			// console.log("da extra clicked old");
+			// pushExtraFerryTime("da", extraDate, extraTime);
+			showOldExtraFerries("da");
+		} else if ( $(this).hasClass("db_extra_btn_old")) {
+			// console.log("db extra clicked old");
+			// pushExtraFerryTime("db", extraDay, extraTime);
+			showOldExtraFerries("db");
+		}
+	});
+});
+
+function showOldExtraFerries(journey){
+	
+	firebaseRef.once("value", function(snapshot) {
+	var timetableObj = {};
+	timetableObj = snapshot.val();
+	
+
+	if (journey == "da") {
+		var oldFerriesObj = timetableObj.extra_ferry.da;
+		var htmlID = "da_extra_table_old";
+	} else {
+		var oldFerriesObj = timetableObj.extra_ferry.db;
+		var htmlID = "db_extra_table_old";
+	};
+
+	constructOldExtraTable(oldFerriesObj, htmlID);
+	}, function (errorObject) {
+  		console.log("The read failed: " + errorObject.code);
+	});
+};
+
+function constructOldExtraTable(dateTimeObj, htmlID){
+	var journey = htmlID.substr(0, htmlID.indexOf('_'));
+	// console.log(htmlID + journey);
+	// console.log(htmlID);
+	if (journey == "da"){
+		var cssColor = "blue";
+		var journeyTitle = "Past Extra Ferries Departing Arranmore";
+	} else {
+		var cssColor = "orange";
+		var journeyTitle = "Past Extra Ferries Departing Burtonport";
+	};
+
+	var array_extra = generateArraysWithOldDate(dateTimeObj);
+	// console.log(array_extra);
+
+    // EXTRA TABLE
+    var tableHTML = "<table class='"+cssColor+" align-center' border='1'> <thead> <tr> <th class='"+cssColor+"'>" + journeyTitle + "</th> </tr> </thead>";
+    tableHTML += "<tbody>";
+
+    if (array_extra.length != 0){
+	    for (var i = 0; i < array_extra.length; i++) {
+	        tableHTML += "<tr> <td>" + array_extra[i] + "</td></tr>";
+	    };    	
+    } else {
+    	tableHTML += "<tr> <td> There were no previous ferries planned! </td></tr>";
+    }
+
+
+    tableHTML += "</tbody></table>";
+
+    document.getElementById(htmlID).innerHTML = tableHTML;
+}
+
+function generateArraysWithOldDate(timeObj){
+	array = [];
+    // GENERATE THE ARRAY
+    for (key in timeObj) {
+    	var today = getTodayDate();
+    	if (datesInFuture(timeObj[key].date, today) == false){
+    		var date = getPrettyDate(timeObj[key].date);
+    		// console.log(date);
+    		if (date != "Wed, 23 Nov 1988") {
+        		array.push(date + ", " + timeObj[key].time);
+    		}
+    	}
+    };
+
+    // console.log(array);
+    // SORT THE ARRAY
+    array.sort(function (a, b) {
+        return new Date(a) - new Date(b);
+    });
+    // return the array
+    // console.log(array);
+    return array;
+}
+
+// ===========================================================================
+// END THE FUNCTIONS FOR ADDING FERRIES
+// ===========================================================================
+
 
 
 // ===========================================================================
@@ -232,9 +336,10 @@ function datesInFuture(dateToCheck, today){
         if (cdate.getMonth() >= tdate.getMonth()) {
             if (cdate.getDate() >= tdate.getDate()) {
                 return true;
-            }
-        }
-    }
+            } else { return false }
+        } else { return false }
+    } else { return false }
+
 };
 
 function getTodayDate(){

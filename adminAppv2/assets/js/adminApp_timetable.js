@@ -228,7 +228,7 @@ function checkRefDay(day){
 function constructLists(timetableObj) {
 	for (key in timetableObj){
 		// console.log(key);
-		if (key == "extra_ferry" || key == "cancel_ferry") { console.log("extra ferry found")} else {
+		if (key == "extra_ferry" || key == "cancel_ferry") { } else {
 			var journey = key;
 			var journeyObj = timetableObj[key];
 
@@ -303,7 +303,7 @@ function extractDateKey(dateString){
 
 function constructTables(timetableObj){
 	for (key in timetableObj){
-		if (key == "extra_ferry" || key == "cancel_ferry") { console.log("extra ferry found table")} else {
+		if (key == "extra_ferry" || key == "cancel_ferry") { } else {
 			// console.log(key);
 			var journey = key;
 			var journeyObj = timetableObj[key];
