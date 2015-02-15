@@ -11,11 +11,11 @@ body {
 	}
 }
 ::selection {
-  background: $blue;
+  background: $orange_light;
 }
 
 ::-moz-selection {
-  background: $blue; 
+  background: $orange_light; 
 }
 
 a {
@@ -123,6 +123,7 @@ h4, h5, h6 {
   -webkit-transition: all 0.1s;
   -moz-transition: all 0.1s;
   transition: all 0.1s;
+  cursor: pointer;
 }
 
 .btn_blue {

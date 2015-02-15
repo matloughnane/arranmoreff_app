@@ -3830,12 +3830,12 @@ body.first_time {
 
 /* line 13, partials/_layout.scss */
 ::selection {
-  background: #03a9f4;
+  background: #ffb74d;
 }
 
 /* line 17, partials/_layout.scss */
 ::-moz-selection {
-  background: #03a9f4;
+  background: #ffb74d;
 }
 
 /* line 21, partials/_layout.scss */
@@ -3863,7 +3863,7 @@ h4, h5, h6 {
 
 /* line 43, partials/_layout.scss */
 .card {
-  border-radius: 2px;
+  border-radius: 1px;
   margin-bottom: 15px;
 }
 
@@ -3945,7 +3945,7 @@ h4, h5, h6 {
 
 /* line 105, partials/_layout.scss */
 .card_noBottom {
-  border-radius: 2px;
+  border-radius: 1px;
   margin-bottom: 0px;
 }
 
@@ -3959,124 +3959,125 @@ h4, h5, h6 {
   text-decoration: none;
   outline: none;
   position: relative;
-  border-radius: 2px;
+  border-radius: 1px;
   -webkit-transition: all 0.1s;
   -moz-transition: all 0.1s;
   transition: all 0.1s;
+  cursor: pointer;
 }
 
-/* line 128, partials/_layout.scss */
+/* line 129, partials/_layout.scss */
 .btn_blue {
   background-color: #03a9f4 !important;
   color: whitesmoke !important;
 }
-/* line 131, partials/_layout.scss */
+/* line 132, partials/_layout.scss */
 .btn_blue:hover {
   box-shadow: 0px -3px 0px 0px #0277bd inset;
 }
-/* line 134, partials/_layout.scss */
+/* line 135, partials/_layout.scss */
 .btn_blue:active {
   background-color: #0277bd !important;
 }
 
-/* line 139, partials/_layout.scss */
+/* line 140, partials/_layout.scss */
 .btn_orange {
   background-color: #f57c00 !important;
   color: whitesmoke !important;
 }
 
-/* line 144, partials/_layout.scss */
+/* line 145, partials/_layout.scss */
 .btn_no_margin {
   margin: 0px;
 }
 
-/* line 148, partials/_layout.scss */
+/* line 149, partials/_layout.scss */
 .btn_large {
   font-size: 1.2em !important;
 }
 
-/* line 152, partials/_layout.scss */
+/* line 153, partials/_layout.scss */
 .btn_add {
   background-color: whitesmoke !important;
   color: #388e3c !important;
   padding: 4px 5px !important;
 }
-/* line 156, partials/_layout.scss */
+/* line 157, partials/_layout.scss */
 .btn_add:hover {
   box-shadow: 0px -2px 0px 0px #1b5e20 inset;
 }
-/* line 159, partials/_layout.scss */
+/* line 160, partials/_layout.scss */
 .btn_add:active {
   background-color: #1b5e20 !important;
   color: whitesmoke !important;
 }
 
-/* line 165, partials/_layout.scss */
+/* line 166, partials/_layout.scss */
 .btn_remove {
   background-color: whitesmoke !important;
   color: #ef9a9a !important;
 }
 
-/* line 172, partials/_layout.scss */
+/* line 173, partials/_layout.scss */
 .shadow1 {
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 }
 
-/* line 175, partials/_layout.scss */
+/* line 176, partials/_layout.scss */
 .shadow2 {
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 }
 
-/* line 178, partials/_layout.scss */
+/* line 179, partials/_layout.scss */
 .shadow3 {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
 }
 
-/* line 181, partials/_layout.scss */
+/* line 182, partials/_layout.scss */
 .shadow4 {
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
 
-/* line 184, partials/_layout.scss */
+/* line 185, partials/_layout.scss */
 .shadow5 {
   box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
 }
 
-/* line 191, partials/_layout.scss */
+/* line 192, partials/_layout.scss */
 .left_half {
   padding-right: 5px;
 }
 
-/* line 195, partials/_layout.scss */
+/* line 196, partials/_layout.scss */
 .right_half {
   padding-left: 5px;
 }
 
-/* line 199, partials/_layout.scss */
+/* line 200, partials/_layout.scss */
 .padded {
   padding: 0px 8px;
 }
 
-/* line 203, partials/_layout.scss */
+/* line 204, partials/_layout.scss */
 .tferry_time {
   display: block;
   padding: 10px;
   font-size: 2em;
 }
 
-/* line 209, partials/_layout.scss */
+/* line 210, partials/_layout.scss */
 #static_timetable {
   display: none;
 }
 
-/* line 214, partials/_layout.scss */
+/* line 215, partials/_layout.scss */
 .tferry_table_title {
   display: block;
   padding: 5px;
   font-size: 1em;
 }
 
-/* line 220, partials/_layout.scss */
+/* line 221, partials/_layout.scss */
 .settings_title {
   display: block;
   font-weight: 600;
@@ -4084,7 +4085,7 @@ h4, h5, h6 {
   font-size: 1em;
 }
 
-/* line 227, partials/_layout.scss */
+/* line 228, partials/_layout.scss */
 .horizontal_line {
   width: 400px;
   height: 0;
@@ -4092,60 +4093,60 @@ h4, h5, h6 {
   font-size: 0;
 }
 
-/* line 234, partials/_layout.scss */
+/* line 235, partials/_layout.scss */
 .loading_text {
   font-size: 0.4em;
 }
 
-/* line 238, partials/_layout.scss */
+/* line 239, partials/_layout.scss */
 .blue_text {
   color: #0277bd;
 }
 
-/* line 243, partials/_layout.scss */
+/* line 244, partials/_layout.scss */
 .orange_text {
   color: #e65100;
 }
 
-/* line 248, partials/_layout.scss */
+/* line 249, partials/_layout.scss */
 .settings_text {
   padding: 5px;
   margin-left: 14px;
   font-size: 1em;
 }
 
-/* line 254, partials/_layout.scss */
+/* line 255, partials/_layout.scss */
 .margin_small {
   margin: 5px;
 }
 
-/* line 258, partials/_layout.scss */
+/* line 259, partials/_layout.scss */
 .margin_left {
   margin-left: 10px;
 }
 
-/* line 262, partials/_layout.scss */
+/* line 263, partials/_layout.scss */
 .margin_right {
   margin-right: 10px;
 }
 
-/* line 266, partials/_layout.scss */
+/* line 267, partials/_layout.scss */
 .important_text {
   font-size: 1.5em;
   font-weight: 700;
 }
 
-/* line 271, partials/_layout.scss */
+/* line 272, partials/_layout.scss */
 .date_text {
   font-size: 0.8em;
   color: #9e9e9e;
 }
 
-/* line 276, partials/_layout.scss */
+/* line 277, partials/_layout.scss */
 img {
   max-width: 100%;
 }
-/* line 278, partials/_layout.scss */
+/* line 279, partials/_layout.scss */
 img.first_time_logo {
   width: 60%;
   margin-top: 10px;
@@ -4256,25 +4257,12 @@ th.fri_subheading.orange {
   border-right: 1px solid #f57c00;
 }
 
-/* line 4, partials/_forms.scss */
-input[type=date] {
-  padding: 2px;
-  text-align: center;
-  font-family: "Roboto", sans-serif;
-}
-
-/* line 10, partials/_forms.scss */
+/* line 6, partials/_forms.scss */
 .no-spin::-webkit-inner-spin-button {
   -webkit-appearance: none;
 }
 
-/* line 14, partials/_forms.scss */
-.datePick {
-  width: 100%;
-  font-size: 1em;
-}
-
-/* line 24, partials/_forms.scss */
+/* line 18, partials/_forms.scss */
 html input[type="button"],
 input[type="reset"],
 input[type="submit"] {
@@ -4282,68 +4270,106 @@ input[type="submit"] {
   cursor: pointer;
 }
 
-/* line 29, partials/_forms.scss */
+/* line 23, partials/_forms.scss */
 button[disabled],
 html input[disabled] {
   cursor: default;
 }
 
-/* line 33, partials/_forms.scss */
+/* line 27, partials/_forms.scss */
 button::-moz-focus-inner,
 input::-moz-focus-inner {
   border: 0;
   padding: 0;
 }
 
-/* line 37, partials/_forms.scss */
+/* line 31, partials/_forms.scss */
 input {
   line-height: normal;
 }
 
-/* line 41, partials/_forms.scss */
+/* line 36, partials/_forms.scss */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/* line 39, partials/_forms.scss */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  box-sizing: content-box;
+}
+
+/* line 44, partials/_forms.scss */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/* line 49, partials/_forms.scss */
+.input {
+  position: relative;
+  margin: 15px;
+}
+
+/* line 66, partials/_forms.scss */
+input[type='time'] {
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  padding: 2px;
+  border-radius: 2px !important;
+  border: solid 1px #e65100;
+  font-size: 14px;
+  height: 2em;
+}
+/* line 74, partials/_forms.scss */
+input[type='time'].extra {
+  border: solid 1px #388e3c;
+  font-size: 14px;
+}
+/* line 77, partials/_forms.scss */
+input[type='time'].extra:focus {
+  outline: 2px #d32f2f;
+}
+/* line 81, partials/_forms.scss */
+input[type='time']:focus {
+  outline: 2px #d32f2f;
+}
+
+/* line 86, partials/_forms.scss */
+.datePick {
+  width: 100%;
+  font-size: 1em;
+}
+
+/* line 91, partials/_forms.scss */
+input[type="date"] {
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  padding: 2px;
+  border-radius: 2px !important;
+}
+/* line 97, partials/_forms.scss */
+input[type="date"].extra {
+  border: solid 1px #388e3c;
+  font-size: 14px;
+}
+
+/* line 109, partials/_forms.scss */
 input[type="checkbox"],
 input[type="radio"] {
   box-sizing: border-box;
   padding: 0;
 }
 
-/* line 46, partials/_forms.scss */
-input[type="number"]::-webkit-inner-spin-button,
-input[type="number"]::-webkit-outer-spin-button {
-  height: auto;
-}
-
-/* line 49, partials/_forms.scss */
-input[type="search"] {
-  -webkit-appearance: textfield;
-  box-sizing: content-box;
-}
-
-/* line 54, partials/_forms.scss */
-input[type="search"]::-webkit-search-cancel-button,
-input[type="search"]::-webkit-search-decoration {
-  -webkit-appearance: none;
-}
-
-/* line 59, partials/_forms.scss */
-.input {
-  position: relative;
-  margin: 15px;
-}
-
-/* line 71, partials/_forms.scss */
-input[type="time"] {
-  font-size: 14px;
-  padding: 1px 3px;
-}
-
-/* line 79, partials/_forms.scss */
+/* line 114, partials/_forms.scss */
 .input input[type='checkbox'] {
   position: absolute;
   opacity: 0;
 }
 
-/* line 83, partials/_forms.scss */
+/* line 118, partials/_forms.scss */
 .input input[type='checkbox'] + label {
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -4353,7 +4379,7 @@ input[type="time"] {
   padding-left: 30px;
 }
 
-/* line 91, partials/_forms.scss */
+/* line 126, partials/_forms.scss */
 .input input[type='checkbox'] + label:before {
   position: absolute;
   left: 0;
@@ -4368,7 +4394,7 @@ input[type="time"] {
   box-sizing: border-box;
 }
 
-/* line 105, partials/_forms.scss */
+/* line 140, partials/_forms.scss */
 .input input[type='checkbox'] + label:after {
   position: absolute;
   display: block;
@@ -4388,40 +4414,40 @@ input[type="time"] {
   box-sizing: border-box;
 }
 
-/* line 127, partials/_forms.scss */
+/* line 162, partials/_forms.scss */
 .input input[type='checkbox']:checked + label:before {
   background: #03a9f4;
 }
 
-/* line 130, partials/_forms.scss */
+/* line 165, partials/_forms.scss */
 .input input[type='checkbox']:checked + label:after {
   border-right: 2px solid #ffffff;
   border-bottom: 2px solid #ffffff;
   opacity: 1;
 }
 
-/* line 135, partials/_forms.scss */
+/* line 170, partials/_forms.scss */
 .input input[type='checkbox'][disabled] + label {
   color: #cccccc;
 }
 
-/* line 138, partials/_forms.scss */
+/* line 173, partials/_forms.scss */
 .input input[type='checkbox'][disabled] + label:before {
   border-color: #cccccc;
 }
 
-/* line 141, partials/_forms.scss */
+/* line 176, partials/_forms.scss */
 .input input[type='checkbox'][disabled]:checked + label:before {
   background: #cccccc;
 }
 
-/* line 148, partials/_forms.scss */
+/* line 185, partials/_forms.scss */
 .input input[type='radio'] {
   position: absolute;
   opacity: 0;
 }
 
-/* line 152, partials/_forms.scss */
+/* line 189, partials/_forms.scss */
 .input input[type='radio'] + label {
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -4431,7 +4457,7 @@ input[type="time"] {
   padding-left: 30px;
 }
 
-/* line 161, partials/_forms.scss */
+/* line 198, partials/_forms.scss */
 .input input[type='radio'] + label:before,
 .input input[type='radio'] + label:after {
   position: absolute;
@@ -4448,7 +4474,7 @@ input[type="time"] {
   background-clip: padding-box;
 }
 
-/* line 176, partials/_forms.scss */
+/* line 213, partials/_forms.scss */
 .input input[type='radio'] + label:after {
   background: #03a9f4;
   border: 2px solid whitesmoke;
@@ -4459,63 +4485,40 @@ input[type="time"] {
   transition: all 0.3s ease;
 }
 
-/* line 188, partials/_forms.scss */
+/* line 225, partials/_forms.scss */
 .input input[type='radio']:checked + label:before {
   border-color: #03a9f4;
 }
 
-/* line 191, partials/_forms.scss */
+/* line 228, partials/_forms.scss */
 .input input[type='radio']:checked + label:after {
   -webkit-transform: scale(0.75, 0.75);
   -ms-transform: scale(0.75, 0.75);
   transform: scale(0.75, 0.75);
 }
 
-/* line 196, partials/_forms.scss */
+/* line 233, partials/_forms.scss */
 .input input[type='radio'][disabled] + label {
   color: #cccccc;
 }
 
-/* line 199, partials/_forms.scss */
+/* line 236, partials/_forms.scss */
 .input input[type='radio'][disabled] + label:before {
   border-color: #cccccc;
 }
 
-/* line 203, partials/_forms.scss */
+/* line 240, partials/_forms.scss */
 .input input[type='radio'][disabled]:checked + label:before,
 .input input[type='radio'][disabled]:checked + label:after {
   background: #cccccc;
 }
 
-/* line 209, partials/_forms.scss */
-input[type='time'] {
-  text-align: center;
-  border-radius: 5px !important;
-  padding: 2px;
-  border: solid 1px #e65100;
-  font-size: 14px;
-  height: 2em;
-}
-/* line 216, partials/_forms.scss */
-input[type='time'].extra {
-  border: solid 1px #388e3c;
-  font-size: 14px;
-}
-/* line 219, partials/_forms.scss */
-input[type='time'].extra:focus {
-  outline: 2px #d32f2f;
-}
-/* line 223, partials/_forms.scss */
-input[type='time']:focus {
-  outline: 2px #d32f2f;
-}
-
-/* line 230, partials/_forms.scss */
+/* line 251, partials/_forms.scss */
 .input_select {
   display: inline-block;
 }
 
-/* line 234, partials/_forms.scss */
+/* line 255, partials/_forms.scss */
 select {
   text-align: center;
   border-radius: 1px !important;
@@ -4524,18 +4527,18 @@ select {
   font-size: 16px;
   height: 2em;
 }
-/* line 242, partials/_forms.scss */
+/* line 263, partials/_forms.scss */
 select.extra {
   border: solid 1px #388e3c;
   font-size: 14px;
 }
 
-/* line 248, partials/_forms.scss */
+/* line 269, partials/_forms.scss */
 select:focus {
   outline: none;
 }
 
-/* line 263, partials/_forms.scss */
+/* line 287, partials/_forms.scss */
 .switch {
   display: inline-block;
   position: relative;
@@ -4549,7 +4552,7 @@ select:focus {
   cursor: pointer;
 }
 
-/* line 275, partials/_forms.scss */
+/* line 299, partials/_forms.scss */
 .switch::before {
   content: '';
   position: absolute;
@@ -4564,23 +4567,23 @@ select:focus {
   transition: left 0.28s cubic-bezier(0.4, 0, 0.2, 1), background 0.28s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.28s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* line 288, partials/_forms.scss */
+/* line 312, partials/_forms.scss */
 .switch:active::before {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.28), 0 0 0 20px rgba(128, 128, 128, 0.1);
 }
 
-/* line 293, partials/_forms.scss */
+/* line 317, partials/_forms.scss */
 input:checked + .switch {
   background: #ffb74d;
 }
 
-/* line 297, partials/_forms.scss */
+/* line 321, partials/_forms.scss */
 input:checked + .switch::before {
   left: 20px;
   background: #ffb74d;
 }
 
-/* line 302, partials/_forms.scss */
+/* line 326, partials/_forms.scss */
 input:checked + .switch:active::before {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.28), 0 0 0 20px rgba(0, 150, 136, 0.2);
 }
@@ -4715,11 +4718,11 @@ button.toast-close-button {
   position: relative;
   overflow: hidden;
   margin: 0 0 6px;
-  padding: 15px 15px 15px 50px;
+  padding: 15px;
   width: 300px;
-  -moz-border-radius: 2px;
-  -webkit-border-radius: 2px;
-  border-radius: 2px;
+  -moz-border-radius: 1px;
+  -webkit-border-radius: 1px;
+  border-radius: 1px;
   background-position: 15px center;
   background-repeat: no-repeat;
   color: whitesmoke;
@@ -4793,7 +4796,7 @@ button.toast-close-button {
 @media all and (max-width: 240px) {
   /* line 170, partials/_toastr.scss */
   #toast-container > div {
-    padding: 8px 8px 8px 50px;
+    padding: 8px;
     width: 11em;
   }
 
@@ -4806,7 +4809,7 @@ button.toast-close-button {
 @media all and (min-width: 241px) and (max-width: 480px) {
   /* line 180, partials/_toastr.scss */
   #toast-container > div {
-    padding: 8px 8px 8px 50px;
+    padding: 8px;
     width: 18em;
   }
 
@@ -4819,7 +4822,7 @@ button.toast-close-button {
 @media all and (min-width: 481px) and (max-width: 768px) {
   /* line 190, partials/_toastr.scss */
   #toast-container > div {
-    padding: 15px 15px 15px 50px;
+    padding: 15px;
     width: 25em;
   }
 }
@@ -4840,7 +4843,7 @@ button.toast-close-button {
   text-decoration: none;
   outline: none;
   position: relative;
-  border-radius: 2px;
+  border-radius: 1px;
   -webkit-transition: all 0.1s;
   -moz-transition: all 0.1s;
   transition: all 0.1s;

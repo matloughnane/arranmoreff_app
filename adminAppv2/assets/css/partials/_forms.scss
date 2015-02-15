@@ -1,23 +1,17 @@
 form {
 }
 
-input[type=date] {
-	padding: 2px;
-	text-align: center;
-	font-family: "Roboto", sans-serif;
-}
+
 
 .no-spin::-webkit-inner-spin-button {
   -webkit-appearance: none;
 }
 
-.datePick {
-	width: 100%;
-	font-size: 1em;
-}
 
+// ===========================================================================================
+// ===============================       GENERAL FORM        =================================
+// ===========================================================================================
 
-// GENERAL FORM STUFF
 
 html input[type="button"],
 input[type="reset"],
@@ -37,11 +31,7 @@ input::-moz-focus-inner {
 input {
   line-height: normal;
 }
-input[type="checkbox"],
-input[type="radio"] {
-  box-sizing: border-box;
-  padding: 0;
-}
+
 input[type="number"]::-webkit-inner-spin-button,
 input[type="number"]::-webkit-outer-spin-button {
   height: auto;
@@ -68,13 +58,58 @@ input[type="search"]::-webkit-search-decoration {
 }
 
 
-input[type="time"] {
+// ===========================================================================================
+// =================================       DATE TIME        =================================
+// ===========================================================================================
+
+
+input[type='time'] {
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  padding: 2px;
+  border-radius: 2px !important;
+  border: solid 1px $orange_dull;
   font-size: 14px;
-  padding: 1px 3px;
+  height: 2em;
+  &.extra {
+    border: solid 1px $green;
+    font-size: 14px;
+    &:focus {
+      outline: 2px $red;
+    }
+  }
+  &:focus {
+    outline: 2px $red;
+  }
+}
+
+.datePick {
+  width: 100%;
+  font-size: 1em;
+}
+
+input[type="date"] {
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  padding: 2px;
+  border-radius: 2px !important;
+  &.extra {
+    border: solid 1px $green;
+    font-size: 14px;
+  }
 }
 
 
-// INPUTS MASTER
+// ===========================================================================================
+// =================================       CHECKBOXES        =================================
+// ===========================================================================================
+
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  padding: 0;
+}
 
 .input input[type='checkbox'] {
   position: absolute;
@@ -143,7 +178,9 @@ input[type="time"] {
 }
 
 
-// RADIO BUTTON
+// ===========================================================================================
+// ===============================       RADIO BUTTON        =================================
+// ===========================================================================================
 
 .input input[type='radio'] {
   position: absolute;
@@ -204,29 +241,13 @@ input[type="time"] {
   background: #cccccc;
 }
 
-// TIME
-
-input[type='time'] {
-  text-align: center;
-  border-radius: 5px !important;
-  padding: 2px;
-  border: solid 1px $orange_dull;
-  font-size: 14px;
-  height: 2em;
-  &.extra {
-    border: solid 1px $green;
-    font-size: 14px;
-    &:focus {
-      outline: 2px $red;
-    }
-  }
-  &:focus {
-    outline: 2px $red;
-  }
-}
 
 
-// SELECT
+// ===========================================================================================
+// =================================     SELECT       ==================================
+// ===========================================================================================
+
+
 .input_select {
   display: inline-block;
 }
@@ -258,7 +279,10 @@ select:hover {
 
 
 
-// SWITCH CSS
+// ===========================================================================================
+// ======================================      SWITCH       ==================================
+// ===========================================================================================
+
 
 .switch {
   display: inline-block;
