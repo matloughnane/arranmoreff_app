@@ -4,6 +4,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
   <title>Admin Dashboard</title>
 
+  <meta http-equiv="refresh" content="300">
   <!-- CORDOVA NECESSITIES -->
 
   <!-- CSS  -->
@@ -40,17 +41,10 @@
 
 <main >
 
-<!-- NO INTERNET CONNECTION NOTIFICATION -->
-<div class="grid padded">
-  <div class="unit whole card shadow1 red align-center">
-    NO INTERNET CONNECTION
-  </div>
-</div>
-
 <!-- LOCAL TIME -->
 <div class="grid padded">
   <div class="unit whole card shadow1 orange align-center">
-    ARRANMORE LOCAL TIME
+    <div id="localTime"></div>
   </div>
 </div>
 
@@ -59,8 +53,8 @@
 <div id="next_ferries" class="grid padded">
   <div class="unit half card shadow1 blue align-center">
     <span id="next_ferry_da_title"></span>
+    Next Ferry Departing Arranmore:
     <span class="tferry_time" id="nextFerry_da">
-
       <div class="align-center">
         NEXT FERRY TIME
       </div>
@@ -69,6 +63,7 @@
   </div>
   <div class="unit half card orange shadow1 align-center">
     <span id="next_ferry_db_title"></span>
+    Next Ferry Departing Burtonport:
     <span class="tferry_time" id="nextFerry_db">
 
       <div class="align-center">
@@ -79,41 +74,35 @@
   </div>
 </div>
 
-<!-- TIMETABLE -->
-<div class="grid padded">
-  <div class="unit whole card shadow1 plain align-center">
-    <h3>Arranmore with split inside card</h3>
-    <!-- TWO HALVES BANNER -->
-      <div id="next_ferries" class="grid padded">
-        <div class="unit half card shadow1 blue align-center">
-          <span id="next_ferry_da_title"></span>
-          <span class="tferry_time" id="nextFerry_da">
-
-            <div class="align-center">
-              NEXT FERRY TIME
-            </div>
-
-          </span>
-        </div>
-        <div class="unit half card orange shadow1 align-center">
-          <span id="next_ferry_db_title"></span>
-          <span class="tferry_time" id="nextFerry_db">
-
-            <div class="align-center">
-              NEXT FERRY TIME
-            </div>
-
-          </span>
+<!-- TIMETABLES -->
+<div id="todays_timetables" class="grid padded">
+  <div class="unit whole card shadow1 plain">
+    <span class="tferry_table_title"> <h3>Todays Ferries: </h3></span>
+    <!-- HALFS -->
+      <div class="unit half left_half align-center">
+        <!-- TABLE -->
+        <div id="today_timetable_da" class="table_container">
         </div>
       </div>
+      <div class="unit half right_half align-center">
+        <!-- TABLE -->
+        <div id="today_timetable_db" class="table_container">
+        </div>
+      </div>
+
+    <!-- SYNC DATE DISPLAYED -->
+    <div id="lastest_sync_date"></div>
 
   </div>
 </div>
 
+
 <!-- LOCAL TIME -->
 <div class="grid padded">
-  <div class="unit whole card shadow1 blue align-center">
-    footer
+  <div class="unit whole card shadow1 plain align-center">
+    <a href="mailto:mat.loughnane@gmail.com" class="btn btn_blue">Email Mat</a>
+
+    <a href="tel:00447983357260" class="btn btn_orange">Phone Mat: 00447983357260</a>
   </div>
 </div>
 
@@ -123,6 +112,7 @@
   <script src="assets/js/jquery-2.1.3.min.js"></script>
   <script src="assets/js/sidepanel.js"></script>
   <script src="assets/js/firebase.js"></script>
+  <script src="assets/js/clock.js"></script>
   <script src="assets/js/adminApp_index.js"></script>
 
   </body>

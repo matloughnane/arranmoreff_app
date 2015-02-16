@@ -40,88 +40,22 @@
 
 <main >
 
-<!-- NO INTERNET CONNECTION NOTIFICATION -->
-<div class="grid padded">
-  <div class="unit whole card shadow1 red align-center">
-    NO INTERNET CONNECTION
-  </div>
-</div>
-
-<!-- LOCAL TIME -->
-<div class="grid padded">
-  <div class="unit whole card shadow1 orange align-center">
-    ARRANMORE LOCAL TIME
-  </div>
-</div>
-
-
-<!-- LOCAL CLOCK BANNER -->
-<div id="next_ferries" class="grid padded">
-  <div class="unit half card shadow1 blue align-center">
-    <span id="next_ferry_da_title"></span>
-    <span class="tferry_time" id="nextFerry_da">
-
-      <div class="align-center">
-        NEXT FERRY TIME
-      </div>
-
-    </span>
-  </div>
-  <div class="unit half card orange shadow1 align-center">
-    <span id="next_ferry_db_title"></span>
-    <span class="tferry_time" id="nextFerry_db">
-
-      <div class="align-center">
-        NEXT FERRY TIME
-      </div>
-
-    </span>
-  </div>
-</div>
-
 <!-- TIMETABLE -->
 <div class="grid padded">
-  <div class="unit whole card shadow1 plain align-center">
-    <h3>Arranmore with split inside card</h3>
-    <!-- TWO HALVES BANNER -->
-      <div id="next_ferries" class="grid padded">
-        <div class="unit half card shadow1 blue align-center">
-          <span id="next_ferry_da_title"></span>
-          <span class="tferry_time" id="nextFerry_da">
-
-            <div class="align-center">
-              NEXT FERRY TIME
-            </div>
-
-          </span>
-        </div>
-        <div class="unit half card orange shadow1 align-center">
-          <span id="next_ferry_db_title"></span>
-          <span class="tferry_time" id="nextFerry_db">
-
-            <div class="align-center">
-              NEXT FERRY TIME
-            </div>
-
-          </span>
-        </div>
-      </div>
-
+  <div class="unit whole card shadow1 plain">
+    <h3>Offline Timetable for reference:</h3>
+    <div id="offline_json"></div>
   </div>
 </div>
 
-<!-- LOCAL TIME -->
-<div class="grid padded">
-  <div class="unit whole card shadow1 blue align-center">
-    footer
-  </div>
-</div>
 
 </main>
 
   <!--  Scripts-->
   <script src="../assets/js/jquery-2.1.3.min.js"></script>
   <script src="../assets/js/sidepanel.js"></script>
+  <script src="../assets/js/firebase.js"></script>
+  <script src="../assets/js/adminApp_offline.js"></script>
 
   </body>
 </html>

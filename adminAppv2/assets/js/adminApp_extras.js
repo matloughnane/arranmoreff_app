@@ -331,14 +331,37 @@ function getPrettyDate(date){
 function datesInFuture(dateToCheck, today){
     var cdate = new Date(dateToCheck);
     var tdate = new Date(today);
+    // console.log(cdate);
 
-    if (cdate.getYear() >= tdate.getYear()) {
-        if (cdate.getMonth() >= tdate.getMonth()) {
-            if (cdate.getDate() >= tdate.getDate()) {
-                return true;
-            } else { return false }
-        } else { return false }
-    } else { return false }
+    if (cdate.getYear() == tdate.getYear()) {
+    	// console.log("year is current");
+        if (cdate.getMonth() > tdate.getMonth()) {
+        	// console.log("month is in future");
+        	return true;
+            if (cdate.getDate() < tdate.getDate()) {
+             	//  return true;
+            }
+        } else if (cdate.getMonth() == tdate.getMonth() ) {
+        	// console.log("month is current");
+        	if (cdate.getDate() >= tdate.getDate()) {
+            	// console.log("date is in future");
+            	return true;
+             	//  return true;
+            } else {
+				// console.log("date in past");
+				return false;
+            }
+    	} else {
+    		// console.log("month is in past");
+    		return false;
+    	}
+    } else if (cdate.getYear() > tdate.getYear()) {
+    	// console.log("year is in future");
+    	return true
+    } else {
+    	// console.log("year is in past");
+    	return false;
+    }
 
 };
 

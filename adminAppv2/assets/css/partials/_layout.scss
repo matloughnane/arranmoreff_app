@@ -140,6 +140,48 @@ h4, h5, h6 {
 .btn_orange {
 	background-color: $orange !important;
 	color: $bkg_light !important;
+	&:hover {
+		box-shadow: 0px -3px 0px 0px $orange_dull inset;
+	}
+	&:active {
+		background-color: $orange_dull !important;
+	}
+}
+
+.btn_red {
+	background-color: $red !important;
+	color: $bkg_light !important;
+	&:hover {
+		box-shadow: 0px -3px 0px 0px $red_dull inset;
+	}
+	&:active {
+		background-color: $red_dull !important;
+	}
+}
+
+.btn_green {
+	background-color: $green !important;
+	color: $bkg_light !important;
+	&:hover {
+		box-shadow: 0px -3px 0px 0px $green_dull inset;
+	}
+	&:active {
+		background-color: $green_dull !important;
+	}
+}
+
+.btn_uncancel {
+	padding: 5px;
+	display: inline-block;
+	margin: 0px 5px;
+	background-color: $green !important;
+	color: $bkg_light !important;
+	&:hover {
+		box-shadow: 0px -3px 0px 0px $green_dull inset;
+	}
+	&:active {
+		background-color: $green_dull !important;
+	}
 }
 
 .btn_no_margin {
@@ -165,7 +207,15 @@ h4, h5, h6 {
 
 .btn_remove {
 	background-color: $bkg_light !important;
-	color: $red_light !important;
+	color: $red !important;
+	padding: 4px 5px !important;
+	&:hover{
+		box-shadow: 0px -2px 0px 0px $red_dull inset;
+	}
+	&:active {
+		background-color: $red_dull !important;
+		color: $bkg_light !important;
+	}
 }
 
 // SHADOWS
@@ -234,6 +284,10 @@ h4, h5, h6 {
 
 .loading_text {
 	font-size: 0.4em;
+}
+
+.larger_text{
+	font-size: 1.25em;
 }
 
 .blue_text {

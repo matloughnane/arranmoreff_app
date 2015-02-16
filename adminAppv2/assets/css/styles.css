@@ -3985,99 +3985,162 @@ h4, h5, h6 {
   background-color: #f57c00 !important;
   color: whitesmoke !important;
 }
+/* line 143, partials/_layout.scss */
+.btn_orange:hover {
+  box-shadow: 0px -3px 0px 0px #e65100 inset;
+}
+/* line 146, partials/_layout.scss */
+.btn_orange:active {
+  background-color: #e65100 !important;
+}
 
-/* line 145, partials/_layout.scss */
+/* line 151, partials/_layout.scss */
+.btn_red {
+  background-color: #d32f2f !important;
+  color: whitesmoke !important;
+}
+/* line 154, partials/_layout.scss */
+.btn_red:hover {
+  box-shadow: 0px -3px 0px 0px #b71c1c inset;
+}
+/* line 157, partials/_layout.scss */
+.btn_red:active {
+  background-color: #b71c1c !important;
+}
+
+/* line 162, partials/_layout.scss */
+.btn_green {
+  background-color: #388e3c !important;
+  color: whitesmoke !important;
+}
+/* line 165, partials/_layout.scss */
+.btn_green:hover {
+  box-shadow: 0px -3px 0px 0px #1b5e20 inset;
+}
+/* line 168, partials/_layout.scss */
+.btn_green:active {
+  background-color: #1b5e20 !important;
+}
+
+/* line 173, partials/_layout.scss */
+.btn_uncancel {
+  padding: 5px;
+  display: inline-block;
+  margin: 0px 5px;
+  background-color: #388e3c !important;
+  color: whitesmoke !important;
+}
+/* line 179, partials/_layout.scss */
+.btn_uncancel:hover {
+  box-shadow: 0px -3px 0px 0px #1b5e20 inset;
+}
+/* line 182, partials/_layout.scss */
+.btn_uncancel:active {
+  background-color: #1b5e20 !important;
+}
+
+/* line 187, partials/_layout.scss */
 .btn_no_margin {
   margin: 0px;
 }
 
-/* line 149, partials/_layout.scss */
+/* line 191, partials/_layout.scss */
 .btn_large {
   font-size: 1.2em !important;
 }
 
-/* line 153, partials/_layout.scss */
+/* line 195, partials/_layout.scss */
 .btn_add {
   background-color: whitesmoke !important;
   color: #388e3c !important;
   padding: 4px 5px !important;
 }
-/* line 157, partials/_layout.scss */
+/* line 199, partials/_layout.scss */
 .btn_add:hover {
   box-shadow: 0px -2px 0px 0px #1b5e20 inset;
 }
-/* line 160, partials/_layout.scss */
+/* line 202, partials/_layout.scss */
 .btn_add:active {
   background-color: #1b5e20 !important;
   color: whitesmoke !important;
 }
 
-/* line 166, partials/_layout.scss */
+/* line 208, partials/_layout.scss */
 .btn_remove {
   background-color: whitesmoke !important;
-  color: #ef9a9a !important;
+  color: #d32f2f !important;
+  padding: 4px 5px !important;
+}
+/* line 212, partials/_layout.scss */
+.btn_remove:hover {
+  box-shadow: 0px -2px 0px 0px #b71c1c inset;
+}
+/* line 215, partials/_layout.scss */
+.btn_remove:active {
+  background-color: #b71c1c !important;
+  color: whitesmoke !important;
 }
 
-/* line 173, partials/_layout.scss */
+/* line 223, partials/_layout.scss */
 .shadow1 {
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 }
 
-/* line 176, partials/_layout.scss */
+/* line 226, partials/_layout.scss */
 .shadow2 {
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 }
 
-/* line 179, partials/_layout.scss */
+/* line 229, partials/_layout.scss */
 .shadow3 {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
 }
 
-/* line 182, partials/_layout.scss */
+/* line 232, partials/_layout.scss */
 .shadow4 {
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
 
-/* line 185, partials/_layout.scss */
+/* line 235, partials/_layout.scss */
 .shadow5 {
   box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
 }
 
-/* line 192, partials/_layout.scss */
+/* line 242, partials/_layout.scss */
 .left_half {
   padding-right: 5px;
 }
 
-/* line 196, partials/_layout.scss */
+/* line 246, partials/_layout.scss */
 .right_half {
   padding-left: 5px;
 }
 
-/* line 200, partials/_layout.scss */
+/* line 250, partials/_layout.scss */
 .padded {
   padding: 0px 8px;
 }
 
-/* line 204, partials/_layout.scss */
+/* line 254, partials/_layout.scss */
 .tferry_time {
   display: block;
   padding: 10px;
   font-size: 2em;
 }
 
-/* line 210, partials/_layout.scss */
+/* line 260, partials/_layout.scss */
 #static_timetable {
   display: none;
 }
 
-/* line 215, partials/_layout.scss */
+/* line 265, partials/_layout.scss */
 .tferry_table_title {
   display: block;
   padding: 5px;
   font-size: 1em;
 }
 
-/* line 221, partials/_layout.scss */
+/* line 271, partials/_layout.scss */
 .settings_title {
   display: block;
   font-weight: 600;
@@ -4085,7 +4148,7 @@ h4, h5, h6 {
   font-size: 1em;
 }
 
-/* line 228, partials/_layout.scss */
+/* line 278, partials/_layout.scss */
 .horizontal_line {
   width: 400px;
   height: 0;
@@ -4093,60 +4156,65 @@ h4, h5, h6 {
   font-size: 0;
 }
 
-/* line 235, partials/_layout.scss */
+/* line 285, partials/_layout.scss */
 .loading_text {
   font-size: 0.4em;
 }
 
-/* line 239, partials/_layout.scss */
+/* line 289, partials/_layout.scss */
+.larger_text {
+  font-size: 1.25em;
+}
+
+/* line 293, partials/_layout.scss */
 .blue_text {
   color: #0277bd;
 }
 
-/* line 244, partials/_layout.scss */
+/* line 298, partials/_layout.scss */
 .orange_text {
   color: #e65100;
 }
 
-/* line 249, partials/_layout.scss */
+/* line 303, partials/_layout.scss */
 .settings_text {
   padding: 5px;
   margin-left: 14px;
   font-size: 1em;
 }
 
-/* line 255, partials/_layout.scss */
+/* line 309, partials/_layout.scss */
 .margin_small {
   margin: 5px;
 }
 
-/* line 259, partials/_layout.scss */
+/* line 313, partials/_layout.scss */
 .margin_left {
   margin-left: 10px;
 }
 
-/* line 263, partials/_layout.scss */
+/* line 317, partials/_layout.scss */
 .margin_right {
   margin-right: 10px;
 }
 
-/* line 267, partials/_layout.scss */
+/* line 321, partials/_layout.scss */
 .important_text {
   font-size: 1.5em;
   font-weight: 700;
 }
 
-/* line 272, partials/_layout.scss */
+/* line 326, partials/_layout.scss */
 .date_text {
   font-size: 0.8em;
   color: #9e9e9e;
 }
 
-/* line 277, partials/_layout.scss */
+/* line 331, partials/_layout.scss */
 img {
   max-width: 100%;
 }
-/* line 279, partials/_layout.scss */
+/* line 333, partials/_layout.scss */
 img.first_time_logo {
   width: 60%;
   margin-top: 10px;

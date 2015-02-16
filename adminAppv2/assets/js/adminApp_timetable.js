@@ -170,6 +170,7 @@ function pushToNewFerryTime(journey, month, day, ferryTime){
 		var databaseRef = chooseFirebaseEntry(journey, month, day);
 		// console.log(databaseRef);
 		var refToPush = firebaseRef.child(databaseRef);
+		console.log(refToPush);
 		refToPush.push( {time: ferryTime} );
 		toastr.success("<i class='mdi-action-done margin_right'></i>New ferry time added");
 		// console.log("success");
