@@ -300,6 +300,21 @@ h4, h5, h6 {
 	// font-size: 0.9em !important;
 }
 
+// LOADING IMAGES
+
+rect {
+	fill: $bkg_light;
+}
+
+.blue_rect {
+	fill: $blue !important;	
+}
+
+.orange_rect {
+	fill: $orange_dull !important;	
+}
+
+
 .settings_text {
 	padding: 5px;
 	margin-left: 14px;
