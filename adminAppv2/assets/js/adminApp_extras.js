@@ -9,7 +9,7 @@ $(function() {
 
 	constructExtrasLists(timetableObj);
 	
-	constructExtraTables(timetableObj)
+	constructExtraTables(timetableObj);
 
 	// ERROR FUNCTION
 	}, function (errorObject) {

@@ -10,6 +10,11 @@ body {
 		color: $bkg_light;
 	}
 }
+
+.samsungfix {
+	margin: 0px 0px 0px -2px !important;
+};
+
 ::selection {
   background: $orange_light;
 }
@@ -42,8 +47,7 @@ h4, h5, h6 {
 
 .card {
 	border-radius: $border-radius;
-
-	margin-bottom: 15px;
+	margin-bottom: 10px;
 }
 
 .padded_left_right {
@@ -255,6 +259,10 @@ h4, h5, h6 {
 	display: block;
 	padding: 10px;
 	font-size: 2em;
+}
+
+#cancel_times, #changes_requires_internet, #changes_requires_internet_timeout, #extra_times {
+	display: none;
 }
 
 #static_timetable {

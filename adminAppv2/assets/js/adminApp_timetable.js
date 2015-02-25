@@ -35,6 +35,9 @@ $(function() {
 			} else if (daySelect == "da_jantoapr_fri"){
 				var time = $(this).prev('input').val();
 				pushToNewFerryTime("da", "jantoapr", "fri", time);
+			} else if (daySelect == "da_jantoapr_sat"){
+				var time = $(this).prev('input').val();
+				pushToNewFerryTime("da", "jantoapr", "sat", time);
 			}else if (daySelect == "da_jantoapr_sun") {
 				var time = $(this).prev('input').val();
 				pushToNewFerryTime("da", "jantoapr", "sun", time);
@@ -48,6 +51,9 @@ $(function() {
 			} else if (daySelect == "db_jantoapr_fri"){
 				var time = $(this).prev('input').val();
 				pushToNewFerryTime("db", "jantoapr", "fri", time);
+			}else if (daySelect == "db_jantoapr_sat"){
+				var time = $(this).prev('input').val();
+				pushToNewFerryTime("db", "jantoapr", "sat", time);
 			}else if (daySelect == "db_jantoapr_sun") {
 				var time = $(this).prev('input').val();
 				pushToNewFerryTime("db", "jantoapr", "sun", time);
@@ -62,7 +68,10 @@ $(function() {
 			} else if (daySelect == "da_may_fri"){
 				var time = $(this).prev('input').val();
 				pushToNewFerryTime("da", "may", "fri", time);
-			}else if (daySelect == "da_may_sun") {
+			} else if (daySelect == "da_may_sat"){
+				var time = $(this).prev('input').val();
+				pushToNewFerryTime("da", "may", "sat", time);
+			} else if (daySelect == "da_may_sun") {
 				var time = $(this).prev('input').val();
 				pushToNewFerryTime("da", "may", "sun", time);
 			};
@@ -75,7 +84,10 @@ $(function() {
 			} else if (daySelect == "db_may_fri"){
 				var time = $(this).prev('input').val();
 				pushToNewFerryTime("db", "may", "fri", time);
-			}else if (daySelect == "db_may_sun") {
+			} else if (daySelect == "db_may_sat"){
+				var time = $(this).prev('input').val();
+				pushToNewFerryTime("db", "may", "sat", time);
+			} else if (daySelect == "db_may_sun") {
 				var time = $(this).prev('input').val();
 				pushToNewFerryTime("db", "may", "sun", time);
 			};
@@ -89,7 +101,10 @@ $(function() {
 			} else if (daySelect == "da_juntoaug_fri"){
 				var time = $(this).prev('input').val();
 				pushToNewFerryTime("da", "juntoaug", "fri", time);
-			}else if (daySelect == "da_juntoaug_sun") {
+			} else if (daySelect == "da_juntoaug_sat"){
+				var time = $(this).prev('input').val();
+				pushToNewFerryTime("da", "juntoaug", "sat", time);
+			} else if (daySelect == "da_juntoaug_sun") {
 				var time = $(this).prev('input').val();
 				pushToNewFerryTime("da", "juntoaug", "sun", time);
 			};
@@ -102,7 +117,10 @@ $(function() {
 			} else if (daySelect == "db_juntoaug_fri"){
 				var time = $(this).prev('input').val();
 				pushToNewFerryTime("db", "juntoaug", "fri", time);
-			}else if (daySelect == "db_juntoaug_sun") {
+			} else if (daySelect == "db_juntoaug_sat"){
+				var time = $(this).prev('input').val();
+				pushToNewFerryTime("db", "juntoaug", "sat", time);
+			} else if (daySelect == "db_juntoaug_sun") {
 				var time = $(this).prev('input').val();
 				pushToNewFerryTime("db", "juntoaug", "sun", time);
 			};
@@ -116,7 +134,10 @@ $(function() {
 			} else if (daySelect == "da_septooct_fri"){
 				var time = $(this).prev('input').val();
 				pushToNewFerryTime("da", "septooct", "fri", time);
-			}else if (daySelect == "da_septooct_sun") {
+			} else if (daySelect == "da_septooct_sat"){
+				var time = $(this).prev('input').val();
+				pushToNewFerryTime("da", "septooct", "sat", time);
+			} else if (daySelect == "da_septooct_sun") {
 				var time = $(this).prev('input').val();
 				pushToNewFerryTime("da", "septooct", "sun", time);
 			};
@@ -129,7 +150,10 @@ $(function() {
 			} else if (daySelect == "db_septooct_fri"){
 				var time = $(this).prev('input').val();
 				pushToNewFerryTime("db", "septooct", "fri", time);
-			}else if (daySelect == "db_septooct_sun") {
+			} else if (daySelect == "db_septooct_sat"){
+				var time = $(this).prev('input').val();
+				pushToNewFerryTime("db", "septooct", "sat", time);
+			} else if (daySelect == "db_septooct_sun") {
 				var time = $(this).prev('input').val();
 				pushToNewFerryTime("db", "septooct", "sun", time);
 			};
@@ -143,7 +167,10 @@ $(function() {
 			} else if (daySelect == "da_novtodec_fri"){
 				var time = $(this).prev('input').val();
 				pushToNewFerryTime("da", "novtodec", "fri", time);
-			}else if (daySelect == "da_novtodec_sun") {
+			} else if (daySelect == "da_novtodec_sat"){
+				var time = $(this).prev('input').val();
+				pushToNewFerryTime("da", "novtodec", "sat", time);
+			} else if (daySelect == "da_novtodec_sun") {
 				var time = $(this).prev('input').val();
 				pushToNewFerryTime("da", "novtodec", "sun", time);
 			};
@@ -156,7 +183,10 @@ $(function() {
 			} else if (daySelect == "db_novtodec_fri"){
 				var time = $(this).prev('input').val();
 				pushToNewFerryTime("db", "novtodec", "fri", time);
-			}else if (daySelect == "db_novtodec_sun") {
+			}else if (daySelect == "db_novtodec_sat"){
+				var time = $(this).prev('input').val();
+				pushToNewFerryTime("db", "novtodec", "sat", time);
+			} else if (daySelect == "db_novtodec_sun") {
 				var time = $(this).prev('input').val();
 				pushToNewFerryTime("db", "novtodec", "sun", time);
 			};
@@ -170,7 +200,7 @@ function pushToNewFerryTime(journey, month, day, ferryTime){
 		var databaseRef = chooseFirebaseEntry(journey, month, day);
 		// console.log(databaseRef);
 		var refToPush = firebaseRef.child(databaseRef);
-		console.log(refToPush);
+		// console.log(refToPush);
 		refToPush.push( {time: ferryTime} );
 		toastr.success("<i class='mdi-action-done margin_right'></i>New ferry time added");
 		// console.log("success");
@@ -213,6 +243,8 @@ function checkRefDay(day){
 		return "wk";
 	} else if (day == "fri") {
 		return "fri";
+	} else if (day == "sat") {
+		return "sat";
 	} else if (day == "sun") {
 		return "sun";
 	}
@@ -333,6 +365,7 @@ function constructSingleTable(journey, monthRange, daysObj){
 
 	var array_wk = generateArrays(daysObj.wk);
 	var array_fri = generateArrays(daysObj.fri);
+	var array_sat = generateArrays(daysObj.sat);
 	var array_sun = generateArrays(daysObj.sun);
 
     // MONDAY TO SATURDAY TABLE
@@ -346,29 +379,25 @@ function constructSingleTable(journey, monthRange, daysObj){
     tableHTML += "</tr></tbody></table>";
 
     // FRIDAY TABLE
-    // STYLE 1
-    if (journey == "da"){
-	    if (array_fri.length != 0) {
-	    	tableHTML += "<table class='"+cssColor+" no_top_border align-center'> <tr> <th class='"+cssColor+" fri_subheading'>Fridays Only:</th>";
+    if (array_fri.length != 0) {
+    	tableHTML += "<table class='"+cssColor+" no_top_border align-center'> <tr> <th width='50%' class='"+cssColor+" fri_subheading'>Fridays Only:</th>";
 
-		    for (var i = 0; i < array_fri.length; i++) {
-		        tableHTML += "<td class='fri_subheading "+cssColor+"'>" + array_fri[i] + "</td>";
-		    };
+	    for (var i = 0; i < array_fri.length; i++) {
+	        tableHTML += "<td class='fri_subheading "+cssColor+"'>" + array_fri[i] + "</td>";
+	    };
 
-	    	tableHTML == "</tr></table>";
-	    }
-	// STYLE 2
-    } else {
-    	if (array_fri.length != 0) {
-	    	tableHTML += "<table class='"+cssColor+" align-center' border='1'> <thead> <tr> <th class='"+cssColor+" subheading' colspan='"+array_fri.length+"'>Fridays Only</th> </tr> </thead>";
-		    tableHTML += "<tbody> <tr>";
+    	tableHTML == "</tr></table>";
+    }
 
-		    for (var i = 0; i < array_fri.length; i++) {
-		        tableHTML += "<td>" + array_fri[i] + "</td>";
-		    };
+    // SATURDAY TABLE
+    if (array_sat.length != 0) {
+    	tableHTML += "<table class='"+cssColor+" no_top_border align-center'> <tr> <th width='50%' class='"+cssColor+" fri_subheading'>Saturdays Only:</th>";
 
-		    tableHTML += "</tr></tbody></table>";
-		}
+	    for (var i = 0; i < array_sat.length; i++) {
+	        tableHTML += "<td class='fri_subheading "+cssColor+"'>" + array_sat[i] + "</td>";
+	    };
+
+    	tableHTML == "</tr></table>";
     }
 
     // SUNDAY TABLE
@@ -403,62 +432,57 @@ function generateArrays(timeObj){
 // ===========================================================================
 // FILTERING THE LIST OF FERRIES
 // ===========================================================================
-
 $(function() { 
 
-	jQuery('body').on('click', 'a', function () { 
-		if ( $(this).hasClass("submit_filter") ) {
-			var filterOn = $('select[name="filterMonths"]').val()
-			switch (filterOn) {
+	$('.selectpicker').change(function () {
+		var filterOn = $('select[name="filterMonths"]').val();
+
+		switch (filterOn) {
 			    case "all":
-			        console.log("show all months");
-			        document.getElementById('jantoapr').style.display = 'block';
-			        document.getElementById('may').style.display = 'block';
-			        document.getElementById('juntoaug').style.display = 'block';
-			        document.getElementById('septooct').style.display = 'block';
-			        document.getElementById('novtodec').style.display = 'block';
+					$('#jantoapr').show(); 
+			        $('#may').show();
+			        $('#juntoaug').show(); 
+					$('#septooct').show(); 
+					$('#novtodec').show(); 
 			        break;
 			    case "jan_apr":
-			        console.log("show all jan to apr");
-			        document.getElementById('jantoapr').style.display = 'block';
-			        document.getElementById('may').style.display = 'none';
-			        document.getElementById('juntoaug').style.display = 'none';
-			        document.getElementById('septooct').style.display = 'none';
-			        document.getElementById('novtodec').style.display = 'none';
+					$('#jantoapr').show(); 
+			        $('#may').hide();
+			        $('#juntoaug').hide(); 
+					$('#septooct').hide(); 
+					$('#novtodec').hide(); 
 			        break;
 			    case "may":
-			        console.log("show all may");
-			        document.getElementById('jantoapr').style.display = 'none';
-			        document.getElementById('may').style.display = 'block';
-			        document.getElementById('juntoaug').style.display = 'none';
-			        document.getElementById('septooct').style.display = 'none';
-			        document.getElementById('novtodec').style.display = 'none';
+					$('#jantoapr').hide(); 
+			        $('#may').show();
+			        $('#juntoaug').hide(); 
+					$('#septooct').hide(); 
+					$('#novtodec').hide(); 
 			        break;
 			    case "jun_aug":
-			        console.log("show all june to aug");
-			        document.getElementById('jantoapr').style.display = 'none';
-			        document.getElementById('may').style.display = 'none';
-			        document.getElementById('juntoaug').style.display = 'block';
-			        document.getElementById('septooct').style.display = 'none';
-			        document.getElementById('novtodec').style.display = 'none';
+					$('#jantoapr').hide(); 
+			        $('#may').hide();
+			        $('#juntoaug').show(); 
+					$('#septooct').hide(); 
+					$('#novtodec').hide(); 
 			        break;
 			    case "sep_oct":
-			        document.getElementById('jantoapr').style.display = 'none';
-			        document.getElementById('may').style.display = 'none';
-			        document.getElementById('juntoaug').style.display = 'none';
-			        document.getElementById('septooct').style.display = 'block';
-			        document.getElementById('novtodec').style.display = 'none';
+					$('#jantoapr').hide(); 
+			        $('#may').hide();
+			        $('#juntoaug').hide(); 
+					$('#septooct').show(); 
+					$('#novtodec').hide(); 
 			        break;
 			    case "nov_dec":
-			        console.log("show all nov to dec");
-			        document.getElementById('jantoapr').style.display = 'none';
-			        document.getElementById('may').style.display = 'none';
-			        document.getElementById('juntoaug').style.display = 'none';
-			        document.getElementById('septooct').style.display = 'none';
-			        document.getElementById('novtodec').style.display = 'block';
+					$('#jantoapr').hide(); 
+			        $('#may').hide();
+			        $('#juntoaug').hide(); 
+					$('#septooct').hide(); 
+					$('#novtodec').show(); 
+					break
 			};
-		} 
-	});
-});
 
+	})
+
+});
 

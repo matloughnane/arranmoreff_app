@@ -29,15 +29,12 @@ $(function() {
 function getNextFerryTimes(timetableObj){
 	var tdate = new Date();
 	var todaysDate = checkDayRange(tdate);
-	// console.log(tdate);
-	// console.log(todaysDate);
 
 	var ttime = getPrettyTime(tdate);
 
 	var dayRange = todaysDate.substr(0, todaysDate.indexOf(','));
 	var monthRange = todaysDate.substr(todaysDate.lastIndexOf(',')+1, todaysDate.length);
 
-	// console.log(dayRange + " " +monthRange);
 
 	var da_cancelledArray = checkCancelledFerries(timetableObj, "da", tdate);
 	var da_extraArray = checkExtraFerries(timetableObj, "da", tdate);
@@ -295,8 +292,6 @@ function checkDayRange(date){
 	if (cyear < 1900){ cyear = cyear + 1900};
     var cmonth = cdate.getMonth()+1;
     var cdate = cdate.getDate();
-
-	// console.log(day + " " + cyear + " " + cmonth + " " + " " + cdate);
 
 	if (day == "Sun"){
 		// console.log("it's Sunday");

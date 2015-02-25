@@ -3828,23 +3828,28 @@ body.first_time {
   color: whitesmoke;
 }
 
-/* line 13, /Users/Matthew/developer/github/arranmoreff_app/adminAppv2/assets/css/partials/_layout.scss */
+/* line 14, /Users/Matthew/developer/github/arranmoreff_app/adminAppv2/assets/css/partials/_layout.scss */
+.samsungfix {
+  margin: 0px 0px 0px -2px !important;
+}
+
+/* line 18, /Users/Matthew/developer/github/arranmoreff_app/adminAppv2/assets/css/partials/_layout.scss */
 ::selection {
   background: #ffb74d;
 }
 
-/* line 17, /Users/Matthew/developer/github/arranmoreff_app/adminAppv2/assets/css/partials/_layout.scss */
+/* line 22, /Users/Matthew/developer/github/arranmoreff_app/adminAppv2/assets/css/partials/_layout.scss */
 ::-moz-selection {
   background: #ffb74d;
 }
 
-/* line 21, /Users/Matthew/developer/github/arranmoreff_app/adminAppv2/assets/css/partials/_layout.scss */
+/* line 26, /Users/Matthew/developer/github/arranmoreff_app/adminAppv2/assets/css/partials/_layout.scss */
 a {
   color: black;
   text-decoration: none;
 }
 
-/* line 26, /Users/Matthew/developer/github/arranmoreff_app/adminAppv2/assets/css/partials/_layout.scss */
+/* line 31, /Users/Matthew/developer/github/arranmoreff_app/adminAppv2/assets/css/partials/_layout.scss */
 h1, h2, h3 {
   -webkit-margin-before: 0.5em;
   -webkit-margin-after: 0.5em;
@@ -3852,7 +3857,7 @@ h1, h2, h3 {
   -webkit-margin-end: 0px;
 }
 
-/* line 33, /Users/Matthew/developer/github/arranmoreff_app/adminAppv2/assets/css/partials/_layout.scss */
+/* line 38, /Users/Matthew/developer/github/arranmoreff_app/adminAppv2/assets/css/partials/_layout.scss */
 h4, h5, h6 {
   font-weight: 550;
   -webkit-margin-before: 0.15em;
@@ -3861,95 +3866,95 @@ h4, h5, h6 {
   -webkit-margin-end: 0px;
 }
 
-/* line 43, /Users/Matthew/developer/github/arranmoreff_app/adminAppv2/assets/css/partials/_layout.scss */
+/* line 48, /Users/Matthew/developer/github/arranmoreff_app/adminAppv2/assets/css/partials/_layout.scss */
 .card {
   border-radius: 1px;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
 
-/* line 49, /Users/Matthew/developer/github/arranmoreff_app/adminAppv2/assets/css/partials/_layout.scss */
+/* line 53, /Users/Matthew/developer/github/arranmoreff_app/adminAppv2/assets/css/partials/_layout.scss */
 .padded_left_right {
   padding-left: 10px !important;
   padding-right: 10px !important;
 }
 
-/* line 54, /Users/Matthew/developer/github/arranmoreff_app/adminAppv2/assets/css/partials/_layout.scss */
+/* line 58, /Users/Matthew/developer/github/arranmoreff_app/adminAppv2/assets/css/partials/_layout.scss */
 .plain {
   background: whitesmoke;
   color: #424242;
 }
 
-/* line 58, /Users/Matthew/developer/github/arranmoreff_app/adminAppv2/assets/css/partials/_layout.scss */
+/* line 62, /Users/Matthew/developer/github/arranmoreff_app/adminAppv2/assets/css/partials/_layout.scss */
 .blue {
   background: #03a9f4;
   color: whitesmoke;
 }
 
-/* line 62, /Users/Matthew/developer/github/arranmoreff_app/adminAppv2/assets/css/partials/_layout.scss */
+/* line 66, /Users/Matthew/developer/github/arranmoreff_app/adminAppv2/assets/css/partials/_layout.scss */
 .blue_light {
   background: #81d4fa;
   color: #424242;
 }
 
-/* line 66, /Users/Matthew/developer/github/arranmoreff_app/adminAppv2/assets/css/partials/_layout.scss */
+/* line 70, /Users/Matthew/developer/github/arranmoreff_app/adminAppv2/assets/css/partials/_layout.scss */
 .blue_dull {
   background: #0277bd;
   color: whitesmoke;
 }
 
-/* line 70, /Users/Matthew/developer/github/arranmoreff_app/adminAppv2/assets/css/partials/_layout.scss */
+/* line 74, /Users/Matthew/developer/github/arranmoreff_app/adminAppv2/assets/css/partials/_layout.scss */
 .orange {
   background: #f57c00;
   color: whitesmoke;
 }
 
-/* line 74, /Users/Matthew/developer/github/arranmoreff_app/adminAppv2/assets/css/partials/_layout.scss */
+/* line 78, /Users/Matthew/developer/github/arranmoreff_app/adminAppv2/assets/css/partials/_layout.scss */
 .orange_light {
   background: #ffb74d;
   color: #424242;
 }
 
-/* line 78, /Users/Matthew/developer/github/arranmoreff_app/adminAppv2/assets/css/partials/_layout.scss */
+/* line 82, /Users/Matthew/developer/github/arranmoreff_app/adminAppv2/assets/css/partials/_layout.scss */
 .orange_dull {
   background: #e65100;
   color: whitesmoke;
 }
 
-/* line 82, /Users/Matthew/developer/github/arranmoreff_app/adminAppv2/assets/css/partials/_layout.scss */
+/* line 86, /Users/Matthew/developer/github/arranmoreff_app/adminAppv2/assets/css/partials/_layout.scss */
 .green {
   background: #388e3c;
   color: whitesmoke;
 }
 
-/* line 86, /Users/Matthew/developer/github/arranmoreff_app/adminAppv2/assets/css/partials/_layout.scss */
+/* line 90, /Users/Matthew/developer/github/arranmoreff_app/adminAppv2/assets/css/partials/_layout.scss */
 .green_light {
   font-size: 15px;
   background: #a5d6a7;
 }
 
-/* line 92, /Users/Matthew/developer/github/arranmoreff_app/adminAppv2/assets/css/partials/_layout.scss */
+/* line 96, /Users/Matthew/developer/github/arranmoreff_app/adminAppv2/assets/css/partials/_layout.scss */
 .red {
   background: #d32f2f;
   color: whitesmoke;
 }
 
-/* line 97, /Users/Matthew/developer/github/arranmoreff_app/adminAppv2/assets/css/partials/_layout.scss */
+/* line 101, /Users/Matthew/developer/github/arranmoreff_app/adminAppv2/assets/css/partials/_layout.scss */
 .light_red {
   background: #ef9a9a;
 }
 
-/* line 101, /Users/Matthew/developer/github/arranmoreff_app/adminAppv2/assets/css/partials/_layout.scss */
+/* line 105, /Users/Matthew/developer/github/arranmoreff_app/adminAppv2/assets/css/partials/_layout.scss */
 .light_green {
   background-color: #a5d6a7;
 }
 
-/* line 105, /Users/Matthew/developer/github/arranmoreff_app/adminAppv2/assets/css/partials/_layout.scss */
+/* line 109, /Users/Matthew/developer/github/arranmoreff_app/adminAppv2/assets/css/partials/_layout.scss */
 .card_noBottom {
   border-radius: 1px;
   margin-bottom: 0px;
 }
 
-/* line 113, /Users/Matthew/developer/github/arranmoreff_app/adminAppv2/assets/css/partials/_layout.scss */
+/* line 117, /Users/Matthew/developer/github/arranmoreff_app/adminAppv2/assets/css/partials/_layout.scss */
 .btn {
   border: none;
   background: none;
@@ -3966,63 +3971,63 @@ h4, h5, h6 {
   cursor: pointer;
 }
 
-/* line 129, /Users/Matthew/developer/github/arranmoreff_app/adminAppv2/assets/css/partials/_layout.scss */
+/* line 133, /Users/Matthew/developer/github/arranmoreff_app/adminAppv2/assets/css/partials/_layout.scss */
 .btn_blue {
   background-color: #03a9f4 !important;
   color: whitesmoke !important;
 }
-/* line 132, /Users/Matthew/developer/github/arranmoreff_app/adminAppv2/assets/css/partials/_layout.scss */
+/* line 136, /Users/Matthew/developer/github/arranmoreff_app/adminAppv2/assets/css/partials/_layout.scss */
 .btn_blue:hover {
   box-shadow: 0px -3px 0px 0px #0277bd inset;
 }
-/* line 135, /Users/Matthew/developer/github/arranmoreff_app/adminAppv2/assets/css/partials/_layout.scss */
+/* line 139, /Users/Matthew/developer/github/arranmoreff_app/adminAppv2/assets/css/partials/_layout.scss */
 .btn_blue:active {
   background-color: #0277bd !important;
 }
 
-/* line 140, /Users/Matthew/developer/github/arranmoreff_app/adminAppv2/assets/css/partials/_layout.scss */
+/* line 144, /Users/Matthew/developer/github/arranmoreff_app/adminAppv2/assets/css/partials/_layout.scss */
 .btn_orange {
   background-color: #f57c00 !important;
   color: whitesmoke !important;
 }
-/* line 143, /Users/Matthew/developer/github/arranmoreff_app/adminAppv2/assets/css/partials/_layout.scss */
+/* line 147, /Users/Matthew/developer/github/arranmoreff_app/adminAppv2/assets/css/partials/_layout.scss */
 .btn_orange:hover {
   box-shadow: 0px -3px 0px 0px #e65100 inset;
 }
-/* line 146, /Users/Matthew/developer/github/arranmoreff_app/adminAppv2/assets/css/partials/_layout.scss */
+/* line 150, /Users/Matthew/developer/github/arranmoreff_app/adminAppv2/assets/css/partials/_layout.scss */
 .btn_orange:active {
   background-color: #e65100 !important;
 }
 
-/* line 151, /Users/Matthew/developer/github/arranmoreff_app/adminAppv2/assets/css/partials/_layout.scss */
+/* line 155, /Users/Matthew/developer/github/arranmoreff_app/adminAppv2/assets/css/partials/_layout.scss */
 .btn_red {
   background-color: #d32f2f !important;
   color: whitesmoke !important;
 }
-/* line 154, /Users/Matthew/developer/github/arranmoreff_app/adminAppv2/assets/css/partials/_layout.scss */
+/* line 158, /Users/Matthew/developer/github/arranmoreff_app/adminAppv2/assets/css/partials/_layout.scss */
 .btn_red:hover {
   box-shadow: 0px -3px 0px 0px #b71c1c inset;
 }
-/* line 157, /Users/Matthew/developer/github/arranmoreff_app/adminAppv2/assets/css/partials/_layout.scss */
+/* line 161, /Users/Matthew/developer/github/arranmoreff_app/adminAppv2/assets/css/partials/_layout.scss */
 .btn_red:active {
   background-color: #b71c1c !important;
 }
 
-/* line 162, /Users/Matthew/developer/github/arranmoreff_app/adminAppv2/assets/css/partials/_layout.scss */
+/* line 166, /Users/Matthew/developer/github/arranmoreff_app/adminAppv2/assets/css/partials/_layout.scss */
 .btn_green {
   background-color: #388e3c !important;
   color: whitesmoke !important;
 }
-/* line 165, /Users/Matthew/developer/github/arranmoreff_app/adminAppv2/assets/css/partials/_layout.scss */
+/* line 169, /Users/Matthew/developer/github/arranmoreff_app/adminAppv2/assets/css/partials/_layout.scss */
 .btn_green:hover {
   box-shadow: 0px -3px 0px 0px #1b5e20 inset;
 }
-/* line 168, /Users/Matthew/developer/github/arranmoreff_app/adminAppv2/assets/css/partials/_layout.scss */
+/* line 172, /Users/Matthew/developer/github/arranmoreff_app/adminAppv2/assets/css/partials/_layout.scss */
 .btn_green:active {
   background-color: #1b5e20 !important;
 }
 
-/* line 173, /Users/Matthew/developer/github/arranmoreff_app/adminAppv2/assets/css/partials/_layout.scss */
+/* line 177, /Users/Matthew/developer/github/arranmoreff_app/adminAppv2/assets/css/partials/_layout.scss */
 .btn_uncancel {
   padding: 5px;
   display: inline-block;
@@ -4030,117 +4035,122 @@ h4, h5, h6 {
   background-color: #388e3c !important;
   color: whitesmoke !important;
 }
-/* line 179, /Users/Matthew/developer/github/arranmoreff_app/adminAppv2/assets/css/partials/_layout.scss */
+/* line 183, /Users/Matthew/developer/github/arranmoreff_app/adminAppv2/assets/css/partials/_layout.scss */
 .btn_uncancel:hover {
   box-shadow: 0px -3px 0px 0px #1b5e20 inset;
 }
-/* line 182, /Users/Matthew/developer/github/arranmoreff_app/adminAppv2/assets/css/partials/_layout.scss */
+/* line 186, /Users/Matthew/developer/github/arranmoreff_app/adminAppv2/assets/css/partials/_layout.scss */
 .btn_uncancel:active {
   background-color: #1b5e20 !important;
 }
 
-/* line 187, /Users/Matthew/developer/github/arranmoreff_app/adminAppv2/assets/css/partials/_layout.scss */
+/* line 191, /Users/Matthew/developer/github/arranmoreff_app/adminAppv2/assets/css/partials/_layout.scss */
 .btn_no_margin {
   margin: 0px;
 }
 
-/* line 191, /Users/Matthew/developer/github/arranmoreff_app/adminAppv2/assets/css/partials/_layout.scss */
+/* line 195, /Users/Matthew/developer/github/arranmoreff_app/adminAppv2/assets/css/partials/_layout.scss */
 .btn_large {
   font-size: 1.2em !important;
 }
 
-/* line 195, /Users/Matthew/developer/github/arranmoreff_app/adminAppv2/assets/css/partials/_layout.scss */
+/* line 199, /Users/Matthew/developer/github/arranmoreff_app/adminAppv2/assets/css/partials/_layout.scss */
 .btn_add {
   background-color: whitesmoke !important;
   color: #388e3c !important;
   padding: 4px 5px !important;
 }
-/* line 199, /Users/Matthew/developer/github/arranmoreff_app/adminAppv2/assets/css/partials/_layout.scss */
+/* line 203, /Users/Matthew/developer/github/arranmoreff_app/adminAppv2/assets/css/partials/_layout.scss */
 .btn_add:hover {
   box-shadow: 0px -2px 0px 0px #1b5e20 inset;
 }
-/* line 202, /Users/Matthew/developer/github/arranmoreff_app/adminAppv2/assets/css/partials/_layout.scss */
+/* line 206, /Users/Matthew/developer/github/arranmoreff_app/adminAppv2/assets/css/partials/_layout.scss */
 .btn_add:active {
   background-color: #1b5e20 !important;
   color: whitesmoke !important;
 }
 
-/* line 208, /Users/Matthew/developer/github/arranmoreff_app/adminAppv2/assets/css/partials/_layout.scss */
+/* line 212, /Users/Matthew/developer/github/arranmoreff_app/adminAppv2/assets/css/partials/_layout.scss */
 .btn_remove {
   background-color: whitesmoke !important;
   color: #d32f2f !important;
   padding: 4px 5px !important;
 }
-/* line 212, /Users/Matthew/developer/github/arranmoreff_app/adminAppv2/assets/css/partials/_layout.scss */
+/* line 216, /Users/Matthew/developer/github/arranmoreff_app/adminAppv2/assets/css/partials/_layout.scss */
 .btn_remove:hover {
   box-shadow: 0px -2px 0px 0px #b71c1c inset;
 }
-/* line 215, /Users/Matthew/developer/github/arranmoreff_app/adminAppv2/assets/css/partials/_layout.scss */
+/* line 219, /Users/Matthew/developer/github/arranmoreff_app/adminAppv2/assets/css/partials/_layout.scss */
 .btn_remove:active {
   background-color: #b71c1c !important;
   color: whitesmoke !important;
 }
 
-/* line 223, /Users/Matthew/developer/github/arranmoreff_app/adminAppv2/assets/css/partials/_layout.scss */
+/* line 227, /Users/Matthew/developer/github/arranmoreff_app/adminAppv2/assets/css/partials/_layout.scss */
 .shadow1 {
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 }
 
-/* line 226, /Users/Matthew/developer/github/arranmoreff_app/adminAppv2/assets/css/partials/_layout.scss */
+/* line 230, /Users/Matthew/developer/github/arranmoreff_app/adminAppv2/assets/css/partials/_layout.scss */
 .shadow2 {
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 }
 
-/* line 229, /Users/Matthew/developer/github/arranmoreff_app/adminAppv2/assets/css/partials/_layout.scss */
+/* line 233, /Users/Matthew/developer/github/arranmoreff_app/adminAppv2/assets/css/partials/_layout.scss */
 .shadow3 {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
 }
 
-/* line 232, /Users/Matthew/developer/github/arranmoreff_app/adminAppv2/assets/css/partials/_layout.scss */
+/* line 236, /Users/Matthew/developer/github/arranmoreff_app/adminAppv2/assets/css/partials/_layout.scss */
 .shadow4 {
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
 
-/* line 235, /Users/Matthew/developer/github/arranmoreff_app/adminAppv2/assets/css/partials/_layout.scss */
+/* line 239, /Users/Matthew/developer/github/arranmoreff_app/adminAppv2/assets/css/partials/_layout.scss */
 .shadow5 {
   box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
 }
 
-/* line 242, /Users/Matthew/developer/github/arranmoreff_app/adminAppv2/assets/css/partials/_layout.scss */
+/* line 246, /Users/Matthew/developer/github/arranmoreff_app/adminAppv2/assets/css/partials/_layout.scss */
 .left_half {
   padding-right: 5px;
 }
 
-/* line 246, /Users/Matthew/developer/github/arranmoreff_app/adminAppv2/assets/css/partials/_layout.scss */
+/* line 250, /Users/Matthew/developer/github/arranmoreff_app/adminAppv2/assets/css/partials/_layout.scss */
 .right_half {
   padding-left: 5px;
 }
 
-/* line 250, /Users/Matthew/developer/github/arranmoreff_app/adminAppv2/assets/css/partials/_layout.scss */
+/* line 254, /Users/Matthew/developer/github/arranmoreff_app/adminAppv2/assets/css/partials/_layout.scss */
 .padded {
   padding: 0px 8px;
 }
 
-/* line 254, /Users/Matthew/developer/github/arranmoreff_app/adminAppv2/assets/css/partials/_layout.scss */
+/* line 258, /Users/Matthew/developer/github/arranmoreff_app/adminAppv2/assets/css/partials/_layout.scss */
 .tferry_time {
   display: block;
   padding: 10px;
   font-size: 2em;
 }
 
-/* line 260, /Users/Matthew/developer/github/arranmoreff_app/adminAppv2/assets/css/partials/_layout.scss */
+/* line 264, /Users/Matthew/developer/github/arranmoreff_app/adminAppv2/assets/css/partials/_layout.scss */
+#cancel_times, #changes_requires_internet, #changes_requires_internet_timeout, #extra_times {
+  display: none;
+}
+
+/* line 268, /Users/Matthew/developer/github/arranmoreff_app/adminAppv2/assets/css/partials/_layout.scss */
 #static_timetable {
   display: none;
 }
 
-/* line 265, /Users/Matthew/developer/github/arranmoreff_app/adminAppv2/assets/css/partials/_layout.scss */
+/* line 273, /Users/Matthew/developer/github/arranmoreff_app/adminAppv2/assets/css/partials/_layout.scss */
 .tferry_table_title {
   display: block;
   padding: 5px;
   font-size: 1em;
 }
 
-/* line 271, /Users/Matthew/developer/github/arranmoreff_app/adminAppv2/assets/css/partials/_layout.scss */
+/* line 279, /Users/Matthew/developer/github/arranmoreff_app/adminAppv2/assets/css/partials/_layout.scss */
 .settings_title {
   display: block;
   font-weight: 600;
@@ -4148,7 +4158,7 @@ h4, h5, h6 {
   font-size: 1em;
 }
 
-/* line 278, /Users/Matthew/developer/github/arranmoreff_app/adminAppv2/assets/css/partials/_layout.scss */
+/* line 286, /Users/Matthew/developer/github/arranmoreff_app/adminAppv2/assets/css/partials/_layout.scss */
 .horizontal_line {
   width: 400px;
   height: 0;
@@ -4156,80 +4166,80 @@ h4, h5, h6 {
   font-size: 0;
 }
 
-/* line 285, /Users/Matthew/developer/github/arranmoreff_app/adminAppv2/assets/css/partials/_layout.scss */
+/* line 293, /Users/Matthew/developer/github/arranmoreff_app/adminAppv2/assets/css/partials/_layout.scss */
 .loading_text {
   font-size: 0.4em;
 }
 
-/* line 289, /Users/Matthew/developer/github/arranmoreff_app/adminAppv2/assets/css/partials/_layout.scss */
+/* line 297, /Users/Matthew/developer/github/arranmoreff_app/adminAppv2/assets/css/partials/_layout.scss */
 .larger_text {
   font-size: 1.25em;
 }
 
-/* line 293, /Users/Matthew/developer/github/arranmoreff_app/adminAppv2/assets/css/partials/_layout.scss */
+/* line 301, /Users/Matthew/developer/github/arranmoreff_app/adminAppv2/assets/css/partials/_layout.scss */
 .blue_text {
   color: #0277bd;
 }
 
-/* line 298, /Users/Matthew/developer/github/arranmoreff_app/adminAppv2/assets/css/partials/_layout.scss */
+/* line 306, /Users/Matthew/developer/github/arranmoreff_app/adminAppv2/assets/css/partials/_layout.scss */
 .orange_text {
   color: #e65100;
 }
 
-/* line 305, /Users/Matthew/developer/github/arranmoreff_app/adminAppv2/assets/css/partials/_layout.scss */
+/* line 313, /Users/Matthew/developer/github/arranmoreff_app/adminAppv2/assets/css/partials/_layout.scss */
 rect {
   fill: whitesmoke;
 }
 
-/* line 309, /Users/Matthew/developer/github/arranmoreff_app/adminAppv2/assets/css/partials/_layout.scss */
+/* line 317, /Users/Matthew/developer/github/arranmoreff_app/adminAppv2/assets/css/partials/_layout.scss */
 .blue_rect {
   fill: #03a9f4 !important;
 }
 
-/* line 313, /Users/Matthew/developer/github/arranmoreff_app/adminAppv2/assets/css/partials/_layout.scss */
+/* line 321, /Users/Matthew/developer/github/arranmoreff_app/adminAppv2/assets/css/partials/_layout.scss */
 .orange_rect {
   fill: #e65100 !important;
 }
 
-/* line 318, /Users/Matthew/developer/github/arranmoreff_app/adminAppv2/assets/css/partials/_layout.scss */
+/* line 326, /Users/Matthew/developer/github/arranmoreff_app/adminAppv2/assets/css/partials/_layout.scss */
 .settings_text {
   padding: 5px;
   margin-left: 14px;
   font-size: 1em;
 }
 
-/* line 324, /Users/Matthew/developer/github/arranmoreff_app/adminAppv2/assets/css/partials/_layout.scss */
+/* line 332, /Users/Matthew/developer/github/arranmoreff_app/adminAppv2/assets/css/partials/_layout.scss */
 .margin_small {
   margin: 5px;
 }
 
-/* line 328, /Users/Matthew/developer/github/arranmoreff_app/adminAppv2/assets/css/partials/_layout.scss */
+/* line 336, /Users/Matthew/developer/github/arranmoreff_app/adminAppv2/assets/css/partials/_layout.scss */
 .margin_left {
   margin-left: 10px;
 }
 
-/* line 332, /Users/Matthew/developer/github/arranmoreff_app/adminAppv2/assets/css/partials/_layout.scss */
+/* line 340, /Users/Matthew/developer/github/arranmoreff_app/adminAppv2/assets/css/partials/_layout.scss */
 .margin_right {
   margin-right: 10px;
 }
 
-/* line 336, /Users/Matthew/developer/github/arranmoreff_app/adminAppv2/assets/css/partials/_layout.scss */
+/* line 344, /Users/Matthew/developer/github/arranmoreff_app/adminAppv2/assets/css/partials/_layout.scss */
 .important_text {
   font-size: 1.5em;
   font-weight: 700;
 }
 
-/* line 341, /Users/Matthew/developer/github/arranmoreff_app/adminAppv2/assets/css/partials/_layout.scss */
+/* line 349, /Users/Matthew/developer/github/arranmoreff_app/adminAppv2/assets/css/partials/_layout.scss */
 .date_text {
   font-size: 0.8em;
   color: #9e9e9e;
 }
 
-/* line 346, /Users/Matthew/developer/github/arranmoreff_app/adminAppv2/assets/css/partials/_layout.scss */
+/* line 354, /Users/Matthew/developer/github/arranmoreff_app/adminAppv2/assets/css/partials/_layout.scss */
 img {
   max-width: 100%;
 }
-/* line 348, /Users/Matthew/developer/github/arranmoreff_app/adminAppv2/assets/css/partials/_layout.scss */
+/* line 356, /Users/Matthew/developer/github/arranmoreff_app/adminAppv2/assets/css/partials/_layout.scss */
 img.first_time_logo {
   width: 60%;
   margin-top: 10px;
