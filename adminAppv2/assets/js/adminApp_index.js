@@ -39,6 +39,7 @@ function getNextFerryTimes(timetableObj){
 	var da_cancelledArray = checkCancelledFerries(timetableObj, "da", tdate);
 	var da_extraArray = checkExtraFerries(timetableObj, "da", tdate);
 	// console.log(da_extraArray);
+	// console.log(da_cancelledArray);
 	var da_finalArray = findDatabaseRef(timetableObj, "da", monthRange, dayRange, da_cancelledArray, da_extraArray);
 	// console.log(da_finalArray);
 	var da_nextTime = checkForNextFerry(da_finalArray, ttime);
@@ -48,6 +49,7 @@ function getNextFerryTimes(timetableObj){
 
 	var db_cancelledArray = checkCancelledFerries(timetableObj, "db", tdate);
 	var db_extraArray = checkExtraFerries(timetableObj, "db", tdate);
+	// console.log(db_cancelledArray);
 	// console.log(db_extraArray);
 	var db_finalArray = findDatabaseRef(timetableObj, "db", monthRange, dayRange, db_cancelledArray, db_extraArray);
 	// console.log(db_finalArray);
@@ -57,14 +59,18 @@ function getNextFerryTimes(timetableObj){
 };
 
 function checkForNextFerry(array, time){
-    for ( var i = 0; i < array.length; i++){
-        if (time < array[i]) {
-            var nextFerry = array[i];
-            break;
-        } else {
-            var nextFerry = "No more ferries today!";
-        }
-    };
+	if (array.length == 0){
+		var nextFerry = "All ferries have been cancelled!"
+	} else {
+	    for ( var i = 0; i < array.length; i++){
+	        if (time < array[i]) {
+	            var nextFerry = array[i];
+	            break;
+	        } else {
+	            var nextFerry = "No more ferries today!";
+	        }
+    	};
+	}
     return nextFerry;
 };
 
@@ -104,20 +110,22 @@ function getTodaysFerryTimes(timetableObj){
 };
 
 function createOneDaysTable(array, journey){
-	if (array.length == 0 ) {
-        // console.log("All ferries are cancelled...");
-        // CREATE HTML FOR NO FERRIES
-        var tableHTML = "all_ferries_cancelled";
+    // CREATE TABLE
+    if (journey == "da") {
+        var cssColor = "blue";
+        var journey = "Departing Arranmore";
     } else {
-        // CREATE TABLE
-        if (journey == "da") {
-            var cssColor = "blue";
-            var journey = "Departing Arranmore";
-        } else {
-            var cssColor = "orange";
-            var journey = "Departing Burtonport";
-        };
+        var cssColor = "orange";
+        var journey = "Departing Burtonport";
+    };
 
+	if (array.length == 0 ) {
+        // CREATE HTML FOR NO FERRIES
+        var tableHTML = "<table class='" + cssColor + " align-center' border='1'> <thead> <tr> <th class='"+cssColor+"' colspan='"+array.length+"'>"+journey+"</th> </tr> <tbody>";
+        tableHTML += "<tr><td>"+"All ferries are cancelled for today, call us for more info!"+"</td></tr>";
+        tableHTML += "</tbody> </table>";
+
+    } else {
         var tableHTML = "<table class='" + cssColor + " align-center' border='1'> <thead> <tr> <th class='"+cssColor+"' colspan='"+array.length+"'>"+journey+"</th> </tr> <tbody>";
 
         // LOGIC FOR TIMES
@@ -146,7 +154,9 @@ function checkCancelledFerries(timetableObj, journey, date){
 	} else {
 		var cancelFerryObj = timetableObj.cancel_ferry.db;
 	}
-
+	// console.log(cancelFerryObj);
+	var date = getInputDate(date);
+	// console.log(date);
 	var array = [];
 	for (key in cancelFerryObj){
 		if (date == cancelFerryObj[key].date){
