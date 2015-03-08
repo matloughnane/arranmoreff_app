@@ -4072,69 +4072,74 @@ h4, h5, h6 {
 }
 
 /* line 187, partials/_layout.scss */
+.copyright_bar {
+  padding-top: 0px !important;
+}
+
+/* line 191, partials/_layout.scss */
 .copyright_text {
   font-size: 0.75em;
 }
 
-/* line 191, partials/_layout.scss */
+/* line 195, partials/_layout.scss */
 footer {
   margin-bottom: 0px !important;
 }
-/* line 194, partials/_layout.scss */
+/* line 198, partials/_layout.scss */
 footer a i {
   font-size: 2em;
 }
-/* line 197, partials/_layout.scss */
+/* line 201, partials/_layout.scss */
 footer a i.fb:hover {
   color: #3b5998;
 }
-/* line 202, partials/_layout.scss */
+/* line 206, partials/_layout.scss */
 footer a i.twittr:hover {
   color: #00aced;
 }
-/* line 206, partials/_layout.scss */
+/* line 210, partials/_layout.scss */
 footer a i.gplus {
   font-size: 1.8em !important;
 }
-/* line 208, partials/_layout.scss */
+/* line 212, partials/_layout.scss */
 footer a i.gplus:hover {
   color: #dd4b39;
 }
 
-/* line 216, partials/_layout.scss */
+/* line 220, partials/_layout.scss */
 img {
   max-width: 100%;
 }
-/* line 218, partials/_layout.scss */
+/* line 222, partials/_layout.scss */
 img.main_logo {
   width: 450px;
 }
-/* line 221, partials/_layout.scss */
+/* line 225, partials/_layout.scss */
 img.logo {
   max-width: 150px;
 }
-/* line 224, partials/_layout.scss */
+/* line 228, partials/_layout.scss */
 img.waw {
   max-width: 150px;
 }
 
-/* line 229, partials/_layout.scss */
+/* line 233, partials/_layout.scss */
 .tferry_time {
   display: block;
   font-size: 2em;
 }
 
-/* line 234, partials/_layout.scss */
+/* line 238, partials/_layout.scss */
 #apple_badge {
   display: none;
 }
 
-/* line 238, partials/_layout.scss */
+/* line 242, partials/_layout.scss */
 #google_badge {
   display: none;
 }
 
-/* line 242, partials/_layout.scss */
+/* line 246, partials/_layout.scss */
 .apple_badge {
   padding-top: 4px;
 }
