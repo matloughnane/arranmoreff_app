@@ -1,0 +1,244 @@
+body {
+	font-family: "Roboto", sans-serif;
+	margin: 0px;
+	font-size: 100%;
+	font-weight: 300;
+	color: $bkg_dark;
+	background: $bkg_light url("../img/background-01.jpg") no-repeat fixed center center;
+	  -webkit-background-size: cover;
+	  -moz-background-size: cover;
+	  -o-background-size: cover;
+	  background-size: cover;
+}
+
+::selection {
+  background: $orange_light;
+}
+::-moz-selection {
+  background: $orange_light; 
+}
+
+a {
+  color: $black;
+  text-decoration: none;
+  &:hover {
+  	color: $blue_dull;
+  }
+}
+
+h1, h2, h3, {
+	-webkit-margin-before: 0.5em;
+	-webkit-margin-after: 0.5em;
+	-webkit-margin-start: 0px;
+	-webkit-margin-end: 0px;
+}
+
+h4, h5, h6 {
+	font-weight: 550;
+	-webkit-margin-before: 0.15em;
+	-webkit-margin-after: 0.15em;
+	-webkit-margin-start: 0px;
+	-webkit-margin-end: 0px;
+}
+
+// MATERIAL, CARD + COLOURS
+
+.card {
+	border-radius: $border-radius;
+	margin-bottom: 10px !important;
+}
+
+.padded_left_right {
+	padding-left: 10px !important;
+	padding-right: 10px !important;
+}
+
+.plain {
+	background: $bkg_light;
+	color: $bkg_dark;
+}
+.blue {
+	background: $blue;
+	color: $bkg_light;
+}
+.blue_light {
+	background: $blue_light;
+	color: $bkg_dark;
+}
+.blue_dull {
+	background: $blue_dull;
+	color: $bkg_light;
+}
+.orange {
+	background: $orange;
+	color: $bkg_light;
+}
+.orange_light {
+	background: $orange_light;
+	color: $bkg_dark;
+}
+.orange_dull {
+	background: $orange_dull;
+	color: $bkg_light;
+}
+
+.overlay {
+	background: $bkg_overlay;
+	color: $bkg_light;
+}
+
+.green {
+	background: $green;
+	color: $bkg_light;
+}
+.green_light {
+	font-size: 15px;
+	background: $green_light;
+	// color: $bkg_light;
+}
+.red {
+	background: $red;	
+	color: $bkg_light;
+}
+.light_red {
+	background: $red_light;	
+}
+.light_green {
+	background-color: $green_light;
+}
+.cancel_card {
+	// border: 2px solid $red_dull;
+	span{
+		color: $red_dull;
+	}
+}
+.extra_card {
+	// border: 2px solid $green_dull;
+	span{
+		color: $green_dull;
+	}
+}
+.card_noBottom {
+	border-radius: $border-radius;
+	margin-bottom: 0px;
+}
+
+
+// SHADOWS
+
+.shadow1 {
+	box-shadow: $shadow1;;
+}
+.shadow2 {
+	box-shadow: $shadow2;;
+}
+.shadow3 {
+	box-shadow: $shadow3;;
+}
+.shadow4 {
+	box-shadow: $shadow4;;
+}
+.shadow5 {
+	box-shadow: $shadow5;;
+}
+
+
+// APP SPECFIC
+
+.left_half {
+	padding-right: 5px;
+}
+
+.right_half {
+	padding-left: 5px;
+}
+
+.padded {
+	padding: 0px 8px;
+}
+
+
+.larger_text{
+	font-size: 1.25em;
+}
+
+.blue_text {
+	color: $blue_dull;
+	// font-size: 0.9em !important;
+}
+
+.orange_text {
+	color: $orange_dull;
+	// font-size: 0.9em !important;
+}
+
+.margin_small {
+	margin: 5px;
+}
+
+.margin_left {
+	margin-left: 10px;
+}
+
+.margin_right {
+	margin-right: 10px;
+}
+
+.copyright_text {
+	font-size: 0.75em;
+}
+
+footer {
+	margin-bottom: 0px !important;
+	a {
+		i {
+			font-size: 2em;
+			&.fb{
+				&:hover {
+					color: $facebook_bg;
+				}
+			}	
+			&.twittr {
+				&:hover {
+					color: $twitter_bg;
+				}
+			}
+			&.gplus {
+				font-size: 1.8em !important;
+				&:hover {
+					color: $google_plus_bg;
+				}
+			}
+		}
+	}
+}
+
+img {
+	max-width: 100%;
+	&.main_logo {
+		width: 450px;
+	}
+	&.logo {
+		max-width: 150px;
+	}
+	&.waw {
+		max-width: 150px;
+	}
+}
+
+.tferry_time {
+	display: block;
+	font-size: 2em;
+}
+
+#apple_badge {
+	display: none;
+}
+
+#google_badge {
+	display: none;
+}
+
+.apple_badge {
+	padding-top: 4px;
+}
