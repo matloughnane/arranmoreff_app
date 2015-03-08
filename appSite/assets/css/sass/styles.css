@@ -1,0 +1,468 @@
+@-webkit-viewport {
+  width: device-width;
+}
+
+@-moz-viewport {
+  width: device-width;
+}
+
+@-ms-viewport {
+  width: device-width;
+}
+
+@-o-viewport {
+  width: device-width;
+}
+
+@viewport {
+  width: device-width;
+}
+
+/* line 10, partials/_base.scss */
+body {
+  font-family: 'Rambla', sans-serif;
+  background-color: #424242;
+  margin: 0px;
+  text-align: 10px;
+}
+
+/* line 17, partials/_base.scss */
+h1 {
+  color: #f4f5f5;
+  font-size: 3em;
+  padding: 10px;
+}
+
+/* line 23, partials/_base.scss */
+p {
+  font-size: 18px;
+}
+
+/* line 27, partials/_base.scss */
+a {
+  text-decoration: none;
+}
+
+/* line 31, partials/_base.scss */
+i.margin_right {
+  margin-right: 10px;
+}
+
+@media screen and (max-width: 640px) {
+  /* line 37, partials/_base.scss */
+  i.margin_right {
+    margin-right: 0px;
+  }
+}
+/* line 42, partials/_base.scss */
+i.margin_left {
+  margin-left: 10px;
+}
+
+/* line 47, partials/_base.scss */
+.full_bar {
+  width: 100%;
+  background-color: #35c1d6;
+}
+
+/* line 53, partials/_base.scss */
+.card {
+  border-radius: 2px;
+  margin-bottom: 15px;
+  padding: 10px;
+}
+
+/* line 59, partials/_base.scss */
+.plain {
+  background: whitesmoke;
+  color: #424242;
+}
+
+/* line 64, partials/_base.scss */
+img {
+  max-width: 60%;
+}
+
+/* line 68, partials/_base.scss */
+img.screen {
+  max-width: 100%;
+}
+
+/* line 71, partials/_base.scss */
+img.badge {
+  max-height: 50px;
+}
+
+/* line 77, partials/_base.scss */
+img.ri {
+  max-width: 30%;
+}
+
+/* line 82, partials/_base.scss */
+img.banner {
+  max-width: 100%;
+}
+
+/* line 86, partials/_base.scss */
+.footer_bar {
+  text-align: center;
+  background-color: #35c1d6;
+  padding: 5px;
+}
+/* line 90, partials/_base.scss */
+.footer_bar p {
+  color: #f4f5f5;
+  font-size: 12px;
+}
+
+@media screen and (max-width: 968px) {
+  /* line 99, partials/_base.scss */
+  h1 {
+    color: #f4f5f5;
+    font-size: 2em;
+    padding: 0px;
+    margin: 0px;
+  }
+
+  /* line 105, partials/_base.scss */
+  h2 {
+    font-size: 1.5em;
+  }
+
+  /* line 108, partials/_base.scss */
+  h3 {
+    font-size: 1em;
+  }
+
+  /* line 111, partials/_base.scss */
+  .nav li a {
+    font-size: 1em;
+  }
+
+  /* line 114, partials/_base.scss */
+  p {
+    font-size: 1.2em;
+  }
+
+  /* line 117, partials/_base.scss */
+  .sidebar p {
+    font-size: 0.9em;
+  }
+}
+@media screen and (max-width: 640px) {
+  /* line 129, partials/_base.scss */
+  h1 {
+    color: #f4f5f5;
+    font-size: 2em;
+    padding: 0px;
+    margin: 0px;
+  }
+
+  /* line 135, partials/_base.scss */
+  p {
+    font-size: 1em;
+  }
+
+  /* line 138, partials/_base.scss */
+  .content {
+    height: auto;
+  }
+
+  /* line 142, partials/_base.scss */
+  .location {
+    height: auto;
+  }
+}
+/* line 1, partials/_buttons.scss */
+.btn {
+  border: none;
+  background: none;
+  padding: 10px 10px;
+  display: inline-block;
+  margin: 8px 5px;
+  text-transform: lowercase;
+  text-decoration: none;
+  outline: none;
+  position: relative;
+  border-radius: 3px;
+  -webkit-transition: all 0.1s;
+  -moz-transition: all 0.1s;
+  transition: all 0.1s;
+}
+
+/* line 17, partials/_buttons.scss */
+.default {
+  color: #f4f5f5;
+  background-color: #35c1d6;
+}
+/* line 20, partials/_buttons.scss */
+.default a {
+  color: #f4f5f5;
+}
+/* line 23, partials/_buttons.scss */
+.default:hover {
+  box-shadow: 0px -3px 0px 0px #0297a7 inset;
+  outline: 0 6px #0297a7;
+  background-color: #35c1d6;
+}
+/* line 28, partials/_buttons.scss */
+.default:active {
+  background-color: #0297a7;
+  top: 0px;
+}
+
+/* line 34, partials/_buttons.scss */
+.googlebtn {
+  color: #f4f5f5;
+  background-color: #dd4b39;
+}
+/* line 37, partials/_buttons.scss */
+.googlebtn:hover {
+  box-shadow: 0px -3px 0px 0px #892417 inset;
+  outline: 0 6px #892417;
+  background-color: #e05a4a;
+}
+/* line 42, partials/_buttons.scss */
+.googlebtn:active {
+  background-color: #dd4b39;
+  top: 0px;
+}
+
+/* line 48, partials/_buttons.scss */
+.twitterbtn {
+  color: #f4f5f5;
+  background-color: #00aced;
+}
+/* line 51, partials/_buttons.scss */
+.twitterbtn:hover {
+  box-shadow: 0px -3px 0px 0px #0081b2 inset;
+  outline: 0 6px #0081b2;
+  background-color: #29c4ff;
+}
+/* line 57, partials/_buttons.scss */
+.twitterbtn:active {
+  background-color: #00aced;
+  top: 0px;
+}
+
+/* line 63, partials/_buttons.scss */
+.githubbtn {
+  color: #f4f5f5;
+  background-color: #0e1717;
+}
+/* line 66, partials/_buttons.scss */
+.githubbtn:hover {
+  box-shadow: 0px -3px 0px 0px #426c6c inset;
+  outline: 0 6px #426c6c;
+  background-color: #77adad;
+}
+/* line 72, partials/_buttons.scss */
+.githubbtn:active {
+  background-color: #0e1717;
+  top: 0px;
+}
+
+@CHARSET "ISO-8859-1";
+/* Reset CSS
+ * --------------------------------------- */
+/* line 5, partials/_examples.scss */
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre,
+form, fieldset, input, textarea, p, blockquote, th, td {
+  padding: 0;
+  margin: 0;
+}
+
+/* line 9, partials/_examples.scss */
+a {
+  text-decoration: none;
+}
+
+/* line 12, partials/_examples.scss */
+table {
+  border-spacing: 0;
+}
+
+/* line 15, partials/_examples.scss */
+fieldset, img {
+  border: 0;
+}
+
+/* line 18, partials/_examples.scss */
+address, caption, cite, code, dfn, em, strong, th, var {
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* line 22, partials/_examples.scss */
+strong {
+  font-weight: bold;
+}
+
+/* line 25, partials/_examples.scss */
+ol, ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 31, partials/_examples.scss */
+ul.list {
+  margin: 10px 20px;
+  padding: 5px;
+  list-style-type: square;
+}
+/* line 36, partials/_examples.scss */
+ul.list li {
+  padding: 5px;
+}
+
+/* line 41, partials/_examples.scss */
+caption, th {
+  text-align: left;
+}
+
+/* line 45, partials/_examples.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+  font-size: 100%;
+  margin: 0;
+  padding: 0;
+  color: #424242;
+}
+
+/* line 52, partials/_examples.scss */
+q:before, q:after {
+  content: '';
+}
+
+/* line 55, partials/_examples.scss */
+abbr, acronym {
+  border: 0;
+}
+
+/* Custom CSS
+ * --------------------------------------- */
+/* line 61, partials/_examples.scss */
+body {
+  font-family: arial,helvetica;
+  /*color: #333;*/
+  color: white;
+  background-image: url(../img/background-01.jpg);
+  background-size: cover;
+}
+
+/* line 68, partials/_examples.scss */
+.wrap {
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+
+/* line 74, partials/_examples.scss */
+h1 {
+  font-size: 6em;
+}
+
+/* line 79, partials/_examples.scss */
+h2 {
+  font-size: 3em;
+}
+
+/* line 87, partials/_examples.scss */
+.intro p {
+  width: 50%;
+  margin: 0 auto;
+  font-size: 1.5em;
+}
+
+/* line 92, partials/_examples.scss */
+.section {
+  text-align: center;
+}
+
+/* line 95, partials/_examples.scss */
+#menu li {
+  display: inline-block;
+  margin: 10px;
+  color: #000;
+  background: rgba(255, 255, 255, 0.5);
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+}
+
+/* line 103, partials/_examples.scss */
+#menu li.active {
+  background: #666;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+}
+
+/* line 108, partials/_examples.scss */
+#menu li a {
+  text-decoration: none;
+  color: #000;
+}
+
+/* line 112, partials/_examples.scss */
+#menu li.active a:hover {
+  color: #000;
+}
+
+/* line 115, partials/_examples.scss */
+#menu li:hover {
+  background: rgba(255, 255, 255, 0.8);
+}
+
+/* line 119, partials/_examples.scss */
+#menu li a,
+#menu li.active a {
+  padding: 9px 18px;
+  display: block;
+}
+
+/* line 123, partials/_examples.scss */
+#menu li.active a {
+  color: #fff;
+}
+
+/* line 126, partials/_examples.scss */
+#menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 40px;
+  z-index: 70;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+/* line 139, partials/_examples.scss */
+#header, #footer {
+  position: fixed;
+  height: 40px;
+  display: block;
+  width: 100%;
+  background: rgba(52, 152, 219, 0.5);
+  z-index: 9;
+  text-align: left;
+  color: #f2f2f2;
+  padding: 20px 0 0 0;
+}
+
+/* line 151, partials/_examples.scss */
+#header {
+  top: 0px;
+}
+
+/*ANIMATED LOADER*/
+/* line 158, partials/_examples.scss */
+svg {
+  /*  position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;*/
+  margin: auto;
+}
+/* line 162, partials/_examples.scss */
+svg rect {
+  fill: #76daff;
+}
