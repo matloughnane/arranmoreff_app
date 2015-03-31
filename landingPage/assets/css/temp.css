@@ -1,0 +1,20 @@
+.btn.blue{
+	margin: 0px;
+	background-color: #0277BD;
+	color: whitesmoke;
+	font-size: 12px;
+}
+
+.btn.blue:hover{
+	background-color: #03A9F4;
+}
+
+.btn.back{
+	background-color: #0277BD;
+	color: whitesmoke;
+	font-size: 12px;
+}
+
+.btn.back:hover{
+	background-color: #03A9F4;
+}

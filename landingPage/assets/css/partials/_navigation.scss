@@ -1,0 +1,41 @@
+nav {
+	ul {
+		list-style-type: none;
+		margin: 0px;
+		padding: 0px;
+		text-align: center;
+		li {
+			cursor: pointer;
+			max-width: 100%;
+			padding: 10px 0px;
+			margin: 2px 0px;
+			background: $primary_light;
+			color: $text_dark;
+			border-radius: $border-radius;
+			&:hover {
+				background: $primary;
+				color: $bkg_light;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: $medium_screen) {
+	nav {
+		ul {
+			list-style-type: none;
+			margin: 0px;
+			padding: 0px;
+			text-align: center;
+			li {
+				display: inline;
+				max-width: 25%;
+				padding: 10px 20px;
+				margin: 2px 0px;
+				&:hover {
+					background: $primary;
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,34 @@
+// BUTTONS
+
+.btn {
+  border: none;
+  background: none;
+  padding: 10px 10px;
+  display: inline-block;
+  margin: 8px 5px;
+  text-decoration: none;
+  outline: none;
+  position: relative;
+  border-radius: $border_radius;
+  -webkit-transition: all 0.1s;
+  -moz-transition: all 0.1s;
+  transition: all 0.1s;
+  cursor: pointer;
+}
+
+.social_btn{
+	width: 220px;
+}
+
+.facebook {
+	background-color: $facebook_bg !important;
+	color: $white !important;
+}
+.twitter {
+	background-color: $twitter_bg !important;
+	color: $white !important;
+}
+.google_plus {
+	background-color: $google_plus_bg !important;
+	color: $white !important;
+}

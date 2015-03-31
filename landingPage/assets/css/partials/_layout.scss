@@ -1,0 +1,115 @@
+// * {
+// 	margin: 0px;
+// 	padding: 0px;
+// }
+
+body {
+	font-family: "Droid Sans", sans-serif;
+	font-size: 100%;
+	font-weight: 300;
+	color: $text_light;
+	background: $bkg_light url("../img/background-01.jpg") no-repeat fixed center center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+::selection {
+  background: $secondary;
+}
+::-moz-selection {
+  background: $secondary; 
+}
+
+h1, h2, h3, {
+	-webkit-margin-before: 0.25em;
+	-webkit-margin-after: 0.25em;
+	-webkit-margin-start: 0px;
+	-webkit-margin-end: 0px;
+}
+
+h4, h5, h6 {
+	font-weight: 550;
+	-webkit-margin-before: 0.15em;
+	-webkit-margin-after: 0.15em;
+	-webkit-margin-start: 0px;
+	-webkit-margin-end: 0px;
+}
+
+a {
+	font-size: 1.5em;
+	text-decoration: none;
+	color: $primary_light;
+	&:hover {
+		color: $primary;
+	}
+}
+
+
+img {
+	max-width: 100%;
+}
+
+
+// ====================================================
+// ================= HEADER
+// ====================================================
+
+.main_logo {
+	max-width: 60%;
+}
+
+// ====================================================
+// ================= FOOTER
+// ====================================================
+
+footer {
+	margin: 10px;
+}
+
+.copyright {
+	font-size: 0.75em;
+}
+
+// ====================================================
+// ================= CARDS
+// ====================================================
+
+.card {
+	border-radius: $border-radius;
+	// margin: 15px !important;
+	padding: 15px;
+}
+
+.light {
+	background: $bkg_light;
+}
+
+.orange {
+	background: $secondary;
+}
+
+.orange_alpha {
+	background: $secondary_light_alpha;
+}
+
+// ====================================================
+// ================= SHADOWS
+// ====================================================
+
+.shadow1 {
+	box-shadow: $shadow1;;
+}
+.shadow2 {
+	box-shadow: $shadow2;;
+}
+.shadow3 {
+	box-shadow: $shadow3;;
+}
+.shadow4 {
+	box-shadow: $shadow4;;
+}
+.shadow5 {
+	box-shadow: $shadow5;;
+}

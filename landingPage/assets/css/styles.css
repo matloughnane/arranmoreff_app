@@ -1,0 +1,407 @@
+/*
+ * Gridism
+ * A simple, responsive, and handy CSS grid by @cobyism
+ * https://github.com/cobyism/gridism
+ */
+/* Preserve some sanity */
+/* line 9, partials/_gridism.scss */
+.grid,
+.unit {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* Set up some rules to govern the grid */
+/* line 16, partials/_gridism.scss */
+.grid {
+  display: block;
+  clear: both;
+}
+
+/* line 20, partials/_gridism.scss */
+.grid .unit {
+  float: left;
+  width: 100%;
+  padding: 5px;
+}
+
+/* This ensures the outer gutters are equal to the (doubled) inner gutters. */
+/*.grid .unit:first-child { padding-left: 20px; }
+.grid .unit:last-child { padding-right: 20px; }*/
+/* Nested grids already have padding though, so let’s nuke it */
+/*.unit .unit:first-child { padding-left: 0; }
+.unit .unit:last-child { padding-right: 0; }*/
+/* line 33, partials/_gridism.scss */
+.unit .grid:first-child > .unit {
+  padding-top: 0;
+}
+
+/* line 34, partials/_gridism.scss */
+.unit .grid:last-child > .unit {
+  padding-bottom: 0;
+}
+
+/* Let people nuke the gutters/padding completely in a couple of ways */
+/* line 38, partials/_gridism.scss */
+.no-gutters .unit,
+.unit.no-gutters {
+  padding: 0 !important;
+}
+
+/* Wrapping at a maximum width is optional */
+/* line 44, partials/_gridism.scss */
+.wrap .grid,
+.grid.wrap {
+  max-width: 978px;
+  margin: 0 auto;
+}
+
+/* Width classes also have shorthand versions numbered as fractions
+ * For example: for a grid unit 1/3 (one third) of the parent width,
+ * simply apply class="w-1-3" to the element. */
+/* line 52, partials/_gridism.scss */
+.grid .whole, .grid .w-1-1 {
+  width: 100%;
+}
+
+/* line 53, partials/_gridism.scss */
+.grid .half, .grid .w-1-2 {
+  width: 50%;
+}
+
+/* line 54, partials/_gridism.scss */
+.grid .one-third, .grid .w-1-3 {
+  width: 33.3332%;
+}
+
+/* line 55, partials/_gridism.scss */
+.grid .two-thirds, .grid .w-2-3 {
+  width: 66.6665%;
+}
+
+/* line 56, partials/_gridism.scss */
+.grid .one-quarter, .grid .w-1-4 {
+  width: 25%;
+}
+
+/* line 57, partials/_gridism.scss */
+.grid .three-quarters, .grid .w-3-4 {
+  width: 75%;
+}
+
+/* line 58, partials/_gridism.scss */
+.grid .one-fifth, .grid .w-1-5 {
+  width: 20%;
+}
+
+/* line 59, partials/_gridism.scss */
+.grid .two-fifths, .grid .w-2-5 {
+  width: 40%;
+}
+
+/* line 60, partials/_gridism.scss */
+.grid .three-fifths, .grid .w-3-5 {
+  width: 60%;
+}
+
+/* line 61, partials/_gridism.scss */
+.grid .four-fifths, .grid .w-4-5 {
+  width: 80%;
+}
+
+/* line 62, partials/_gridism.scss */
+.grid .golden-small, .grid .w-g-s {
+  width: 38.2716%;
+}
+
+/* Golden section: smaller piece */
+/* line 63, partials/_gridism.scss */
+.grid .golden-large, .grid .w-g-l {
+  width: 61.7283%;
+}
+
+/* Golden section: larger piece */
+/* Clearfix after every .grid */
+/* line 66, partials/_gridism.scss */
+.grid {
+  *zoom: 1;
+}
+
+/* line 69, partials/_gridism.scss */
+.grid:before, .grid:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+
+/* line 74, partials/_gridism.scss */
+.grid:after {
+  clear: both;
+}
+
+/* Utility classes */
+/* line 79, partials/_gridism.scss */
+.align-center {
+  text-align: center;
+}
+
+/* line 80, partials/_gridism.scss */
+.align-left {
+  text-align: left;
+}
+
+/* line 81, partials/_gridism.scss */
+.align-right {
+  text-align: right;
+}
+
+/* line 82, partials/_gridism.scss */
+.pull-left {
+  float: left;
+}
+
+/* line 83, partials/_gridism.scss */
+.pull-right {
+  float: right;
+}
+
+/* Responsive Stuff */
+@media screen and (max-width: 768px) {
+  /* Stack anything that isn’t full-width on smaller screens */
+  /* line 88, partials/_gridism.scss */
+  .grid .unit {
+    width: 100% !important;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  /* line 93, partials/_gridism.scss */
+  .unit .grid .unit {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  /* Sometimes, you just want to be different on small screens */
+  /* line 99, partials/_gridism.scss */
+  .center-on-mobiles {
+    text-align: center !important;
+  }
+
+  /* line 102, partials/_gridism.scss */
+  .hide-on-mobiles {
+    display: none !important;
+  }
+
+  /* line 106, partials/_gridism.scss */
+  .remove_margin_mobile {
+    margin-bottom: 0px !important;
+  }
+}
+/* Expand the wrap a bit further on larger screens */
+@media screen and (min-width: 1170px) {
+  /* line 113, partials/_gridism.scss */
+  .wider .grid {
+    max-width: 1180px;
+    margin: 0 auto;
+  }
+}
+/* line 6, partials/_layout.scss */
+body {
+  font-family: "Droid Sans", sans-serif;
+  font-size: 100%;
+  font-weight: 300;
+  color: whitesmoke;
+  background: whitesmoke url("../img/background-01.jpg") no-repeat fixed center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+/* line 18, partials/_layout.scss */
+::selection {
+  background: #f57c00;
+}
+
+/* line 21, partials/_layout.scss */
+::-moz-selection {
+  background: #f57c00;
+}
+
+/* line 25, partials/_layout.scss */
+h1, h2, h3 {
+  -webkit-margin-before: 0.25em;
+  -webkit-margin-after: 0.25em;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+}
+
+/* line 32, partials/_layout.scss */
+h4, h5, h6 {
+  font-weight: 550;
+  -webkit-margin-before: 0.15em;
+  -webkit-margin-after: 0.15em;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+}
+
+/* line 40, partials/_layout.scss */
+a {
+  font-size: 1.5em;
+  text-decoration: none;
+  color: #b2d8f1;
+}
+/* line 44, partials/_layout.scss */
+a:hover {
+  color: #03a9f4;
+}
+
+/* line 50, partials/_layout.scss */
+img {
+  max-width: 100%;
+}
+
+/* line 59, partials/_layout.scss */
+.main_logo {
+  max-width: 60%;
+}
+
+/* line 67, partials/_layout.scss */
+footer {
+  margin: 10px;
+}
+
+/* line 71, partials/_layout.scss */
+.copyright {
+  font-size: 0.75em;
+}
+
+/* line 79, partials/_layout.scss */
+.card {
+  border-radius: 2px;
+  padding: 15px;
+}
+
+/* line 85, partials/_layout.scss */
+.light {
+  background: whitesmoke;
+}
+
+/* line 89, partials/_layout.scss */
+.orange {
+  background: #f57c00;
+}
+
+/* line 93, partials/_layout.scss */
+.orange_alpha {
+  background: rgba(245, 124, 0, 0.75);
+}
+
+/* line 101, partials/_layout.scss */
+b {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+/* line 104, partials/_layout.scss */
+.shadow2 {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+/* line 107, partials/_layout.scss */
+.shadow3 {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+/* line 110, partials/_layout.scss */
+.shadow4 {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+/* line 113, partials/_layout.scss */
+.shadow5 {
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+}
+
+/* line 2, partials/_navigation.scss */
+nav ul {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+  text-align: center;
+}
+/* line 7, partials/_navigation.scss */
+nav ul li {
+  cursor: pointer;
+  max-width: 100%;
+  padding: 10px 0px;
+  margin: 2px 0px;
+  background: #b2d8f1;
+  color: #424242;
+  border-radius: 2px;
+}
+/* line 15, partials/_navigation.scss */
+nav ul li:hover {
+  background: #03a9f4;
+  color: whitesmoke;
+}
+
+@media screen and (max-width: 768px) {
+  /* line 25, partials/_navigation.scss */
+  nav ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+  }
+  /* line 30, partials/_navigation.scss */
+  nav ul li {
+    display: inline;
+    max-width: 25%;
+    padding: 10px 20px;
+    margin: 2px 0px;
+  }
+  /* line 35, partials/_navigation.scss */
+  nav ul li:hover {
+    background: #03a9f4;
+  }
+}
+/* line 3, partials/_buttons.scss */
+.btn {
+  border: none;
+  background: none;
+  padding: 10px 10px;
+  display: inline-block;
+  margin: 8px 5px;
+  text-decoration: none;
+  outline: none;
+  position: relative;
+  border-radius: 2px;
+  -webkit-transition: all 0.1s;
+  -moz-transition: all 0.1s;
+  transition: all 0.1s;
+  cursor: pointer;
+}
+
+/* line 19, partials/_buttons.scss */
+.social_btn {
+  width: 220px;
+}
+
+/* line 23, partials/_buttons.scss */
+.facebook {
+  background-color: #3b5998 !important;
+  color: white !important;
+}
+
+/* line 27, partials/_buttons.scss */
+.twitter {
+  background-color: #00aced !important;
+  color: white !important;
+}
+
+/* line 31, partials/_buttons.scss */
+.google_plus {
+  background-color: #dd4b39 !important;
+  color: white !important;
+}
