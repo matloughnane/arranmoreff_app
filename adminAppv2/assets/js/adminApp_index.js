@@ -192,6 +192,13 @@ function findDatabaseRef(timetableObj, journey, monthRange, dayRange, cancelledA
 									array.push(wkObj[key].time);
 								}
 							}
+							if (dayRange == "sat"){
+								var wkObj = monthObj["wk"];
+								// console.log(wkObj);
+								for (key in wkObj){
+									array.push(wkObj[key].time);
+								}
+							}
 							
 							array.sort(function (a, b) {
         						return new Date('1970/01/01 ' + a) - new Date('1970/01/01 ' + b);

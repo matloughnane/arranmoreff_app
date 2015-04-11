@@ -303,12 +303,17 @@ Primary style
 }
 
 /* line 13, partials/_base.scss */
+::selection {
+  background-color: #ffb74d;
+}
+
+/* line 17, partials/_base.scss */
 html, body {
   height: 100%;
   margin: 0px;
 }
 
-/* line 22, partials/_base.scss */
+/* line 26, partials/_base.scss */
 body {
   font-size: 1em;
   font-family: "Open Sans", sans-serif;
@@ -316,22 +321,22 @@ body {
   background-color: #ecf0f1;
 }
 
-/* line 29, partials/_base.scss */
+/* line 33, partials/_base.scss */
 a {
   color: #ecf0f1;
   text-decoration: none;
 }
 
-/* line 34, partials/_base.scss */
+/* line 38, partials/_base.scss */
 img {
   max-width: 100%;
 }
-/* line 36, partials/_base.scss */
+/* line 40, partials/_base.scss */
 img.intro_logo {
   max-width: 20em;
 }
 
-/* line 41, partials/_base.scss */
+/* line 45, partials/_base.scss */
 ul {
   line-height: 2em;
 }
@@ -339,49 +344,49 @@ ul {
 /* ----------------------------------------------------------------------
 ========================= SECTION - INTRO ==================
 ------------------------------------------------------------------------ */
-/* line 49, partials/_base.scss */
+/* line 53, partials/_base.scss */
 .intro {
   background-color: rgba(0, 0, 0, 0.7);
   color: #ecf0f1;
   text-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 }
-/* line 53, partials/_base.scss */
+/* line 57, partials/_base.scss */
 .intro h1 {
   font-size: 2em;
 }
-/* line 56, partials/_base.scss */
+/* line 60, partials/_base.scss */
 .intro span {
   font-size: 1.1em;
   line-height: 1.5em;
 }
 
-/* line 63, partials/_base.scss */
+/* line 67, partials/_base.scss */
 .social_buttons {
   margin-top: 15px;
   font-size: 3.5em;
 }
 
-/* line 69, partials/_base.scss */
+/* line 73, partials/_base.scss */
 .share_buttons {
   margin-top: 15px;
   font-size: 0.5em;
 }
-/* line 72, partials/_base.scss */
+/* line 76, partials/_base.scss */
 .share_buttons a {
   color: #001f31;
 }
 
-/* line 78, partials/_base.scss */
+/* line 82, partials/_base.scss */
 .facebook:hover {
   color: #3b5998;
 }
 
-/* line 84, partials/_base.scss */
+/* line 88, partials/_base.scss */
 .twitter:hover {
   color: #00aced;
 }
 
-/* line 90, partials/_base.scss */
+/* line 94, partials/_base.scss */
 .gplus:hover {
   color: #dd4b39;
 }
@@ -389,27 +394,27 @@ ul {
 /* ----------------------------------------------------------------------
   ========================= SECTION 1 ==========================
 ------------------------------------------------------------------------ */
-/* line 100, partials/_base.scss */
+/* line 104, partials/_base.scss */
 .sec-1, .sec-3 {
   color: #ecf0f1;
 }
-/* line 102, partials/_base.scss */
+/* line 106, partials/_base.scss */
 .sec-1 h2, .sec-3 h2 {
   color: #ecf0f1;
 }
 
-/* line 107, partials/_base.scss */
+/* line 111, partials/_base.scss */
 .blue_block {
   background-color: #03a9f4;
 }
 
-/* line 111, partials/_base.scss */
+/* line 115, partials/_base.scss */
 .orange_block {
   background-color: #f57c00;
 }
 
 @media only screen and (min-width: 768px) {
-  /* line 117, partials/_base.scss */
+  /* line 121, partials/_base.scss */
   .sec-1 h2, .sec-3 h2 {
     color: #ecf0f1;
   }
@@ -417,67 +422,67 @@ ul {
 /* ----------------------------------------------------------------------
 ========================= GENERAL STUFF ==================
 ------------------------------------------------------------------------ */
-/* line 130, partials/_base.scss */
+/* line 134, partials/_base.scss */
 .card {
   border-radius: 2px;
   padding: 15px 20px 10px;
 }
 
-/* line 135, partials/_base.scss */
+/* line 139, partials/_base.scss */
 .content {
   margin-top: 8em;
 }
-/* line 137, partials/_base.scss */
+/* line 141, partials/_base.scss */
 .content i {
   font-size: 6em;
 }
 
-/* line 142, partials/_base.scss */
+/* line 146, partials/_base.scss */
 .apple_badge {
   height: 58px;
 }
 
 @media only screen and (max-width: 768px) {
-  /* line 147, partials/_base.scss */
+  /* line 151, partials/_base.scss */
   .content {
     margin-top: 0em;
   }
-  /* line 149, partials/_base.scss */
+  /* line 153, partials/_base.scss */
   .content i {
     font-size: 4em;
   }
 
-  /* line 153, partials/_base.scss */
+  /* line 157, partials/_base.scss */
   body {
     font-size: 0.8em;
   }
 
-  /* line 156, partials/_base.scss */
+  /* line 160, partials/_base.scss */
   ul {
     font-size: 1.1em;
   }
 
-  /* line 159, partials/_base.scss */
+  /* line 163, partials/_base.scss */
   .share_buttons {
     font-size: 0.9em;
   }
 
-  /* line 162, partials/_base.scss */
+  /* line 166, partials/_base.scss */
   .apple_badge {
     height: 53px;
   }
 }
-/* line 167, partials/_base.scss */
+/* line 171, partials/_base.scss */
 .shadow1 {
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 }
 
-/* line 171, partials/_base.scss */
+/* line 175, partials/_base.scss */
 .shadow2 {
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 }
 
-/* line 175, partials/_base.scss */
+/* line 179, partials/_base.scss */
 .btn {
   border: none;
   background: none;
@@ -494,7 +499,7 @@ ul {
   cursor: pointer;
 }
 
-/* line 191, partials/_base.scss */
+/* line 195, partials/_base.scss */
 .blue {
   margin: 10px;
   background-color: #03a9f4;
@@ -502,12 +507,12 @@ ul {
   font-size: 12px;
   box-shadow: 0px -3px 0px 0px #0277bd inset;
 }
-/* line 197, partials/_base.scss */
+/* line 201, partials/_base.scss */
 .blue:hover {
   background-color: #0277bd;
 }
 
-/* line 202, partials/_base.scss */
+/* line 206, partials/_base.scss */
 .blue_dull {
   margin: 10px 0 0 0;
   background-color: #0277bd;
@@ -515,12 +520,12 @@ ul {
   font-size: 12px;
   box-shadow: 0px -3px 0px 0px #03a9f4 inset;
 }
-/* line 208, partials/_base.scss */
+/* line 212, partials/_base.scss */
 .blue_dull:hover {
   background-color: #03a9f4;
 }
 
-/* line 213, partials/_base.scss */
+/* line 217, partials/_base.scss */
 .orange {
   margin: 10px;
   background-color: #f57c00;
@@ -528,7 +533,7 @@ ul {
   font-size: 12px;
   box-shadow: 0px -3px 0px 0px #e65100 inset;
 }
-/* line 219, partials/_base.scss */
+/* line 223, partials/_base.scss */
 .orange:hover {
   background-color: #e65100;
 }
@@ -536,7 +541,7 @@ ul {
 /* ----------------------------------------------------------------------
 ========================= PARALLAX BACKGROUND STUFF ==================
 ------------------------------------------------------------------------ */
-/* line 228, partials/_base.scss */
+/* line 232, partials/_base.scss */
 .cd-fixed-background {
   position: relative;
   padding: 1em 5% 1em;
@@ -544,14 +549,14 @@ ul {
   background-size: cover;
   background-position: center center;
 }
-/* line 234, partials/_base.scss */
+/* line 238, partials/_base.scss */
 .cd-fixed-background h2 {
   font-size: 2em;
   margin-bottom: 0.5em;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-/* line 241, partials/_base.scss */
+/* line 245, partials/_base.scss */
 .cd-fixed-background p {
   line-height: 1.6;
   font-family: "Merriweather", serif;
@@ -560,12 +565,12 @@ ul {
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* line 250, partials/_base.scss */
+/* line 254, partials/_base.scss */
 .cd-fixed-background .light-background h2, .cd-fixed-background .light-background p {
   color: #0f594d;
 }
 
-/* line 254, partials/_base.scss */
+/* line 258, partials/_base.scss */
 .cd-fixed-background .cd-content::after {
   /* phone image on small devices */
   content: '';
@@ -575,44 +580,44 @@ ul {
   margin: 2em auto 0;
 }
 
-/* line 265, partials/_base.scss */
+/* line 269, partials/_base.scss */
 .cd-fixed-background.sec-bkg {
   background-image: url("../img/background-01.jpg");
 }
-/* line 270, partials/_base.scss */
+/* line 274, partials/_base.scss */
 .cd-fixed-background.sec-1 {
   background-color: #004f7d;
 }
-/* line 274, partials/_base.scss */
+/* line 278, partials/_base.scss */
 .cd-fixed-background.sec-2 {
   background-color: #dd9a39;
 }
-/* line 278, partials/_base.scss */
+/* line 282, partials/_base.scss */
 .cd-fixed-background.sec-3 {
   background-color: #004f7d;
 }
-/* line 282, partials/_base.scss */
+/* line 286, partials/_base.scss */
 .cd-fixed-background.sec-4 {
   background-color: #dd9a39;
 }
 
 @media only screen and (min-width: 768px) {
-  /* line 291, partials/_base.scss */
+  /* line 295, partials/_base.scss */
   .cd-fixed-background {
     height: 100%;
     padding: 0;
   }
-  /* line 294, partials/_base.scss */
+  /* line 298, partials/_base.scss */
   .cd-fixed-background h2 {
     font-size: 2.5rem;
     font-weight: 300;
   }
-  /* line 298, partials/_base.scss */
+  /* line 302, partials/_base.scss */
   .cd-fixed-background p {
     font-size: 1.8rem;
     line-height: 1.8;
   }
-  /* line 302, partials/_base.scss */
+  /* line 306, partials/_base.scss */
   .cd-fixed-background.cd-content {
     width: 50%;
     position: absolute;
@@ -625,37 +630,37 @@ ul {
     -o-transform: translateY(-50%);
     transform: translateY(-50%);
   }
-  /* line 314, partials/_base.scss */
+  /* line 318, partials/_base.scss */
   .cd-fixed-background.cd-content::after {
     display: none !important;
   }
-  /* line 317, partials/_base.scss */
+  /* line 321, partials/_base.scss */
   .cd-fixed-background.sec-bkg {
     background-image: url("../img/background-01.jpg");
   }
-  /* line 320, partials/_base.scss */
+  /* line 324, partials/_base.scss */
   .cd-fixed-background.sec-1 {
     background-image: url("../img/img-1.jpg");
   }
-  /* line 323, partials/_base.scss */
+  /* line 327, partials/_base.scss */
   .cd-fixed-background.sec-2 {
     background-image: url("../img/img-2.jpg");
   }
-  /* line 326, partials/_base.scss */
+  /* line 330, partials/_base.scss */
   .cd-fixed-background.sec-3 {
     background-image: url("../img/img-3.jpg");
   }
-  /* line 329, partials/_base.scss */
+  /* line 333, partials/_base.scss */
   .cd-fixed-background.sec-4 {
     background-image: url("../img/img-4.jpg");
   }
 
-  /* line 333, partials/_base.scss */
+  /* line 337, partials/_base.scss */
   .mobile_img {
     display: none;
   }
 }
-/* line 338, partials/_base.scss */
+/* line 342, partials/_base.scss */
 .cd-vertical-nav {
   position: fixed;
   z-index: 2;
@@ -669,7 +674,7 @@ ul {
   transform: translateY(-50%);
   display: none;
 }
-/* line 350, partials/_base.scss */
+/* line 354, partials/_base.scss */
 .cd-vertical-nav a {
   display: block;
   height: 40px;
@@ -683,7 +688,7 @@ ul {
   -moz-transition: opacity 0.2s 0s, visibility 0.2s 0s;
   transition: opacity 0.2s 0s, visibility 0.2s 0s;
 }
-/* line 362, partials/_base.scss */
+/* line 366, partials/_base.scss */
 .cd-vertical-nav a.cd-prev {
   -webkit-transform: rotate(180deg);
   -moz-transform: rotate(180deg);
@@ -692,7 +697,7 @@ ul {
   transform: rotate(180deg);
   margin-bottom: 10px;
 }
-/* line 370, partials/_base.scss */
+/* line 374, partials/_base.scss */
 .cd-vertical-nav a.inactive {
   visibility: hidden;
   opacity: 0;
@@ -702,29 +707,29 @@ ul {
 }
 
 @media only screen and (min-width: 1000px) {
-  /* line 381, partials/_base.scss */
+  /* line 385, partials/_base.scss */
   .cd-vertical-nav {
     display: block;
   }
 }
-/* line 386, partials/_base.scss */
+/* line 390, partials/_base.scss */
 .no-js .cd-vertical-nav {
   display: none;
 }
 
 @media only screen and (min-width: 1048px) {
-  /* line 392, partials/_base.scss */
+  /* line 396, partials/_base.scss */
   body {
     /* hide horizontal scroll bar in IE */
     overflow-x: hidden;
   }
 
-  /* line 397, partials/_base.scss */
+  /* line 401, partials/_base.scss */
   .cd-fixed-background {
     background-attachment: fixed;
   }
 
-  /* line 400, partials/_base.scss */
+  /* line 404, partials/_base.scss */
   .cd-fixed-background .cd-content {
     width: 40%;
     left: 10%;

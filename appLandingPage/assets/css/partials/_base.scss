@@ -10,6 +10,10 @@ Primary style
   margin: 0px;
 }
 
+::selection {
+  background-color: $secondary_light;
+}
+
 html, body {
   height: 100%;
   margin: 0px;
