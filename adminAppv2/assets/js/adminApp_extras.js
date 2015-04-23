@@ -105,7 +105,16 @@ function constructSingleExtrasList(Obj, htmlID) {
 // 	});
 // });
 
-
+$(function() { 
+	$(document.body).on('click', 'a', function () { 
+		if ($(this).hasClass('remove_extraFerryTime_btn')){
+			var timeKey = $(this).parent().attr('id');
+			var dateKey = $(this).parent().parent().attr('id');
+			// console.log(timeKey + " " +dateKey);
+			removeFromFirebase(timeKey, dateKey);
+		}
+	});
+});
 
 function removeFromFirebase(timeKey, dateKey){
 	// console.log(timeKey);

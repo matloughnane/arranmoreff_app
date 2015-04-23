@@ -10,12 +10,6 @@
   <link href="../assets/css/gridism.css" type="text/css" rel="stylesheet"/>
   <link href="../assets/css/styles.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 
-  <style type="text/css">
-    a
-    {
-         cursor: pointer;
-    }
-  </style>
 </head>
 <body>
 
@@ -134,21 +128,6 @@
   toastr.options = {
     "positionClass": "toast-bottom-right",
   }
-  </script>
-
-  <script type="text/javascript">
-
-    $(function() { 
-      jQuery('body').on('click', 'a', function () { 
-        if ($(this).hasClass('remove_extraFerryTime_btn')){
-          var timeKey = $(this).parent().attr('id');
-          var dateKey = $(this).parent().parent().attr('id');
-          // console.log(timeKey + " " +dateKey);
-          removeFromFirebase(timeKey, dateKey);
-        }
-      });
-    });
-
   </script>
 
   </body>
