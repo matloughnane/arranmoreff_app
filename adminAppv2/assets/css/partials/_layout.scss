@@ -360,13 +360,19 @@ img {
 	}
 }
 
-
+.mobile_block {
+	display: inline;
+	// margin: 8px;
+}
 
 // MOBILE APP
 
 @media screen and (max-width: 568px) {
 	.mobile_block {
 		display: block;
+		margin: 8px;
+	}
+	.remove_extraFerryTime_btn {
 		margin: 8px;
 	}
 }

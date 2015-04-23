@@ -35,7 +35,8 @@ $(function() {
 		} else if ( $(this).hasClass("db_extra_btn")) {
 			console.log("db extra clicked");
 			var extraDay = $('input[ name="db_extra_date"]').val();
-			var extraTime = $(this).prev('input').val();
+			// var extraTime = $(this).prev('input').val();
+			var extraTime = $('#db_extra_time').val();
 			// console.log(extraDay + " " + extraTime);
 			pushExtraFerryTime("db", extraDay, extraTime);
 		}
@@ -85,7 +86,7 @@ function constructSingleExtrasList(Obj, htmlID) {
 		var today = getTodayDate();
 		if (datesInFuture(Obj[key].date, today) == true){
 			var prettyDate = getPrettyDate(Obj[key].date);
-			result += "<div id="+key+" class='list_item'> "+prettyDate+" at "+Obj[key].time+" <a class='margin_left mdi-content-remove-circle red remove_extraFerryTime_btn'> remove ferry </a></div>";
+			result += "<div id="+key+" class='list_item'> "+prettyDate+" at "+Obj[key].time+" <a class='margin_left mdi-content-remove-circle red remove_extraFerryTime_btn' > remove ferry </a></div>";
 		};
 	};
 	document.getElementById(htmlID).innerHTML = result;
@@ -93,16 +94,18 @@ function constructSingleExtrasList(Obj, htmlID) {
 
 // START THE RUNNING FUNCTION FOR REMOVING EXTRA FERRIES
 
-$(function() { 
-	jQuery('body').on('click', 'a', function () { 
-		if ($(this).hasClass('remove_extraFerryTime_btn')){
-			var timeKey = $(this).parent().attr('id');
-			var dateKey = $(this).parent().parent().attr('id');
-			// console.log(timeKey + " " +dateKey);
-			removeFromFirebase(timeKey, dateKey);
-		}
-	});
-});
+// $(function() { 
+// 	jQuery('body').on('click', 'a', function () { 
+// 		if ($(this).hasClass('remove_extraFerryTime_btn')){
+// 			var timeKey = $(this).parent().attr('id');
+// 			var dateKey = $(this).parent().parent().attr('id');
+// 			// console.log(timeKey + " " +dateKey);
+// 			removeFromFirebase(timeKey, dateKey);
+// 		}
+// 	});
+// });
+
+
 
 function removeFromFirebase(timeKey, dateKey){
 	// console.log(timeKey);

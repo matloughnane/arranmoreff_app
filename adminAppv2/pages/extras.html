@@ -89,10 +89,8 @@
         <div class="card" id="db_extra_list"></div>
       <!-- EXTRA FERRY FORM -->
       <div class="unit whole card orange_light align-center">
-        New ferry for:
-        <input type="date" class="extra" name="db_extra_date">
-        at:
-        <input type="time" class="extra">
+        <div class="mobile_block"> New ferry for: <input type="date" class="extra" name="db_extra_date"> </div>
+        <div class="mobile_block">  at: <input type="time" class="extra" id="db_extra_time"> </div>
         <a class="btn btn_no_margin btn_add db_extra_btn"><i class="mdi-content-add-circle margin_right"></i>Add Ferry</a>
       </div>
 
@@ -129,6 +127,21 @@
   toastr.options = {
     "positionClass": "toast-bottom-right",
   }
+  </script>
+
+  <script type="text/javascript">
+
+    $(function() { 
+      jQuery('body').on('click', 'a', function () { 
+        if ($(this).hasClass('remove_extraFerryTime_btn')){
+          var timeKey = $(this).parent().attr('id');
+          var dateKey = $(this).parent().parent().attr('id');
+          // console.log(timeKey + " " +dateKey);
+          removeFromFirebase(timeKey, dateKey);
+        }
+      });
+    });
+
   </script>
 
   </body>

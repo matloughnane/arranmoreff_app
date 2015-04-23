@@ -4245,10 +4245,20 @@ img.first_time_logo {
   margin-top: 10px;
 }
 
+/* line 363, partials/_layout.scss */
+.mobile_block {
+  display: inline;
+}
+
 @media screen and (max-width: 568px) {
-  /* line 368, partials/_layout.scss */
+  /* line 371, partials/_layout.scss */
   .mobile_block {
     display: block;
+    margin: 8px;
+  }
+
+  /* line 375, partials/_layout.scss */
+  .remove_extraFerryTime_btn {
     margin: 8px;
   }
 }
