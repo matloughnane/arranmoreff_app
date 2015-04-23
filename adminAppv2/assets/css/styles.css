@@ -4260,6 +4260,7 @@ img.first_time_logo {
   /* line 375, partials/_layout.scss */
   .remove_extraFerryTime_btn {
     margin: 8px;
+    cursor: pointer;
   }
 }
 /* line 5, partials/_tables.scss */
@@ -4957,11 +4958,6 @@ button.toast-close-button {
   -webkit-transition: all 0.1s;
   -moz-transition: all 0.1s;
   transition: all 0.1s;
-}
-/* line 21, partials/_adminApp.scss */
-.list_item a:hover {
-  background-color: #b71c1c !important;
-  cursor: pointer;
 }
 
 /* -------------------------------- 
