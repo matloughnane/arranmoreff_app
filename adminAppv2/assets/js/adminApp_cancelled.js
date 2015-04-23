@@ -190,7 +190,7 @@ function displayCancelledList(array, journey, date){
 	if (array.length != 0){
 		var result = "<h4>Choose times to cancel from "+prettyDate+"</h4>";
 		for (var i = 0; i < array.length; i++) {
-			result += "<div class='list_item'> <strong>"+array[i]+"</strong> <a id='"+journey+","+date+","+array[i]+"' class='margin_left mdi-content-remove-circle red cancel_single_time'>Cancel this ferry</a></div>";
+			result += "<div class='list_item'> <strong>"+array[i]+"</strong> <a id='"+journey+","+date+","+array[i]+"' class='margin_left mdi-content-remove-circle red cancel_single_time' href='#'>Cancel this ferry</a></div>";
 		};
 		// result += "<div class='align-right'><a class='btn btn_red cancel_whole_day' id='"+journey+","+date+"'>Cancel all ferries for this day</a></div>"
 	} else {
@@ -355,7 +355,7 @@ function constructSingleCancelTable(dateTimeObj, htmlID){
     	if (datesInFuture(dateTimeObj[key].date, today) == true){
     		var date = getPrettyDate(dateTimeObj[key].date);
         	// array.push(date + ", " + dateTimeObj[key].time);
-        	tableHTML += "<tr> <td>" + date + ", " + dateTimeObj[key].time + "<a class='btn btn_uncancel' id='"+journey+","+key+"'>Un-cancel</a></td></tr>";
+        	tableHTML += "<tr> <td>" + date + ", " + dateTimeObj[key].time + "<a class='btn btn_uncancel' id='"+journey+","+key+"' href='#'>Un-cancel</a></td></tr>";
     	}
     };
 
