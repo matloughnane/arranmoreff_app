@@ -116,6 +116,17 @@ $(function() {
 	});
 });
 
+$(function() { 
+	$(document.body).on('click touchstart', 'a', function () { 
+		if ($(this).hasClass('remove_extraFerryTime_btn')){
+			var timeKey = $(this).parent().attr('id');
+			var dateKey = $(this).parent().parent().attr('id');
+			// console.log(timeKey + " " +dateKey);
+			removeFromFirebase(timeKey, dateKey);
+		}
+	});
+});
+
 function removeFromFirebase(timeKey, dateKey){
 	// console.log(timeKey);
 	var databaseRef = extractDateKey(dateKey);
