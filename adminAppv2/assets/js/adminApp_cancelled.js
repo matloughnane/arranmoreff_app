@@ -21,7 +21,7 @@ $(function() {
 // START THE FUNCTIONS FOR ADDING EXTRA FERRIES
 // ===========================================================================
 $(function() {
-	jQuery('body').on('click', 'a', function () { 
+	$(document.body).on('click', 'a', function () { 
 		// JAN TO APR
 		if ( $(this).hasClass("da_cancel_date_btn") ) {
 			// console.log("da extra clicked");
@@ -207,7 +207,7 @@ function displayCancelledList(array, journey, date){
 
 
 $(function() { 
-	jQuery('body').on('click', 'a', function () { 
+	$(document.body).on('click', 'a', function () { 
 		if ($(this).hasClass('cancel_single_time')){
 			var cancelKey = $(this).attr('id');
 			// console.log(cancelKey);
@@ -285,7 +285,7 @@ function cancelDaysFerries(cancelDayKey){
 // START THE RUNNING FUNCTION FOR REMOVING EXTRA FERRIES
 
 $(function() { 
-	jQuery('body').on('click', 'a', function () { 
+	$(document.body).on('click', 'a', function () { 
 		if ($(this).hasClass('remove_cancelFerryTime_btn')){
 			var timeKey = $(this).parent().attr('id');
 			var dateKey = $(this).parent().parent().attr('id');
@@ -387,7 +387,7 @@ function generateArraysWithDate(timeObj){
 }
 
 $(function() {
-	jQuery('body').on('click', 'a', function () { 
+	$(document.body).on('click', 'a', function () { 
 		// JAN TO APR
 		if ( $(this).hasClass("btn_uncancel") ) {
 			var uncancelKey = $(this).attr('id');
