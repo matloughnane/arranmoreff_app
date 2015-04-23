@@ -86,7 +86,7 @@ function constructSingleExtrasList(Obj, htmlID) {
 		var today = getTodayDate();
 		if (datesInFuture(Obj[key].date, today) == true){
 			var prettyDate = getPrettyDate(Obj[key].date);
-			result += "<div id="+key+" class='list_item'> "+prettyDate+" at "+Obj[key].time+" <a class='margin_left mdi-content-remove-circle red remove_extraFerryTime_btn' > remove ferry </a></div>";
+			result += "<div id="+key+" class='list_item'> "+prettyDate+" at "+Obj[key].time+" <div class='margin_left mdi-content-remove-circle red remove_extraFerryTime_btn' > remove ferry <span></span> </div></div>";
 		};
 	};
 	document.getElementById(htmlID).innerHTML = result;

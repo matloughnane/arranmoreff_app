@@ -4259,8 +4259,9 @@ img.first_time_logo {
 
   /* line 375, partials/_layout.scss */
   .remove_extraFerryTime_btn {
+    padding: 5px;
     margin: 8px;
-    cursor: pointer;
+    cursor: cursor;
   }
 }
 /* line 5, partials/_tables.scss */
