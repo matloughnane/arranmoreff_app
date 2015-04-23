@@ -45,12 +45,6 @@
 
 <main >
 
-<!-- NO INTERNET CONNECTION NOTIFICATION -->
-<!-- <div class="grid padded" id="internet_notification">
-  <div class="unit whole card shadow1 red align-center">
-    <p><i class="mdi-alert-warning margin_right"></i>No internet connection - you can't change the timetables without an internet connection!<i class="mdi-alert-warning margin_left"></i></p>
-  </div>
-</div> -->
 
 <!-- WARNING FOR CHANGES -->
 <div class="grid padded">
@@ -69,10 +63,8 @@
         <div class="card" id="da_extra_list"></div>
       <!-- EXTRA FERRY FORM -->
       <div class="unit whole card blue_light align-center">
-        New ferry for:
-        <input type="date" class="extra" name="da_extra_date">
-        at:
-        <input type="time" class="extra">
+        <div class="mobile_block"> New ferry for: <input type="date" class="extra" name="da_extra_date"> </div>
+        <div class="mobile_block"> at: <input type="time" class="extra" id="da_extra_time" > </div>
         <a class="btn btn_no_margin btn_add da_extra_btn"><i class="mdi-content-add-circle margin_right"></i>Add Ferry</a>
       </div>
 

@@ -29,7 +29,7 @@ $(function() {
 		if ( $(this).hasClass("da_extra_btn") ) {
 			// console.log("da extra clicked");
 			var extraDate = $('input[ name="da_extra_date"]').val();
-			var extraTime = $(this).prev('input').val();
+			var extraTime = $('#da_extra_time').val();
 			// console.log(extraDate + " " + extraTime);
 			pushExtraFerryTime("da", extraDate, extraTime);
 		} else if ( $(this).hasClass("db_extra_btn")) {
@@ -85,7 +85,7 @@ function constructSingleExtrasList(Obj, htmlID) {
 		var today = getTodayDate();
 		if (datesInFuture(Obj[key].date, today) == true){
 			var prettyDate = getPrettyDate(Obj[key].date);
-			result += "<div id="+key+" class='list_item'> "+prettyDate+" at "+Obj[key].time+" <a class='margin_left mdi-content-remove-circle red remove_extraFerryTime_btn'></a></div>";
+			result += "<div id="+key+" class='list_item'> "+prettyDate+" at "+Obj[key].time+" <a class='margin_left mdi-content-remove-circle red remove_extraFerryTime_btn'> remove ferry </a></div>";
 		};
 	};
 	document.getElementById(htmlID).innerHTML = result;
