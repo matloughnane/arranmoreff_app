@@ -290,6 +290,7 @@ function constructSingleList(Obj, htmlID) {
 	for (key in Obj){
 		result += "<div id="+key+" class='list_item'> "+Obj[key].time+" <a class='margin_left mdi-content-remove-circle red remove_ferryTime_btn'></a></div>";
 	}
+	// console.log(htmlID);
 	document.getElementById(htmlID).innerHTML = result;
 };
 
