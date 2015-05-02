@@ -4,7 +4,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
   <title>Control Centre</title>
 
-  <meta http-equiv="refresh" content="300">
+<!--   <meta http-equiv="refresh" content="300"> -->
   <!-- CORDOVA NECESSITIES -->
 
   <!-- CSS  -->
@@ -144,6 +144,16 @@
         <div id="lastest_sync_date"></div>
       </div>
     </div>
+
+    <!-- CONTACT MAT -->
+    <div class="grid padded">
+      <div class="unit whole card shadow1 plain align-center">
+        <a href="mailto:mat.loughnane@gmail.com" target="_blank" class="btn btn_blue">Email Mat</a>
+
+        <a href="tel:00447983357260" target="_blank" class="btn btn_orange">Phone Mat: 00447983357260</a>
+      </div>
+    </div>
+
   </div>
 
   <!-- BOOKING CONTENT -->
@@ -167,32 +177,34 @@
                   <option>12:00</option>
                 </select>
             </div>
+            <hr>
           <!-- DAILY FERRIES STATS -->
           <h3>Bookings:</h3>
+          <span>Here's a quick breakdown of passengers booked from the app vs web bookings</span>
             <div class="align-center">
                 <canvas id="bookings"></canvas>
-                <span style="color:#E65100">Online Bookings: 12</span> <br>
-                <span style="color:#0277BD">Manual Bookings: 3</span>
+                <span style="color:#F57C00;margin:20px;">App Bookings: 12</span> <br>
+                <span style="color:#0277BD;margin:20px;">Web Bookings: 3</span>
             </div>
         </div>
         <!-- FERRY DETAILS -->
         <div class="unit w-2-3">
-          <h3>Grid for Ferry</h3>
             <div class="grid unit whole align-center">
             <!-- FERRY SHAPE -->
-            <div class="grid">
-              <div class="unit w-1-5"><div class="car full">1 (taken)</div></div>
-              <div class="unit w-1-5"><div class="car full">3 (taken)</div></div>
-              <div class="unit w-1-5"><div class="car full">5 (taken)</div></div>
-              <div class="unit w-1-5"><div class="car">7</div></div>
-            </div>
-            <div class="grid">
-              <div class="unit w-1-5"><div class="car full">2 (taken)</div></div>
-              <div class="unit w-1-5"><div class="car full">4 (taken)</div></div>
-              <div class="unit w-1-5"><div class="car">6</div></div>
-              <div class="unit w-1-5"><div class="car">8</div></div>
-              <div class="unit w-1-5"><div class="car middle">9</div></div>
-            </div>
+              <!-- <div class="grid">
+                <div class="unit w-1-5"><div class="car full">1 (taken)</div></div>
+                <div class="unit w-1-5"><div class="car full">3 (taken)</div></div>
+                <div class="unit w-1-5"><div class="car full">5 (taken)</div></div>
+                <div class="unit w-1-5"><div class="car">7</div></div>
+              </div>
+              <div class="grid">
+                <div class="unit w-1-5"><div class="car full">2 (taken)</div></div>
+                <div class="unit w-1-5"><div class="car full">4 (taken)</div></div>
+                <div class="unit w-1-5"><div class="car">6</div></div>
+                <div class="unit w-1-5"><div class="car">8</div></div>
+                <div class="unit w-1-5"><div class="car middle">9</div></div>
+              </div> -->
+              <img src="assets/img/ferry_image.png">
             </div>
 
             <!-- PASSENGER TABLE -->
@@ -208,8 +220,8 @@
                     <tr><td>Car 1</td><td>Mat Loughnane</td><td>+447983357260</td><td>CAR w/ 4</td></tr>
                     <tr><td>Car 2</td><td>Brian Proctor</td><td>+353XXXXXXXXX</td><td>CAR w/ 4</td></tr>
                     <tr><td>Car 3</td><td>Anthony Proctor</td><td>+353XXXXXXXXX</td><td>CAR w/ 4</td></tr>
-                    <tr><td>Car 4</td><td>Marion McHugh</td><td>+353XXXXXXXXX</td><td>CAR w/ 3</td></tr>
-                    <tr><td>Car 5</td><td>Rachael Early</td><td>+353XXXXXXXXX</td><td>CAR </td></tr>
+                    <tr><td>Car 4</td><td>Rachael Early</td><td>+353XXXXXXXXX</td><td>CAR w/ 3</td></tr>
+                    <tr><td>Car 5</td><td>Marion McHugh</td><td>+353XXXXXXXXX</td><td>CAR </td></tr>
                   </tbody>
                 </table>
             </div>
@@ -220,15 +232,6 @@
   </div>
 
 <!-- END WHOLE GRID -->
-</div>
-
-<!-- LOCAL TIME -->
-<div class="grid padded">
-  <div class="unit whole card shadow1 plain align-center">
-    <a href="mailto:mat.loughnane@gmail.com" target="_blank" class="btn btn_blue">Email Mat</a>
-
-    <a href="tel:00447983357260" target="_blank" class="btn btn_orange">Phone Mat: 00447983357260</a>
-  </div>
 </div>
 
 </main>
@@ -249,7 +252,7 @@
       },
       {
         value : 12,
-        color : "#E65100"
+        color : "#F57C00"
       }
     ];
     var pieOptions = {

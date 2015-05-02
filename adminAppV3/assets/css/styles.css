@@ -4150,23 +4150,28 @@ h4, h5, h6 {
 }
 
 /* line 277, partials/_layout.scss */
+hr {
+  margin: 40px 20px;
+}
+
+/* line 281, partials/_layout.scss */
 #cancel_times, #changes_requires_internet, #changes_requires_internet_timeout, #extra_times {
   display: none;
 }
 
-/* line 281, partials/_layout.scss */
+/* line 285, partials/_layout.scss */
 #static_timetable {
   display: none;
 }
 
-/* line 286, partials/_layout.scss */
+/* line 290, partials/_layout.scss */
 .tferry_table_title {
   display: block;
   padding: 5px;
   font-size: 1em;
 }
 
-/* line 292, partials/_layout.scss */
+/* line 296, partials/_layout.scss */
 .settings_title {
   display: block;
   font-weight: 600;
@@ -4174,7 +4179,7 @@ h4, h5, h6 {
   font-size: 1em;
 }
 
-/* line 299, partials/_layout.scss */
+/* line 303, partials/_layout.scss */
 .horizontal_line {
   width: 400px;
   height: 0;
@@ -4182,98 +4187,98 @@ h4, h5, h6 {
   font-size: 0;
 }
 
-/* line 306, partials/_layout.scss */
+/* line 310, partials/_layout.scss */
 .loading_text {
   font-size: 0.4em;
 }
 
-/* line 310, partials/_layout.scss */
+/* line 314, partials/_layout.scss */
 .larger_text {
   font-size: 1.25em;
 }
 
-/* line 314, partials/_layout.scss */
+/* line 318, partials/_layout.scss */
 .blue_text {
   color: #0277bd;
 }
 
-/* line 319, partials/_layout.scss */
+/* line 323, partials/_layout.scss */
 .orange_text {
   color: #e65100;
 }
 
-/* line 326, partials/_layout.scss */
+/* line 330, partials/_layout.scss */
 rect {
   fill: whitesmoke;
 }
 
-/* line 330, partials/_layout.scss */
+/* line 334, partials/_layout.scss */
 .blue_rect {
   fill: #03a9f4 !important;
 }
 
-/* line 334, partials/_layout.scss */
+/* line 338, partials/_layout.scss */
 .orange_rect {
   fill: #e65100 !important;
 }
 
-/* line 339, partials/_layout.scss */
+/* line 343, partials/_layout.scss */
 .settings_text {
   padding: 5px;
   margin-left: 14px;
   font-size: 1em;
 }
 
-/* line 345, partials/_layout.scss */
+/* line 349, partials/_layout.scss */
 .margin_small {
   margin: 5px;
 }
 
-/* line 349, partials/_layout.scss */
+/* line 353, partials/_layout.scss */
 .margin_left {
   margin-left: 10px;
 }
 
-/* line 353, partials/_layout.scss */
+/* line 357, partials/_layout.scss */
 .margin_right {
   margin-right: 10px;
 }
 
-/* line 357, partials/_layout.scss */
+/* line 361, partials/_layout.scss */
 .important_text {
   font-size: 1.5em;
   font-weight: 700;
 }
 
-/* line 362, partials/_layout.scss */
+/* line 366, partials/_layout.scss */
 .date_text {
   font-size: 0.8em;
   color: #9e9e9e;
 }
 
-/* line 367, partials/_layout.scss */
+/* line 371, partials/_layout.scss */
 img {
   max-width: 100%;
 }
-/* line 369, partials/_layout.scss */
+/* line 373, partials/_layout.scss */
 img.first_time_logo {
   width: 60%;
   margin-top: 10px;
 }
 
-/* line 376, partials/_layout.scss */
+/* line 380, partials/_layout.scss */
 .mobile_block {
   display: inline;
 }
 
 @media screen and (max-width: 568px) {
-  /* line 384, partials/_layout.scss */
+  /* line 388, partials/_layout.scss */
   .mobile_block {
     display: block;
     margin: 8px;
   }
 
-  /* line 388, partials/_layout.scss */
+  /* line 392, partials/_layout.scss */
   .remove_extraFerryTime_btn {
     padding: 5px;
     margin: 8px;
