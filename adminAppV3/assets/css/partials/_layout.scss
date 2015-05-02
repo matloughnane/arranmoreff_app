@@ -260,6 +260,20 @@ h4, h5, h6 {
 	font-size: 2em;
 }
 
+.cc_title {
+	font-size: 1.2em;
+	font-weight: 600;
+	margin: 10px 5px; 
+}
+
+.car {
+	padding: 15px 10px;
+	background-color: $blue_light;
+	&.full {
+		background-color: $red_light;
+	}
+}
+
 #cancel_times, #changes_requires_internet, #changes_requires_internet_timeout, #extra_times {
 	display: none;
 }

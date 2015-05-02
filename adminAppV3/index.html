@@ -10,6 +10,13 @@
   <!-- CSS  -->
   <link href="assets/css/gridism.css" type="text/css" rel="stylesheet"/>
   <link href="assets/css/styles.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+
+  <style type="text/css">
+  .tg  {border-collapse:collapse;border-spacing:0;}
+  .tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
+  .tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
+  </style>
+
 </head>
 <body>
 
@@ -49,100 +56,172 @@
 </div>
 
 <div class="grid">
-<div class="unit w-1-3">
-<!-- NEXT FERRY TIMES -->
-<div id="next_ferries" class="grid">
-  <div class="unit half card shadow1 blue align-center padded">
-    <span id="next_ferry_da_title"></span>
-    Next Ferry Departing Arranmore:
-    <span class="tferry_time" id="nextFerry_da">
-      <div class="align-center">
-        <svg width="36" height="10">
-          <rect width="10" height="10" x="0" y="0" rx="3" ry="3">
-            <animate attributeName="width" values="0;10;10;10;0" dur="1000ms" repeatCount="indefinite"/>
-            <animate attributeName="height" values="0;10;10;10;0" dur="1000ms" repeatCount="indefinite"/>
-            <animate attributeName="x" values="5;0;0;0;5" dur="1000ms" repeatCount="indefinite"/>
-            <animate attributeName="y" values="5;0;0;0;5" dur="1000ms" repeatCount="indefinite"/>
-          </rect>
-          <rect width="10" height="10" x="13" y="0" rx="3" ry="3">
-            <animate attributeName="width" values="0;10;10;10;0" begin="300ms" dur="1000ms" repeatCount="indefinite"/>
-            <animate attributeName="height" values="0;10;10;10;0" begin="300ms" dur="1000ms" repeatCount="indefinite"/>
-            <animate attributeName="x" values="18;13;13;13;18" begin="300ms" dur="1000ms" repeatCount="indefinite"/>
-            <animate attributeName="y" values="5;0;0;0;5" begin="300ms" dur="1000ms" repeatCount="indefinite"/>
-          </rect>
-          <rect width="10" height="10" x="36" y="0" rx="3" ry="3">
-            <animate attributeName="width" values="0;10;10;10;0" begin="500ms" dur="1000ms" repeatCount="indefinite"/>
-            <animate attributeName="height" values="0;10;10;10;0" begin="500ms" dur="1000ms" repeatCount="indefinite"/>
-            <animate attributeName="x" values="31;26;26;26;31" begin="500ms" dur="1000ms" repeatCount="indefinite"/>
-            <animate attributeName="y" values="5;0;0;0;5" begin="500ms" dur="1000ms" repeatCount="indefinite"/>
-          </rect>
-        </svg>
-        <br>
-        <span class="loading_text"> Checking Next Ferry Time </span> 
+
+  <!-- TIMETABLE DASHBOARD -->
+  <div class="unit w-1-3">
+    <!-- NEXT FERRY TIMES -->
+    <div id="next_ferries" class="grid">
+      <div class="unit half card shadow1 blue align-center padded">
+        <!-- <span id="next_ferry_da_title"></span> -->
+        Next Ferry Departing Arranmore:
+        <span class="tferry_time" id="nextFerry_da">
+          <div class="align-center">
+            <svg width="36" height="10">
+              <rect width="10" height="10" x="0" y="0" rx="3" ry="3">
+                <animate attributeName="width" values="0;10;10;10;0" dur="1000ms" repeatCount="indefinite"/>
+                <animate attributeName="height" values="0;10;10;10;0" dur="1000ms" repeatCount="indefinite"/>
+                <animate attributeName="x" values="5;0;0;0;5" dur="1000ms" repeatCount="indefinite"/>
+                <animate attributeName="y" values="5;0;0;0;5" dur="1000ms" repeatCount="indefinite"/>
+              </rect>
+              <rect width="10" height="10" x="13" y="0" rx="3" ry="3">
+                <animate attributeName="width" values="0;10;10;10;0" begin="300ms" dur="1000ms" repeatCount="indefinite"/>
+                <animate attributeName="height" values="0;10;10;10;0" begin="300ms" dur="1000ms" repeatCount="indefinite"/>
+                <animate attributeName="x" values="18;13;13;13;18" begin="300ms" dur="1000ms" repeatCount="indefinite"/>
+                <animate attributeName="y" values="5;0;0;0;5" begin="300ms" dur="1000ms" repeatCount="indefinite"/>
+              </rect>
+              <rect width="10" height="10" x="36" y="0" rx="3" ry="3">
+                <animate attributeName="width" values="0;10;10;10;0" begin="500ms" dur="1000ms" repeatCount="indefinite"/>
+                <animate attributeName="height" values="0;10;10;10;0" begin="500ms" dur="1000ms" repeatCount="indefinite"/>
+                <animate attributeName="x" values="31;26;26;26;31" begin="500ms" dur="1000ms" repeatCount="indefinite"/>
+                <animate attributeName="y" values="5;0;0;0;5" begin="500ms" dur="1000ms" repeatCount="indefinite"/>
+              </rect>
+            </svg>
+            <br>
+            <span class="loading_text"> Checking Next Ferry Time </span> 
+          </div>
+
+        </span>
       </div>
+      <div class="unit half card orange shadow1 align-center padded">
+        <!-- <span id="next_ferry_db_title"></span> -->
+        Next Ferry Departing Burtonport:
+        <span class="tferry_time" id="nextFerry_db">
 
-    </span>
-  </div>
-  <div class="unit half card orange shadow1 align-center padded">
-    <span id="next_ferry_db_title"></span>
-    Next Ferry Departing Burtonport:
-    <span class="tferry_time" id="nextFerry_db">
+          <div class="align-center">
+            <svg width="36" height="10">
+              <rect width="10" height="10" x="0" y="0" rx="3" ry="3">
+                <animate attributeName="width" values="0;10;10;10;0" dur="1000ms" repeatCount="indefinite"/>
+                <animate attributeName="height" values="0;10;10;10;0" dur="1000ms" repeatCount="indefinite"/>
+                <animate attributeName="x" values="5;0;0;0;5" dur="1000ms" repeatCount="indefinite"/>
+                <animate attributeName="y" values="5;0;0;0;5" dur="1000ms" repeatCount="indefinite"/>
+              </rect>
+              <rect width="10" height="10" x="13" y="0" rx="3" ry="3">
+                <animate attributeName="width" values="0;10;10;10;0" begin="300ms" dur="1000ms" repeatCount="indefinite"/>
+                <animate attributeName="height" values="0;10;10;10;0" begin="300ms" dur="1000ms" repeatCount="indefinite"/>
+                <animate attributeName="x" values="18;13;13;13;18" begin="300ms" dur="1000ms" repeatCount="indefinite"/>
+                <animate attributeName="y" values="5;0;0;0;5" begin="300ms" dur="1000ms" repeatCount="indefinite"/>
+              </rect>
+              <rect width="10" height="10" x="36" y="0" rx="3" ry="3">
+                <animate attributeName="width" values="0;10;10;10;0" begin="500ms" dur="1000ms" repeatCount="indefinite"/>
+                <animate attributeName="height" values="0;10;10;10;0" begin="500ms" dur="1000ms" repeatCount="indefinite"/>
+                <animate attributeName="x" values="31;26;26;26;31" begin="500ms" dur="1000ms" repeatCount="indefinite"/>
+                <animate attributeName="y" values="5;0;0;0;5" begin="500ms" dur="1000ms" repeatCount="indefinite"/>
+              </rect>
+            </svg>
+            <br>
+            <span class="loading_text"> Checking Next Ferry Time </span> 
+          </div>
 
-      <div class="align-center">
-        <svg width="36" height="10">
-          <rect width="10" height="10" x="0" y="0" rx="3" ry="3">
-            <animate attributeName="width" values="0;10;10;10;0" dur="1000ms" repeatCount="indefinite"/>
-            <animate attributeName="height" values="0;10;10;10;0" dur="1000ms" repeatCount="indefinite"/>
-            <animate attributeName="x" values="5;0;0;0;5" dur="1000ms" repeatCount="indefinite"/>
-            <animate attributeName="y" values="5;0;0;0;5" dur="1000ms" repeatCount="indefinite"/>
-          </rect>
-          <rect width="10" height="10" x="13" y="0" rx="3" ry="3">
-            <animate attributeName="width" values="0;10;10;10;0" begin="300ms" dur="1000ms" repeatCount="indefinite"/>
-            <animate attributeName="height" values="0;10;10;10;0" begin="300ms" dur="1000ms" repeatCount="indefinite"/>
-            <animate attributeName="x" values="18;13;13;13;18" begin="300ms" dur="1000ms" repeatCount="indefinite"/>
-            <animate attributeName="y" values="5;0;0;0;5" begin="300ms" dur="1000ms" repeatCount="indefinite"/>
-          </rect>
-          <rect width="10" height="10" x="36" y="0" rx="3" ry="3">
-            <animate attributeName="width" values="0;10;10;10;0" begin="500ms" dur="1000ms" repeatCount="indefinite"/>
-            <animate attributeName="height" values="0;10;10;10;0" begin="500ms" dur="1000ms" repeatCount="indefinite"/>
-            <animate attributeName="x" values="31;26;26;26;31" begin="500ms" dur="1000ms" repeatCount="indefinite"/>
-            <animate attributeName="y" values="5;0;0;0;5" begin="500ms" dur="1000ms" repeatCount="indefinite"/>
-          </rect>
-        </svg>
-        <br>
-        <span class="loading_text"> Checking Next Ferry Time </span> 
+        </span>
       </div>
-
-    </span>
+    </div>
+    <!-- TIMETABLES -->
+    <div id="todays_timetables" class="grid">
+      <div class="unit whole card shadow1 plain">
+        <span class="tferry_table_title"> <h3>Todays Ferries, including extra ferries and cancellations:</h3></span>
+        <!-- HALFS -->
+          <div class="unit whole left_half align-center">
+            <!-- TABLE -->
+            <div id="today_timetable_da" class="table_container">
+            </div>
+          </div>
+          <div class="unit whole right_half align-center">
+            <!-- TABLE -->
+            <div id="today_timetable_db" class="table_container">
+            </div>
+          </div>
+        <!-- SYNC DATE DISPLAYED -->
+        <div id="lastest_sync_date"></div>
+      </div>
+    </div>
   </div>
-</div>
-<!-- TIMETABLES -->
-<div id="todays_timetables" class="grid">
-  <div class="unit whole card shadow1 plain">
-    <span class="tferry_table_title"> <h3>Todays Ferries, including extra ferries and cancellations:</h3></span>
-    <!-- HALFS -->
-      <div class="unit whole left_half align-center">
-        <!-- TABLE -->
-        <div id="today_timetable_da" class="table_container">
+
+  <!-- BOOKING CONTENT -->
+  <div class="unit w-2-3">
+    <!-- CARD -->
+    <div class="unit whole card shadow1 plain">
+      <h2>Online Bookings</h2>
+      <div class="grid">
+        <!-- DAILY FERRIES -->
+        <div class="unit w-1-3">
+          <h3>Ferry Details</h3>
+          <div class="cc_title">
+            <span class="">Date:</span> <input type="date">
+          </div>
+            <div class="cc_title">
+              <span class="">Ferry:</span> 
+                <select type="select">
+                  <option>07:00</option>
+                  <option>09:00</option>
+                  <option>10:00</option>
+                  <option>12:00</option>
+                </select>
+            </div>
+          <!-- DAILY FERRIES STATS -->
+          <h3>Bookings:</h3>
+            <div class="align-center">
+                <canvas id="bookings"></canvas>
+                <span style="color:#E65100">Online Bookings: 12</span> <br>
+                <span style="color:#0277BD">Manual Bookings: 3</span>
+            </div>
+        </div>
+        <!-- FERRY DETAILS -->
+        <div class="unit w-2-3">
+          <h3>Grid for Ferry</h3>
+            <div class="grid unit whole align-center">
+            <!-- FERRY SHAPE -->
+            <div class="grid">
+              <div class="unit w-1-5"><div class="car full">1 (taken)</div></div>
+              <div class="unit w-1-5"><div class="car full">3 (taken)</div></div>
+              <div class="unit w-1-5"><div class="car full">5 (taken)</div></div>
+              <div class="unit w-1-5"><div class="car">7</div></div>
+            </div>
+            <div class="grid">
+              <div class="unit w-1-5"><div class="car full">2 (taken)</div></div>
+              <div class="unit w-1-5"><div class="car full">4 (taken)</div></div>
+              <div class="unit w-1-5"><div class="car">6</div></div>
+              <div class="unit w-1-5"><div class="car">8</div></div>
+              <div class="unit w-1-5"><div class="car middle">9</div></div>
+            </div>
+            </div>
+
+            <!-- PASSENGER TABLE -->
+            <div class="unit whole">
+              <h3>Passengers</h3>
+                <table class="blue align-center" border="1">
+                  <thead>
+                    <tr>
+                      <th class="blue" colspan="4">Booked Passengers</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr><td>Car 1</td><td>Mat Loughnane</td><td>+447983357260</td><td>CAR w/ 4</td></tr>
+                    <tr><td>Car 2</td><td>Brian Proctor</td><td>+353XXXXXXXXX</td><td>CAR w/ 4</td></tr>
+                    <tr><td>Car 3</td><td>Anthony Proctor</td><td>+353XXXXXXXXX</td><td>CAR w/ 4</td></tr>
+                    <tr><td>Car 4</td><td>Marion McHugh</td><td>+353XXXXXXXXX</td><td>CAR w/ 3</td></tr>
+                    <tr><td>Car 5</td><td>Rachael Early</td><td>+353XXXXXXXXX</td><td>CAR </td></tr>
+                  </tbody>
+                </table>
+            </div>
+
         </div>
       </div>
-      <br>
-      <div class="unit whole right_half align-center">
-        <!-- TABLE -->
-        <div id="today_timetable_db" class="table_container">
-        </div>
-      </div>
-    <!-- SYNC DATE DISPLAYED -->
-    <div id="lastest_sync_date"></div>
-
+    </div>
   </div>
-</div>
+
+<!-- END WHOLE GRID -->
 </div>
 
-<div class="unit w-2-3">
-  BOOKING CONTENT
-</div>
-</div>
 <!-- LOCAL TIME -->
 <div class="grid padded">
   <div class="unit whole card shadow1 plain align-center">
@@ -160,6 +239,26 @@
   <script src="assets/js/firebase.js"></script>
   <script src="assets/js/clock.js"></script>
   <script src="assets/js/adminApp_index.js"></script>
+  <script src="assets/js/Chart.min.js"></script>
+
+  <script type="text/javascript">
+    var pieData = [
+      {
+        value: 3,
+        color:"#0277BD"
+      },
+      {
+        value : 12,
+        color : "#E65100"
+      }
+    ];
+    var pieOptions = {
+      segmentShowStroke : false,
+      animateScale : true
+    }
+    var bookings= document.getElementById("bookings").getContext("2d");
+    new Chart(bookings).Pie(pieData, pieOptions);
+  </script>
 
   </body>
 </html>

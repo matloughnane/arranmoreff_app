@@ -93,7 +93,7 @@ input[type="date"] {
   font-family: "Roboto", sans-serif;
   font-size: 14px;
   padding: 2px;
-  border-radius: 2px !important;
+  border-radius: solid 2px $blue_dull !important;
   &.extra {
     border: solid 1px $green;
     font-size: 14px;

@@ -1,0 +1,118 @@
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+  <title>Control Centre - Chart JS</title>
+
+  <!-- CORDOVA NECESSITIES -->
+
+  <!-- CSS  -->
+  <link href="../assets/css/gridism.css" type="text/css" rel="stylesheet"/>
+  <link href="../assets/css/styles.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+<body>
+
+<!-- NAVIGATION -->
+<nav>
+  <div class="nav_bar">
+    <a href="#" class="cd-btn"><i class="mdi-navigation-menu"></i></a><div>Chart JS</div>
+    <!-- POSSIBILITY OF ADDING AN EDITABLE SWITCH -->
+    <!-- <span class="editable_div">
+      <span class="margin_right">Flick the switch to edit</span>
+      <input id="editable" type="checkbox" hidden="hidden" class="editable_switch"/>
+      <label for="editable" class="switch"></label>
+    </span> -->
+    <a href="javascript:history.go(0)" class="refresh-icon"><i class="mdi-navigation-refresh"></i></a>
+  </div>
+
+  <div class="cd-panel from-left">
+    <div class="cd-panel-container">
+      <div class="cd-panel-content">
+        <ul>
+          <a href="../index.html"><li><i class="mdi-action-home"></i>Dashboard</li></a>
+          <a href="timetables.html"><li><i class="mdi-action-event"></i>Master Timetables</li></a>
+          <a href="extras.html"><li><i class="mdi-content-add-circle"></i>Extra Ferries</li></a>
+          <a href="cancelled.html"><li><i class="mdi-content-remove-circle"></i>Cancelled Ferries</li></a>
+          <a href="offline.html"><li><i class="mdi-device-signal-wifi-off"></i>Offline Timetables</li></a>
+        </ul>
+      </div> <!-- cd-panel-content -->
+    </div> <!-- cd-panel-container -->
+  </div> <!-- cd-panel -->
+
+</nav>
+
+<div class="nav_bar_buffer"></div>
+
+<main >
+
+<div class="grid padded">
+  <div class="unit whole card shadow1 plain">
+    <h2>Chart JS</h2>
+      <canvas id="buyers" width="600" height="400"></canvas>
+      <canvas id="bookings"></canvas>
+  </div>
+</div>
+
+<!-- LOCAL TIME -->
+<div class="grid padded">
+  <div class="unit whole card shadow1 plain align-center">
+    <a class="btn btn_blue" href="mailto:mat.loughnane@gmail.com" target="_blank">No idea what's going on? Email Mat</a>
+  </div>
+</div>
+
+</main>
+
+  <!--  Scripts-->
+  <script src="../assets/js/jquery-2.1.3.min.js"></script>
+  <script src="../assets/js/sidepanel.js"></script>
+  <script src="../assets/js/toastr.min.js"></script>
+  <script src="../assets/js/Chart.min.js"></script>
+
+  <script>
+  toastr.options = {
+    "positionClass": "toast-bottom-right",
+  }
+  </script>
+
+  <script type="text/javascript">
+    var buyerData = {
+      labels : ["January","February","March","April","May","June"],
+      datasets : [
+        {
+          fillColor : "rgba(172,194,132,0.4)",
+          strokeColor : "#ACC26D",
+          pointColor : "#fff",
+          pointStrokeColor : "#9DB86D",
+          data : [203,156,99,251,305,247]
+        }
+      ]
+    }
+
+    var buyers = document.getElementById('buyers').getContext('2d');
+    new Chart(buyers).Line(buyerData);
+
+    var pieData = [
+      {
+        value: 3,
+        color:"#878BB6"
+      },
+      {
+        value : 12,
+        color : "#4ACAB4"
+      }
+    ];
+    var pieOptions = {
+      segmentShowStroke : false,
+      animateScale : true,
+      legendTemplate : "<ul class=\"<%=name.toLowerCase()%>-legend\"><% for (var i=0; i<segments.length; i++){%><li><span style=\"background-color:<%=segments[i].fillColor%>\"></span><%if(segments[i].label){%><%=segments[i].label%><%}%></li><%}%></ul>"
+
+    }
+    var bookings= document.getElementById("bookings").getContext("2d");
+    new Chart(bookings).Pie(pieData, pieOptions);
+
+  </script>
+
+  </body>
+</html>
+
+
