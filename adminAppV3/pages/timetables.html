@@ -1,0 +1,541 @@
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+  <title>Admin Master Timetables</title>
+
+  <!-- CORDOVA NECESSITIES -->
+
+  <!-- CSS  -->
+  <link href="../assets/css/gridism.css" type="text/css" rel="stylesheet"/>
+  <link href="../assets/css/styles.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+<body>
+
+<!-- NAVIGATION -->
+<nav>
+  <div class="nav_bar">
+    <a href="#" class="cd-btn"><i class="mdi-navigation-menu"></i></a><div>Timetables</div>
+    <!-- POSSIBILITY OF ADDING AN EDITABLE SWITCH -->
+    <!-- <span class="editable_div">
+      <span class="margin_right">Flick the switch to edit</span>
+      <input id="editable" type="checkbox" hidden="hidden" class="editable_switch"/>
+      <label for="editable" class="switch"></label>
+    </span> -->
+    <a href="javascript:history.go(0)" class="refresh-icon"><i class="mdi-navigation-refresh"></i></a>
+  </div>
+
+  <div class="cd-panel from-left">
+    <div class="cd-panel-container">
+      <div class="cd-panel-content">
+        <ul>
+          <a href="../index.html"><li><i class="mdi-action-home"></i>Dashboard</li></a>
+          <a href="timetables.html"><li><i class="mdi-action-event"></i>Master Timetables</li></a>
+          <a href="extras.html"><li><i class="mdi-content-add-circle"></i>Extra Ferries</li></a>
+          <a href="cancelled.html"><li><i class="mdi-content-remove-circle"></i>Cancelled Ferries</li></a>
+          <a href="offline.html"><li><i class="mdi-device-signal-wifi-off"></i>Offline Timetables</li></a>
+        </ul>
+      </div> <!-- cd-panel-content -->
+    </div> <!-- cd-panel-container -->
+  </div> <!-- cd-panel -->
+
+</nav>
+
+<div class="nav_bar_buffer"></div>
+
+<main >
+
+<!-- NO INTERNET CONNECTION NOTIFICATION -->
+<!-- <div class="grid padded" id="internet_notification">
+  <div class="unit whole card shadow1 red align-center">
+    <p><i class="mdi-alert-warning margin_right"></i>No internet connection - you can't change the timetables without an internet connection!<i class="mdi-alert-warning margin_left"></i></p>
+  </div>
+</div> -->
+
+<!-- WARNING FOR CHANGES -->
+<div class="grid padded">
+  <div class="unit whole card red shadow1 align-center">
+    <span> <i class="mdi-alert-warning margin_right"></i>CHANGES MADE HERE WILL EFFECT EVERY TIMETABLE ON WEBSITES and APPS<i class="mdi-alert-warning margin_left"></i> </span>
+  </div>
+</div>
+
+
+<!-- FILTER SYSTEM -->
+<div class="grid padded">
+  <div class="unit whole card shadow1 orange_light padded_left_right align-center">
+    Choose a timetable:
+    <div class="input_select">
+      <!-- TEMPLATES -->
+        <select class="selectpicker" name="filterMonths">
+          <option value="all">All Months</option>
+          <option value="jan_apr">Jan to Apr</option>
+          <option value="may">May</option>
+          <option value="jun_aug">Jun to Aug</option>
+          <option value="sep_oct">Sep to Oct</option>
+          <option value="nov_dec">Nov to Dec</option>
+        </select>
+    </div>
+  </div>
+</div>
+
+
+<!-- JANUARY TO APRIL -->
+<div id="jantoapr" class="grid padded">
+  <div class="unit whole card shadow1 plain padded_left_right">
+    <h3>January to April Timetables:</h3>
+    <div class="unit half">
+        <h3 class="blue_text">Departing Arranmore:</h3>
+        <h4>Monday to Saturday</h4>
+        <div class="card" id="da_jantoapr_wk">
+          There are no ferries for this date and time.
+        </div>
+
+        <h4>Friday Only</h4>
+        <div class="card" id="da_jantoapr_fri">
+          There are no ferries for this date and time.
+        </div>
+
+        <h4>Saturday Only</h4>
+        <div class="card" id="da_jantoapr_sat">
+          There are no ferries for this date and time.
+        </div>
+
+        <h4>Sundays</h4>
+        <div class="card" id="da_jantoapr_sun">
+          There are no ferries for this date and time.
+        </div>
+      <!-- ADD FERRY FORM -->
+      <div class="unit whole card blue_light align-center">
+        New ferry for:
+        <select class="extra" name="da_jantoapr_select">
+          <option value="da_jantoapr_wk">Monday to Saturday</option>
+          <option value="da_jantoapr_fri">Fridays Only</option>
+          <option value="da_jantoapr_sat"> Saturdays Only</option>
+          <option value="da_jantoapr_sun">Sunday</option>
+        </select>
+        at:
+        <input type="time" class="extra">
+        <a class="btn btn_no_margin btn_add da_jantoapr_btn"><i class="mdi-content-add-circle margin_right"></i>Add Ferry</a>
+      </div>
+
+      <h3 class="orange_text">Departing Burtonport:</h3>
+        <h4>Monday to Saturday</h4>
+        <div class="card" id="db_jantoapr_wk">
+          There are no ferries for this date and time.
+        </div>
+
+        <h4>Friday Only</h4>
+        <div class="card" id="db_jantoapr_fri">
+          There are no ferries for this date and time.
+        </div>
+
+        <h4>Saturday Only</h4>
+        <div class="card" id="db_jantoapr_sat">
+          There are no ferries for this date and time.
+        </div>
+
+        <h4>Sundays</h4>
+        <div class="card" id="db_jantoapr_sun">
+          There are no ferries for this date and time.
+        </div>
+      <!-- ADD FERRY FORM -->
+      <div class="unit whole card orange_light align-center">
+        New ferry for:
+        <select class="extra" name="db_jantoapr_select">
+          <option value="db_jantoapr_wk">Monday to Saturday</option>
+          <option value="db_jantoapr_fri">Fridays Only</option>
+          <option value="db_jantoapr_sat"> Saturdays Only</option>
+          <option value="db_jantoapr_sun">Sunday</option>
+        </select>
+        at:
+        <input type="time" class="extra">
+        <a class="btn btn_no_margin btn_add db_jantoapr_btn"><i class="mdi-content-add-circle margin_right"></i>Add Ferry</a>
+      </div>
+    </div>
+    <!-- END OF FIRST HALF -->
+    <div class="unit half">
+      <h3 class="blue_text">Departing Arranmore Table:</h3>
+      <div id="da_jantoapr_table"></div>
+      <h3 class="orange_text">Departing Burtonport Table:</h3>
+      <div id="db_jantoapr_table"></div>
+    </div>
+  </div>
+</div>
+
+
+<!-- May -->
+<div id="may" class="grid padded">
+  <div class="unit whole card shadow1 plain padded_left_right">
+    <h3>May Timetables:</h3>
+
+    <div class="unit half">
+      <h3 class="blue_text">Departing Arranmore:</h3>
+      <h4>Monday to Saturday</h4>
+      <div class="card" id="da_may_wk">
+        There are no ferries for this date and time.
+      </div>
+
+      <h4>Friday Only</h4>
+      <div class="card" id="da_may_fri">
+        There are no ferries for this date and time.
+      </div>
+
+      <h4>Saturday Only</h4>
+      <div class="card" id="da_may_sat">
+        There are no ferries for this date and time.
+      </div>
+
+      <h4>Sundays</h4>
+      <div class="card" id="da_may_sun">
+        There are no ferries for this date and time.
+      </div>
+    <!-- ADD FERRY FORM -->
+      <div class="unit whole card blue_light align-center">
+        New ferry for:
+        <select class="extra" name="da_may_select">
+          <option value="da_may_wk">Monday to Saturday</option>
+          <option value="da_may_fri">Fridays Only</option>
+          <option value="da_may_sat"> Saturdays Only</option>
+          <option value="da_may_sun">Sunday</option>
+        </select>
+        at:
+        <input type="time" class="extra">
+        <a class="btn btn_no_margin btn_add da_may_btn"><i class="mdi-content-add-circle margin_right"></i>Add Ferry</a>
+      </div>
+
+      <h3 class="orange_text">Departing Burtonport:</h3>
+        <h4>Monday to Saturday</h4>
+        <div class="card" id="db_may_wk">
+          There are no ferries for this date and time.
+        </div>
+
+        <h4>Friday Only</h4>
+        <div class="card" id="db_may_fri">
+          There are no ferries for this date and time.
+        </div>
+
+        <h4>Saturday Only</h4>
+        <div class="card" id="db_may_sat">
+          There are no ferries for this date and time.
+        </div>
+
+        <h4>Sundays</h4>
+        <div class="card" id="db_may_sun">
+          There are no ferries for this date and time.
+        </div>
+      <!-- ADD FERRY FORM -->
+      <div class="unit whole card orange_light align-center">
+        New ferry for:
+        <select class="extra" name="db_may_select">
+          <option value="db_may_wk">Monday to Saturday</option>
+          <option value="db_may_fri">Fridays Only</option>
+          <option value="db_may_sat"> Saturdays Only</option>
+          <option value="db_may_sun">Sunday</option>
+        </select>
+        at:
+        <input type="time" class="extra">
+        <a class="btn btn_no_margin btn_add db_may_btn"><i class="mdi-content-add-circle margin_right"></i>Add Ferry</a>
+      </div>
+    </div>
+    <!-- END OF FIRST HALF -->
+    <div class="unit half">
+      <h3 class="blue_text">Departing Arranmore Table:</h3>
+      <div id="da_may_table"></div>
+      <h3 class="orange_text">Departing Burtonport Table:</h3>
+      <div id="db_may_table"></div>
+    </div>
+
+  </div>
+</div>
+
+
+<!-- June to August -->
+<div id="juntoaug" class="grid padded">
+  <div class="unit whole card shadow1 plain padded_left_right">
+    <h3>June to August Timetables:</h3>
+
+
+    <div class="unit half">
+      <h3 class="blue_text">Departing Arranmore:</h3>
+      <h4>Monday to Saturday</h4>
+      <div class="card" id="da_juntoaug_wk">
+        There are no ferries for this date and time.
+      </div>
+
+      <h4>Friday Only</h4>
+      <div class="card" id="da_juntoaug_fri">
+        There are no ferries for this date and time.
+      </div>
+
+      <h4>Saturday Only</h4>
+      <div class="card" id="da_juntoaug_sat">
+        There are no ferries for this date and time.
+      </div>
+
+      <h4>Sundays</h4>
+      <div class="card" id="da_juntoaug_sun">
+        There are no ferries for this date and time.
+      </div>
+    <!-- ADD FERRY FORM -->
+      <div class="unit whole card blue_light align-center">
+        New ferry for:
+        <select class="extra" name="da_juntoaug_select">
+          <option value="da_juntoaug_wk">Monday to Saturday</option>
+          <option value="da_juntoaug_fri">Fridays Only</option>
+          <option value="da_juntoaug_sat"> Saturdays Only</option>
+          <option value="da_juntoaug_sun">Sunday</option>
+        </select>
+        at:
+        <input type="time" class="extra">
+        <a class="btn btn_no_margin btn_add da_juntoaug_btn"><i class="mdi-content-add-circle margin_right"></i>Add Ferry</a>
+      </div>
+
+      <h3 class="orange_text">Departing Burtonport:</h3>
+        <h4>Monday to Saturday</h4>
+        <div class="card" id="db_juntoaug_wk">
+          There are no ferries for this date and time.
+        </div>
+
+        <h4>Friday Only</h4>
+        <div class="card" id="db_juntoaug_fri">
+          There are no ferries for this date and time.
+        </div>
+
+        <h4>Saturday Only</h4>
+        <div class="card" id="db_juntoaug_sat">
+          There are no ferries for this date and time.
+        </div>
+
+        <h4>Sundays</h4>
+        <div class="card" id="db_juntoaug_sun">
+          There are no ferries for this date and time.
+        </div>
+      <!-- ADD FERRY FORM -->
+      <div class="unit whole card orange_light align-center">
+        New ferry for:
+        <select class="extra" name="db_juntoaug_select">
+          <option value="db_juntoaug_wk">Monday to Saturday</option>
+          <option value="db_juntoaug_fri">Fridays Only</option>
+          <option value="db_juntoaug_sat"> Saturdays Only</option>
+          <option value="db_juntoaug_sun">Sunday</option>
+        </select>
+        at:
+        <input type="time" class="extra">
+        <a class="btn btn_no_margin btn_add db_juntoaug_btn"><i class="mdi-content-add-circle margin_right"></i>Add Ferry</a>
+      </div>
+    </div>
+    <!-- END OF FIRST HALF -->
+    <div class="unit half">
+      <h3 class="blue_text">Departing Arranmore Table:</h3>
+      <div id="da_juntoaug_table"></div>
+      <h3 class="orange_text">Departing Burtonport Table:</h3>
+      <div id="db_juntoaug_table"></div>
+    </div>
+
+
+  </div>
+</div>
+
+
+<!-- September to October -->
+<div id="septooct" class="grid padded">
+  <div class="unit whole card shadow1 plain padded_left_right">
+    <h3>September to October Timetables:</h3>
+
+
+    <div class="unit half">
+      <h3 class="blue_text">Departing Arranmore:</h3>
+      <h4>Monday to Saturday</h4>
+      <div class="card" id="da_septooct_wk">
+        There are no ferries for this date and time.
+      </div>
+
+      <h4>Friday Only</h4>
+      <div class="card" id="da_septooct_fri">
+        There are no ferries for this date and time.
+      </div>
+
+      <h4>Saturday Only</h4>
+      <div class="card" id="da_septooct_sat">
+        There are no ferries for this date and time.
+      </div>
+
+      <h4>Sundays</h4>
+      <div class="card" id="da_septooct_sun">
+        There are no ferries for this date and time.
+      </div>
+    <!-- ADD FERRY FORM -->
+      <div class="unit whole card blue_light align-center">
+        New ferry for:
+        <select class="extra" name="da_septooct_select">
+          <option value="da_septooct_wk">Monday to Saturday</option>
+          <option value="da_septooct_fri">Fridays Only</option>
+          <option value="da_septooct_sat"> Saturdays Only</option>
+          <option value="da_septooct_sun">Sunday</option>
+        </select>
+        at:
+        <input type="time" class="extra">
+        <a class="btn btn_no_margin btn_add da_septooct_btn"><i class="mdi-content-add-circle margin_right"></i>Add Ferry</a>
+      </div>
+
+      <h3 class="orange_text">Departing Burtonport:</h3>
+        <h4>Monday to Saturday</h4>
+        <div class="card" id="db_septooct_wk">
+          There are no ferries for this date and time.
+        </div>
+
+        <h4>Friday Only</h4>
+        <div class="card" id="db_septooct_fri">
+          There are no ferries for this date and time.
+        </div>
+
+        <h4>Saturday Only</h4>
+        <div class="card" id="db_septooct_sat">
+          There are no ferries for this date and time.
+        </div>
+
+        <h4>Sundays</h4>
+        <div class="card" id="db_septooct_sun">
+          There are no ferries for this date and time.
+        </div>
+      <!-- ADD FERRY FORM -->
+      <div class="unit whole card orange_light align-center">
+        New ferry for:
+        <select class="extra" name="db_septooct_select">
+          <option value="db_septooct_wk">Monday to Saturday</option>
+          <option value="db_septooct_fri">Fridays Only</option>
+          <option value="db_septooct_sat"> Saturdays Only</option>
+          <option value="db_septooct_sun">Sunday</option>
+        </select>
+        at:
+        <input type="time" class="extra">
+        <a class="btn btn_no_margin btn_add db_septooct_btn"><i class="mdi-content-add-circle margin_right"></i>Add Ferry</a>
+      </div>
+    </div>
+    <!-- END OF FIRST HALF -->
+    <div class="unit half">
+      <h3 class="blue_text">Departing Arranmore Table:</h3>
+      <div id="da_septooct_table"></div>
+      <h3 class="orange_text">Departing Burtonport Table:</h3>
+      <div id="db_septooct_table"></div>
+    </div>
+
+
+  </div>
+</div>
+
+
+<!-- November to December -->
+<div id="novtodec" class="grid padded">
+  <div class="unit whole card shadow1 plain padded_left_right">
+    <h3>November to December Timetables:</h3>
+
+
+    <div class="unit half">
+      <h3 class="blue_text">Departing Arranmore:</h3>
+      <h4>Monday to Saturday</h4>
+      <div class="card" id="da_novtodec_wk">
+        There are no ferries for this date and time.
+      </div>
+
+      <h4>Friday Only</h4>
+      <div class="card" id="da_novtodec_fri">
+        There are no ferries for this date and time.
+      </div>
+
+      <h4>Saturday Only</h4>
+      <div class="card" id="da_novtodec_sat">
+        There are no ferries for this date and time.
+      </div>
+
+      <h4>Sundays</h4>
+      <div class="card" id="da_novtodec_sun">
+        There are no ferries for this date and time.
+      </div>
+    <!-- ADD FERRY FORM -->
+      <div class="unit whole card blue_light align-center">
+        New ferry for:
+        <select class="extra" name="da_novtodec_select">
+          <option value="da_novtodec_wk">Monday to Saturday</option>
+          <option value="da_novtodec_fri">Fridays Only</option>
+          <option value="da_novtodec_sat"> Saturdays Only</option>
+          <option value="da_novtodec_sun">Sunday</option>
+        </select>
+        at:
+        <input type="time" class="extra">
+        <a class="btn btn_no_margin btn_add da_novtodec_btn"><i class="mdi-content-add-circle margin_right"></i>Add Ferry</a>
+      </div>
+
+      <h3 class="orange_text">Departing Burtonport:</h3>
+        <h4>Monday to Saturday</h4>
+        <div class="card" id="db_novtodec_wk">
+          There are no ferries for this date and time.
+        </div>
+
+        <h4>Friday Only</h4>
+        <div class="card" id="db_novtodec_fri">
+          There are no ferries for this date and time.
+        </div>
+
+        <h4>Saturday Only</h4>
+        <div class="card" id="db_novtodec_sat">
+          There are no ferries for this date and time.
+        </div>
+
+        <h4>Sundays</h4>
+        <div class="card" id="db_novtodec_sun">
+          There are no ferries for this date and time.
+        </div>
+      <!-- ADD FERRY FORM -->
+      <div class="unit whole card orange_light align-center">
+        New ferry for:
+        <select class="extra" name="db_novtodec_select">
+          <option value="db_novtodec_wk">Monday to Saturday</option>
+          <option value="db_novtodec_fri">Fridays Only</option>
+          <option value="db_novtodec_sat"> Saturdays Only</option>
+          <option value="db_novtodec_sun">Sunday</option>
+        </select>
+        at:
+        <input type="time" class="extra">
+        <a class="btn btn_no_margin btn_add db_novtodec_btn"><i class="mdi-content-add-circle margin_right"></i>Add Ferry</a>
+      </div>
+    </div>
+    <!-- END OF FIRST HALF -->
+    <div class="unit half">
+      <h3 class="blue_text">Departing Arranmore Table:</h3>
+      <div id="da_novtodec_table"></div>
+      <h3 class="orange_text">Departing Burtonport Table:</h3>
+      <div id="db_novtodec_table"></div>
+    </div>
+
+
+  </div>
+</div>
+
+
+<!-- LOCAL TIME -->
+<div class="grid padded">
+  <div class="unit whole card shadow1 plain align-center">
+    <a class="btn btn_blue" href="mailto:mat.loughnane@gmail.com" target="_blank">No idea what's going on? Email Mat</a>
+  </div>
+</div>
+
+</main>
+
+  <!--  Scripts-->
+  <script src="../assets/js/jquery-2.1.3.min.js"></script>
+  <script src="../assets/js/sidepanel.js"></script>
+  <script src="../assets/js/toastr.min.js"></script>
+  <script src="../assets/js/firebase.js"></script>
+  <script src="../assets/js/adminApp_timetable.js"></script>
+
+  <script>
+  toastr.options = {
+    "positionClass": "toast-bottom-right",
+  }
+  </script>
+
+  </body>
+</html>
+
+

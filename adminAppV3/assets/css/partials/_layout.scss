@@ -1,0 +1,384 @@
+body {
+	font-family: "Roboto", sans-serif;
+	margin: 0px;
+	font-size: 100%;
+	font-weight: 300;
+	color: $bkg_dark;
+	background: $bkg_light;
+	&.first_time {
+		background: $orange_light;
+		color: $bkg_light;
+	}
+}
+
+.samsungfix {
+	margin: 0px 0px 0px -2px !important;
+};
+
+::selection {
+  background: $orange_light;
+}
+
+::-moz-selection {
+  background: $orange_light; 
+}
+
+a {
+  color: $black;
+  text-decoration: none;
+}
+
+h1, h2, h3, {
+	-webkit-margin-before: 0.5em;
+	-webkit-margin-after: 0.5em;
+	-webkit-margin-start: 0px;
+	-webkit-margin-end: 0px;
+}
+
+h4, h5, h6 {
+	font-weight: 550;
+	-webkit-margin-before: 0.15em;
+	-webkit-margin-after: 0.15em;
+	-webkit-margin-start: 0px;
+	-webkit-margin-end: 0px;
+}
+
+// MATERIAL, CARD + COLOURS
+
+.card {
+	border-radius: $border-radius;
+	margin-bottom: 10px;
+}
+
+.padded_left_right {
+	padding-left: 10px !important;
+	padding-right: 10px !important;
+}
+
+.plain {
+	background: $bkg_light;
+	color: $bkg_dark;
+}
+.blue {
+	background: $blue;
+	color: $bkg_light;
+}
+.blue_light {
+	background: $blue_light;
+	color: $bkg_dark;
+}
+.blue_dull {
+	background: $blue_dull;
+	color: $bkg_light;
+}
+.orange {
+	background: $orange;
+	color: $bkg_light;
+}
+.orange_light {
+	background: $orange_light;
+	color: $bkg_dark;
+}
+.orange_dull {
+	background: $orange_dull;
+	color: $bkg_light;
+}
+.green {
+	background: $green;
+	color: $bkg_light;
+}
+.green_light {
+	font-size: 15px;
+	background: $green_light;
+	// color: $bkg_light;
+}
+
+.red {
+	background: $red;	
+	color: $bkg_light;
+}
+
+.light_red {
+	background: $red_light;	
+}
+
+.light_green {
+	background-color: $green_light;
+}
+
+.card_noBottom {
+	border-radius: $border-radius;
+	margin-bottom: 0px;
+}
+
+
+// BUTTONS
+
+.btn {
+  border: none;
+  background: none;
+  padding: 10px 10px;
+  display: inline-block;
+  margin: 8px 5px;
+  text-decoration: none;
+  outline: none;
+  position: relative;
+  border-radius: $border_radius;
+  -webkit-transition: all 0.1s;
+  -moz-transition: all 0.1s;
+  transition: all 0.1s;
+  cursor: pointer;
+}
+
+.btn_blue {
+	background-color: $blue !important;
+	color: $bkg_light !important;
+	&:hover {
+		box-shadow: 0px -3px 0px 0px $blue_dull inset;
+	}
+	&:active {
+		background-color: $blue_dull !important;
+	}
+}
+
+.btn_orange {
+	background-color: $orange !important;
+	color: $bkg_light !important;
+	&:hover {
+		box-shadow: 0px -3px 0px 0px $orange_dull inset;
+	}
+	&:active {
+		background-color: $orange_dull !important;
+	}
+}
+
+.btn_red {
+	background-color: $red !important;
+	color: $bkg_light !important;
+	&:hover {
+		box-shadow: 0px -3px 0px 0px $red_dull inset;
+	}
+	&:active {
+		background-color: $red_dull !important;
+	}
+}
+
+.btn_green {
+	background-color: $green !important;
+	color: $bkg_light !important;
+	&:hover {
+		box-shadow: 0px -3px 0px 0px $green_dull inset;
+	}
+	&:active {
+		background-color: $green_dull !important;
+	}
+}
+
+.btn_uncancel {
+	padding: 5px;
+	display: inline-block;
+	margin: 0px 5px;
+	background-color: $green !important;
+	color: $bkg_light !important;
+	&:hover {
+		box-shadow: 0px -3px 0px 0px $green_dull inset;
+	}
+	&:active {
+		background-color: $green_dull !important;
+	}
+}
+
+.btn_no_margin {
+  margin: 0px;
+}
+
+.btn_large {
+	font-size: 1.2em !important;
+}
+
+.btn_add {
+	background-color: $bkg_light !important;
+	color: $green !important;
+	padding: 4px 5px !important;
+	&:hover{
+		box-shadow: 0px -2px 0px 0px $green_dull inset;
+	}
+	&:active {
+		background-color: $green_dull !important;
+		color: $bkg_light !important;
+	}
+}
+
+.btn_remove {
+	background-color: $bkg_light !important;
+	color: $red !important;
+	padding: 4px 5px !important;
+	&:hover{
+		box-shadow: 0px -2px 0px 0px $red_dull inset;
+	}
+	&:active {
+		background-color: $red_dull !important;
+		color: $bkg_light !important;
+	}
+}
+
+// SHADOWS
+
+.shadow1 {
+	box-shadow: $shadow1;;
+}
+.shadow2 {
+	box-shadow: $shadow2;;
+}
+.shadow3 {
+	box-shadow: $shadow3;;
+}
+.shadow4 {
+	box-shadow: $shadow4;;
+}
+.shadow5 {
+	box-shadow: $shadow5;;
+}
+
+
+// APP SPECFIC
+
+.left_half {
+	padding-right: 5px;
+}
+
+.right_half {
+	padding-left: 5px;
+}
+
+.padded {
+	padding: 5px 8px !important;
+}
+
+.tferry_time {
+	display: block;
+	font-size: 2em;
+}
+
+#cancel_times, #changes_requires_internet, #changes_requires_internet_timeout, #extra_times {
+	display: none;
+}
+
+#static_timetable {
+	display: none;
+
+}
+
+.tferry_table_title {
+	display: block;
+	padding: 5px;
+	font-size: 1em;
+}
+
+.settings_title {
+	display: block;
+	font-weight: 600;
+	padding: 5px;
+	font-size: 1em;
+}
+
+.horizontal_line {
+	width:400px;
+	height:0;
+	border-top:2px solid #FF7500;
+	font-size:0;
+}
+
+.loading_text {
+	font-size: 0.4em;
+}
+
+.larger_text{
+	font-size: 1.25em;
+}
+
+.blue_text {
+	color: $blue_dull;
+	// font-size: 0.9em !important;
+}
+
+.orange_text {
+	color: $orange_dull;
+	// font-size: 0.9em !important;
+}
+
+// LOADING IMAGES
+
+rect {
+	fill: $bkg_light;
+}
+
+.blue_rect {
+	fill: $blue !important;	
+}
+
+.orange_rect {
+	fill: $orange_dull !important;	
+}
+
+
+.settings_text {
+	padding: 5px;
+	margin-left: 14px;
+	font-size: 1em;
+}
+
+.margin_small {
+	margin: 5px;
+}
+
+.margin_left {
+	margin-left: 10px;
+}
+
+.margin_right {
+	margin-right: 10px;
+}
+
+.important_text {
+	font-size: 1.5em;
+	font-weight: 700;
+}
+
+.date_text {
+	font-size: 0.8em;
+	color: $grey_light;
+}
+
+img {
+	max-width: 100%;
+	&.first_time_logo {
+		width: 60%;
+		margin-top: 10px;
+		// margin-left: auto;
+	}
+}
+
+.mobile_block {
+	display: inline;
+	// margin: 8px;
+}
+
+// MOBILE APP
+
+@media screen and (max-width: 568px) {
+	.mobile_block {
+		display: block;
+		margin: 8px;
+	}
+	.remove_extraFerryTime_btn {
+		padding: 5px;
+		margin: 8px;
+		cursor: cursor;
+	}
+}
+
+
+
+
+

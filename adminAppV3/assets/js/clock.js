@@ -23,11 +23,10 @@ function GetClock(){
 
 	// THIS NEEDS TO BE CHANGED
 	var utcTime = utcTime + 3600000;
-	
+
 	var arranmoreDateTime = new Date(utcTime);
 
 	var nday=arranmoreDateTime.getDay(),nmonth=arranmoreDateTime.getMonth(),ndate=arranmoreDateTime.getDate(),nyear=arranmoreDateTime.getYear(),nhour=arranmoreDateTime.getHours(),nmin=arranmoreDateTime.getMinutes(),nsec=arranmoreDateTime.getSeconds(),ap;
-
 
 	// if(nhour==0){ap=" AM";nhour=12;}
 	// else if(nhour<12){ap=" AM";}
