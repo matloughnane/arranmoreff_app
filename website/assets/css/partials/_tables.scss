@@ -1,0 +1,88 @@
+table, th, td, tbody, thead {
+  border-collapse: collapse;
+}
+
+table {
+  width: 100%;
+  font-weight: 700;
+  background-color: $background !important;
+  &.primary {
+    border: 1px solid $primary;
+    color: $primary_dull;
+    &.no_top_border {
+      border-top: 0px;
+      border-left: 1px solid $primary;
+      border-right: 1px solid $primary;
+    }
+  }
+  &.secondary {
+    border: 1px solid $secondary;
+    color: $secondary_dull;
+    &.no_top_border {
+      border-top: 0px;
+      border-left: 1px solid $secondary;
+      border-right: 1px solid $secondary;
+    }
+  }
+}
+
+tbody {
+  &.primary {
+    color: $primary_dull;
+  }
+  &.secondary {
+    color: $secondary_dull; 
+  }
+}
+
+td {
+  padding: 0.5em 0px;
+  &.fri_subheading {
+    padding: 5px 0px;
+    &.primary {
+      background-color: $background;
+      color: $primary_dull;
+      border-right: 1px solid $primary;
+    } &.secondary {
+      background-color: $background;
+      color: $secondary_dull;
+      border-right: 1px solid $secondary;
+    }
+  }
+}
+
+th { 
+  padding: 0.75em 0px;
+  &.primary {
+    background: $primary_dull;
+    color: $white;
+  }
+  &.secondary {
+    background: $secondary_dull;
+    color: $white;  
+  }
+  &.subheading {
+    &.primary {
+    background: $primary;
+    color: $white;
+    }
+    &.secondary {
+    background: $secondary;
+    color: $white;
+    }
+  }
+  &.fri_subheading{
+    padding: 5px 0px !important;
+    &.primary { 
+      background: $primary_light;
+      color: $primary_dull;
+      border-right: 1px solid $primary;
+    } &.secondary {
+      background: $secondary_light;
+      color: $secondary_dull;
+      border-right: 1px solid $secondary;
+    }
+  }
+}
+
+

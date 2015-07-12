@@ -1,0 +1,52 @@
+footer {
+	box-shadow: $shadow_top;
+	font-size: 1em;
+	font-weight: 600;
+	width: 100%;
+	background-color: $secondary_light;
+	color: $background;
+	::selection {
+		background-color: $secondary_light;
+	}
+	section {
+		padding: 0.5em 1em;
+	}
+	a {
+		color: $background;
+		display: block;
+		padding: 0.25em;
+		text-decoration: none;
+		&:hover {
+			color: $secondary_dull;
+		}
+		&.sub {
+			margin-left: 1.5em;
+			color: $background;
+			font-size: 0.8em;
+			&:hover {
+				color: $secondary;
+			}
+		}
+	}
+	h1,h2,h3,h4,h5,h6{
+		margin: 0.25em;
+		color: $secondary_dull;
+	}
+	h6 {
+		color: $background;
+		display: inline-block;
+		margin: 1em 0px;
+		font-size: 0.8em;
+		font-weight: 500;
+	}
+}
+
+.social_buttons {
+	display: block;
+	margin-top: 10px;
+}
+
+.social_icon {
+	display: inline-block;
+	font-size: 2.5em;
+}

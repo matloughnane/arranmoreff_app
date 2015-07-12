@@ -1,0 +1,58 @@
+.btn {
+	display: inline-block;
+	font-size: 0.9em;
+	text-decoration: none;
+	padding: 8px 10px;
+	margin: 3px;
+	border-radius: 3px;
+	i {
+		color: $background;
+		font-size: 1em;
+	}
+}
+
+.btn_big {
+	font-size: 1.1em;
+	i {
+		color: $background;
+		font-size: 1.2em;
+	}
+}
+
+.btn_primary {
+	background-color: $primary;
+	color: $background;
+	&:hover, &:active {
+		background-color: $primary_dull;
+		transition-duration: 0.1s;
+		box-shadow:$shadow2;
+	}
+}
+
+
+.btn_primary_light {
+	background-color: $primary_light;
+	color: $primary_dull;
+	// box-shadow: 0px -3px 0px 0px $primary inset;
+	&:hover, &:active {
+		background-color: $primary;
+		transition-duration: 0.1s;
+		box-shadow:$shadow2;
+	}
+	i {
+		color: $primary_dull;
+		font-size: 1em;
+	}
+}
+
+
+.btn_secondary {
+	background-color: $secondary;
+	color: $background;
+	// box-shadow: 0px -3px 0px 0px $secondary_dull inset;
+	&:hover, &:active {
+		background-color: $secondary_dull;
+		transition-duration: 0.1s;
+		box-shadow:$shadow2;
+	}
+}

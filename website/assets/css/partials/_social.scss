@@ -1,0 +1,159 @@
+// INDEX PAGE
+.social_card {
+	color: $background;
+	h1,h2,h3,h4,h5,h6{
+		color: $background;
+	}
+}
+
+.fb {
+	background-color: $facebook_bg;
+	a {
+		text-decoration: none;
+		color: $background;
+		display: block;
+		margin: 5px 0px;
+		&:hover {
+			color: $primary_lightest;
+		}
+		i {
+			font-size: 1.5em;
+		}
+	}
+}
+
+
+// FACEBOOK
+.fb_page {
+	background-color: $facebook_bg;
+	color: $background;
+	a {
+		color: $background;
+		text-decoration: none;
+		h3 {
+			color: $background;
+			font-size: 1em;
+			display: inline; 
+			margin: 0em 0em;
+			-webkit-margin-before: 0em;
+	  		-webkit-margin-after: 0em;
+		}
+	}
+	i {
+		font-size: 2em;
+		&.icon-angle-double-right {
+			font-size: 1em;
+		}
+	}
+}
+
+
+.tw {
+	background-color: $twitter_bg;
+	margin-bottom: 10px;
+	a {
+		text-decoration: none;
+		color: $background;
+		display: block;
+		margin: 5px 0px;
+		&:hover {
+			color: $primary_lightest;
+		}
+		i {
+			font-size: 1.5em;
+		}
+	}
+}
+
+// TWITTER 
+.twitter_badge {
+	background-color: $twitter_bg;
+	color: $background;
+	box-shadow: $shadow1;
+	a {
+		color: $background;
+		text-decoration: none;
+	}
+	h3 {
+		color: $background;
+		font-size: 1em;
+		display: inline; 
+		margin: 0em 0em;
+		-webkit-margin-before: 0em;
+  		-webkit-margin-after: 0em;
+	}
+	i {
+		font-size: 2em;
+	}
+}
+
+#tw-widget1 {
+	background-color: $background;
+	color: $primary;
+	border-radius: 2px;
+	box-shadow: $shadow1;
+	margin-top: 5px;
+	ul {
+		list-style-type: none;
+		-webkit-padding-start: 2px;
+		display: inline;
+		-webkit-margin-before: 0em;
+  		-webkit-margin-after: 0em;
+		li {
+			padding: 0px 20px;
+			p {
+				margin: 5px 10px;
+				padding: 0px 10px;
+				&.tweet {
+					font-style: italic;
+					a {
+						color: $primary_dull;
+						text-decoration: none;
+						&:hover {
+							color: $primary_dull;
+							background-color: $primary_lightest;
+						}
+					}
+					img {
+						width: 5%;
+						margin: 0px 5px;
+					}
+				}
+				&.interact {
+					text-align: center;
+					a {	
+						font-size: 0.8em;
+						margin: 0px 10px;
+						text-decoration: none;
+						color: $secondary;
+						&:hover {
+							background-color: $secondary_lightest;
+							color: $secondary;
+						}
+					}
+					i {
+						font-size: 1em;
+						margin-right: 0.5em;
+					}
+				}
+				&.timePosted {
+					text-align: right;
+					font-size: 0.75em;
+					color: $primary;
+				}
+			}
+			div.user {
+				a {
+					color: $primary_dull;
+					text-decoration: none;
+					img {
+						box-shadow:$shadow1;
+						float: right;
+						// display: none;
+					}
+				}
+			}
+		}
+	}
+}
+

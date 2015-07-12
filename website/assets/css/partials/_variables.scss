@@ -1,0 +1,55 @@
+
+// BACKGROUND
+$background: whitesmoke;
+$background_black: #2c3e50;
+$background_alpha: rgba(245,245,245, 0.5);
+
+$white:#fff; 
+
+// PRIMARY COLOURS
+$primary: #03A9F4;
+
+$primary_dull: #0277BD;
+$primary_dull_alpha: rgba(2,119,189,0.5);
+
+$primary_light: #b2d8f1;
+$primary_light_alpha: rgba(178,216,241,0.5);
+
+$primary_lightest: #E0EFF9;
+
+// SECONDARY COLOURS
+$secondary: #F57C00;
+
+$secondary_light: #FFB74D;
+$secondary_light_alpha: rgba(255,183,77, 0.5);
+
+$secondary_dull: #e65100;
+$secondary_dull_alpha: rgba(230,81,0, 0.5);
+
+$secondary_lightest: #ffe6c2;
+
+
+$tertiary: #ff7373;
+
+// SOCIAL
+$facebook_bg: #3b5998;
+$twitter_bg: #00aced;
+$google_plus_bg: #dd4b39;
+$instagram_bg: #3f729b;
+
+
+// SHADOW
+$shadow1: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+$shadow2: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+
+$shadow_top: 1px 0px 3px rgba(0,0,0,0.12), 1px 0px 3px rgba(0,0,0,0.24);
+
+$border_radius: 3px;
+
+// MOBILE NAV
+$panel_width_default: 50%;
+$panel_width_large: 50%;
+$panel_width_medium: 50%;
+$panel_transition_closing: visibility 0s 0.5s;
+$panel_transition_opening: visibility 0s 0s;
+$panel_overlay_transition: background 0.3s 0.3s;

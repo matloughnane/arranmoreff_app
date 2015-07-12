@@ -1,0 +1,31 @@
+nav {
+	ul {
+		text-align: center;
+		padding: 0px;
+		background:$primary_dull;
+		box-shadow:$shadow1;
+		border-radius:$border_radius;
+		margin: 0 0 0.75em 0;
+		a {
+			color: $background;
+			// text-transform: uppercase;
+			li {
+				display: inline-block;
+				width: 15%;
+				padding:0.75em 0em;
+				i {
+					margin-right: 0.25em;
+				}
+				&:hover {
+					background:$primary;
+					transition-duration: 0.1s;
+				}
+				&:active {
+					box-shadow: 0px -5px 0px 0px $primary_light inset; 
+					transition-duration: 0.1s;
+				}
+			}
+
+		}
+	}
+}
