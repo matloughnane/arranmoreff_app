@@ -2,32 +2,14 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
-  <meta name="author" content="mat.loughnane" />
+  <meta name="author" content="arranmorefastferry.com" />
+  <meta name="description" content="The Arranmore Fast Ferry is a ferry service running between Arranmore Island and Burtonport, several times a day, every day of the week. Check out the latest times on our website or download our app, available on iOS, Android and Amazon FireOS" />
   <meta name="keywords"  content="arranmore,fast,ferry,download,fastferry,app,apple,android" />
   <meta name="Resource-type" content="Document" />
-  <link rel="icon" type="image/png" href="../assets/img/icon40.png">
-
-  <!-- Schema.org markup for Google+ -->
-  <meta itemprop="name" content="Arranmore Ferry">
-  <meta itemprop="description" content="The Arranmore Ferry Service's website for the ferry sailings between Arranmore Island and Burtonport, Co Donegal. Bookings can be made at 00353 873171810. All timetables are up to date online.">
-  <meta itemprop="image" content="#">
-  <!-- Twitter Card data -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:site" content="@ArranmoreFFerry">
-  <meta name="twitter:title" content="Arranmore Ferry">
-  <meta name="twitter:description" content="The Arranmore Ferry Service's website for the ferry sailings between Arranmore Island and Burtonport, Co Donegal. Bookings can be made at 00353 873171810. All timetables are up to date online.">
-  <meta name="twitter:creator" content="@ArranmoreFFerry">
-  <meta name="twitter:image:src" content="#">
-  <!-- Open Graph data -->
-  <meta property="og:title" content="Arranmore Ferry" />
-  <meta property="og:type" content="article" />
-  <meta property="og:url" content="http://arranmorefastferry.com/" />
-  <meta property="og:image" content="#" />
-  <meta property="og:description" content="The Arranmore Ferry Service's website for the ferry sailings between Arranmore Island and Burtonport, Co Donegal. Bookings can be made at 00353 873171810.  All timetables are up to date online."/>
-  <meta name="theme-color" content="#0277bd">
-  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
   
-  <title>Competition</title>
+  <link rel="icon" type="image/png" href="assets/img/icon40.png">
+  
+  <title>Testing | Book Tickets</title>
 
   <!-- CSS  -->
   <link href="assets/css/styles.css" type="text/css" rel="stylesheet" media="screen,projection"/>
@@ -74,25 +56,59 @@
     </section>
   </nav>
 
+  <section class="grid card no-gutters">
+    <a href="competition.html"><img src="assets/img/competition_banner_thin.jpg" alt="Be in the running to win €5000 by travelling on the Blue Arranmore Fast Ferry"></a>
+  </section>
+
   <section class="grid card content">
-    <h1 class="">Competition</h1>
-      <div class="unit w-1-2">
-        <p>TEXT ABOUT COMPETITION AND HIGHLAND RADIO</p>
-        <h3>Terms & Conditions of Draw</h3>
-          <ol>
-            <li>All Passengers who purchase a full fare return ticket may enter draw.</li>
-            <li>Drivers with a pass, who purchase a return ticket may enter draw.</li>
-            <li>Groups of 12+, travelling on the same sailing and availing of the Group Discount may enter draw.</li>
-            <li>Passengers who purchase return tickets online or via phone & paying by card, who receive 10% discount, may enter draw.</li>
-            <li>Passengers who avail of the €45 family rate (2 adults & 2 chldren) may enter draw.</li>
-            <li>Any other concessions apart from those listed above are not eligible to enter draw.</li>
-            <li>Winner must be available to take phonecall on 11th September 2015.</li>
-          </ol>
-          <em>Competition closes after last sailing on Thursday the 10th September 2015 and draw will take place live on the Gary Gamble show on Highland Radio on the 11th September 2015.</em>
+    <h1 class="">Tickets</h1>
+      <div class="unit w-1-1">
+        <p>This is a javascript PayPal button, generating statically - can be done via API</p>
+        <p class="align-center">
+            <script async="async" src="https://www.paypalobjects.com/js/external/paypal-button.min.js?merchant=contact@matloughnane.com"
+            data-button="buynow" 
+            data-name="Test_Purchase" 
+            data-quantity="1" 
+            data-amount="0.01" 
+            data-currency="GBP" 
+            data-shipping="0" 
+            data-tax="0" 
+            <input type="image" src="https://www.paypalobjects.com/webstatic/en_US/i/buttons/buy-logo-large.png" border="0" name="submit" alt="PayPal – The safer, easier way to pay online.">
+            data-callback="http://matloughnane.github.io/arranmoreff_app/website/tickets/tickets_booked.html" >
+            </script></p>
       </div>
-      <div class="unit w-1-2">
-        <img src="assets/img/portrait_banner.jpg" alt="Be in the running to win €5000 by travelling on the Blue Arranmore Fast Ferry">
+      <p>This is a managed PayPal button</p>
+      <div class="align-center">
+        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+          <input type="hidden" name="cmd" value="_s-xclick">
+          <input type="hidden" name="hosted_button_id" value="X3TLY9BGTVXE4">
+          <input type="image"  class="hover_paypal" src="https://www.paypalobjects.com/webstatic/en_US/i/buttons/buy-logo-large.png" border="0" name="submit" alt="PayPal – The safer, easier way to pay online.">
+          <img alt="" border="0" src="https://www.paypalobjects.com/en_GB/i/scr/pixel.gif" width="1" height="1">
+        </form>
       </div>
+
+
+      <p>This is a *HACKED* PayPal button, using previous code</p>
+      <div class="align-center">
+        <form name="_xclick" action="https://www.paypal.com/uk/cgi-bin/webscr" method="post">
+        <input type="hidden" name="cmd" value="_xclick">
+        <input type="hidden" name="business" value="contact@matloughnane.com">
+        <input type="hidden" name="currency_code" value="GBP">
+        <input type="hidden" name="item_name" value="Test Ferry Ticket Dynamic HTML">
+        <input type="hidden" name="amount" value="0.01">
+        <input type="image" src="http://www.paypal.com/en_GB/i/btn/x-click-but01.gif" border="0" name="submit" alt="Make payments with PayPal - it's fast, free and secure!">
+        </form>
+      </div>
+
+      <h3>Prototype</h3>
+      <form>
+        <input type="text" id="fname" placeholder="Name Surname">
+        <input type="text" id="ticket_desc" placeholder="Ferry Desc">
+      </form>
+      <p>Confirm details</p>
+      <span id="fullName"></span>
+      <div id="paypal_button"></div>
+
   </section>
 
   <footer class="grid wrap">
@@ -127,7 +143,8 @@
   </footer>
 
   <!-- LAZY LOAD -->
-  <script src="assets/js/jquery-1.11.2.min.js"></script>  
+  <script src="assets/js/jquery-1.11.2.min.js"></script> 
+  <script src="assets/js/payments.min.js"></script>  
   <script src="assets/js/sidepanel.js"></script>
 
 </body>

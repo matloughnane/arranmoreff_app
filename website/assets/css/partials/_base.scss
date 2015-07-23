@@ -2,7 +2,7 @@
 body {
 	background: $primary_lightest;
 	color: $background_black;
-	font-family: Helvetica, sans-serif;
+	font-family: 'Open Sans', Helvetica, sans-serif;
 	font-size: 16px;
 	margin: 0px 0px 0px 0px;
 }
@@ -68,6 +68,10 @@ p {
 			color: $background;
 		}
 	}
+}
+
+.smaller_text {
+	font-size: 0.75em;
 }
 
 // IMAGES
@@ -181,7 +185,6 @@ section {
 		font-size: 1.25em;
 	}
 }
-
 
 // MEDIA
 // VIDEO

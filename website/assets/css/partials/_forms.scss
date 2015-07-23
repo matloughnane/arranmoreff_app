@@ -1,0 +1,46 @@
+select {
+	text-align: center;
+	border-radius: 5px !important;
+	background-color: $background;
+	border: solid 1px $secondary;
+	font-size: 16px;
+	height: 2em;
+	&.selectpicker {
+		border: solid 2px $secondary_dull;
+	}
+}
+
+input[type="text"], input[type="date"]  {
+	border-radius: 5px !important;
+	background-color: $background;
+	border: solid 1px $secondary;
+	font-size: 16px;
+	height: 2em;
+	width: 100%;
+	padding:5px;
+}
+textarea {
+	border-radius: 5px !important;
+	background-color: $background;
+	border: solid 1px $secondary;
+	font-size: 16px;
+	height: 4em;
+	width: 100%;
+	padding:5px;
+}
+
+
+
+button {
+	border: 0px;
+}
+
+input[type='text'] {
+
+}
+
+// PAYMENTS
+
+#price_grid {
+	display: none;
+}
