@@ -19,6 +19,17 @@
 	}
 }
 
+.btn_header {
+	margin: 20px 0px;
+}
+
+@media only screen and (max-width: 768px) {
+	.btn_header {
+		margin: 5px 0px;
+	}
+}
+
+
 .btn_primary {
 	background-color: $primary;
 	color: $background;

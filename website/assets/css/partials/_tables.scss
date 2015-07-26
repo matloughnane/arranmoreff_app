@@ -35,6 +35,10 @@ tbody {
   }
 }
 
+tr:hover {
+  background-color: $secondary_lightest;
+}
+
 td {
   padding: 0.5em 0px;
   &.fri_subheading {

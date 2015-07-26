@@ -2,20 +2,21 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
-  <title>Admin Extra Ferries</title>
+  <title>Admin Bookings</title>
 
   <!-- CORDOVA NECESSITIES -->
 
   <!-- CSS  -->
   <link href="../assets/css/gridism.css" type="text/css" rel="stylesheet"/>
   <link href="../assets/css/styles.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+
 </head>
 <body>
 
 <!-- NAVIGATION -->
 <nav>
   <div class="nav_bar">
-    <a href="#" class="cd-btn"><i class="mdi-navigation-menu"></i></a><div>Offline</div>
+    <a href="#" class="cd-btn"><i class="mdi-navigation-menu"></i></a><div>Bookings</div>
     <a href="javascript:history.go(0)" class="refresh-icon"><i class="mdi-navigation-refresh"></i></a>
   </div>
 
@@ -38,17 +39,28 @@
 
 <div class="nav_bar_buffer"></div>
 
-
 <main >
 
 <!-- TIMETABLE -->
 <div class="grid padded">
   <div class="unit whole card shadow1 plain">
     <h3>Offline Timetable for reference:</h3>
-    <div id="offline_json"></div>
+      <p>Bookings list - this is a temporary fix until we have the fully integrated system. Let me know if you have issues and I'll fix them. All these bookings should be considered UNPAID until you receive a PayPal email.</p>
+      <div id='bookings_list'></div> 
+      <!-- <div>
+        <ul class="bookings">
+          <li class="ticket">Name, number: 123456789, ticket type: adult <div class="pull-right">EDIT</div></li>
+          <li>Sailing Details: , Outward Journey: , Return Journey: </li>
+        </ul>
+      </div> -->
   </div>
-</div>
 
+  <div class="unit whole card shadow1 plain">
+    <h3>RAW OUTPUT:</h3>
+      <div id="bookings"></div>
+  </div>
+
+</div>
 
 </main>
 
@@ -56,7 +68,8 @@
   <script src="../assets/js/jquery-2.1.3.min.js"></script>
   <script src="../assets/js/sidepanel.js"></script>
   <script src="../assets/js/firebase.js"></script>
-  <script src="../assets/js/adminApp_offline.js"></script>
+  <script src="../assets/js/toastr.min.js"></script>
+  <script src="../assets/js/adminApp_bookings.js"></script>
 
   </body>
 </html>

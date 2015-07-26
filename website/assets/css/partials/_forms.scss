@@ -3,7 +3,7 @@ select {
 	border-radius: 5px !important;
 	background-color: $background;
 	border: solid 1px $secondary;
-	font-size: 16px;
+	font-size: 14px;
 	height: 2em;
 	&.selectpicker {
 		border: solid 2px $secondary_dull;
@@ -29,18 +29,60 @@ textarea {
 	padding:5px;
 }
 
-
+.btn_ferry {
+	font-size: 1em;
+	padding: 10px 15px;
+	margin-top: 10px;
+	background-color: $primary;
+	color: $background;
+	cursor: pointer;
+	&:hover, &:active {
+		background-color: $primary_dull;
+		transition-duration: 0.1s;
+		box-shadow:$shadow2;
+	}
+}
 
 button {
 	border: 0px;
 }
 
 input[type='text'] {
+}
 
+form {
+	padding-top: 10px;
 }
 
 // PAYMENTS
-
 #price_grid {
 	display: none;
 }
+#car_details_grid {
+	display: none;
+}
+#payp_btn {
+	display: none;
+}
+
+.warning {
+	padding:6px;
+	border-radius: 5px !important;
+	background-color: $tertiary;
+	color: $background;
+	// border: solid 1px $red;
+	font-size: 13px;
+	text-align: center;
+}
+
+.margin_ticket {
+	margin-left: 40px;
+}
+
+
+@media screen and (max-width: 768px) {
+	.margin_ticket {
+		margin-left: 0px;
+	}
+}
+

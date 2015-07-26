@@ -1,3 +1,4 @@
+<!DOCTYPE html5>
 <html>
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
@@ -28,8 +29,8 @@
   <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
 
     <!-- META -->
-  <meta name="description" content="Arranmore Ferry" />
-  <title>Arranmore Fast Ferry</title>
+  <meta name="description" content="Arranmore Ferry, Fast Car and Passenger Service" />
+  <title>Arranmore Ferry | Car and Passenger Service</title>
 
   <!-- CSS  -->
   <link href="assets/css/styles.css" type="text/css" rel="stylesheet" media="screen,projection"/>
@@ -38,13 +39,16 @@
 <body class="wrap">
 
   <header class="grid padded center-on-mobiles">
-    <div class="unit half align-center">
-      <h1 class="title">Arranmore Fast Ferry</h1>
-      <!-- <img class="logo" src="assets/img/arranmoreff_icon.png"> -->
+    <div class="unit w-2-3">
+      <div class="w-25"><img class="logo" src="assets/img/arranmoreff_icon.png"></div>
+      <div class="w-75">
+        <h1 class="title">Arranmore Ferry</h1> 
+        <h2 class="sub-title">Arranmore's Blue Ferry: Car and Passenger Service</h2>
+      </div>
     </div>
-    <div class="unit half center-on-mobiles align-right">
-      <a href="tel:+353873171810" class="btn btn_big btn_primary">Call: +353-87-3171810</a><br>
-      <a href="mailto:info.fastferry@gmail.com?Subject=Arranmore Fast Ferry" target="_blank" class="btn btn_big btn_secondary hide-on-mobiles">Email: info.fastferry@gmail.com</a>
+    <div class="unit w-1-3 center-on-mobiles align-right">
+      <a href="tel:+353873171810" class="btn btn_big btn_primary btn_header">Call: +353-87-3171810</a><br>
+      <a href="mailto:info.fastferry@gmail.com?Subject=Arranmore Fast Ferry" target="_blank" class="btn btn_secondary hide-on-mobiles">Email: info.fastferry@gmail.com</a>
     </div>
   </header>
 
@@ -78,7 +82,7 @@
   </nav>
 
   <main class="grid card">
-    <section class="unit w-1-2 primary">
+    <section class="unit w-1-2 primary" id="Ferry Departing Arranmore">
       <div class="tday_time">Next Ferry Departing Arranmore: <br>
         <span id="nextFerry_da">
           <div class="unit whole align-center" id="loading_notification_da">
@@ -106,7 +110,7 @@
         </span>
       </div>
     </section>
-    <section class="unit w-1-2 secondary">
+    <section class="unit w-1-2 secondary" id="Ferry Departing Burtonport">
       <div class="tday_time">Next Ferry Departing Burtonport: <br>
         <span id="nextFerry_db">
           <div class="unit whole align-center" id="loading_notification_db">
@@ -135,11 +139,12 @@
       </div>
     </section>
   </main>
-  <main class="grid card">
+  <main class="grid card" id="todays full ferry timetables">
     <section class="unit w-1-2 no-gutters" id="today_timetable_da">
     </section>
     <section class="unit w-1-2 no-gutters" id="today_timetable_db">
     </section>
+    <h4 style="display:none" class="align-center">THESE FERRY TIMETABLES INCLUDE EXTRA SAILINGS AND HIDE CANCELLATIONS.</h4>
   </main>
 
   <section class="grid card no-gutters">
@@ -147,37 +152,42 @@
   </section>
 
   <section class="grid card content">
-    <h1>Arranmore Fast Ferry</h1>
-    <div class="unit w-1-2">
-      <p>Realt Na Maidne Teoranta Ferry Company (Bookings & Info 087 3171810) is located at Leabgarrow, Arranmore Island, Co Donegal and have been operating since June 2007. We run a daily schedule between Arranmore Island and Burtonport. Vessels are wheelchair friendly.</p>
-      <p class="smaller">** Passengers with disabilities are advised to pre book your vehicle on the ferry so that you can be given the designated parking area for easy access to onboard facilities. **</p>
-        <p class="align-right">
-          <a href="#" class="btn btn_secondary">About Us <i class="icon-angle-double-right"></i></a>
-        </p>
-      <p>Arranmore Island is an idyllic island off the west coast of County Donegal.</p>
-        <p class="align-right">
-          <a href="#" class="btn btn_secondary">About Arranmore <i class="icon-angle-double-right"></i></a>
-        </p>
-    </div>
+    <h1>Arranmore's Blue Ferry</h1>
+    <section class="unit w-1-2">
+      <p>Realt Na Maidne Teoranta Ferry Company is a family run business and is located at Arranmore Island, Co. Donegal. The Boyle family have been taking passengers to Arranmore Island for over 100 years.</p>
+      
+      <p>We run a car and passenger ferry service between Arranmore Island and Burtonport sailing several times a day. All ferry times are updated instantly on this website and our mobile apps. All our vessels are wheelchair friendly.</p>
+      
+      <p class="smaller">** Passengers with disabilites are advised to pre-book your vehicle on the ferry so that you can be given the designated parking area for easy access to onboard facilities **</p>
+        <div class="align-right">
+          <a href="about_us.html" class="btn btn_secondary">More About Us <i class="icon-angle-double-right"></i></a>
+        </div>
+
+      <h3>Arranmore Island</h3>
+      <p>Arranmore Island is an idyllic island off the west coast of County Donegal. The island has world renowned cliff scenery offering stunning views of the Atlantic, beautiful sand and stone beaches and traditional music sessions in it's pubs, offering something for everyone.</p>
+        <div class="align-right">
+          <a href="about_us.html#arranmore" class="btn btn_secondary">About Arranmore Island<i class="icon-angle-double-right"></i></a>
+        </div>
+    </section>
     <div class="unit w-1-2 no-gutters">
       <img class="shadow1" src="assets/img/morvern.jpg" alt="Arranmore Fast Ferries main boat, Movern, capable of onboarding 9 cars and 50 passengers">
     </div>
   </section>
 
   <section class="grid card content">
-    <h1>Wild Atlantic Way</h1>
+    <h1>The Wild Atlantic Way</h1>
     <div class="unit w-1-2 no-gutters">
-      <img class="shadow1" src="assets/img/sunset_waw.png" alt="Arran roads, one of the many routes along the Wild Atlantic Way">
+      <img class="shadow1" src="assets/img/sunset_waw.png" alt="Arran roads, one of the many routes along the Wild Atlantic Way as seen from the Arranmore Ferry service during a sunset.">
     </div>
     <div class="unit w-1-2">
-      <h3 class="notop">Subheading</h3>
-        <p>Realt Na Maidne Teoranta Ferry Company (Bookings & Info 087 3171810) is located at Leabgarrow, Arranmore Island, Co Donegal and have been operating since June 2007. We run a daily schedule between Arranmore Island and Burtonport. Vessels are wheelchair friendly.</p>
-        <p>Realt Na Maidne Teoranta Ferry Company (Bookings & Info 087 3171810) is located at Leabgarrow, Arranmore Island, Co Donegal and have been operating since June 2007. We run a daily schedule between Arranmore Island and Burtonport. Vessels are wheelchair friendly.</p>
-      <h3>Subheading</h3>
-        <p>* Passengers with disabilities are advised to pre book your vehicle on ferry so that you can be given the designated parking area for easy access to onboard facilities.</p>
-      <div class="align-right">
-        <a href="http://www.wildatlanticway.com/home/" target="_blank" class="btn btn_secondary">Learn More<i class="icon-angle-double-right"></i></a>
-      </div>
+      <h3 class="notop">Arran Roads</h3>
+        <p>Arranmore Island is situated along the Wild Atlantic Way path and well worth a visit. During the 15-20 minute scenic journey from Burtonport to Arranmore, a wide range of wildlife can be seen - you may even be lucky enough to catch a glimpse of our regular visitors, the Bottlenose Dolphins. Check out our <a href="about_us.html#dolphinsArranmoreFerry">video of the dolphins here.</a></p>
+        <p>The <a href="http://www.ireland.com/en-gb/destinations/republic-of-ireland/donegal/arranmore--%C3%A1rainn-mh%C3%B3r/all/1-77801/" target="_blank">Arranmore Fast Ferry</a> service is featured on the <a href="http://www.ireland.com/en-gb/wild-atlantic-way/" target="_blank">Wild Atlantic Way website.</a></p>
+        <p class="align-right">
+          <a href="http://www.wildatlanticway.com/home/" target="_blank" class="btn btn_secondary">Wild Atlantic Way <i class="icon-angle-double-right"></i></a>
+      </p>
+      <h4>Things To Do</h4>
+        <p>Arranmore has a wide range of activities and events running year round including; hiking and hill walking, <a href="http://www.divearranmore.com/" target="_blank">diving and eco tours</a>, football tournaments, bird watching, surfing, <a href="http://earlysbar.com/bumperball.html" target="_blank">bumper balls</a> and even Archery. Information can always be found at the community centre, <a href="https://www.facebook.com/arainnmhor" target="_blank">CFFAM Árainn Mhór</a>.</p>
     </div>
   </section>
 
@@ -185,8 +195,8 @@
   <section class="grid card content">
     <h1>iOS and Android Mobile App</h1>
     <div class="unit w-1-2">
-      <p>We're very excited to present our Smartphone App - it's available now on iOS, Android and Amazon's FireOS. Search for "Arranmore Ferry" on Apple's App Store, Google Play or Amazon and download the app now. Let us now what you think and help us spread the word too!</p>
-      <h3 class="align-center"><em>Get all the latest ferries direct to your phone!</em></h3>
+      <p>We're very excited to present our Smartphone App - it's available now on iOS, Android and Amazon's FireOS. Search for "Arranmore Ferry" on Apple's App Store, Google Play or Amazon and download the app to your mobile now!</p>
+      <h3 class="align-center"><em>Get all the latest Arranmore ferry times direct to your phone!</em></h3>
       <p class="align-right">
         <a href="http://app.arranmorefastferry.com/" class="btn btn_secondary">Learn More <i class="icon-angle-double-right"></i></a>
       </p>
@@ -196,9 +206,9 @@
         <img class="hide-on-mobiles" src="assets/img/arranmoreff_icon_ios.png" alt="The Arranmore Ferry App, available on iOS Apple store for iPads and iPhones and on Android on Google Play for all Android devices, including Amazon FireOS">
       </div>
       <div class="unit w-1-2 no-gutters app_badges center-on-mobiles">
-        <a href="https://itunes.apple.com/app/arranmore-ferry/id964609530"><img class="badge" src="assets/img/app_store_badge.svg"></a>
-        <a href="https://play.google.com/store/apps/details?id=com.matloughnane.arranmoreff"><img class="badge" src="assets/img/google_play_badge.png"></a>
-        <a href="http://www.amazon.com/dp/B00Y5R65MQ"><img class="badge" src="assets/img/amazon-black.png"></a>
+        <a href="https://itunes.apple.com/app/arranmore-ferry/id964609530" target="_blank"><img class="badge" src="assets/img/app_store_badge.svg" alt="The iOS and Apple store badge for the Arranmore Ferry App" ></a>
+        <a href="https://play.google.com/store/apps/details?id=com.matloughnane.arranmoreff" target="_blank"><img class="badge" src="assets/img/google_play_badge.png" alt="The Google Play Badge for the Arranmore Ferry Android app." ></a>
+        <a href="http://www.amazon.com/dp/B00Y5R65MQ" target="_blank"><img class="badge" src="assets/img/amazon-black.png" alt="The Amazon Android App store badge for the Arranmore Ferry App"></a>
       </div>
     </div>
   </section>
@@ -229,7 +239,7 @@
     </section>
       
     <div class="unit w-1-1 no-gutters align-center copyright_text">
-      <h6>&copy; Arranmore Fast Ferry 2015</h6> &middot; <h6><a href="http://matloughnane.com/" target="_blank">by matloughnane</a></h6>
+      <h6>&copy; Arranmore Fast Ferry 2015</h6> &middot; <h6><a href="http://matloughnane.com/" target="_blank">by mat.loughnane</a></h6>
     </div>
 
   </footer>

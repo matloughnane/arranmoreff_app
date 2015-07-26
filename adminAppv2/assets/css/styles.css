@@ -4369,6 +4369,58 @@ th.fri_subheading.orange {
   border-right: 1px solid #f57c00;
 }
 
+/* line 107, partials/_tables.scss */
+ul.bookings {
+  border: 1px solid #0277bd;
+  list-style-type: none;
+  margin: 0px;
+  margin-before: 0px;
+  -webkit-margin-before: 0px;
+  -moz-margin-before: 0px;
+  -webkit-padding-start: 0px;
+  -moz-padding-start: 0px;
+}
+/* line 116, partials/_tables.scss */
+ul.bookings li.ticket {
+  font-weight: 700;
+  background-color: #81d4fa;
+  padding: 10px;
+  border: 1px solid #0277bd;
+}
+/* line 123, partials/_tables.scss */
+ul.bookings li {
+  font-weight: 400;
+  padding: 10px 0px 5px 20px;
+}
+
+/* line 129, partials/_tables.scss */
+.edit_btn {
+  padding: 2px;
+}
+
+/* line 133, partials/_tables.scss */
+.paid {
+  padding: 1px 5px;
+  text-transform: uppercase;
+}
+
+/* line 138, partials/_tables.scss */
+.paid_paypal {
+  background-color: #388E3C !important;
+}
+
+/* line 142, partials/_tables.scss */
+.undo_pay {
+  font-weight: 300;
+  cursor: pointer;
+}
+
+/* line 147, partials/_tables.scss */
+.remove_entry {
+  padding: 2px;
+  cursor: pointer;
+}
+
 /* line 6, partials/_forms.scss */
 .no-spin::-webkit-inner-spin-button {
   -webkit-appearance: none;

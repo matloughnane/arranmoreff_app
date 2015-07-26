@@ -103,3 +103,59 @@ th {
   }
 }
 
+
+ul.bookings {
+  border: 1px solid $blue_dull;
+  list-style-type: none;
+  margin: 0px;
+  margin-before: 0px;
+  -webkit-margin-before: 0px;
+  -moz-margin-before: 0px;
+  -webkit-padding-start: 0px;
+  -moz-padding-start: 0px;
+  li.ticket {
+    font-weight: 700;
+    background-color: $blue_light;
+    // color: white;
+    padding: 10px;
+    border: 1px solid $blue_dull;
+  }
+  li {
+    font-weight: 400;
+    padding: 10px 0px 5px 20px;
+  }
+}
+
+.edit_btn {
+  padding: 2px;
+}
+
+.paid {
+  padding: 1px 5px;
+  text-transform: uppercase;
+}
+
+.paid_paypal {
+  background-color: #388E3C !important;
+}
+
+.undo_pay {
+  font-weight: 300;
+  cursor: pointer;
+}
+
+.remove_entry {
+  padding: 2px;
+  cursor: pointer;
+}
+
+// =======================
+
+
+
+
+
+
+
+
+
