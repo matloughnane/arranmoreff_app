@@ -244,6 +244,42 @@ section {
     }
 }
 
+.corner-ribbon{
+  width: 200px;
+  background: $secondary_dull;
+  position: absolute;
+  top: 25px;
+  left: -50px;
+  text-align: center;
+  letter-spacing: 1px;
+  color: #f0f0f0;
+  font-size: 0.75em;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  span {
+  	margin: 5px;
+  	line-height: 20px;
+  }
+}
+
+/* Custom styles */
+
+.corner-ribbon.sticky{
+  position: fixed;
+}
+
+.corner-ribbon.shadow{
+  box-shadow: 0 0 3px rgba(0,0,0,.3);
+}
+
+.corner-ribbon.top-right{
+  top: 25px;
+  right: -50px;
+  left: auto;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
 // SHADOWS
 .shadow1 {
 	box-shadow: $shadow1;
