@@ -1,0 +1,52 @@
+server {
+        listen 80;
+        server_name hexa.design;
+
+        root /var/www/hexa.design/public_html;
+        index index.html index.htm index.php;
+
+        # ROOT LOCATION
+        location / {
+                try_files $uri $uri/ =404;
+        }
+
+        # PAGES
+        location /about_us {
+                try_files $uri.html $uri/ =404;
+        }
+        location /timetables {
+                try_files $uri.html $uri/ =404;
+        }
+        location /tickets {
+                try_files $uri.html $uri/ =404;
+        }
+        location /contact {
+                try_files $uri.html $uri/ =404;
+        }
+        location /competition {
+                try_files $uri.html $uri/ =404;
+        }
+        location /tickets/tickets_booked {
+                try_files $uri.html $uri/ =404;
+        }
+
+        # REDUNDANCY
+        location /book-tickets {
+                return 301 http://hexa.design;
+        }
+        location /terms-conditions {
+                return 301 http://hexa.design;
+        }
+
+        # ERRORS
+        error_page 404		/404.html;
+        location = /404.html {
+                root /var/www/hexa.design/public_html;
+                internal;
+        }
+        
+	error_page 500 502 503 504 /50x.html;
+	location = /50x.html {
+		root /usr/share/nginx/www;
+	}
+}

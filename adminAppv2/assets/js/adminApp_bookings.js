@@ -7,7 +7,9 @@ $(function() {
 	bookingsObj = snapshot.val();
 	// END FIREBASE
 
+	offlineTables(bookingsObj);
 	makeBookingsTable(bookingsObj);
+	// makeBookingsTable2(bookingsObj);
 
 	// ERROR FUNCTION
 	}, function (errorObject) {
@@ -17,23 +19,91 @@ $(function() {
 });
 // END THE RUNNING FUNCTION
 
-function makeBookingsTable(Obj){
+// function makeBookingsTable(Obj){
+// 	var offline = JSON.stringify(Obj, undefined, 4);
+// 	document.getElementById("bookings").innerHTML = offline;
+// 	var html = "<ul class='bookings'>"
+// 	for (key in Obj) {
+// 		html += "<li class='ticket'> Name: "+Obj[key].name+ ", Phone: " + Obj[key].number +  ", Ticket Type: " + Obj[key].type_of_ticket;
+// 		if (Obj[key].paid == "no"){
+// 			html += ", Email Received: <a class='red paid' href='#' id='"+key+"'>"+Obj[key].paid+"</a>";
+// 		} else {
+// 			html += ", Email Received: <a class='red paid paid_paypal' href='#' id='"+key+"'>"+Obj[key].paid+"</a> <span id='"+key+"' class='undo_pay'>payment not received</span>";
+// 		}
+// 		html += "<span class='red remove_entry pull-right' id='"+key+"'>ARCHIVE</span> </li>";
+// 		html += "<li><strong>Sailing Details:</strong> Outward: "+Obj[key].ticket.outbound_date+" at "+Obj[key].ticket.outbound_time+  ",  Returning: "+Obj[key].ticket.return_date+" at "+Obj[key].ticket.return_time+"</li>";
+// 	}
+// 	html += "</ul>";
+// 	document.getElementById("bookings_list").innerHTML = html;
+// };
+
+
+function offlineTables(Obj) {
 	var offline = JSON.stringify(Obj, undefined, 4);
 	document.getElementById("bookings").innerHTML = offline;
-	var html = "<ul class='bookings'>"
-	for (key in Obj) {
-		html += "<li class='ticket'> Name: "+Obj[key].name+ ", Phone: " + Obj[key].number +  ", Ticket Type: " + Obj[key].type_of_ticket;
-		if (Obj[key].paid == "no"){
-			html += ", Email Received: <a class='red paid' href='#' id='"+key+"'>"+Obj[key].paid+"</a>";
-		} else {
-			html += ", Email Received: <a class='red paid paid_paypal' href='#' id='"+key+"'>"+Obj[key].paid+"</a> <span id='"+key+"' class='undo_pay'>payment not received</span>";
-		}
-		html += "<span class='red remove_entry pull-right' id='"+key+"'>ARCHIVE</span> </li>";
-		html += "<li><strong>Sailing Details:</strong> Outward: "+Obj[key].ticket.outbound_date+" at "+Obj[key].ticket.outbound_time+  ",  Returning: "+Obj[key].ticket.return_date+" at "+Obj[key].ticket.return_time+"</li>";
-	}
-	html += "</ul>";
-	document.getElementById("bookings_list").innerHTML = html;
 }
+
+function makeBookingsTable(Obj){
+	var html = "";
+	for (key in Obj) {
+		// START HEADER + NAME
+		html += "<div class='unit w-1-3'> <div class='card shadow1 plain ticketCard'> <div class='ticketHeader'> <div class='ticketRow'><span class='ticketTitle'>Name:</span> <span class='ticketDetail'>" + Obj[key].name + "</span></div>";
+		// NUMBER
+		html += "<div class='ticketRow'><span class='ticketTitle'>Contact:</span> <span class='ticketDetail'>"+ Obj[key].number +"</span></div>";
+		// ENDING HEADER + START MAIN
+		html += "</div><div class='ticketMain'><div class='ticketRow'>";
+		// TICKET DETAILS
+		html += "<div class='ticketRow'> <span class='ticketTitle'>Ticket Type:</span> <span class='ticketDetail'>"+ Obj[key].type_of_ticket +"</span>";
+		// QUANTITY
+		if (Obj[key].qty == null) {
+			html += "<span class='ticketTitle QTY'>Qty:</span> <span class='ticketDetail'>1</span> </div>";
+		} else {
+			html += "<span class='ticketTitle QTY'>Qty:</span> <span class='ticketDetail'>"+Obj[key].qty+"</span> </div>";
+		};
+		// JOURNEY DETAILS
+		html += "<div class='ticketRow'><span class='ticketTitle'>Journey Out:</span> <span class='ticketDetail'>"+ Obj[key].ticket.outbound_date +", "+Obj[key].ticket.outbound_time+"</span></div>";
+		html += "<div class='ticketRow'><span class='ticketTitle'>Journey Return:</span> <span class='ticketDetail'>"+ Obj[key].ticket.return_date +", "+Obj[key].ticket.return_time+"</span></div>";
+		// REQUIREMENTS
+		html += "<div class='ticketRow'><span class='ticketTitle'>Special Requirements:</span> <span class='ticketDetail'>"+ Obj[key].requirements +"</span></div>";
+
+		if (Obj[key].paid == "no"){
+			// html += ", Email Received: <a class='red paid' href='#' id='"+key+"'>"+Obj[key].paid+"</a>";
+			html += "<div class='ticketRow'><span class='ticketTitle'>Paid:</span> <span class='ticketDetail red'>"+Obj[key].paid+"</span></div>";
+			// HTML FOOTER
+			html += "</div><div class='ticketFooter'> <span class='btn_orange btn_tkt remove_entry' id='"+key+"'>Archive</span> <span class='ticketDetail'> <a class='btn_orange btn_tkt paid' href='#' id='"+key+"'> Mark As Paid </a> </span> </div>";
+		} else {
+			// html += ", Email Received: <a class='red paid paid_paypal' href='#' id='"+key+"'>"+Obj[key].paid+"</a> <span id='"+key+"' class='undo_pay'>payment not received</span>";
+			html += "<div class='ticketRow'><span class='ticketTitle'>Paid:</span> <span class='ticketDetail green'>"+Obj[key].paid+"</span></div>";
+			// HTML FOOTER
+			html += "</div><div class='ticketFooter'> <span class='btn_orange btn_tkt remove_entry' id='"+key+"'>Archive</span> <span class='ticketDetail'>  <span id='"+key+"' class='btn_orange btn_tkt undo_pay'>Mark As Not Paid</span> </div>";
+		}
+
+		html += "</div> </div> </div>"
+	}
+	document.getElementById("bookings_list").innerHTML = html;
+};
+
+// <div class='unit w-1-3'>
+//   <div class='card shadow1 plain ticketCard'>
+//     <div class='ticketHeader'>
+//       <div class='ticketRow'><span class='ticketTitle'>Name:</span> <span class='ticketDetail'>Matthew Loughnane</span></div>
+//       <div class='ticketRow'><span class='ticketTitle'>Contact:</span> <span class='ticketDetail'>+447983357260</span></div>
+//     </div>
+//     <div class='ticketMain'>
+//       <div class='ticketRow'>
+//         <span class='ticketTitle'>Ticket Type:</span> <span class='ticketDetail'>Passenger</span><span class='ticketTitle QTY'>Qty:</span> <span class='ticketDetail'>1</span>
+//       </div>
+//       <div class='ticketRow'><span class='ticketTitle'>Journey Out:</span> <span class='ticketDetail'>Date, Time</span></div>
+//       <div class='ticketRow'><span class='ticketTitle'>Journey Return:</span> <span class='ticketDetail'>N/A</span></div>
+//       <div class='ticketRow'><span class='ticketTitle'>Paid:</span> <span class='ticketDetail'>No</span></div>
+//     </div>
+//     <div class='ticketFooter'>
+//       <span class='btn_orange btn_tkt'>Archive</span>
+//       <span class='btn_orange btn_tkt'>Mark As Paid</span>
+//     </div>
+//   </div>
+// </div>
+
 
 
 $(function() { 

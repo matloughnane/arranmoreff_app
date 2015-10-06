@@ -25,3 +25,70 @@
 		// }
 	}
 }
+
+
+// ============================================================
+// =================== FERRY APPS =======================
+// ============================================================
+
+.ticketCard {
+	margin-top: 5px;
+	border: 1px solid $blue_dull;
+	clear: both;
+	// height: 270px;
+	// background-color:$blue_light;
+	// padding-left: 0px !important;
+	// padding-right: 0px !important;
+	// padding-bottom: 0px !important;
+}
+
+.ticketRow {
+	display: block;
+	padding:5px; 
+}
+
+.ticketTitle {
+	font-weight: 300;
+}
+.ticketDetail {
+	font-weight: 500;
+}
+
+.QTY {
+	margin-left: 10px;
+}
+
+.ticketMain {
+	font-size: 0.9em;
+	padding: 5px;
+}
+
+.ticketFooter {
+	background-color: $blue_light;
+	padding: 5px;
+	bottom: 0;
+}
+.ticketHeader {
+	border: 3px solid $blue;
+	// background-color: $blue_dull;
+	// color: $white;
+	padding: 5px;
+	top: 0;
+}
+
+.btn_tkt {
+	border: none;
+	background: none;
+	padding: 5px 8px;
+	display: inline-block;
+	margin: 0px 5px;
+	text-decoration: none;
+	outline: none;
+	position: relative;
+	border-radius: $border_radius;
+	-webkit-transition: all 0.1s;
+	-moz-transition: all 0.1s;
+	transition: all 0.1s;
+	cursor: pointer;
+	margin-bottom: 0 !important;
+}

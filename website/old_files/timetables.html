@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+  <meta name="author" content="mat.loughnane" />
+  <meta name="keywords"  content="arranmore,fast,ferry,download,fastferry,app,apple,android" />
+  <meta name="Resource-type" content="Document" />
+  <link rel="icon" type="image/png" href="assets/img/favicon.png">
+  <!-- Schema.org markup for Google+ -->
+  <meta itemprop="name" content="Arranmore Ferry">
+  <meta itemprop="description" content="The Arranmore Ferry Service's website for the ferry sailings between Arranmore Island and Burtonport, Co Donegal. Bookings can be made at 00353 873171810. All timetables are up to date online.">
+  <meta itemprop="image" content="#">
+  <!-- Twitter Card data -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@ArranmoreFFerry">
+  <meta name="twitter:title" content="Arranmore Ferry">
+  <meta name="twitter:description" content="The Arranmore Ferry Service's website for the ferry sailings between Arranmore Island and Burtonport, Co Donegal. Bookings can be made at 00353 873171810. All timetables are up to date online.">
+  <meta name="twitter:creator" content="@ArranmoreFFerry">
+  <meta name="twitter:image:src" content="http://app.arranmorefastferry.com/assets/img/meta_banner.png">
+  <!-- Open Graph data -->
+  <meta property="og:title" content="Arranmore Ferry" />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="http://arranmorefastferry.com/" />
+  <meta property="og:image" content="http://app.arranmorefastferry.com/assets/img/meta_banner.png" />
+  <meta property="og:description" content="The Arranmore Ferry Service's website for the ferry sailings between Arranmore Island and Burtonport, Co Donegal. Bookings can be made at 00353 873171810.  All timetables are up to date online."/>
+  <meta name="theme-color" content="#0277bd">
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+  
+  <title>Full Timetables for the Arranmore Ferry</title>
+
+  <!-- CSS  -->
+  <link href="assets/css/styles.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+
+<body class="wrap">
+
+  <header class="grid padded center-on-mobiles">
+    <div class="unit w-2-3">
+      <div class="w-25"><a href="/"><img class="logo" src="assets/img/arranmoreff_icon.png" alt="Arranmore Ferry Main Logo, Blue Ferry icon, car and passenger service"></a></div>
+      <div class="w-75">
+        <h1 class="title">Arranmore Ferry</h1> 
+        <h2 class="sub-title">Arranmore's Blue Ferry: Car and Passenger Service</h2>
+      </div>
+    </div>
+    <div class="unit w-1-3 center-on-mobiles align-right">
+      <a href="tel:+353873171810" class="btn btn_big btn_primary btn_header">Call: +353-87-3171810</a><br>
+      <a href="mailto:info.fastferry@gmail.com?Subject=Arranmore Fast Ferry" target="_blank" class="btn btn_secondary hide-on-mobiles">Email: info.fastferry@gmail.com</a>
+    </div>
+  </header>
+
+  <div class="cd-panel from-left">
+    <div class="cd-panel-container">
+      <div class="cd-panel-content">
+        <ul>
+          <a href="/"><li>Home</li></a>
+          <a href="/about-us/"><li>About</li></a>
+          <a href="/timetables/"><li>Timetables</li></a>
+          <a href="/tickets/"><li>Tickets</li></a>
+          <a href="/contact/"><li>Contact</li></a>
+          <a href="http://app.arranmorefastferry.com"><li>Mobile App</li></a>
+        </ul>
+      </div> <!-- cd-panel-content -->
+    </div> <!-- cd-panel-container -->
+  </div> <!-- cd-panel -->
+
+  <nav class="grid">
+    <ul class="hide-on-mobiles">
+      <a href="/"><li>Home</li></a>
+      <a href="/about-us/"><li>About</li></a>
+      <a href="/timetables/"><li class="active">Timetables</li></a>
+      <a href="/tickets/"><li>Tickets</li></a>
+      <a href="/contact/"><li>Contact</li></a>
+      <a href="http://app.arranmorefastferry.com"><li>Mobile App</li></a>
+    </ul>
+    <section class="mobile_bar show-on-mobiles card">
+      <a href="#" class="cd-btn"><i class="icon-menu"></i></a>Menu
+    </section>
+  </nav>
+
+  <section class="grid card no-gutters">
+    <a href="/competition/"><img src="assets/img/competition_banner_thin.jpg" alt="Be in the running to win €5000 by travelling on the Blue Arranmore Fast Ferry"></a>
+  </section>
+
+  <!-- FILTER SYSTEM -->
+  <section class="grid">
+    <div class="unit card no-gutters">
+      <div class="content">
+        <h1>Timetables</h1>
+        <p>All our timetables are up to date, but don't include cancellations or last minute changes. If you're travelling today, check the today's timetable on our homepage or give us a call. If you want to check times for a specific day, why not download our app?</p>
+        <p class="align-right">
+          <a class="btn btn_primary" href="http://app.arranmorefastferry.com">Arranmore Ferry App <i class="icon-angle-double-right"></i></a>
+        </p>
+      </div>
+      <div class="secondary filter align-center">
+        <p>Choose a Timetable:
+            <select class="selectpicker" name="filterMonths" id="select_filter">
+              <option value='all'>All Months</option>
+              <option value='jan_apr'>January to April</option>
+              <option value='may'>May</option>
+              <option value='jun_aug'>June to August</option>
+              <option value='sep_oct'>September to October</option>
+              <option value='nov_dec'>November to December</option>
+            </select>
+        </p>
+        <div class="unit whole align-center" id="loading_notification">
+          <svg width="36" height="10">
+            <rect class="white_svg" width="10" height="10" x="0" y="0" rx="3" ry="3">
+              <animate attributeName="width" values="0;10;10;10;0" dur="1000ms" repeatCount="indefinite"/>
+              <animate attributeName="height" values="0;10;10;10;0" dur="1000ms" repeatCount="indefinite"/>
+              <animate attributeName="x" values="5;0;0;0;5" dur="1000ms" repeatCount="indefinite"/>
+              <animate attributeName="y" values="5;0;0;0;5" dur="1000ms" repeatCount="indefinite"/>
+            </rect>
+            <rect class="white_svg" width="10" height="10" x="13" y="0" rx="3" ry="3">
+              <animate attributeName="width" values="0;10;10;10;0" begin="300ms" dur="1000ms" repeatCount="indefinite"/>
+              <animate attributeName="height" values="0;10;10;10;0" begin="300ms" dur="1000ms" repeatCount="indefinite"/>
+              <animate attributeName="x" values="18;13;13;13;18" begin="300ms" dur="1000ms" repeatCount="indefinite"/>
+              <animate attributeName="y" values="5;0;0;0;5" begin="300ms" dur="1000ms" repeatCount="indefinite"/>
+            </rect>
+            <rect class="white_svg" width="10" height="10" x="36" y="0" rx="3" ry="3">
+              <animate attributeName="width" values="0;10;10;10;0" begin="500ms" dur="1000ms" repeatCount="indefinite"/>
+              <animate attributeName="height" values="0;10;10;10;0" begin="500ms" dur="1000ms" repeatCount="indefinite"/>
+              <animate attributeName="x" values="31;26;26;26;31" begin="500ms" dur="1000ms" repeatCount="indefinite"/>
+              <animate attributeName="y" values="5;0;0;0;5" begin="500ms" dur="1000ms" repeatCount="indefinite"/>
+            </rect>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- JANUARY TO APRIL -->
+  <section id="jantoapr" class="grid card">
+      <h2 class="margin_left">January, February, March & April</h2>
+          <!-- SYNC DATE DISPLAYED -->
+      <div class="unit half">
+        <div id="da_jantoapr_table"></div>
+      </div>
+      <div class="unit half">
+        <div id="db_jantoapr_table"></div>
+
+    </div>
+  </section>
+
+  <!-- MAY -->
+  <section id="may" class="grid card">
+      <h2 class="margin_left">May</h2>
+      <div class="unit half">
+        <div id="da_may_table"></div>
+      </div>
+      <div class="unit half">
+        <div id="db_may_table"></div>
+      </div>
+  </section>
+
+  <!-- JUN TO AUG -->
+  <section id="juntoaug" class="grid card">
+      <h2 class="margin_left">June, July and August</h2>
+      <div class="unit half">
+        <div id="da_juntoaug_table"></div>
+      </div>
+      <div class="unit half">
+        <div id="db_juntoaug_table"></div>
+      </div>
+  </section>
+
+  <!-- SEP TO OCT -->
+  <section id="septooct" class="grid card">
+      <h2 class="margin_left">September and October</h2>
+      <div class="unit half">
+        <div id="da_septooct_table"></div>
+      </div>
+      <div class="unit half">
+        <div id="db_septooct_table"></div>
+      </div>
+  </section>
+
+  <!-- NOV TO DEC -->
+  <section id="novtodec" class="grid card">
+      <h2 class="margin_left">November and December</h2>
+      <div class="unit half">
+        <div id="da_novtodec_table"></div>
+      </div>
+      <div class="unit half">
+        <div id="db_novtodec_table"></div>
+      </div>    
+  </section>
+
+
+  <footer class="grid wrap">
+    <section>
+      <div class="unit w-1-3 hide-on-mobiles">
+        <a href="/">Home</a>
+        <a href="/about-us/">About Us</a>
+        <a href="/tickets/">Tickets</a>
+        <!-- <a href="#" class="sub">Arranmore Island</a> -->
+        <a href="/competition/" class="sub">Competition Details</a>
+      </div>
+      <div class="unit w-1-3 hide-on-mobiles">
+        <a href="/timetables/">Timetables</a>   
+        <a href="/contact/">Contact</a>
+          <a href="https://www.facebook.com/arranmorefastferries?fref=ts" target="_blank" class="sub">Our Facebook</a>
+          <a href="https://twitter.com/ArranmoreFFerry" target="_blank" class="sub">Our Twitter</a>
+      </div>
+      <div class="unit w-1-3 align-center">
+        <h3>Share Our Site</h3>
+          <div class="social_buttons">
+            <a class="social_icon" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://arranmorefastferry.com/"><i class="icon-facebook-squared"></i></a>
+          <a class="social_icon" target="_blank" href="https://twitter.com/home?status=Check%20out%20all%20the%20latest%20%23Arranmore%20Ferry%20times%20from%20%40ArranmoreFFerry%20on%20their%20website!%20http://arranmorefastferry.com/"><i class="icon-twitter"></i></a>
+          <a class="social_icon" target="_blank" href="https://plus.google.com/share?url=http://arranmorefastferry.com/"><i class="icon-gplus"></i></a>
+          </div>
+      </div>
+    </section>
+      
+    <div class="unit w-1-1 no-gutters align-center copyright_text">
+      <h6>&copy; Arranmore Fast Ferry 2015</h6> &middot; <h6><a href="http://matloughnane.com/" target="_blank">by matloughnane</a></h6>
+    </div>
+
+  </footer>
+
+  <!-- LAZY LOAD -->
+  <script src="assets/js/timetables.min.js"></script>  
+
+
+</body>
+
+</html>

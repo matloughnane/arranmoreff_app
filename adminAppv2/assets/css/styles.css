@@ -3924,37 +3924,39 @@ h4, h5, h6 {
 .green {
   background: #388e3c;
   color: whitesmoke;
+  padding: 2px;
 }
 
-/* line 90, partials/_layout.scss */
+/* line 91, partials/_layout.scss */
 .green_light {
   font-size: 15px;
   background: #a5d6a7;
 }
 
-/* line 96, partials/_layout.scss */
+/* line 97, partials/_layout.scss */
 .red {
   background: #d32f2f;
   color: whitesmoke;
+  padding: 2px;
 }
 
-/* line 101, partials/_layout.scss */
+/* line 103, partials/_layout.scss */
 .light_red {
   background: #ef9a9a;
 }
 
-/* line 105, partials/_layout.scss */
+/* line 107, partials/_layout.scss */
 .light_green {
   background-color: #a5d6a7;
 }
 
-/* line 109, partials/_layout.scss */
+/* line 111, partials/_layout.scss */
 .card_noBottom {
   border-radius: 1px;
   margin-bottom: 0px;
 }
 
-/* line 117, partials/_layout.scss */
+/* line 119, partials/_layout.scss */
 .btn {
   border: none;
   background: none;
@@ -3971,63 +3973,63 @@ h4, h5, h6 {
   cursor: pointer;
 }
 
-/* line 133, partials/_layout.scss */
+/* line 135, partials/_layout.scss */
 .btn_blue {
   background-color: #03a9f4 !important;
   color: whitesmoke !important;
 }
-/* line 136, partials/_layout.scss */
+/* line 138, partials/_layout.scss */
 .btn_blue:hover {
   box-shadow: 0px -3px 0px 0px #0277bd inset;
 }
-/* line 139, partials/_layout.scss */
+/* line 141, partials/_layout.scss */
 .btn_blue:active {
   background-color: #0277bd !important;
 }
 
-/* line 144, partials/_layout.scss */
+/* line 146, partials/_layout.scss */
 .btn_orange {
   background-color: #f57c00 !important;
   color: whitesmoke !important;
 }
-/* line 147, partials/_layout.scss */
+/* line 149, partials/_layout.scss */
 .btn_orange:hover {
   box-shadow: 0px -3px 0px 0px #e65100 inset;
 }
-/* line 150, partials/_layout.scss */
+/* line 152, partials/_layout.scss */
 .btn_orange:active {
   background-color: #e65100 !important;
 }
 
-/* line 155, partials/_layout.scss */
+/* line 157, partials/_layout.scss */
 .btn_red {
   background-color: #d32f2f !important;
   color: whitesmoke !important;
 }
-/* line 158, partials/_layout.scss */
+/* line 160, partials/_layout.scss */
 .btn_red:hover {
   box-shadow: 0px -3px 0px 0px #b71c1c inset;
 }
-/* line 161, partials/_layout.scss */
+/* line 163, partials/_layout.scss */
 .btn_red:active {
   background-color: #b71c1c !important;
 }
 
-/* line 166, partials/_layout.scss */
+/* line 168, partials/_layout.scss */
 .btn_green {
   background-color: #388e3c !important;
   color: whitesmoke !important;
 }
-/* line 169, partials/_layout.scss */
+/* line 171, partials/_layout.scss */
 .btn_green:hover {
   box-shadow: 0px -3px 0px 0px #1b5e20 inset;
 }
-/* line 172, partials/_layout.scss */
+/* line 174, partials/_layout.scss */
 .btn_green:active {
   background-color: #1b5e20 !important;
 }
 
-/* line 177, partials/_layout.scss */
+/* line 179, partials/_layout.scss */
 .btn_uncancel {
   padding: 5px;
   display: inline-block;
@@ -4035,122 +4037,122 @@ h4, h5, h6 {
   background-color: #388e3c !important;
   color: whitesmoke !important;
 }
-/* line 183, partials/_layout.scss */
+/* line 185, partials/_layout.scss */
 .btn_uncancel:hover {
   box-shadow: 0px -3px 0px 0px #1b5e20 inset;
 }
-/* line 186, partials/_layout.scss */
+/* line 188, partials/_layout.scss */
 .btn_uncancel:active {
   background-color: #1b5e20 !important;
 }
 
-/* line 191, partials/_layout.scss */
+/* line 193, partials/_layout.scss */
 .btn_no_margin {
   margin: 0px;
 }
 
-/* line 195, partials/_layout.scss */
+/* line 197, partials/_layout.scss */
 .btn_large {
   font-size: 1.2em !important;
 }
 
-/* line 199, partials/_layout.scss */
+/* line 201, partials/_layout.scss */
 .btn_add {
   background-color: whitesmoke !important;
   color: #388e3c !important;
   padding: 4px 5px !important;
 }
-/* line 203, partials/_layout.scss */
+/* line 205, partials/_layout.scss */
 .btn_add:hover {
   box-shadow: 0px -2px 0px 0px #1b5e20 inset;
 }
-/* line 206, partials/_layout.scss */
+/* line 208, partials/_layout.scss */
 .btn_add:active {
   background-color: #1b5e20 !important;
   color: whitesmoke !important;
 }
 
-/* line 212, partials/_layout.scss */
+/* line 214, partials/_layout.scss */
 .btn_remove {
   background-color: whitesmoke !important;
   color: #d32f2f !important;
   padding: 4px 5px !important;
 }
-/* line 216, partials/_layout.scss */
+/* line 218, partials/_layout.scss */
 .btn_remove:hover {
   box-shadow: 0px -2px 0px 0px #b71c1c inset;
 }
-/* line 219, partials/_layout.scss */
+/* line 221, partials/_layout.scss */
 .btn_remove:active {
   background-color: #b71c1c !important;
   color: whitesmoke !important;
 }
 
-/* line 227, partials/_layout.scss */
+/* line 229, partials/_layout.scss */
 .shadow1 {
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 }
 
-/* line 230, partials/_layout.scss */
+/* line 232, partials/_layout.scss */
 .shadow2 {
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 }
 
-/* line 233, partials/_layout.scss */
+/* line 235, partials/_layout.scss */
 .shadow3 {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
 }
 
-/* line 236, partials/_layout.scss */
+/* line 238, partials/_layout.scss */
 .shadow4 {
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
 
-/* line 239, partials/_layout.scss */
+/* line 241, partials/_layout.scss */
 .shadow5 {
   box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
 }
 
-/* line 246, partials/_layout.scss */
+/* line 248, partials/_layout.scss */
 .left_half {
   padding-right: 5px;
 }
 
-/* line 250, partials/_layout.scss */
+/* line 252, partials/_layout.scss */
 .right_half {
   padding-left: 5px;
 }
 
-/* line 254, partials/_layout.scss */
+/* line 256, partials/_layout.scss */
 .padded {
   padding: 0px 8px;
 }
 
-/* line 258, partials/_layout.scss */
+/* line 260, partials/_layout.scss */
 .tferry_time {
   display: block;
   padding: 10px;
   font-size: 2em;
 }
 
-/* line 264, partials/_layout.scss */
+/* line 266, partials/_layout.scss */
 #cancel_times, #changes_requires_internet, #changes_requires_internet_timeout, #extra_times {
   display: none;
 }
 
-/* line 268, partials/_layout.scss */
+/* line 270, partials/_layout.scss */
 #static_timetable {
   display: none;
 }
 
-/* line 273, partials/_layout.scss */
+/* line 275, partials/_layout.scss */
 .tferry_table_title {
   display: block;
   padding: 5px;
   font-size: 1em;
 }
 
-/* line 279, partials/_layout.scss */
+/* line 281, partials/_layout.scss */
 .settings_title {
   display: block;
   font-weight: 600;
@@ -4158,7 +4160,7 @@ h4, h5, h6 {
   font-size: 1em;
 }
 
-/* line 286, partials/_layout.scss */
+/* line 288, partials/_layout.scss */
 .horizontal_line {
   width: 400px;
   height: 0;
@@ -4166,98 +4168,98 @@ h4, h5, h6 {
   font-size: 0;
 }
 
-/* line 293, partials/_layout.scss */
+/* line 295, partials/_layout.scss */
 .loading_text {
   font-size: 0.4em;
 }
 
-/* line 297, partials/_layout.scss */
+/* line 299, partials/_layout.scss */
 .larger_text {
   font-size: 1.25em;
 }
 
-/* line 301, partials/_layout.scss */
+/* line 303, partials/_layout.scss */
 .blue_text {
   color: #0277bd;
 }
 
-/* line 306, partials/_layout.scss */
+/* line 308, partials/_layout.scss */
 .orange_text {
   color: #e65100;
 }
 
-/* line 313, partials/_layout.scss */
+/* line 315, partials/_layout.scss */
 rect {
   fill: whitesmoke;
 }
 
-/* line 317, partials/_layout.scss */
+/* line 319, partials/_layout.scss */
 .blue_rect {
   fill: #03a9f4 !important;
 }
 
-/* line 321, partials/_layout.scss */
+/* line 323, partials/_layout.scss */
 .orange_rect {
   fill: #e65100 !important;
 }
 
-/* line 326, partials/_layout.scss */
+/* line 328, partials/_layout.scss */
 .settings_text {
   padding: 5px;
   margin-left: 14px;
   font-size: 1em;
 }
 
-/* line 332, partials/_layout.scss */
+/* line 334, partials/_layout.scss */
 .margin_small {
   margin: 5px;
 }
 
-/* line 336, partials/_layout.scss */
+/* line 338, partials/_layout.scss */
 .margin_left {
   margin-left: 10px;
 }
 
-/* line 340, partials/_layout.scss */
+/* line 342, partials/_layout.scss */
 .margin_right {
   margin-right: 10px;
 }
 
-/* line 344, partials/_layout.scss */
+/* line 346, partials/_layout.scss */
 .important_text {
   font-size: 1.5em;
   font-weight: 700;
 }
 
-/* line 349, partials/_layout.scss */
+/* line 351, partials/_layout.scss */
 .date_text {
   font-size: 0.8em;
   color: #9e9e9e;
 }
 
-/* line 354, partials/_layout.scss */
+/* line 356, partials/_layout.scss */
 img {
   max-width: 100%;
 }
-/* line 356, partials/_layout.scss */
+/* line 358, partials/_layout.scss */
 img.first_time_logo {
   width: 60%;
   margin-top: 10px;
 }
 
-/* line 363, partials/_layout.scss */
+/* line 365, partials/_layout.scss */
 .mobile_block {
   display: inline;
 }
 
 @media screen and (max-width: 568px) {
-  /* line 371, partials/_layout.scss */
+  /* line 373, partials/_layout.scss */
   .mobile_block {
     display: block;
     margin: 8px;
   }
 
-  /* line 375, partials/_layout.scss */
+  /* line 377, partials/_layout.scss */
   .remove_extraFerryTime_btn {
     padding: 5px;
     margin: 8px;
@@ -4401,7 +4403,6 @@ ul.bookings li {
 /* line 133, partials/_tables.scss */
 .paid {
   padding: 1px 5px;
-  text-transform: uppercase;
 }
 
 /* line 138, partials/_tables.scss */
@@ -5012,6 +5013,72 @@ button.toast-close-button {
   -webkit-transition: all 0.1s;
   -moz-transition: all 0.1s;
   transition: all 0.1s;
+}
+
+/* line 34, partials/_adminApp.scss */
+.ticketCard {
+  margin-top: 5px;
+  border: 1px solid #0277bd;
+  clear: both;
+}
+
+/* line 45, partials/_adminApp.scss */
+.ticketRow {
+  display: block;
+  padding: 5px;
+}
+
+/* line 50, partials/_adminApp.scss */
+.ticketTitle {
+  font-weight: 300;
+}
+
+/* line 53, partials/_adminApp.scss */
+.ticketDetail {
+  font-weight: 500;
+}
+
+/* line 57, partials/_adminApp.scss */
+.QTY {
+  margin-left: 10px;
+}
+
+/* line 61, partials/_adminApp.scss */
+.ticketMain {
+  font-size: 0.9em;
+  padding: 5px;
+}
+
+/* line 66, partials/_adminApp.scss */
+.ticketFooter {
+  background-color: #81d4fa;
+  padding: 5px;
+  bottom: 0;
+}
+
+/* line 71, partials/_adminApp.scss */
+.ticketHeader {
+  border: 3px solid #03a9f4;
+  padding: 5px;
+  top: 0;
+}
+
+/* line 79, partials/_adminApp.scss */
+.btn_tkt {
+  border: none;
+  background: none;
+  padding: 5px 8px;
+  display: inline-block;
+  margin: 0px 5px;
+  text-decoration: none;
+  outline: none;
+  position: relative;
+  border-radius: 1px;
+  -webkit-transition: all 0.1s;
+  -moz-transition: all 0.1s;
+  transition: all 0.1s;
+  cursor: pointer;
+  margin-bottom: 0 !important;
 }
 
 /* -------------------------------- 

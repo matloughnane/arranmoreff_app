@@ -86,6 +86,7 @@ h4, h5, h6 {
 .green {
 	background: $green;
 	color: $bkg_light;
+	padding: 2px;
 }
 .green_light {
 	font-size: 15px;
@@ -96,6 +97,7 @@ h4, h5, h6 {
 .red {
 	background: $red;	
 	color: $bkg_light;
+	padding: 2px;
 }
 
 .light_red {
@@ -378,8 +380,3 @@ img {
 		cursor: cursor;
 	}
 }
-
-
-
-
-
