@@ -27,7 +27,7 @@
   <meta name="theme-color" content="#0277bd">
   <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
   
-  <title>Book Tickets</title>
+  <title>Book Tickets | Arranmore Ferry </title>
 
   <!-- CSS  -->
   <link href="assets/css/styles.css" type="text/css" rel="stylesheet" />
@@ -102,6 +102,25 @@
         </div>
         <div class="unit w-1-3" id="warning_ticket_type"></div>
       </div>
+
+      <div class="grid">
+        <div class="unit w-1-3 secondary_text align-right left-on-mobiles">Quantity:</div>
+        <div class="unit w-1-3">
+            <select name="qty" id="qtyPicker">
+              <option value='1'>1</option>
+              <option value='2'>2</option>
+              <option value='3'>3</option>
+              <option value='4'>4</option>
+              <option value='5'>5</option>
+              <option value='6'>6</option>
+              <option value='7'>7</option>
+              <option value='8'>8</option>
+              <option value='9'>9</option>
+            </select>
+        </div>
+        <div class="unit w-1-3" id="warning_ticket_type"></div>
+      </div>
+
       <div class="grid" id="price_grid">
         <div class="unit w-1-3 secondary_text align-right left-on-mobiles">Price:</div>
         <div class="unit w-1-3"><span id="ticket_price"></span></div>
@@ -120,22 +139,22 @@
       </div>
 
       <div class="grid" id="car_details_grid">
-        <div class="unit w-1-3 secondary_text align-right left-on-mobiles">Car Registration:</div>
-        <div class="unit w-1-3"><input type="text" id="car_details_input" placeholder="Car Reg. Number"></div>
+        <div class="unit w-1-3 secondary_text align-right left-on-mobiles">Car Make and Model:</div>
+        <div class="unit w-1-3"><input type="text" id="car_details_input" placeholder="Car Make and Model"></div>
         <div class="unit w-1-3" id="warning_car_details"></div>
       </div>
-      <div class="grid" id="car_model_grid">
-        <div class="unit w-1-3 secondary_text align-right left-on-mobiles">Car Make / Model:</div>
-        <div class="unit w-1-3"><input type="text" id="car_model_input" placeholder="Make, Model"></div>
+      <!-- <div class="grid" id="car_model_grid">
+        <div class="unit w-1-3 secondary_text align-right left-on-mobiles">Car Make and Model:</div>
+        <div class="unit w-1-3"><input type="text" id="car_model_input" placeholder="Make and Model"></div>
         <div class="unit w-1-3" id="warning_car_model"></div>
-      </div>
+      </div> -->
 
       <div class="grid">
         <div class="unit w-1-3 secondary_text align-right left-on-mobiles">Special Requirements: <br> <span class="smaller_text">(optional)</span></div>
         <div class="unit w-1-3"> <textarea name="requirements" id="special_reqs" cols="40" rows="5" placeholder="Passengers with reduced mobility, etc." ></textarea></div>
         <div class="unit w-1-3"></div>
       </div>
-      <h3>Sailing Details</h3>
+      <h3>Sailing Details:</h3>
       <div class="grid">
         <div class="unit w-1-3 secondary_text align-right left-on-mobiles">Outward Journey:</div>
         <div class="unit w-1-3">
@@ -233,14 +252,14 @@
 
   <!-- LAZY LOAD -->
   <!-- // <script src="assets/js/tickets.min.js"></script>  --> 
-            'assets/js/tickets.min.js': ['assets/js/jquery-1.11.2.min.js', 'assets/js/sidepanel.js', 'assets/js/firebase.js', 'assets/js/picker.js', 'assets/js/picker.date.js', 'assets/js/legacy.js', 'assets/js/payments.min.js']
+<!--             'assets/js/tickets.min.js': ['assets/js/jquery-1.11.2.min.js', 'assets/js/sidepanel.js', 'assets/js/firebase.js', 'assets/js/picker.js', 'assets/js/picker.date.js', 'assets/js/legacy.js', 'assets/js/payments.min.js'] -->
   <script src="assets/js/jquery-1.11.2.min.js"></script>
   <script src="assets/js/sidepanel.js"></script>
   <script src="assets/js/firebase.js"></script>
   <script src="assets/js/picker.js"></script>
   <script src="assets/js/picker.date.js"></script>
   <script src="assets/js/legacy.js"></script>
-  <script src="assets/js/payments.min.js"></script>
+  <script src="assets/js/paymentsV2.js"></script>
 
   <script type="text/javascript">
     $('.js__datepicker').pickadate({

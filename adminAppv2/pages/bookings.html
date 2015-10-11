@@ -44,8 +44,9 @@
 <!-- TIMETABLE -->
 <div class="grid padded">
   <div class="unit whole card shadow1 plain">
-    <h3>Offline Timetable for reference:</h3>
+    <h3>Bookings:</h3>
       <p>Bookings list - this is a temporary fix until we have the fully integrated system. Let me know if you have issues and I'll fix them. All these bookings should be considered UNPAID until you receive a PayPal email.</p>
+      <p>See below for the archive, all the tickets from the past.</p>
       
       <!-- <div>
         <ul class="bookings">
@@ -80,17 +81,22 @@
         <!-- END OF TICKET -->
       </div>
 
-
-      <div class="grid">
-        <div id='bookings_list2'></div>   
-      </div>
+      <div id='bookings_list2'></div>   
       
       <div id='bookings_list'></div> 
 
   </div>
 
   <div class="unit whole card shadow1 plain">
+    <h3>Archive:</h3>
+      <p>The full list of all tickets can be found here.</p>
+      <a id="toggleArchive" class="btn btn_orange toggleArchive"> Show / Hide Archive </a>
+      <div id="bookings_list_archive"></div>
+  </div>
+
+  <div class="unit whole card shadow1 plain">
     <h3>RAW OUTPUT:</h3>
+      <p>Note to Mat, uncomment line 10 for raw output.</p>
       <div id="bookings"></div>
   </div>
 

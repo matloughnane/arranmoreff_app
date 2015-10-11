@@ -1,0 +1,65 @@
+.list_item {
+	border: 1px dotted $bkg_dark;
+	// TOP RIGHT BOTTOM RIGHT
+	padding: 4px 3px 4px 3px;
+	margin: 3px;
+	display: inline-block;
+	a {
+		background-color: $red !important;
+		border: none;
+		background: none;
+		padding: 5px;
+		margin: 5px;
+		display: inline-block;
+		// margin: 8px 5px;
+		text-decoration: none;
+		outline: none;
+		position: relative;
+		border-radius: $border_radius;
+		-webkit-transition: all 0.1s;
+		-moz-transition: all 0.1s;
+		transition: all 0.1s;
+		// &:hover {
+		// 	background-color: $red_dull !important;
+		// 	cursor: pointer;
+		// }
+	}
+}
+
+.login_bkg {
+	background-color: $orange;
+}
+
+.login-box {
+	margin: 0 auto;
+	// padding: 1em; 
+	width: 400px;
+	background-color: $bkg_light;
+	border-radius: 2px;
+	img {
+		max-width: 200px;
+	}
+}
+
+// .form-group {
+// 	width: 380px;
+// 	padding: 10px;
+// }
+
+form {
+	label {
+		padding: 0.5em;
+		padding-left: 1.1em;
+		display: block;
+		font-weight: 700;
+	}
+	input {
+		width: 350px;
+		font-size: 1.25em;
+		padding: 0.25em;
+	}
+}
+
+
+
+

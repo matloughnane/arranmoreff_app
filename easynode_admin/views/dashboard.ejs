@@ -1,0 +1,164 @@
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+  <title>Dashboard</title>
+
+  <meta http-equiv="refresh" content="300">
+  <!-- CORDOVA NECESSITIES -->
+  <link rel="icon" href="assets/img/favicon.ico">
+
+  <!-- CSS  -->
+  <link href="assets/css/gridism.css" type="text/css" rel="stylesheet"/>
+  <link href="assets/css/styles.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+<body>
+
+<!-- NAVIGATION -->
+<nav>
+  <div class="nav_bar">
+    <a href="#" class="cd-btn"><i class="mdi-navigation-menu"></i></a><div>Dashboard</div>
+    <a href="javascript:history.go(0)" class="refresh-icon"><i class="mdi-navigation-refresh"></i></a>
+    <a href="/logout" class="btn logout">Logout</a>
+  </div>
+
+  <div class="cd-panel from-left">
+    <div class="cd-panel-container">
+      <div class="cd-panel-content">
+        <ul>
+          <a href="dashboard"><li><i class="mdi-action-home"></i>Dashboard</li></a>
+          <a href="timetables"><li><i class="mdi-action-event"></i>Master Timetables</li></a>
+          <a href="extras"><li><i class="mdi-content-add-circle"></i>Extra Ferries</li></a>
+          <a href="cancelled"><li><i class="mdi-content-remove-circle"></i>Cancelled Ferries</li></a>
+          <a href="bookings"><li><i class="mdi-action-credit-card"></i>Bookings (beta)</li></a>
+          <a href="offline"><li><i class="mdi-device-signal-wifi-off"></i>Offline Timetables</li></a>
+        </ul>
+      </div> <!-- cd-panel-content -->
+    </div> <!-- cd-panel-container -->
+  </div> <!-- cd-panel -->
+
+</nav>
+
+<div class="nav_bar_buffer"></div>
+
+
+<main >
+
+<!-- LOCAL TIME -->
+<div class="grid padded">
+  <div class="unit whole card shadow1 orange align-center">
+    <div id="localTime"></div>
+  </div>
+</div>
+
+
+<!-- LOCAL CLOCK BANNER -->
+<div id="next_ferries" class="grid padded">
+  <div class="unit half card shadow1 blue align-center">
+    <span id="next_ferry_da_title"></span>
+    Next Ferry Departing Arranmore:
+    <span class="tferry_time" id="nextFerry_da">
+      <div class="align-center">
+        <svg width="36" height="10">
+          <rect width="10" height="10" x="0" y="0" rx="3" ry="3">
+            <animate attributeName="width" values="0;10;10;10;0" dur="1000ms" repeatCount="indefinite"/>
+            <animate attributeName="height" values="0;10;10;10;0" dur="1000ms" repeatCount="indefinite"/>
+            <animate attributeName="x" values="5;0;0;0;5" dur="1000ms" repeatCount="indefinite"/>
+            <animate attributeName="y" values="5;0;0;0;5" dur="1000ms" repeatCount="indefinite"/>
+          </rect>
+          <rect width="10" height="10" x="13" y="0" rx="3" ry="3">
+            <animate attributeName="width" values="0;10;10;10;0" begin="300ms" dur="1000ms" repeatCount="indefinite"/>
+            <animate attributeName="height" values="0;10;10;10;0" begin="300ms" dur="1000ms" repeatCount="indefinite"/>
+            <animate attributeName="x" values="18;13;13;13;18" begin="300ms" dur="1000ms" repeatCount="indefinite"/>
+            <animate attributeName="y" values="5;0;0;0;5" begin="300ms" dur="1000ms" repeatCount="indefinite"/>
+          </rect>
+          <rect width="10" height="10" x="36" y="0" rx="3" ry="3">
+            <animate attributeName="width" values="0;10;10;10;0" begin="500ms" dur="1000ms" repeatCount="indefinite"/>
+            <animate attributeName="height" values="0;10;10;10;0" begin="500ms" dur="1000ms" repeatCount="indefinite"/>
+            <animate attributeName="x" values="31;26;26;26;31" begin="500ms" dur="1000ms" repeatCount="indefinite"/>
+            <animate attributeName="y" values="5;0;0;0;5" begin="500ms" dur="1000ms" repeatCount="indefinite"/>
+          </rect>
+        </svg>
+        <br>
+        <span class="loading_text"> Checking Next Ferry Time </span> 
+      </div>
+
+    </span>
+  </div>
+  <div class="unit half card orange shadow1 align-center">
+    <span id="next_ferry_db_title"></span>
+    Next Ferry Departing Burtonport:
+    <span class="tferry_time" id="nextFerry_db">
+
+      <div class="align-center">
+        <svg width="36" height="10">
+          <rect width="10" height="10" x="0" y="0" rx="3" ry="3">
+            <animate attributeName="width" values="0;10;10;10;0" dur="1000ms" repeatCount="indefinite"/>
+            <animate attributeName="height" values="0;10;10;10;0" dur="1000ms" repeatCount="indefinite"/>
+            <animate attributeName="x" values="5;0;0;0;5" dur="1000ms" repeatCount="indefinite"/>
+            <animate attributeName="y" values="5;0;0;0;5" dur="1000ms" repeatCount="indefinite"/>
+          </rect>
+          <rect width="10" height="10" x="13" y="0" rx="3" ry="3">
+            <animate attributeName="width" values="0;10;10;10;0" begin="300ms" dur="1000ms" repeatCount="indefinite"/>
+            <animate attributeName="height" values="0;10;10;10;0" begin="300ms" dur="1000ms" repeatCount="indefinite"/>
+            <animate attributeName="x" values="18;13;13;13;18" begin="300ms" dur="1000ms" repeatCount="indefinite"/>
+            <animate attributeName="y" values="5;0;0;0;5" begin="300ms" dur="1000ms" repeatCount="indefinite"/>
+          </rect>
+          <rect width="10" height="10" x="36" y="0" rx="3" ry="3">
+            <animate attributeName="width" values="0;10;10;10;0" begin="500ms" dur="1000ms" repeatCount="indefinite"/>
+            <animate attributeName="height" values="0;10;10;10;0" begin="500ms" dur="1000ms" repeatCount="indefinite"/>
+            <animate attributeName="x" values="31;26;26;26;31" begin="500ms" dur="1000ms" repeatCount="indefinite"/>
+            <animate attributeName="y" values="5;0;0;0;5" begin="500ms" dur="1000ms" repeatCount="indefinite"/>
+          </rect>
+        </svg>
+        <br>
+        <span class="loading_text"> Checking Next Ferry Time </span> 
+      </div>
+
+    </span>
+  </div>
+</div>
+
+<!-- TIMETABLES -->
+<div id="todays_timetables" class="grid padded">
+  <div class="unit whole card shadow1 plain">
+    <span class="tferry_table_title"> <h3>Todays Ferries, including extra ferries and cancellations:</h3></span>
+    <!-- HALFS -->
+      <div class="unit half left_half align-center">
+        <!-- TABLE -->
+        <div id="today_timetable_da" class="table_container">
+        </div>
+      </div>
+      <div class="unit half right_half align-center">
+        <!-- TABLE -->
+        <div id="today_timetable_db" class="table_container">
+        </div>
+      </div>
+
+    <!-- SYNC DATE DISPLAYED -->
+    <div id="lastest_sync_date"></div>
+
+  </div>
+</div>
+
+
+<!-- LOCAL TIME -->
+<div class="grid padded">
+  <div class="unit whole card shadow1 plain align-center">
+    <a href="mailto:mat.loughnane@gmail.com" target="_blank" class="btn btn_blue">Email Mat</a>
+
+    <a href="tel:00447983357260" target="_blank" class="btn btn_orange">Phone Mat: 00447983357260</a>
+  </div>
+</div>
+
+</main>
+
+  <!--  Scripts-->
+  <script src="assets/js/jquery-2.1.3.min.js"></script>
+  <script src="assets/js/sidepanel.js"></script>
+  <script src="assets/js/firebase.js"></script>
+  <script src="assets/js/clock.js"></script>
+  <script src="assets/js/adminApp_index.js"></script>
+
+  </body>
+</html>

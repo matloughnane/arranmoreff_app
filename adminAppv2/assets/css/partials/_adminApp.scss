@@ -31,7 +31,7 @@
 // =================== FERRY APPS =======================
 // ============================================================
 
-.ticketCard {
+.ticketCard_blue {
 	margin-top: 5px;
 	border: 1px solid $blue_dull;
 	clear: both;
@@ -40,7 +40,44 @@
 	// padding-left: 0px !important;
 	// padding-right: 0px !important;
 	// padding-bottom: 0px !important;
+	.ticketFooter {
+	background-color: $blue_light;
+	padding: 5px;
+	bottom: 0;
+	}
+	.ticketHeader {
+		border: 3px solid $blue;
+		// background-color: $blue_dull;
+		// color: $white;
+		padding: 5px;
+		top: 0;
+	}
 }
+
+
+.ticketCard_orange {
+	margin-top: 5px;
+	border: 1px solid $orange_dull;
+	clear: both;
+	// height: 270px;
+	// background-color:$blue_light;
+	// padding-left: 0px !important;
+	// padding-right: 0px !important;
+	// padding-bottom: 0px !important;
+	.ticketFooter {
+	background-color: $orange_light;
+	padding: 5px;
+	bottom: 0;
+	}
+	.ticketHeader {
+		border: 3px solid $orange;
+		// background-color: $blue_dull;
+		// color: $white;
+		padding: 5px;
+		top: 0;
+	}
+}
+
 
 .ticketRow {
 	display: block;
@@ -63,17 +100,8 @@
 	padding: 5px;
 }
 
-.ticketFooter {
-	background-color: $blue_light;
-	padding: 5px;
-	bottom: 0;
-}
-.ticketHeader {
-	border: 3px solid $blue;
-	// background-color: $blue_dull;
-	// color: $white;
-	padding: 5px;
-	top: 0;
+#bookings_list_archive {
+	display: none;
 }
 
 .btn_tkt {

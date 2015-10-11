@@ -1,20 +1,29 @@
 var firebaseRef = new Firebase("https://amber-fire-55.firebaseio.com/temp_tickets/");
 
+var firebaseRefArchive = new Firebase("https://amber-fire-55.firebaseio.com/temp_tickets_archive/");
+
 $(function() { 
 	// GET TIMETABLE OBJECT
 	firebaseRef.on("value", function(snapshot) {
-	var bookingsObj = {};
-	bookingsObj = snapshot.val();
-	// END FIREBASE
-
-	offlineTables(bookingsObj);
-	makeBookingsTable(bookingsObj);
-	// makeBookingsTable2(bookingsObj);
-
+		var bookingsObj = {};
+		bookingsObj = snapshot.val();
+		// END FIREBASE
+		makeBookingsTable(bookingsObj, "bookings_list");
 	// ERROR FUNCTION
 	}, function (errorObject) {
   		console.log("The read failed: " + errorObject.code);
 	});
+
+	firebaseRefArchive.on("value", function(snapshot) {
+		var bookingsObj = {};
+		bookingsObj = snapshot.val();
+		// END FIREBASE
+		makeBookingsTable(bookingsObj, "bookings_list_archive");
+		
+	// ERROR FUNCTION
+	}, function (errorObject) {
+  		console.log("The read failed: " + errorObject.code);
+	});	
 
 });
 // END THE RUNNING FUNCTION
@@ -43,11 +52,29 @@ function offlineTables(Obj) {
 	document.getElementById("bookings").innerHTML = offline;
 }
 
-function makeBookingsTable(Obj){
+function makeBookingsTable(Obj, htmlID){
+	var count = 0;
 	var html = "";
+	// var html = "<div class='grid'>";
 	for (key in Obj) {
+
+		// CREATE GRID
+		if (count == 0) {
+			html += "<div class='grid'>";
+		}
+		if (count == 3){
+			count = 0;
+			html += "</div>";
+			html += "<div class='grid'>";
+		}
+
 		// START HEADER + NAME
-		html += "<div class='unit w-1-3'> <div class='card shadow1 plain ticketCard'> <div class='ticketHeader'> <div class='ticketRow'><span class='ticketTitle'>Name:</span> <span class='ticketDetail'>" + Obj[key].name + "</span></div>";
+		if (htmlID == "bookings_list") {
+			html += "<div class='unit w-1-3'> <div class='card shadow1 plain ticketCard_blue'> <div class='ticketHeader'> <div class='ticketRow'><span class='ticketTitle'>Name:</span> <span class='ticketDetail'>" + Obj[key].name + "</span></div>";
+		} else {
+			html += "<div class='unit w-1-3'> <div class='card shadow1 plain ticketCard_orange'> <div class='ticketHeader'> <div class='ticketRow'><span class='ticketTitle'>Name:</span> <span class='ticketDetail'>" + Obj[key].name + "</span></div>";
+		}
+
 		// NUMBER
 		html += "<div class='ticketRow'><span class='ticketTitle'>Contact:</span> <span class='ticketDetail'>"+ Obj[key].number +"</span></div>";
 		// ENDING HEADER + START MAIN
@@ -70,41 +97,27 @@ function makeBookingsTable(Obj){
 			// html += ", Email Received: <a class='red paid' href='#' id='"+key+"'>"+Obj[key].paid+"</a>";
 			html += "<div class='ticketRow'><span class='ticketTitle'>Paid:</span> <span class='ticketDetail red'>"+Obj[key].paid+"</span></div>";
 			// HTML FOOTER
-			html += "</div><div class='ticketFooter'> <span class='btn_orange btn_tkt remove_entry' id='"+key+"'>Archive</span> <span class='ticketDetail'> <a class='btn_orange btn_tkt paid' href='#' id='"+key+"'> Mark As Paid </a> </span> </div>";
+			if (htmlID !== "bookings_list_archive") {
+				html += "</div><div class='ticketFooter'> <span class='btn_orange btn_tkt remove_entry' id='"+key+"'>Archive</span> <span class='ticketDetail'> <a class='btn_orange btn_tkt paid' href='#' id='"+key+"'> Mark As Paid </a> </span> </div>";
+			}
 		} else {
 			// html += ", Email Received: <a class='red paid paid_paypal' href='#' id='"+key+"'>"+Obj[key].paid+"</a> <span id='"+key+"' class='undo_pay'>payment not received</span>";
 			html += "<div class='ticketRow'><span class='ticketTitle'>Paid:</span> <span class='ticketDetail green'>"+Obj[key].paid+"</span></div>";
 			// HTML FOOTER
-			html += "</div><div class='ticketFooter'> <span class='btn_orange btn_tkt remove_entry' id='"+key+"'>Archive</span> <span class='ticketDetail'>  <span id='"+key+"' class='btn_orange btn_tkt undo_pay'>Mark As Not Paid</span> </div>";
+			if (htmlID !== "bookings_list_archive") {
+				html += "</div><div class='ticketFooter'> <span class='btn_orange btn_tkt remove_entry' id='"+key+"'>Archive</span> <span class='ticketDetail'>  <span id='"+key+"' class='btn_orange btn_tkt undo_pay'>Mark As Not Paid</span> </div>";
+			}
 		}
 
 		html += "</div> </div> </div>"
+		// console.log(count);
+		count++;
 	}
-	document.getElementById("bookings_list").innerHTML = html;
+	html += "</div>";
+	var htmlDIV = ""+htmlID+"";
+	// console.log(htmlDIV);
+	document.getElementById(htmlDIV).innerHTML = html;
 };
-
-// <div class='unit w-1-3'>
-//   <div class='card shadow1 plain ticketCard'>
-//     <div class='ticketHeader'>
-//       <div class='ticketRow'><span class='ticketTitle'>Name:</span> <span class='ticketDetail'>Matthew Loughnane</span></div>
-//       <div class='ticketRow'><span class='ticketTitle'>Contact:</span> <span class='ticketDetail'>+447983357260</span></div>
-//     </div>
-//     <div class='ticketMain'>
-//       <div class='ticketRow'>
-//         <span class='ticketTitle'>Ticket Type:</span> <span class='ticketDetail'>Passenger</span><span class='ticketTitle QTY'>Qty:</span> <span class='ticketDetail'>1</span>
-//       </div>
-//       <div class='ticketRow'><span class='ticketTitle'>Journey Out:</span> <span class='ticketDetail'>Date, Time</span></div>
-//       <div class='ticketRow'><span class='ticketTitle'>Journey Return:</span> <span class='ticketDetail'>N/A</span></div>
-//       <div class='ticketRow'><span class='ticketTitle'>Paid:</span> <span class='ticketDetail'>No</span></div>
-//     </div>
-//     <div class='ticketFooter'>
-//       <span class='btn_orange btn_tkt'>Archive</span>
-//       <span class='btn_orange btn_tkt'>Mark As Paid</span>
-//     </div>
-//   </div>
-// </div>
-
-
 
 $(function() { 
 	$(document.body).on('click', 'a', function () { 
@@ -139,6 +152,14 @@ $(function() {
 			console.log(firebaseKey);
 			moveFirebaseEntry(firebaseKey);
 			// toastr.error('<i class="mdi-alert-warning margin_right"></i>Marked as not paid!');
+		}
+	});
+});
+
+$(function() { 
+	$(document.body).on('click', 'a', function () { 
+		if ($(this).hasClass('toggleArchive')){
+			$( "#bookings_list_archive" ).toggle();
 		}
 	});
 });

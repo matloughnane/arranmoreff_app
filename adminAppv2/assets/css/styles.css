@@ -5016,54 +5016,76 @@ button.toast-close-button {
 }
 
 /* line 34, partials/_adminApp.scss */
-.ticketCard {
+.ticketCard_blue {
   margin-top: 5px;
   border: 1px solid #0277bd;
   clear: both;
 }
-
-/* line 45, partials/_adminApp.scss */
-.ticketRow {
-  display: block;
-  padding: 5px;
-}
-
-/* line 50, partials/_adminApp.scss */
-.ticketTitle {
-  font-weight: 300;
-}
-
-/* line 53, partials/_adminApp.scss */
-.ticketDetail {
-  font-weight: 500;
-}
-
-/* line 57, partials/_adminApp.scss */
-.QTY {
-  margin-left: 10px;
-}
-
-/* line 61, partials/_adminApp.scss */
-.ticketMain {
-  font-size: 0.9em;
-  padding: 5px;
-}
-
-/* line 66, partials/_adminApp.scss */
-.ticketFooter {
+/* line 43, partials/_adminApp.scss */
+.ticketCard_blue .ticketFooter {
   background-color: #81d4fa;
   padding: 5px;
   bottom: 0;
 }
-
-/* line 71, partials/_adminApp.scss */
-.ticketHeader {
+/* line 48, partials/_adminApp.scss */
+.ticketCard_blue .ticketHeader {
   border: 3px solid #03a9f4;
   padding: 5px;
   top: 0;
 }
 
-/* line 79, partials/_adminApp.scss */
+/* line 58, partials/_adminApp.scss */
+.ticketCard_orange {
+  margin-top: 5px;
+  border: 1px solid #e65100;
+  clear: both;
+}
+/* line 67, partials/_adminApp.scss */
+.ticketCard_orange .ticketFooter {
+  background-color: #ffb74d;
+  padding: 5px;
+  bottom: 0;
+}
+/* line 72, partials/_adminApp.scss */
+.ticketCard_orange .ticketHeader {
+  border: 3px solid #f57c00;
+  padding: 5px;
+  top: 0;
+}
+
+/* line 82, partials/_adminApp.scss */
+.ticketRow {
+  display: block;
+  padding: 5px;
+}
+
+/* line 87, partials/_adminApp.scss */
+.ticketTitle {
+  font-weight: 300;
+}
+
+/* line 90, partials/_adminApp.scss */
+.ticketDetail {
+  font-weight: 500;
+}
+
+/* line 94, partials/_adminApp.scss */
+.QTY {
+  margin-left: 10px;
+}
+
+/* line 98, partials/_adminApp.scss */
+.ticketMain {
+  font-size: 0.9em;
+  padding: 5px;
+}
+
+/* line 103, partials/_adminApp.scss */
+#bookings_list_archive {
+  display: none;
+}
+
+/* line 107, partials/_adminApp.scss */
 .btn_tkt {
   border: none;
   background: none;
