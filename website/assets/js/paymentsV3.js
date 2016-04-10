@@ -16,11 +16,11 @@ function decimalPlaces(num) {
 function addZeros(num){
 	// console.log(decimalPlaces(num));
 	if (decimalPlaces(num) == 0) {
-		var zeroString = "â‚¬"+num+".00";
+		var zeroString = "&#8364;"+num+".00";
 	} else if (decimalPlaces(num) == 1) {
-		var zeroString = "â‚¬"+num+"0";
+		var zeroString = "&#8364;"+num+"0";
 	} else if (decimalPlaces(num) == 2) {
-		var zeroString = "â‚¬"+num;
+		var zeroString = "&#8364;"+num;
 	}
 	return zeroString;
 }
@@ -312,7 +312,7 @@ $('#validate_ferry').click( function() {
 		    	console.log("none_selected");
 		}
 		// console.log(tick_price);
-		var result = '<form name="_xclick" action="https://www.paypal.com/uk/cgi-bin/webscr" method="post"><input type="hidden" name="cmd" value="_xclick"><input type="hidden" name="business" value="seamusboyle4@eircom.net"><input type="hidden" name="currency_code" value="EUR"><input type="hidden" name="item_name" value="'+qty+'x '+outward_journey+' on '+input_first_date+' at '+ input_first_times+', '+return_journey+' on '+input_return_date+' at '+input_return_times+'."><input type="hidden" name="amount" value="'+tick_price*qty+'"><input type="image" src="assets/img/pp_buy_large.png" border="0" name="submit" alt="Make payments with PayPal">';
+		var result = '<form name="_xclick" action="https://www.paypal.com/uk/cgi-bin/webscr" method="post"><input type="hidden" name="cmd" value="_xclick"><input type="hidden" name="business" value="info.fastferry@gmail.com"><input type="hidden" name="currency_code" value="EUR"><input type="hidden" name="item_name" value="'+qty+'x '+outward_journey+' on '+input_first_date+' at '+ input_first_times+', '+return_journey+' on '+input_return_date+' at '+input_return_times+'."><input type="hidden" name="amount" value="'+tick_price*qty+'"><input type="image" src="assets/img/pp_buy_large.png" border="0" name="submit" alt="Make payments with PayPal">';
 
 		document.getElementById("ferry_btn").style.display = "none";
 		document.getElementById("payp_btn").style.display = "block";

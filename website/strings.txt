@@ -1,0 +1,257 @@
+# ALL TEXT FOR TRANSLATION
+
+# GENERAL BITS
+
+############################################################
+########### HEADER
+############################################################
+
+Arranmore Ferry | Car and Passenger Service
+Arranmore Blue Ferry: Car and Passenger Service
+Home
+About
+Timetables
+Tickets
+Contact
+Mobile App
+Menu
+
+# FOOTER
+Our Facebook
+Our Twitter
+Share Our Site
+
+############################################################
+########### INDEX.HTML
+############################################################
+
+THESE FERRY TIMETABLES INCLUDE EXTRA SAILINGS AND HIDE CANCELLATIONS.
+
+Arranmore Blue Ferry
+
+Realt Na Maidne Teoranta Ferry Company is a family run business and is located at Arranmore Island, Co. Donegal. The Boyle family have been taking passengers to Arranmore Island for over 100 years.
+
+We run a car and passenger ferry service between Arranmore Island and Burtonport sailing several times a day. All ferry times are updated instantly on this website and our mobile apps. All our vessels are wheelchair friendly. Before booking please read our guidelines for travel
+
+Passengers with mobility issues are advised to pre-book your vehicle on the ferry so that you can be given the designated parking area for easy access to onboard facilities.
+
+More About Us
+
+Arranmore Island
+
+Arranmore Island is an idyllic island off the west coast of County Donegal. The island has world renowned cliff scenery offering stunning views of the Atlantic, beautiful sand and stone beaches and traditional music sessions in it's pubs, offering something for everyone.
+
+About Arranmore Island
+
+The Wild Atlantic Way
+
+Arranmore Island is situated along the Wild Atlantic Way path and well worth a visit. During the 15-20 minute scenic journey from Burtonport to Arranmore, a wide range of wildlife can be seen - you may even be lucky enough to catch a glimpse of our regular visitors, the Bottlenose Dolphins. Check out our video of the dolphins here.
+
+The Arranmore Fast Ferry service is featured on the Wild Atlantic Way website.
+
+Things To Do
+
+Arranmore has a wide range of activities and events running year round including; hiking and hill walking, diving and eco tours, football tournaments, bird watching, surfing, bumper balls and even archery. Information can always be found at the community centre, CFFAM Árainn Mhór.
+If you're planning on visiting Arranmore Island - why not stay at Arranmore's self catered Holiday Village.
+
+
+iOS and Android Mobile App
+
+We're very excited to present our Smartphone App - it's available now on iOS, Android and Amazon's FireOS. Search for "Arranmore Ferry" on Apple's App Store, Google Play or Amazon and download the app to your mobile now!
+Get all the latest Arranmore ferry times direct to your phone!
+
+Learn More
+
+############################################################
+###########  ABOUT
+############################################################
+
+About Us
+
+About The Arranmore Ferry
+
+Realt Na Maidne Teoranta Ferry Company is a family run business and is located at Arranmore Island, Co. Donegal. The Boyle family have been taking passengers to Arranmore Island for over 100 years.
+Arranmore Ferry is the only island owned and run ferry service based on Arranmore Island in Co. Donegal. We operate a daily scheduled service between Burtonport and Arranmore Island and surrounding islands upon request.
+All our ferry prices are listed below, if you book online you'll receive a 10%; discount or give us a call using the number at the top of our webpage.
+When travelling on the Arranmore Ferry service please abide by all our guidelines listed below for a safe crossing.
+
+Our Guidelines
+Our Prices
+
+Probably the most accessible of all the Gaeltacht Islands, Arranmore, has a resident population of approximately 600. From the island's rolling hills, observe views of the Rosses region (Na Rosa), the islands and the Donegal Mountains as a backdrop or visit two of the islands lovely beaches, at Aphort or Leabgarrow. A place to get away from it all and yet main land Donegal is just a 15 minute boat journey.
+
+Arranmore Island is situated along the Wild Atlantic Way path and well worth a visit. During the 15-20 minute scenic journey from Burtonport to Arranmore, a wide range of wildlife can be seen and you may even be lucky enough to catch a glimpse of our regular visitors, the Bottlenose Dolphins.
+
+Bottlenose Dolphins Racing The Arranmore Ferry
+Filmed by our Skipper Niall onboard the Ocean Guardian 
+Posted by on Saturday, 25 July 2015
+
+Our Guidelines
+Please take note of all the following guidelines for a safe crossing:
+All drivers / passengers must vacate vehicles during sailing, the only exception are those with reduced mobility and prior notice must be given at time of booking.
+The Company will only accept responsibility for damage caused to vehicles if crew themselves reverse vehicle onto vessel.
+The Company & Crew cannot be held responsible for damage to loose deck cargo.
+Children must be supervised onboard at all times.
+
+Our Ticket Prices
+Arranmore Ferry Prices
+
+Ticket Type
+Price
+Online Price
+
+Family with Car (2 adults, 2 Children)
+Car and Driver
+Adult Foot Passenger
+Student Price (ID Req.)
+Child Price
+
+More Information
+
+If you have any questions, please give us a call:
+
+Call: +353-87-3171810
+
+If you'd like to book online, please click the button below to pay through PayPal.
+
+Online Tickets
+
+
+############################################################
+###########  TIMETABLES
+############################################################
+
+
+Timetables
+All our timetables are up to date, but don't include cancellations or last minute changes. If you're travelling today, check the today's timetable on our homepage or give us a call. If you want to check times for a specific day, why not download our app?
+
+Choose a timetable
+
+
+############################################################
+###########  TICKETS
+############################################################
+
+Online Bookings
+We've tried to make the online ticketing as simple as possible, but if you're having any trouble at all. Click the blue phone button at the top of the page to give us a call if you have any issues.
+
+
+Your Details:
+
+Ticket Type:
+
+Quantity:
+
+Name:
+Name Surname
+
+Contact Number: 
+(please include your international dialling code) 
++353873171810
+
+Special Requirements: 
+(optional)
+
+Passengers with reduced mobility, etc.
+
+Sailing Details:
+
+Outward Journey:
+
+Outward Sailing Date:
+
+Pick a date
+
+Select A Time:
+
+Return Journey:
+
+Select Outward Journey
+
+Return Sailing Date:
+
+Pick a return date
+
+Select A Time:
+
+Click the button to check availability, we'll then give you a button to pay via PayPal:
+
+Check for Ferry
+
+
+#JS STUFF MAT
+
+Please select a ticket type.
+Check your details above, then try again.
+
+Please enter a name.
+Check your details above, then try again.
+Please enter a number
+Please enter your car details
+Please select an outward journey.
+Please select a valid date.
+Please select a ferry time.
+Check your details above, then try again.
+Please select a valid return date.
+
+Pick a return date after your outward sailing
+Pick a return time after your outward sailing
+
+############################################################
+###########  CONTACT
+############################################################
+
+
+Contact
+The fastest way to get in touch with us is to give us a call or send us an email:
+Call: +353-87-3171810
+Email: info.fastferry@gmail.com
+Directions
+You could always stop in for a visit and a chat too!
+
+Follow Us On Twitter
+Like us on facebook
+
+
+
+############################################################
+###########  APP SITE
+############################################################
+
+
+Back To Arranmore Ferry
+
+Arranmore Ferry App
+
+We're very excited to announce our new app - it's available now on iOS, Android and Amazon's FireOS. Search for "Arranmore Ferry" on Apple's App Store, Google Play or Amazon and download the app now. Let us now what you think and help us spread the word too!
+Learn More
+
+Get all the latest times right on your phone!
+
+Any time in blue will be a ferry departing Arranmore.
+Orange times will always be ferries departing Burtonport.
+All times are updated live by the Fast Ferry team, including extras and cancellations.
+Works online and offline (latest update will need an internet connection).
+
+All timetables available in Gaeilge and English
+
+The whole app has been designed to work in Gaeilge and English.
+You can view all of the ferry timetables from throughout the year.
+Or you can view only the month you're going to Arranmore.
+If you get stuck, you can call or email us right from the app!
+
+Planning a trip?
+
+Doesn't matter where in the world you are, you'll always know when the next ferry is.
+You can use the app to check the times for the day you're travelling.
+This will always include the latest timetables from the Fast Ferry team.
+You can even see the local time in Arranmore.
+
+Download Now
+
+The app works on devices all shapes and sizes running Android or iOS!
+Just download, choose your settings and you're off.
+Let us know what you think by email.
+Help us spread the word about the app!
+
+

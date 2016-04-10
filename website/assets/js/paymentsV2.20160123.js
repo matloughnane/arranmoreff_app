@@ -16,11 +16,11 @@ function decimalPlaces(num) {
 function addZeros(num){
 	// console.log(decimalPlaces(num));
 	if (decimalPlaces(num) == 0) {
-		var zeroString = "â‚¬"+num+".00";
+		var zeroString = "€"+num+".00";
 	} else if (decimalPlaces(num) == 1) {
-		var zeroString = "â‚¬"+num+"0";
+		var zeroString = "€"+num+"0";
 	} else if (decimalPlaces(num) == 2) {
-		var zeroString = "â‚¬"+num;
+		var zeroString = "€"+num;
 	}
 	return zeroString;
 }
@@ -28,7 +28,6 @@ function addZeros(num){
 // var ticket_desc = "Ticket Ferry Test";
 // var car_family_price = "40.50";
 var car_family_price = 40.50;
-var car_pass_price = 40.50;
 var car_driver_price = 27.00;
 var adult_price = 13.50;
 var student_price = 9.00;
@@ -54,12 +53,6 @@ $( "#ticketPicker" ).change(function() {
 	        document.getElementById("price_grid").style.display = "block";
 	        document.getElementById("car_details_grid").style.display = "block";
 	        var car_driver_price_qty = addZeros(car_driver_price * qty);
-	        document.getElementById("ticket_price").innerHTML = car_driver_price_qty;
-	        break;
-	    case "car_pass_driver":
-	        document.getElementById("price_grid").style.display = "block";
-	        document.getElementById("car_details_grid").style.display = "block";
-	        var car_driver_price_qty = addZeros(car_pass_price * qty);
 	        document.getElementById("ticket_price").innerHTML = car_driver_price_qty;
 	        break;
 	    case "adult":
@@ -104,10 +97,6 @@ $( "#qtyPicker" ).change(function() {
 	    case "car_driver":
 	        var car_driver_price_qty = addZeros(car_driver_price * qty);
 	        document.getElementById("ticket_price").innerHTML = car_driver_price_qty;
-	        break;
-	    case "car_pass_driver":
-	        var car_pass_price_qty = addZeros(car_pass_price * qty);
-	        document.getElementById("ticket_price").innerHTML = car_pass_price_qty;
 	        break;
 	    case "adult":
 	        var adult_price_qty = addZeros(adult_price * qty);
@@ -292,9 +281,6 @@ $('#validate_ferry').click( function() {
 		        break;
 		    case "car_driver":
 		        var tick_price = car_driver_price;
-		        break;
-		    case "car_pass_driver":
-		        var tick_price = car_pass_price;
 		        break;
 		    case "adult":
 		        var tick_price = adult_price;

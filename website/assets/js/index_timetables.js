@@ -62,7 +62,7 @@ function getNextFerryTime(timetableObj){
     var localOffset = utcdate.getTimezoneOffset() * 60000;
     var utcTime = localTime + localOffset;
     // console.log(utcTime);
-    var utcTime = utcTime + 3600000;
+    // var utcTime = utcTime + 3600000;
     // FUNCTION
     var tdate = new Date(utcTime);
     var todaysDate = checkDayRange(tdate);
